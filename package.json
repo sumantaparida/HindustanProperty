@@ -1,0 +1,29 @@
+{
+  "name": "property",
+  "version": "1.0.0",
+  "description": "HindustanProperty",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumantaparida/property.git"
+  },
+  "author": "Sumanta Parida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sumantaparida/property/issues"
+  },
+  "homepage": "https://github.com/sumantaparida/property#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-open": "^0.2.3",
+    "grunt-sass": "^1.2.0"
+  }
+}
