@@ -1,0 +1,21 @@
+.nopadding {
+  padding: 0px !important;
+}
+header {
+  .user {
+  > a {
+    .fa-navicon {
+      font-size: 16px;
+    }
+    }
+  }
+  //
+  .header-left {
+    > div {
+      a {
+        line-height: 60px;
+        display: block;
+      }
+    }
+  }
+}

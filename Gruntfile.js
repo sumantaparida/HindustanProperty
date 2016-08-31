@@ -76,6 +76,8 @@ module.exports = function(grunt) {
             files: [
               '<%= project.app %>/{,*/}*.html',
               '<%= project.app %>/css/*.css',
+              '<%= project.src %>/sass/{,*/}*.scss',
+              '<%= project.src %>/sass/{,*/}*.{saas,scss}',
               '<%= project.app %>/js/{,*/}*.js',
               '<%= project.app %>/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
             ]

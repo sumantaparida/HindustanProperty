@@ -1,0 +1,21 @@
+.banner-container {
+  border-bottom: solid 5px #0bab00;
+  padding: 0px;
+  // .owl-controls
+  .owl-controls {
+    margin: 0px;
+    .owl-nav {
+      [class*=owl-] {
+        width: 30px;
+        height: 50px;
+        .fa {
+          font-size: 40px;
+          line-height: 44px;
+        }
+      }
+    }
+    .owl-dots {
+      display: none !important;
+    }
+  }
+}
