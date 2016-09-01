@@ -1,0 +1,51 @@
+.agent-slider {
+  .figure-block {
+    border: solid 1px #dedede;
+    .item-thumb {
+      overflow: hidden;
+    }
+    .detail-bottom {
+      text-align: left;
+      padding: 8px;
+      background-color: #fff;
+      h3 {
+        font-weight: 500;
+      }
+      .list-inline {
+        li {
+          margin: 0px 0px 5px 0px;
+          padding: 0px;
+          width: 100%;
+          color: #656363;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          strong {
+            color: #000;
+          }
+          &:first-child {
+            span {
+              display: block;
+              font-weight: 500;
+              color: #00a65c;
+              text-transform: uppercase;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            a {
+              display: block;
+              color: #c7bb12;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+          }
+          &:last-child {
+            margin: 0px;
+          }
+        }
+      }
+    }
+  }
+}
