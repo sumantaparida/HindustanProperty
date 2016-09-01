@@ -1,0 +1,11 @@
+.feature-project-container {
+  .figure-block {
+    border: none;
+    > div {
+      border: 1px solid #dedede;
+      &:first-child {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
