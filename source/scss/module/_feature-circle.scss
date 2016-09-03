@@ -2,13 +2,39 @@
   padding: 0px;
   ul {
     list-style: none;
-    li {
-      border: solid 1px red;
+    > li {
       display: inline-table;;
       width: 33.3333%;
       float: left;
-      padding: 0px;
+      padding: 20px;
       margin: 0px;
+      text-align: center;
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: #999;
+        border-radius: 50%;
+        margin: auto;
+      }
+      h4 {
+        color: #007183;
+        padding: 0px;
+        margin: 10px 0px;
+      }
+      ul {
+        list-style: none;
+        margin: 0px;
+        li {
+          float: left;
+          width: 100%;
+          padding: 0px;
+          border: none;
+          a {
+            display: block;
+            color: #007183;
+          }
+        }
+      }
     }
   }
 }

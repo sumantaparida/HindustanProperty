@@ -1,10 +1,16 @@
 .feature-project-container {
+  .owl-carousel {
+    @media only screen and (min-width:1025px) {
+      max-width: 1000px;
+      margin: auto;
+    }
+  }
   .figure-block {
     border: none;
     > div {
       border: 1px solid #dedede;
       &:first-child {
-        margin-bottom: 15px;
+        margin-bottom: 30px;
       }
     }
   }

@@ -1,6 +1,7 @@
 .banner-container {
   border-bottom: solid 5px #0bab00;
   padding: 0px;
+  position: relative;
   // .owl-controls
   .owl-controls {
     margin: 0px;
@@ -18,4 +19,6 @@
       display: none !important;
     }
   }
+// main search
+@import "main-search.scss";
 }

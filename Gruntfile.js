@@ -51,7 +51,7 @@ module.exports = function(grunt) {
             },
             my_target: {
                 files: {
-                    'app/js/style.min.js': ['app/js/style.js']
+                    'app/js/style.min.js': ['<%= project.src %>/scss/js/style.js']
                 }
             }
         },
@@ -64,9 +64,11 @@ module.exports = function(grunt) {
         // WATCH
         watch: {
           options: {livereload: true},
+          uglify: {
+            files: '<%= project.src %>/scss/js/{,*/}*.js',
+            tasks: ['uglify:my_target']
+          },
           sass: {
-            // We watch and compile sass files as normal but don't live reload here
-            //files: ['<%= project.src %>/sass/{,*/}*.{scss,sass}'],
             files: '<%= project.src %>/scss/{,*/}*.{scss,sass}',
             tasks: ['sass', 'cssmin'],
           },
@@ -79,7 +81,7 @@ module.exports = function(grunt) {
               '<%= project.app %>/css/*.css',
               '<%= project.src %>/scss/{,*/}*.scss',
               '<%= project.src %>/scss/{,*/}*.{saas,scss}',
-              '<%= project.app %>/js/{,*/}*.js',
+              '<%= project.src %>/scss/js/{,*/}*.js',
               '<%= project.app %>/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
             ]
           }
