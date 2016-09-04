@@ -1,0 +1,107 @@
+#citypopup {
+  .citypop-container {
+    float: left;
+    width: 100%;
+    //
+    .left-property {
+      padding: 5px 30px 15px 30px;
+      h1 {
+        font-weight: 200;
+        font-size: 36px;
+        margin-top: 20px;
+      }
+      form {
+        .city-search-list {
+          padding: 20px 0px;
+        }
+        .form-control {
+          width: 90%;
+        }
+      }
+      // popular
+      .popular {
+        ul {
+          float: left;
+          width: 100%;
+          padding: 0px;
+          list-style: none;
+          li {
+            float: left;
+            width: 20%;
+            padding-top: 5px;
+            a {
+              color: #007183;
+              font-size: 14px;
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+        [data-botom] {
+          padding-top: 10px;
+          border-top: solid 1px rgb(204, 204, 204);
+        }
+      }
+    }
+    //
+    .right-property {
+      background-color: #00a8f2;
+      padding: 15px;
+      color: #fff;
+      .close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        background-color: rgba(0,0,0,.1);
+      }
+      h3 {
+        font-weight: 300;
+        position: relative;
+        color: #fff;
+        font-size: 24px;
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -8px;
+          width: 25px;
+          height: 1px;
+          background-color: #fff;
+        }
+      }
+      .why-ip-list li {
+          border-bottom: 1px solid rgba(255,255,255,.2);
+          margin-bottom: 20px;
+          padding-bottom: 20px
+      }
+      .why-ip-list li:last-child {
+          border: none
+      }
+      .why-ip-list i {
+          float: left;
+          display: block;
+          border: none;
+          margin-right: 15px;
+          background: #0086c2;
+          color: #fff;
+          font-size: 28px;
+          text-align: center;
+          width: 51px;
+          height: 51px;
+          line-height: 50px;
+          border-radius: 25px;
+      }
+      .why-ip-list h5 {
+          font-weight: 600
+      }
+      .overflow-hidden {
+          overflow: hidden
+      }
+    }
+    //
+  }
+}

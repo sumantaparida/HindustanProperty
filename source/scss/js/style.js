@@ -380,8 +380,9 @@ var nice = false;
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
             var admin_nav = $('#wpadminbar').height() + 'px';
-            if( admin_nav == 'nullpx' ) { admin_nav = '0px'; }
-            if (scroll >= sr_sticky_top ) {
+            var ser = $(".banner-search-main").offset().top - 100;
+            //if( admin_nav == 'nullpx' ) { admin_nav = '0px'; }
+            if (scroll >= ser ) {
                 search.addClass("advanced-search-sticky");
                 //search.css('top', admin_nav);
                 //$('#section-body').css('padding-top',thisHeight);
