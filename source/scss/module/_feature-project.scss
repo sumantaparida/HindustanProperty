@@ -15,3 +15,42 @@
     }
   }
 }
+// Arrow left
+.leftArrow, .rightArrow  {
+  position: absolute;
+  width: 40px;
+  height: 100px;
+  color: #007183;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 300;
+  font-size: 65px;
+  background-color: inherit;
+  border: 0;
+  box-shadow: none;
+}
+.leftArrow {
+  left: 0;
+}
+.rightArrow {
+  right: 0;
+}
+// view-all-btn
+.view-all-btn {
+  text-align: center;
+  margin-top: 15px;
+  a {
+    color: #311b92 !important;
+    width: 80px;
+    margin: auto;
+    border: solid 1px #311b92;
+    padding: 5px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    &:hover {
+      background-color: #311b92;
+      color: #fff !important;
+    }
+  }
+}

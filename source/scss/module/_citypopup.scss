@@ -75,11 +75,19 @@
       }
       .why-ip-list li {
           border-bottom: 1px solid rgba(255,255,255,.2);
-          margin-bottom: 20px;
-          padding-bottom: 20px
+          padding: 15px;
+          &.bg1 {
+            background-color: #004c6d;
+          }
+          &.bg2 {
+            background-color: #01567b;
+          }
+          &.bg3 {
+            background-color: #004c6d;
+          }
       }
       .why-ip-list li:last-child {
-          border: none
+          border: none;
       }
       .why-ip-list i {
           float: left;
@@ -96,10 +104,10 @@
           border-radius: 25px;
       }
       .why-ip-list h5 {
-          font-weight: 600
+          font-weight: 600;
       }
       .overflow-hidden {
-          overflow: hidden
+          overflow: hidden;
       }
     }
     //

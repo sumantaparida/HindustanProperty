@@ -35,6 +35,7 @@
         &.active {
           @media only screen and (min-width : 1024px) {
             background-color: transparent;
+            color: #007183;
           }
           &:before {
               @media only screen and (min-width : 1024px) {
@@ -50,5 +51,8 @@
         }
       }
     }
+  }
+  .houzez-module {
+    padding: 15px 0px;
   }
 }

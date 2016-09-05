@@ -168,12 +168,14 @@
       <div class="col-xs-5 right-property">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
         <h3>Why India Property ?</h3>
-        <div class="col-xs-12 nopadding">
-          <ul class="list-unstyled why-ip-list selcity">
-            <li class="font-whit"><i class="icon-building rounded"></i><div class="overflow-hidden"><h5 class="no-margin text-uppercase">End-to-end</h5><p class="no-margin">From identifying the right property, making a buying decision to home loans, we are here to help you in every step of the way</p></div></li>
-            <li class="font-whit"><i class="icon-champ rounded"></i><div class="overflow-hidden"><h5 class="no-margin text-uppercase">Experts</h5><p class="no-margin">Get expert assistance and advice to make the right property investment</p></div></li>
-            <li class="font-whit selcity1"><i class="icon-like rounded"></i><div class="overflow-hidden"><h5 class="no-margin text-uppercase">Extensive</h5><p class="no-margin"> 'We Get You Home' FASTER with close to a million properties to choose from</p></div></li>
-          </ul>
+        <div class="row">
+          <div class="col-xs-12 nopadding">
+            <ul class="list-unstyled why-ip-list selcity">
+              <li class="font-whit bg1"><i class="icon-building rounded"></i><div class="overflow-hidden"><h5 class="no-margin text-uppercase">End-to-end</h5><p class="no-margin">From identifying the right property, making a buying decision to home loans, we are here to help you in every step of the way</p></div></li>
+              <li class="font-whit bg2"><i class="icon-champ rounded"></i><div class="overflow-hidden"><h5 class="no-margin text-uppercase">Experts</h5><p class="no-margin">Get expert assistance and advice to make the right property investment</p></div></li>
+              <li class="font-whit selcity1 bg3"><i class="icon-like rounded"></i><div class="overflow-hidden"><h5 class="no-margin text-uppercase">Extensive</h5><p class="no-margin"> 'We Get You Home' FASTER with close to a million properties to choose from</p></div></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -257,26 +259,148 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <div class="col-xs-3 nopadding">
+        <div class="col-xs-2 nopadding">
           <ul sticky-nav-left>
             <li><a href="javascript:void(0);" data-toggle="modal" data-target="#citypopup"><i class="fa fa-map-marker" aria-hidden="true"></i> Mumbai</a></li>
           </ul>
         </div>
-        <div class="col-xs-6 nopadding">
+        <div class="col-xs-8 nopadding">
           <form method="get" action="#">
             <div class="form-group search-long">
+              <div class="prop-category">
+                <a href="javascript:void(0);"><span>Rent</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <ul>
+                  <li>Buy</li>
+                  <li>Rent</li>
+                  <li>Buy</li>
+                  <li>Rent</li>
+                </ul>
+              </div>
               <div class="search">
                 <div class="input-search input-icon">
                   <input class="houzez_geocomplete form-control" type="text" value="" name="keyword" placeholder="Enter an address, town, street, zip or property ID">
                 </div>
               </div>
+              <div class="price-list">
+                <a href="javascript:void(0);"><span>10 L - 20 L</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <ul>
+                  <li data-input>
+                    <input type="text" name="min-price" placeholder="min price"><input type="text" name="max-price" placeholder="max price">
+                  </li>
+                  <li data-price-list-left>
+                    <ul>
+                      <li>Any</li>
+                      <li>20 Lk</li>
+                      <li>20 Lk</li>
+                      <li>20 Lk</li>
+                      <li>20 Lk</li>
+                      <li>20 Lk</li>
+                      <li>20 Lk</li>
+                      <li>20 Lk</li>
+                      <li>20 Lk</li>
+                      <li>20 Lk</li>
+                    </ul>
+                  </li>
+                  <li data-price-list-right>
+                    <ul>
+                      <li>Any</li>
+                      <li>20 Lk</li>
+                      <li>20 Lk</li>
+                      <li>20 Lk</li>
+                      <li>20 Lk</li>
+                      <li>20 Lk</li>
+                      <li>20 Lk</li>
+                      <li>20 Lk</li>
+                      <li>20 Lk</li>
+                      <li>20 Lk</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="property-type">
+                <a href="javascript:void(0);"><span>Property Type</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <ul>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" id="allresdi">
+                      <label for="allresdi">Remember me</label>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" id="allresdi2">
+                      <label for="allresdi2">Remember me</label>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" id="allresdi3">
+                      <label for="allresdi3">Remember me</label>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" id="allresdi4">
+                      <label for="allresdi4">Remember me</label>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" id="allresdi5">
+                      <label for="allresdi5">Remember me</label>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" id="allresdi6">
+                      <label for="allresdi6">Remember me</label>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" id="allresdi7">
+                      <label for="allresdi7">Remember me</label>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" id="allresdi8">
+                      <label for="allresdi8">Remember me</label>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" id="allresdi9">
+                      <label for="allresdi9">Remember me</label>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" id="allresdi10">
+                      <label for="allresdi10">Remember me</label>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" id="allresdi11">
+                      <label for="allresdi11">Remember me</label>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" id="allresdi12">
+                      <label for="allresdi12">Remember me</label>
+                    </label>
+                  </li>
+                </ul>
+              </div>
               <div class="search-btn">
-                <button class="btn btn-orange">Search</button>
+                <button class="btn hp-search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
               </div>
             </div>
           </form>
         </div>
-        <div class="col-xs-3 nopadding">
+        <div class="col-xs-2 nopadding">
           <ul sticky-nav-right>
             <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i> </a></li>
           </ul>
@@ -295,6 +419,12 @@
       <div class="banner-search-main">
           <form method="get" action="search" class="form-inline">
               <div class="form-group">
+                  <ul tab-search>
+                    <li><a class="active" href="#">Buy</a></li>
+                    <li><a href="#">Rent</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Dealers</a></li>
+                  </ul>
                   <div class="search input-search input-icon">
                       <input type="text" class="form-control ui-autocomplete-input" name="keyword" placeholder="Enter an address, town, street, zip or property ID" autocomplete="off">
                   </div>
@@ -484,17 +614,8 @@
             <h2 headding>Feature Project</h2>
           </div>
           <div class="col-xs-12 nopadding">
-            <div class="module-title-nav clearfix">
-              <div class="module-nav">
-                <button class="btn btn-carousel btn-sm btn-prev-e9ukE2">Prev</button>
-                <button class="btn btn-carousel btn-sm btn-next-e9ukE2">Next</button>
-                <a href="#" class="btn btn-carousel btn-sm">View All</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 nopadding">
-            <button class="btn btn-carousel btn-sm pull-left btn-prev-e9ukE2 hide">Prev</button>
-            <button class="btn btn-carousel btn-sm btn-next-e9ukE2 hide">Next</button>
+            <button class="leftArrow btn-prev-e9ukE2"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+            <button class="rightArrow btn-next-e9ukE2"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
             <div id="properties-carousel-v1-e9ukE2"data-token="e9ukE2" class="carousel slide-animated">
               <!-- // -->
               <div class="figure-block">
@@ -505,11 +626,11 @@
                     </a>
                   </figure>
                   <div class="detail-bottom detail">
-                    <h3><i class="fa fa-map-marker" aria-hidden="true"></i> Lokhandwala, Andheri West</h3>
+                    <h3>Lokhandwala, Andheri West</h3>
                     <ul class="list-inline">
                       <li>
                         <span>ORNATE THE GROVE TOWERS</span>
-                        <a href="#">by Ornate Spaces</a>
+                        <a href="#">By Ornate Spaces</a>
                       </li>
                       <li>Premium - 3, 4 BHK Luxury Apartments, Life Style Features</li>
                       <li><strong><i class="fa fa-inr" aria-hidden="true"></i> 15 lakh - 1.5 Cr</strong></li>
@@ -523,11 +644,11 @@
                     </a>
                   </figure>
                   <div class="detail-bottom detail">
-                    <h3><i class="fa fa-map-marker" aria-hidden="true"></i> Lokhandwala, Andheri West</h3>
+                    <h3>Lokhandwala, Andheri West</h3>
                     <ul class="list-inline">
                       <li>
                         <span>ORNATE THE GROVE TOWERS</span>
-                        <a href="#">by Ornate Spaces</a>
+                        <a href="#">By Ornate Spaces</a>
                       </li>
                       <li>Premium - 3, 4 BHK Luxury Apartments, Life Style Features</li>
                       <li><strong><i class="fa fa-inr" aria-hidden="true"></i> 15 lakh - 1.5 Cr</strong></li>
@@ -545,11 +666,11 @@
                     </a>
                   </figure>
                   <div class="detail-bottom detail">
-                    <h3><i class="fa fa-map-marker" aria-hidden="true"></i> Lokhandwala, Andheri West</h3>
+                    <h3>Lokhandwala, Andheri West</h3>
                     <ul class="list-inline">
                       <li>
                         <span>ORNATE THE GROVE TOWERS</span>
-                        <a href="#">by Ornate Spaces</a>
+                        <a href="#">By Ornate Spaces</a>
                       </li>
                       <li>Premium - 3, 4 BHK Luxury Apartments, Life Style Features</li>
                       <li><strong><i class="fa fa-inr" aria-hidden="true"></i> 15 lakh - 1.5 Cr</strong></li>
@@ -563,11 +684,11 @@
                     </a>
                   </figure>
                   <div class="detail-bottom detail">
-                    <h3><i class="fa fa-map-marker" aria-hidden="true"></i> Lokhandwala, Andheri West</h3>
+                    <h3>Lokhandwala, Andheri West</h3>
                     <ul class="list-inline">
                       <li>
                         <span>ORNATE THE GROVE TOWERS</span>
-                        <a href="#">by Ornate Spaces</a>
+                        <a href="#">By Ornate Spaces</a>
                       </li>
                       <li>Premium - 3, 4 BHK Luxury Apartments, Life Style Features</li>
                       <li><strong><i class="fa fa-inr" aria-hidden="true"></i> 15 lakh - 1.5 Cr</strong></li>
@@ -585,11 +706,11 @@
                     </a>
                   </figure>
                   <div class="detail-bottom detail">
-                    <h3><i class="fa fa-map-marker" aria-hidden="true"></i> Lokhandwala, Andheri West</h3>
+                    <h3>Lokhandwala, Andheri West</h3>
                     <ul class="list-inline">
                       <li>
                         <span>ORNATE THE GROVE TOWERS</span>
-                        <a href="#">by Ornate Spaces</a>
+                        <a href="#">By Ornate Spaces</a>
                       </li>
                       <li>Premium - 3, 4 BHK Luxury Apartments, Life Style Features</li>
                       <li><strong><i class="fa fa-inr" aria-hidden="true"></i> 15 lakh - 1.5 Cr</strong></li>
@@ -603,11 +724,11 @@
                     </a>
                   </figure>
                   <div class="detail-bottom detail">
-                    <h3><i class="fa fa-map-marker" aria-hidden="true"></i> Lokhandwala, Andheri West</h3>
+                    <h3>Lokhandwala, Andheri West</h3>
                     <ul class="list-inline">
                       <li>
                         <span>ORNATE THE GROVE TOWERS</span>
-                        <a href="#">by Ornate Spaces</a>
+                        <a href="#">By Ornate Spaces</a>
                       </li>
                       <li>Premium - 3, 4 BHK Luxury Apartments, Life Style Features</li>
                       <li><strong><i class="fa fa-inr" aria-hidden="true"></i> 15 lakh - 1.5 Cr</strong></li>
@@ -625,11 +746,11 @@
                     </a>
                   </figure>
                   <div class="detail-bottom detail">
-                    <h3><i class="fa fa-map-marker" aria-hidden="true"></i> Lokhandwala, Andheri West</h3>
+                    <h3>Lokhandwala, Andheri West</h3>
                     <ul class="list-inline">
                       <li>
                         <span>ORNATE THE GROVE TOWERS</span>
-                        <a href="#">by Ornate Spaces</a>
+                        <a href="#">By Ornate Spaces</a>
                       </li>
                       <li>Premium - 3, 4 BHK Luxury Apartments, Life Style Features</li>
                       <li><strong><i class="fa fa-inr" aria-hidden="true"></i> 15 lakh - 1.5 Cr</strong></li>
@@ -643,11 +764,11 @@
                     </a>
                   </figure>
                   <div class="detail-bottom detail">
-                    <h3><i class="fa fa-map-marker" aria-hidden="true"></i> Lokhandwala, Andheri West</h3>
+                    <h3>Lokhandwala, Andheri West</h3>
                     <ul class="list-inline">
                       <li>
                         <span>ORNATE THE GROVE TOWERS</span>
-                        <a href="#">by Ornate Spaces</a>
+                        <a href="#">By Ornate Spaces</a>
                       </li>
                       <li>Premium - 3, 4 BHK Luxury Apartments, Life Style Features</li>
                       <li><strong><i class="fa fa-inr" aria-hidden="true"></i> 15 lakh - 1.5 Cr</strong></li>
@@ -665,11 +786,11 @@
                     </a>
                   </figure>
                   <div class="detail-bottom detail">
-                    <h3><i class="fa fa-map-marker" aria-hidden="true"></i> Lokhandwala, Andheri West</h3>
+                    <h3>Lokhandwala, Andheri West</h3>
                     <ul class="list-inline">
                       <li>
                         <span>ORNATE THE GROVE TOWERS</span>
-                        <a href="#">by Ornate Spaces</a>
+                        <a href="#">By Ornate Spaces</a>
                       </li>
                       <li>Premium - 3, 4 BHK Luxury Apartments, Life Style Features</li>
                       <li><strong><i class="fa fa-inr" aria-hidden="true"></i> 15 lakh - 1.5 Cr</strong></li>
@@ -683,11 +804,11 @@
                     </a>
                   </figure>
                   <div class="detail-bottom detail">
-                    <h3><i class="fa fa-map-marker" aria-hidden="true"></i> Lokhandwala, Andheri West</h3>
+                    <h3>Lokhandwala, Andheri West</h3>
                     <ul class="list-inline">
                       <li>
                         <span>ORNATE THE GROVE TOWERS</span>
-                        <a href="#">by Ornate Spaces</a>
+                        <a href="#">By Ornate Spaces</a>
                       </li>
                       <li>Premium - 3, 4 BHK Luxury Apartments, Life Style Features</li>
                       <li><strong><i class="fa fa-inr" aria-hidden="true"></i> 15 lakh - 1.5 Cr</strong></li>
@@ -705,11 +826,11 @@
                     </a>
                   </figure>
                   <div class="detail-bottom detail">
-                    <h3><i class="fa fa-map-marker" aria-hidden="true"></i> Lokhandwala, Andheri West</h3>
+                    <h3>Lokhandwala, Andheri West</h3>
                     <ul class="list-inline">
                       <li>
                         <span>ORNATE THE GROVE TOWERS</span>
-                        <a href="#">by Ornate Spaces</a>
+                        <a href="#">By Ornate Spaces</a>
                       </li>
                       <li>Premium - 3, 4 BHK Luxury Apartments, Life Style Features</li>
                       <li><strong><i class="fa fa-inr" aria-hidden="true"></i> 15 lakh - 1.5 Cr</strong></li>
@@ -723,11 +844,11 @@
                     </a>
                   </figure>
                   <div class="detail-bottom detail">
-                    <h3><i class="fa fa-map-marker" aria-hidden="true"></i> Lokhandwala, Andheri West</h3>
+                    <h3>Lokhandwala, Andheri West</h3>
                     <ul class="list-inline">
                       <li>
                         <span>ORNATE THE GROVE TOWERS</span>
-                        <a href="#">by Ornate Spaces</a>
+                        <a href="#">By Ornate Spaces</a>
                       </li>
                       <li>Premium - 3, 4 BHK Luxury Apartments, Life Style Features</li>
                       <li><strong><i class="fa fa-inr" aria-hidden="true"></i> 15 lakh - 1.5 Cr</strong></li>
@@ -745,11 +866,11 @@
                     </a>
                   </figure>
                   <div class="detail-bottom detail">
-                    <h3><i class="fa fa-map-marker" aria-hidden="true"></i> Lokhandwala, Andheri West</h3>
+                    <h3>Lokhandwala, Andheri West</h3>
                     <ul class="list-inline">
                       <li>
                         <span>ORNATE THE GROVE TOWERS</span>
-                        <a href="#">by Ornate Spaces</a>
+                        <a href="#">By Ornate Spaces</a>
                       </li>
                       <li>Premium - 3, 4 BHK Luxury Apartments, Life Style Features</li>
                       <li><strong><i class="fa fa-inr" aria-hidden="true"></i> 15 lakh - 1.5 Cr</strong></li>
@@ -763,11 +884,11 @@
                     </a>
                   </figure>
                   <div class="detail-bottom detail">
-                    <h3><i class="fa fa-map-marker" aria-hidden="true"></i> Lokhandwala, Andheri West</h3>
+                    <h3>Lokhandwala, Andheri West</h3>
                     <ul class="list-inline">
                       <li>
                         <span>ORNATE THE GROVE TOWERS</span>
-                        <a href="#">by Ornate Spaces</a>
+                        <a href="#">By Ornate Spaces</a>
                       </li>
                       <li>Premium - 3, 4 BHK Luxury Apartments, Life Style Features</li>
                       <li><strong><i class="fa fa-inr" aria-hidden="true"></i> 15 lakh - 1.5 Cr</strong></li>
@@ -785,11 +906,11 @@
                     </a>
                   </figure>
                   <div class="detail-bottom detail">
-                    <h3><i class="fa fa-map-marker" aria-hidden="true"></i> Lokhandwala, Andheri West</h3>
+                    <h3>Lokhandwala, Andheri West</h3>
                     <ul class="list-inline">
                       <li>
                         <span>ORNATE THE GROVE TOWERS</span>
-                        <a href="#">by Ornate Spaces</a>
+                        <a href="#">By Ornate Spaces</a>
                       </li>
                       <li>Premium - 3, 4 BHK Luxury Apartments, Life Style Features</li>
                       <li><strong><i class="fa fa-inr" aria-hidden="true"></i> 15 lakh - 1.5 Cr</strong></li>
@@ -803,11 +924,11 @@
                     </a>
                   </figure>
                   <div class="detail-bottom detail">
-                    <h3><i class="fa fa-map-marker" aria-hidden="true"></i> Lokhandwala, Andheri West</h3>
+                    <h3>Lokhandwala, Andheri West</h3>
                     <ul class="list-inline">
                       <li>
                         <span>ORNATE THE GROVE TOWERS</span>
-                        <a href="#">by Ornate Spaces</a>
+                        <a href="#">By Ornate Spaces</a>
                       </li>
                       <li>Premium - 3, 4 BHK Luxury Apartments, Life Style Features</li>
                       <li><strong><i class="fa fa-inr" aria-hidden="true"></i> 15 lakh - 1.5 Cr</strong></li>
@@ -816,6 +937,9 @@
                 </div>
               </div>
               <!-- // -->
+            </div>
+            <div class="col-xs-12 nopadding view-all-btn">
+              <a href="javascript:void(0);" class="btn btn-carousel btn-sm">View All</a>
             </div>
           </div>
         </div>
@@ -830,58 +954,108 @@
           <div class="vc_column-inner">
               <div class="wpb_wrapper">
                 <h2 headding>Our Feature Service</h2>
-                  <div class="houzez-module module-title section-title-module text-center ">
+                  <div class="houzez-module module-title section-title-module text-center detail-content-tabber">
                       <!-- <h3 class="sub-heading">Display different feature</h3> -->
                       <!--start detail tabs-->
-                      <ul>
-                        <li class="active">For Dealer</li>
-                        <li>For Customer</li>
+                      <ul class="detail-tabs" data-feature-service>
+                        <li class="active" data-route="#Dealer">For Dealer</li>
+                        <li data-route="#Customer">For Customer</li>
                       </ul>
                       <!--end detail tabs-->
                   </div>
-                  <div id="location-module" class="houzez-module location-module  grid grid_v1">
-                      <div class="row">
-                          <div class="col-sm-4">
-                              <div class="location-block" style="background-image: url(http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago.jpg);">
-                                  <a href="#">
-                                      <div class="location-fig-caption">
-                                          <h3 class="heading">Chicago</h3>
-                                          <p class="sub-heading">13 Properties </p>
-                                      </div>
-                                  </a>
+                  <div class="tab-content" feature-service-details>
+                    <div id="Dealer" class="tab-pane fade active in">
+                      <div class="houzez-module location-module  grid grid_v1">
+                          <div class="row">
+                              <div class="col-sm-4">
+                                  <div class="location-block" style="background-image: url(http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago.jpg);">
+                                      <a href="#">
+                                          <div class="location-fig-caption">
+                                              <h3 class="heading">Dealer CRM</h3>
+                                              <p class="sub-heading">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                                          </div>
+                                      </a>
+                                  </div>
                               </div>
-                          </div>
-                          <div class="col-sm-8">
-                              <div class="location-block" style="background-image: url(http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles.jpg);">
-                                  <a href="#">
-                                      <div class="location-fig-caption">
-                                          <h3 class="heading">Los Angeles</h3>
-                                          <p class="sub-heading">14 Properties </p>
-                                      </div>
-                                  </a>
+                              <div class="col-sm-8">
+                                  <div class="location-block" style="background-image: url(http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles.jpg);">
+                                      <a href="#">
+                                          <div class="location-fig-caption">
+                                              <h3 class="heading">Dealer Website</h3>
+                                              <p class="sub-heading">14 Properties </p>
+                                          </div>
+                                      </a>
+                                  </div>
                               </div>
-                          </div>
-                          <div class="col-sm-8">
-                              <div class="location-block" style="background-image: url(http://houzez01.favethemes.com/wp-content/uploads/2016/03/miami-beach.jpg);">
-                                  <a href="#">
-                                      <div class="location-fig-caption">
-                                          <h3 class="heading">Miami</h3>
-                                          <p class="sub-heading">15 Properties </p>
-                                      </div>
-                                  </a>
+                              <div class="col-sm-8">
+                                  <div class="location-block" style="background-image: url(http://houzez01.favethemes.com/wp-content/uploads/2016/03/miami-beach.jpg);">
+                                      <a href="#">
+                                          <div class="location-fig-caption">
+                                              <h3 class="heading">Property Finance</h3>
+                                              <p class="sub-heading">8 Banks</p>
+                                          </div>
+                                      </a>
+                                  </div>
                               </div>
-                          </div>
-                          <div class="col-sm-4">
-                              <div class="location-block" style="background-image: url(http://houzez01.favethemes.com/wp-content/uploads/2016/03/new-york.jpg);">
-                                  <a href="#">
-                                      <div class="location-fig-caption">
-                                          <h3 class="heading">New York</h3>
-                                          <p class="sub-heading">10 Properties </p>
-                                      </div>
-                                  </a>
+                              <div class="col-sm-4">
+                                  <div class="location-block" style="background-image: url(http://houzez01.favethemes.com/wp-content/uploads/2016/03/new-york.jpg);">
+                                      <a href="#">
+                                          <div class="location-fig-caption">
+                                              <h3 class="heading">Property Documentation</h3>
+                                              <p class="sub-heading">10 Properties </p>
+                                          </div>
+                                      </a>
+                                  </div>
                               </div>
                           </div>
                       </div>
+                    </div>
+                    <div id="Customer" class="tab-pane fade in">
+                      <div class="houzez-module location-module  grid grid_v1">
+                          <div class="row">
+                              <div class="col-sm-4">
+                                  <div class="location-block" style="background-image: url(http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago.jpg);">
+                                      <a href="#">
+                                          <div class="location-fig-caption">
+                                              <h3 class="heading">Property Manager</h3>
+                                              <p class="sub-heading">13 Properties </p>
+                                          </div>
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col-sm-8">
+                                  <div class="location-block" style="background-image: url(http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles.jpg);">
+                                      <a href="#">
+                                          <div class="location-fig-caption">
+                                              <h3 class="heading">NRI Services</h3>
+                                              <p class="sub-heading">14 Properties </p>
+                                          </div>
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col-sm-8">
+                                  <div class="location-block" style="background-image: url(http://houzez01.favethemes.com/wp-content/uploads/2016/03/miami-beach.jpg);">
+                                      <a href="#">
+                                          <div class="location-fig-caption">
+                                              <h3 class="heading">Property Plus</h3>
+                                              <p class="sub-heading">15 Properties </p>
+                                          </div>
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col-sm-4">
+                                  <div class="location-block" style="background-image: url(http://houzez01.favethemes.com/wp-content/uploads/2016/03/new-york.jpg);">
+                                      <a href="#">
+                                          <div class="location-fig-caption">
+                                              <h3 class="heading">Property Agreement</h3>
+                                              <p class="sub-heading">10 Properties </p>
+                                          </div>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
                   </div>
               </div>
           </div>
@@ -897,15 +1071,8 @@
           <h2 headding> Feature Agent</h2>
         </div>
         <div class="col-xs-12 nopadding">
-          <div class="module-title-nav clearfix">
-            <div class="module-nav">
-              <button class="btn btn-carousel btn-sm btn-prev-e9ukE">Prev</button>
-              <button class="btn btn-carousel btn-sm btn-next-e9ukE">Next</button>
-              <a href="#" class="btn btn-carousel btn-sm">View All</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 nopadding">
+          <button class="leftArrow btn-prev-e9ukE"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+          <button class="rightArrow btn-next-e9ukE"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
           <div id="properties-carousel-v1-e9ukE"data-token="e9ukE" class="carousel slide-animated">
             <!-- // -->
             <div class="figure-block">
@@ -1068,6 +1235,9 @@
             </div>
             <!-- // -->
           </div>
+          <div class="col-xs-12 nopadding view-all-btn">
+            <a href="javascript:void(0);" class="btn btn-carousel btn-sm">View All</a>
+          </div>
         </div>
       </div>
     </div>
@@ -1118,20 +1288,31 @@
   <!-- // Graph Start -->
   <section>
     <div class="container graph">
-      <div class="stats-block"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
-        <canvas id="myChart" width="730" height="365" style="display: block; width: 730px; height: 365px;"></canvas>
-        <div id="chartjs-tooltip"></div>
+      <!-- // Headding start -->
+      <h2 headding>Page Views</h2>
+      <!-- // headding end -->
+      <div id="stats" class="detail-features detail-block">
+          <!-- <div class="detail-title">
+              <h2 class="title-left">Page Views</h2>
+          </div> -->
+          <div class="stats-block">
+              <canvas id="myChart"></canvas>
+              <div id="chartjs-tooltip"></div>
+          </div>
       </div>
     </div>
   </section>
   <!-- // Graph End -->
-  <!-- // container start -->
-  <div class="container">
-    <!-- // Agent Slider Start -->
-
-    <!-- // Agent Slider End -->
-  </div>
-  <!-- // container end -->
+  <!-- // text Start -->
+  <section>
+    <div class="container text-container">
+      <div class="wpb_wrapper">
+        <p><strong>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong> Ut enim ad minim veniam, quis nostrud&nbsp;<a href="#">text link</a> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Ut enim ad minim veniam, quis nostrud&nbsp;<a href="#">text link</a> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+  </section>
+  <!-- // text end -->
 </div>
 <!-- // middle content end -->
 <!--start footer section-->
@@ -1371,6 +1552,20 @@
   /* ]]> */
 </script>
 <script type='text/javascript' src='http://houzez01.favethemes.com/wp-content/themes/houzez/js/houzez_ajax_calls.js?ver=1.3.0'></script>
+<script type='text/javascript' src='http://houzez01.favethemes.com/wp-content/themes/houzez/js/Chart.min.js?ver=2.2.1'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var houzez_stats_vars = {
+        "stats_labels": "[\"08-17-2016\",\"08-18-2016\",\"08-19-2016\",\"08-20-2016\",\"08-21-2016\",\"08-22-2016\",\"08-23-2016\",\"08-24-2016\",\"08-25-2016\",\"08-26-2016\",\"08-27-2016\",\"08-28-2016\",\"08-29-2016\",\"08-30-2016\",\"08-31-2016\",\"09-01-2016\",\"09-02-2016\",\"09-03-2016\",\"09-04-2016\",\"09-05-2016\"]",
+        "stats_values": "[143,124,93,63,60,106,91,151,72,111,77,57,61,157,92,80,106,80,82,87]",
+        "stats_view": "Views",
+        "chart_type": "line",
+        "bg_color": "rgba(0,174,239,0.2)",
+        "border_color": "rgba(0,174,239,1)"
+    };
+    /* ]]> */
+</script>
+<script type='text/javascript' src='http://houzez01.favethemes.com/wp-content/themes/houzez/js/property_stats.js?ver=1.3.0'></script>
 <!-- <script type='text/javascript' src='http://houzez01.favethemes.com/wp-content/themes/houzez/js/custom.js?ver=1.3.0'></script> -->
 <script type='text/javascript' src='js/style.min.js'></script>
 <script type='text/javascript' src='http://houzez01.favethemes.com/wp-includes/js/wp-embed.min.js?ver=4.5.3'></script>
@@ -1405,6 +1600,18 @@ var prop_carousel_QyLtz = {"slides_to_show":"6","slides_to_scroll":"1","slide_au
 </script>
 <script type="text/javascript">
   jQuery(function($) {
+    // Tap
+    featureService();
+    function featureService() {
+      var datDetailsId = $("[feature-service-details] > div")
+      var dataclick = $("[data-feature-service] > li")
+      dataclick.on("click", function(){
+        datDetailsId.removeClass("active");
+        var id = $(this).attr("data-route")
+        $(id).addClass("active");
+        //console.log($(id).addClass("active"));
+      });
+    }
   });
 </script>
 <!-- // Javascript end -->

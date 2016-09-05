@@ -1,4 +1,10 @@
 .agent-slider {
+  .owl-carousel {
+    @media only screen and (min-width:1025px) {
+      max-width: 1000px;
+      margin: auto;
+    }
+  }
   .figure-block {
     border: solid 1px #dedede;
     margin: 0px 15px 0px 15px;
@@ -9,8 +15,10 @@
       text-align: left;
       padding: 8px;
       background-color: #fff;
+      border-bottom: solid 2px #4c6b00;
       h3 {
-        font-weight: 500;
+        font-weight: 600;
+        color: #000;
       }
       .list-inline {
         li {
@@ -25,12 +33,13 @@
           strong {
             color: #000;
             font-size: 13px;
+            font-weight: 600;
           }
           &:first-child {
             span {
               display: block;
               font-weight: 500;
-              color: #00a65c;
+              color: #7daf00;
               text-transform: uppercase;
               overflow: hidden;
               text-overflow: ellipsis;
@@ -39,14 +48,15 @@
             }
             a {
               display: block;
-              color: #c7bb12;
+              color: #000;
               overflow: hidden;
               text-overflow: ellipsis;
               white-space: nowrap;
               font-size: 12px;
+              text-transform: capitalize;
             }
           }
-          &:last-child {
+          &:last-child, &:nth-of-type(3n+2) {
             margin: 0px;
           }
         }
