@@ -17,7 +17,7 @@
 <body>
 <!-- // Login popup Strat -->
 <div class="modal fade" id="pop-login" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-sm">
+  <div class="modal-dialog modal-md">
     <div class="modal-content">
       <div class="modal-header">
         <ul class="login-tabs">
@@ -68,17 +68,46 @@
               <i class="fa fa-facebook">
               </i> login with facebook
             </button>
-            <button class="yahoo-login btn btn-social btn-bg-yahoo btn-block">
-              <i class="fa fa-yahoo">
-              </i> login with yahoo
-            </button>
             <button class="google-login btn btn-social btn-bg-google-plus btn-block">
               <i class="fa fa-google-plus">
               </i> login with google
             </button>
           </div>
           <div class="tab-pane fade">
-            User registration is disabled in this demo.
+            <form>
+              <div class="form-group field-group">
+                <div class="input-user input-icon">
+                  <input name="Name" placeholder="Name" type="text" />
+                </div>
+                <div class="input-email input-icon">
+                  <input name="Email" placeholder="Email" type="text" />
+                </div>
+                <div class="input-user input-icon">
+                  <input name="Mobil" placeholder="Mobil No" type="text" />
+                </div>
+                <div class="input-pass input-icon">
+                  <input name="password" placeholder="Password" type="password" />
+                </div>
+                <div class="input-pass input-icon">
+                  <input name="password" placeholder="Confirm Password" type="password" />
+                </div>
+              </div>
+              <div class="forget-block clearfix">
+                <div class="form-group pull-left">
+                  <div class="checkbox">
+                    <label>
+                      <input name="remember" id="remember" type="checkbox">
+                      Remember me
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <input type="hidden" id="houzez_login_security" name="houzez_login_security" value="2de8d1e5a3" />
+              <input type="hidden" name="_wp_http_referer" value="/simple-listing-list-view/" />
+              <input type="hidden" name="action" id="login_action" value="houzez_login">
+              <button type="submit" class="fave-login-button btn btn-primary btn-block">Login
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -88,7 +117,7 @@
 <!-- // Login popup End -->
 <!-- // popup reset start -->
 <div class="modal fade" id="pop-reset-pass" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-sm">
+  <div class="modal-dialog modal-md">
     <div class="modal-content">
       <div class="modal-header">
         <ul class="login-tabs">
@@ -194,8 +223,8 @@
     </div>
     <div class="header-right col-xs-6 nopadding">
       <div class="user">
-        <a href="#" class="btn btn-default hidden-xs hidden-sm">Sell/Rent Property for Free</a>
-        <a href="#" data-toggle="modal" data-target="#pop-login">
+        <a href="javascript:void(0);" class="btn btn-default hidden-xs hidden-sm">Sell/Rent Property for Free</a>
+        <a href="javascript:void(0);" data-toggle="modal" data-target="#pop-login">
           <i class="fa fa-user hidden-md hidden-lg"></i>
           <span class="hidden-sm hidden-xs">Sign In / Register</span>
         </a>
@@ -268,8 +297,8 @@
           <form method="get" action="#">
             <div class="form-group search-long">
               <div class="prop-category">
-                <a href="javascript:void(0);"><span>Rent</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                <ul>
+                <a href="javascript:void(0);"><span data-dynamic>Rent</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <ul data-category-block>
                   <li>Buy</li>
                   <li>Rent</li>
                   <li>Buy</li>
@@ -285,11 +314,12 @@
                 <a href="javascript:void(0);"><span>10 L - 20 L</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
                 <ul>
                   <li data-input>
-                    <input type="text" name="min-price" placeholder="min price"><input type="text" name="max-price" placeholder="max price">
+                    <input type="text" name="min-price" placeholder="min price" data="minprice">
+                    <input type="text" name="max-price" placeholder="max price" data="maxprice">
                   </li>
-                  <li data-price-list-left>
+                  <li data-price-list-left style="display:block;" id="minprice">
                     <ul>
-                      <li>Any</li>
+                      <li class="active">Any</li>
                       <li>20 Lk</li>
                       <li>20 Lk</li>
                       <li>20 Lk</li>
@@ -301,10 +331,10 @@
                       <li>20 Lk</li>
                     </ul>
                   </li>
-                  <li data-price-list-right>
+                  <li data-price-list-right id="maxprice">
                     <ul>
                       <li>Any</li>
-                      <li>20 Lk</li>
+                      <li class="active">20 Lk</li>
                       <li>20 Lk</li>
                       <li>20 Lk</li>
                       <li>20 Lk</li>
@@ -318,7 +348,7 @@
                 </ul>
               </div>
               <div class="property-type">
-                <a href="javascript:void(0);"><span>Property Type</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <a href="javascript:void(0);"><span data-featch>Property Type</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
                 <ul>
                   <li>
                     <label class="checkbox">
@@ -420,10 +450,10 @@
           <form method="get" action="search" class="form-inline">
               <div class="form-group">
                   <ul tab-search>
-                    <li><a class="active" href="#">Buy</a></li>
-                    <li><a href="#">Rent</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Dealers</a></li>
+                    <li><a class="active" href="javascript:void(0);">Buy</a></li>
+                    <li><a href="javascript:void(0);">Rent</a></li>
+                    <li><a href="javascript:void(0);">Projects</a></li>
+                    <li><a href="javascript:void(0);">Dealers</a></li>
                   </ul>
                   <div class="search input-search input-icon">
                       <input type="text" class="form-control ui-autocomplete-input" name="keyword" placeholder="Enter an address, town, street, zip or property ID" autocomplete="off">
@@ -444,7 +474,8 @@
           <div class="figure-block">
             <figure class="item-thumb">
               <a href="#" class="hover-effect">
-                <img src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/slider-01.jpg" alt="" class="attachment-property-thumb-image size-property-thumb-image wp-post-image">
+                <img src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/slider-01.jpg" alt="" class="attachment-property-thumb-image size-property-thumb-image wp-post-image hidden-xs">
+                <img src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-07-768x516.jpg" alt="" class="attachment-property-thumb-image size-property-thumb-image wp-post-image visible-xs">
               </a>
             </figure>
           </div>
@@ -453,7 +484,8 @@
           <div class="figure-block">
             <figure class="item-thumb">
               <a href="#" class="hover-effect">
-                <img src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/slider-01.jpg" alt="" class="attachment-property-thumb-image size-property-thumb-image wp-post-image">
+                <img src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/slider-01.jpg" alt="" class="attachment-property-thumb-image size-property-thumb-image wp-post-image hidden-xs">
+                <img src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-07-768x516.jpg" alt="" class="attachment-property-thumb-image size-property-thumb-image wp-post-image visible-xs">
               </a>
             </figure>
           </div>
@@ -462,7 +494,8 @@
           <div class="figure-block">
             <figure class="item-thumb">
               <a href="#" class="hover-effect">
-                <img src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/slider-01.jpg" alt="" class="attachment-property-thumb-image size-property-thumb-image wp-post-image">
+                <img src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/slider-01.jpg" alt="" class="attachment-property-thumb-image size-property-thumb-image wp-post-image hidden-xs">
+                <img src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-07-768x516.jpg" alt="" class="attachment-property-thumb-image size-property-thumb-image wp-post-image visible-xs">
               </a>
             </figure>
           </div>
@@ -472,6 +505,17 @@
     <!-- // slider End -->
   </div>
   <!-- // Banner End -->
+  <!-- // text Start -->
+  <section>
+    <div class="container text-container">
+      <div class="error-404-page text-center">
+        <h1>Property in Mumbai : an overview</h1>
+        <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud text link exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate...</p>
+        <a class="btn btn-link" href="javascript:void("0");">read more.</a>
+      </div>
+    </div>
+  </section>
+  <!-- // text end -->
   <!-- // locality Start -->
   <section>
     <div class="container">
@@ -1303,16 +1347,6 @@
     </div>
   </section>
   <!-- // Graph End -->
-  <!-- // text Start -->
-  <section>
-    <div class="container text-container">
-      <div class="wpb_wrapper">
-        <p><strong>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong> Ut enim ad minim veniam, quis nostrud&nbsp;<a href="#">text link</a> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>Ut enim ad minim veniam, quis nostrud&nbsp;<a href="#">text link</a> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-    </div>
-  </section>
-  <!-- // text end -->
 </div>
 <!-- // middle content end -->
 <!--start footer section-->

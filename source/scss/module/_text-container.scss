@@ -1,7 +1,17 @@
 .text-container {
-  p {
-    strong {
-      font-weight: 700;
+  .error-404-page {
+    padding: 0px;
+    h1 {
+      font-weight: 300;
+    }
+    p {
+      font-size: 20px;
+      line-height: 28px;
+    }
+    .btn-link {
+      border: solid 1px #311b92;
+      color: #311b92;
+      padding: 8px 10px;
     }
   }
 }

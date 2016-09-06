@@ -15087,7 +15087,7 @@ input[type="button"].btn-block {
 
 .header-section, .header-section-4 {
   background-color: #77c720;
-  z-index: 11;
+  z-index: 500;
 }
 
 .header-section .header-left, .header-section-4 .header-left {
@@ -15227,13 +15227,15 @@ input[type="button"].btn-block {
 }
 
 .header-right > div > a:active {
-  color: #fff;
-  border-color: #fff;
+  color: #333;
+  border: solid 1px #00bcdb !important;
+  background-color: #cce7ed !important;
 }
 
 .header-right > div > a:focus {
-  color: #fff;
-  border-color: #fff;
+  color: #333;
+  border: solid 1px #00bcdb !important;
+  background-color: #cce7ed !important;
 }
 
 .header-right > div > a + a {
@@ -17620,7 +17622,7 @@ img {
 .modal-header {
   padding: 0;
   height: 60px;
-  background-color: #393939;
+  background-color: #00a8f2;
 }
 
 .modal-header .close {
@@ -18337,7 +18339,7 @@ img {
 
 .advanced-search {
   position: relative;
-  z-index: 500;
+  z-index: 501;
   -webkit-transform: translate3d(0, -150%, 0);
   -moz-transform: translate3d(0, -150%, 0);
   -o-transform: translate3d(0, -150%, 0);
@@ -30767,10 +30769,10 @@ section {
   width: 100%;
   padding: 35px 0px;
 }
-section:nth-child(odd) {
+section:nth-child(even) {
   background-color: #f7f7f7;
 }
-section:nth-child(even) {
+section:nth-child(odd) {
   background-color: #ffffff;
 }
 
@@ -30791,7 +30793,7 @@ header .header-left > div a {
 }
 
 .bottom-nav {
-  background: #f7f7f7;
+  background: #ebebeb;
   border-top: 1px solid #efefef;
   height: 50px;
   font-size: 13px;
@@ -30925,6 +30927,9 @@ header .header-left > div a {
 .price-list > ul li[data-input] input[type="text"]:last-child {
   float: right;
 }
+.price-list > ul li[data-price-list-left] {
+  display: none;
+}
 .price-list > ul li[data-price-list-left] > ul {
   padding: 0px;
   margin: 0px;
@@ -30940,8 +30945,12 @@ header .header-left > div a {
   text-align: left;
   cursor: pointer;
 }
-.price-list > ul li[data-price-list-left] > ul li:hover {
+.price-list > ul li[data-price-list-left] > ul li:hover, .price-list > ul li[data-price-list-left] > ul li.active {
   border-left: solid 4px #7daf00;
+  background-color: #414446;
+}
+.price-list > ul li[data-price-list-right] {
+  display: none;
 }
 .price-list > ul li[data-price-list-right] > ul {
   padding: 0px;
@@ -30958,8 +30967,9 @@ header .header-left > div a {
   text-align: right;
   cursor: pointer;
 }
-.price-list > ul li[data-price-list-right] > ul li:hover {
+.price-list > ul li[data-price-list-right] > ul li:hover, .price-list > ul li[data-price-list-right] > ul li.active {
   border-right: solid 4px #7daf00;
+  background-color: #414446;
 }
 
 .property-type {
@@ -31155,6 +31165,7 @@ header .header-left > div a {
   height: 40px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.1);
+  z-index: 99;
 }
 #citypopup .citypop-container .right-property h3 {
   font-weight: 300;
@@ -31248,12 +31259,22 @@ header .header-left > div a {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
+@media only screen and (max-width: 768px) {
+  .banner-container .main-search .banner-search-main {
+    padding: 8px;
+  }
+}
 .banner-container .main-search .banner-search-main ul[tab-search] {
   float: left;
   width: 100%;
   margin: -44px -10px 0px;
   padding: 0px;
   list-style: none;
+}
+@media only screen and (max-width: 768px) {
+  .banner-container .main-search .banner-search-main ul[tab-search] {
+    margin: -38px -8px 0px;
+  }
 }
 .banner-container .main-search .banner-search-main ul[tab-search] li {
   float: left;
@@ -31267,6 +31288,12 @@ header .header-left > div a {
   background-color: rgba(255, 255, 255, 0.66);
   display: block;
   height: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .banner-container .main-search .banner-search-main ul[tab-search] li a {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
 }
 .banner-container .main-search .banner-search-main ul[tab-search] li a.active {
   background-color: rgba(0, 0, 0, 0.66);
@@ -31596,12 +31623,30 @@ header .header-left > div a {
   color: #fff !important;
 }
 
-.text-container p strong {
-  font-weight: 700;
+.text-container .error-404-page {
+  padding: 0px;
+}
+.text-container .error-404-page h1 {
+  font-weight: 300;
+}
+.text-container .error-404-page p {
+  font-size: 20px;
+  line-height: 28px;
+}
+.text-container .error-404-page .btn-link {
+  border: solid 1px #311b92;
+  color: #311b92;
+  padding: 8px 10px;
 }
 
 .graph .detail-block {
   background-color: transparent;
+}
+
+@media only screen and (min-width: 1025px) {
+  .listingContainer {
+    padding-top: 8px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

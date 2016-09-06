@@ -15,281 +15,435 @@
   <!-- JS End -->
 </head>
 <body>
-<!-- // Login popup Strat -->
-<div class="modal fade" id="pop-login" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-      <div class="modal-header">
-        <ul class="login-tabs">
-          <li class="active">Login</li>
-          <li>Register</li>
-        </ul>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <i class="fa fa-close">
-          </i>
-        </button>
-      </div>
-      <div class="modal-body login-block">
-        <div class="tab-content">
-          <div class="tab-pane fade in active">
-            <div id="houzez_messages" class="houzez_messages message">
-            </div>
-            <form>
-              <div class="form-group field-group">
-                <div class="input-user input-icon">
-                  <input id="login_username" name="username" placeholder="Username" type="text" />
-                </div>
-                <div class="input-pass input-icon">
-                  <input id="password" name="password" placeholder="Password" type="password" />
-                </div>
-              </div>
-              <div class="forget-block clearfix">
-                <div class="form-group pull-left">
-                  <div class="checkbox">
-                    <label>
-                      <input name="remember" id="remember" type="checkbox">
-                      Remember me
-                    </label>
-                  </div>
-                </div>
-                <div class="form-group pull-right">
-                  <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#pop-reset-pass">Lost your password?
-                  </a>
-                </div>
-              </div>
-              <input type="hidden" id="houzez_login_security" name="houzez_login_security" value="2de8d1e5a3" />
-              <input type="hidden" name="_wp_http_referer" value="/simple-listing-list-view/" />
-              <input type="hidden" name="action" id="login_action" value="houzez_login">
-              <button type="submit" class="fave-login-button btn btn-primary btn-block">Login
-              </button>
-            </form>
-            <hr>
-            <button class="facebook-login btn btn-social btn-bg-facebook btn-block">
-              <i class="fa fa-facebook">
-              </i> login with facebook
-            </button>
-            <button class="yahoo-login btn btn-social btn-bg-yahoo btn-block">
-              <i class="fa fa-yahoo">
-              </i> login with yahoo
-            </button>
-            <button class="google-login btn btn-social btn-bg-google-plus btn-block">
-              <i class="fa fa-google-plus">
-              </i> login with google
-            </button>
-          </div>
-          <div class="tab-pane fade">
-            User registration is disabled in this demo.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- // Login popup End -->
-<!-- // popup reset start -->
-<div class="modal fade" id="pop-reset-pass" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-      <div class="modal-header">
-        <ul class="login-tabs">
-          <li class="active">Reset Password
-          </li>
-        </ul>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <i class="fa fa-close">
-          </i>
-        </button>
-      </div>
-      <div class="modal-body login-block">
-        <p>Please enter your username or email address. You will receive a link to create a new password via email.
-        </p>
-        <div id="houzez_msg_reset" class="message">
-        </div>
-        <form>
-          <div class="form-group">
-            <div class="input-user input-icon">
-              <input name="user_login_forgot" id="user_login_forgot" placeholder="Enter your username or email" class="form-control">
-            </div>
-          </div>
-          <input type="hidden" id="fave_resetpassword_security" name="fave_resetpassword_security" value="76b9d91536" />
-          <input type="hidden" name="_wp_http_referer" value="/simple-listing-list-view/" />
-          <button type="button" id="houzez_forgetpass" class="btn btn-primary btn-block">Get new password
+  <!-- // Login popup Strat -->
+  <div class="modal fade" id="pop-login" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <ul class="login-tabs">
+            <li class="active">Login</li>
+            <li>Register</li>
+          </ul>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-close">
+            </i>
           </button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- // popup reset end -->
-<!-- // city popup end -->
-<div class="modal fade" id="citypopup" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content citypop-container">
-      <div class="col-xs-7 left-property">
-        <h1>Select your City</h1>
-        <div class="col-xs-12 nopadding">
-          <form method="get" action="search" class="form-inline">
-              <div class="form-group col-xs-12 city-search-list">
-                <label for="">Search from over 1500 cities </label>
-                  <div class="search input-search input-icon col-xs-12 nopadding">
-                      <input type="text" class="form-control ui-autocomplete-input" placeholder="Property" autocomplete="off">
+        </div>
+        <div class="modal-body login-block">
+          <div class="tab-content">
+            <div class="tab-pane fade in active">
+              <div id="houzez_messages" class="houzez_messages message">
+              </div>
+              <form>
+                <div class="form-group field-group">
+                  <div class="input-user input-icon">
+                    <input id="login_username" name="username" placeholder="Username" type="text" />
                   </div>
-              </div>
-          </form>
-        </div>
-        <div class="col-xs-12 nopadding popular">
-          <h6>POPULAR CITIES</h6>
-          <ul>
-            <li><a href="#">Chennai</a></li>
-            <li><a href="#">Bangalore</a></li>
-            <li><a href="#">Mumbai</a></li>
-            <li><a href="#">Chennai</a></li>
-            <li><a href="#">Bangalore</a></li>
-            <li><a href="#">Mumbai</a></li>
-            <li><a href="#">Chennai</a></li>
-            <li><a href="#">Bangalore</a></li>
-            <li><a href="#">Mumbai</a></li>
-            <li><a href="#">Mumbai</a></li>
-          </ul>
-          <ul data-botom>
-            <li><a href="#">Chennai</a></li>
-            <li><a href="#">Bangalore</a></li>
-            <li><a href="#">Mumbai</a></li>
-            <li><a href="#">Chennai</a></li>
-            <li><a href="#">Bangalore</a></li>
-            <li><a href="#">Mumbai</a></li>
-            <li><a href="#">Chennai</a></li>
-            <li><a href="#">Bangalore</a></li>
-            <li><a href="#">Mumbai</a></li>
-            <li><a href="#">Mumbai</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-xs-5 right-property">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
-        <h3>Why India Property ?</h3>
-        <div class="col-xs-12 nopadding">
-          <ul class="list-unstyled why-ip-list selcity">
-            <li class="font-whit"><i class="icon-building rounded"></i><div class="overflow-hidden"><h5 class="no-margin text-uppercase">End-to-end</h5><p class="no-margin">From identifying the right property, making a buying decision to home loans, we are here to help you in every step of the way</p></div></li>
-            <li class="font-whit"><i class="icon-champ rounded"></i><div class="overflow-hidden"><h5 class="no-margin text-uppercase">Experts</h5><p class="no-margin">Get expert assistance and advice to make the right property investment</p></div></li>
-            <li class="font-whit selcity1"><i class="icon-like rounded"></i><div class="overflow-hidden"><h5 class="no-margin text-uppercase">Extensive</h5><p class="no-margin"> 'We Get You Home' FASTER with close to a million properties to choose from</p></div></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- // city popup end -->
-<!--start section header-->
-<header id="header-section" class="houzez-header-main header-section-4 not-splash-header nav-left hidden-sm hidden-xs" data-sticky="0">
-  <div class="container">
-    <div class="header-left col-xs-6 nopadding">
-      <div class="">
-        <a href="#">
-          <img src="http://www.hindustanproperty.com/images/logo.png" alt="">
-        </a>
-      </div>
-    </div>
-    <div class="header-right col-xs-6 nopadding">
-      <div class="user">
-        <a href="#" class="btn btn-default hidden-xs hidden-sm">Sell/Rent Property for Free</a>
-        <a href="#" data-toggle="modal" data-target="#pop-login">
-          <i class="fa fa-user hidden-md hidden-lg"></i>
-          <span class="hidden-sm hidden-xs">Sign In / Register</span>
-        </a>
-        <a href="#"><i class="fa fa-navicon"></i></a>
-      </div>
-    </div>
-  </div>
-  <!-- // botom nav start -->
-  <div class="col-xs-12 bottom-nav nopadding">
-    <div class="container">
-      <div class="col-xs-7 col-sm-7 nopadding">
-        <ul data-botom-nav-left>
-          <li><a href="#" data-toggle="modal" data-target="#citypopup"><i class="fa fa-map-marker" aria-hidden="true"></i> Mumbai</a></li>
-          <li>Download Our Apps <span><i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-android" aria-hidden="true"></i></span></li>
-          <li><a href="#">7710048300</a></li>
-        </ul>
-      </div>
-      <div class="col-xs-5 col-sm-5 nopadding">
-        <ul data-botom-nav-right>
-          <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i> </a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- // botom nav end -->
-</header>
-<!--end section header-->
-<!--start advanced search section-->
-<div class="header-mobile houzez-header-mobile  visible-sm visible-xs"  data-sticky="0">
-  <div class="container">
-    <!--start mobile nav-->
-    <div class="mobile-nav">
-      <span class="nav-trigger">
-        <i class="fa fa-navicon"></i>
-      </span>
-      <div class="nav-dropdown main-nav-dropdown">
-      </div>
-    </div>
-    <!--end mobile nav-->
-    <div class="header-logo">
-      <a href="#">
-        <img src="http://www.hindustanproperty.com/images/logo.png" alt="">
-      </a>
-    </div>
-    <div class="header-user">
-      <div class="user">
-        <a href="#" data-toggle="modal" data-target="#pop-login">
-          <i class="fa fa-user hidden-md hidden-lg">
-          </i>
-          <span class="hidden-sm hidden-xs">Sign In / Register</span>
-        </a>
-        <a href="#" class="btn btn-default hidden-xs hidden-sm">Create Listing</a>
-        <!--<a href="#" data-toggle="modal" data-target="#pop-login"><i class="fa fa-user"></i> <span class="hidden-sm hidden-xs"></span></a>-->
-      </div>
-    </div>
-  </div>
-</div>
-<!--start advanced search section-->
-<!-- // Advance Search start -->
-<div class="advanced-search advance-search-header" data-sticky='1'>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="col-xs-3 nopadding">
-          <ul sticky-nav-left>
-            <li><a href="javascript:void(0);" data-toggle="modal" data-target="#citypopup"><i class="fa fa-map-marker" aria-hidden="true"></i> Mumbai</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-6 nopadding">
-          <form method="get" action="#">
-            <div class="form-group search-long">
-              <div class="search">
-                <div class="input-search input-icon">
-                  <input class="houzez_geocomplete form-control" type="text" value="" name="keyword" placeholder="Enter an address, town, street, zip or property ID">
+                  <div class="input-pass input-icon">
+                    <input id="password" name="password" placeholder="Password" type="password" />
+                  </div>
                 </div>
-              </div>
-              <div class="search-btn">
-                <button class="btn btn-orange"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <div class="forget-block clearfix">
+                  <div class="form-group pull-left">
+                    <div class="checkbox">
+                      <label>
+                        <input name="remember" id="remember" type="checkbox">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group pull-right">
+                    <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#pop-reset-pass">Lost your password?
+                    </a>
+                  </div>
+                </div>
+                <input type="hidden" id="houzez_login_security" name="houzez_login_security" value="2de8d1e5a3" />
+                <input type="hidden" name="_wp_http_referer" value="/simple-listing-list-view/" />
+                <input type="hidden" name="action" id="login_action" value="houzez_login">
+                <button type="submit" class="fave-login-button btn btn-primary btn-block">Login
+                </button>
+              </form>
+              <hr>
+              <button class="facebook-login btn btn-social btn-bg-facebook btn-block">
+                <i class="fa fa-facebook">
+                </i> login with facebook
+              </button>
+              <button class="google-login btn btn-social btn-bg-google-plus btn-block">
+                <i class="fa fa-google-plus">
+                </i> login with google
+              </button>
+            </div>
+            <div class="tab-pane fade">
+              <form>
+                <div class="form-group field-group">
+                  <div class="input-user input-icon">
+                    <input name="Name" placeholder="Name" type="text" />
+                  </div>
+                  <div class="input-email input-icon">
+                    <input name="Email" placeholder="Email" type="text" />
+                  </div>
+                  <div class="input-user input-icon">
+                    <input name="Mobil" placeholder="Mobil No" type="text" />
+                  </div>
+                  <div class="input-pass input-icon">
+                    <input name="password" placeholder="Password" type="password" />
+                  </div>
+                  <div class="input-pass input-icon">
+                    <input name="password" placeholder="Confirm Password" type="password" />
+                  </div>
+                </div>
+                <div class="forget-block clearfix">
+                  <div class="form-group pull-left">
+                    <div class="checkbox">
+                      <label>
+                        <input name="remember" id="remember" type="checkbox">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <input type="hidden" id="houzez_login_security" name="houzez_login_security" value="2de8d1e5a3" />
+                <input type="hidden" name="_wp_http_referer" value="/simple-listing-list-view/" />
+                <input type="hidden" name="action" id="login_action" value="houzez_login">
+                <button type="submit" class="fave-login-button btn btn-primary btn-block">Login
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // Login popup End -->
+  <!-- // popup reset start -->
+  <div class="modal fade" id="pop-reset-pass" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <ul class="login-tabs">
+            <li class="active">Reset Password
+            </li>
+          </ul>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-close">
+            </i>
+          </button>
+        </div>
+        <div class="modal-body login-block">
+          <p>Please enter your username or email address. You will receive a link to create a new password via email.
+          </p>
+          <div id="houzez_msg_reset" class="message">
+          </div>
+          <form>
+            <div class="form-group">
+              <div class="input-user input-icon">
+                <input name="user_login_forgot" id="user_login_forgot" placeholder="Enter your username or email" class="form-control">
               </div>
             </div>
+            <input type="hidden" id="fave_resetpassword_security" name="fave_resetpassword_security" value="76b9d91536" />
+            <input type="hidden" name="_wp_http_referer" value="/simple-listing-list-view/" />
+            <button type="button" id="houzez_forgetpass" class="btn btn-primary btn-block">Get new password
+            </button>
           </form>
         </div>
-        <div class="col-xs-3 nopadding">
-          <ul sticky-nav-right>
+      </div>
+    </div>
+  </div>
+  <!-- // popup reset end -->
+  <!-- // city popup end -->
+  <div class="modal fade" id="citypopup" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content citypop-container">
+        <div class="col-xs-7 left-property">
+          <h1>Select your City</h1>
+          <div class="col-xs-12 nopadding">
+            <form method="get" action="search" class="form-inline">
+                <div class="form-group col-xs-12 city-search-list">
+                  <label for="">Search from over 1500 cities </label>
+                    <div class="search input-search input-icon col-xs-12 nopadding">
+                        <input type="text" class="form-control ui-autocomplete-input" placeholder="Property" autocomplete="off">
+                    </div>
+                </div>
+            </form>
+          </div>
+          <div class="col-xs-12 nopadding popular">
+            <h6>POPULAR CITIES</h6>
+            <ul>
+              <li><a href="#">Chennai</a></li>
+              <li><a href="#">Bangalore</a></li>
+              <li><a href="#">Mumbai</a></li>
+              <li><a href="#">Chennai</a></li>
+              <li><a href="#">Bangalore</a></li>
+              <li><a href="#">Mumbai</a></li>
+              <li><a href="#">Chennai</a></li>
+              <li><a href="#">Bangalore</a></li>
+              <li><a href="#">Mumbai</a></li>
+              <li><a href="#">Mumbai</a></li>
+            </ul>
+            <ul data-botom>
+              <li><a href="#">Chennai</a></li>
+              <li><a href="#">Bangalore</a></li>
+              <li><a href="#">Mumbai</a></li>
+              <li><a href="#">Chennai</a></li>
+              <li><a href="#">Bangalore</a></li>
+              <li><a href="#">Mumbai</a></li>
+              <li><a href="#">Chennai</a></li>
+              <li><a href="#">Bangalore</a></li>
+              <li><a href="#">Mumbai</a></li>
+              <li><a href="#">Mumbai</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-5 right-property">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
+          <h3>Why India Property ?</h3>
+          <div class="row">
+            <div class="col-xs-12 nopadding">
+              <ul class="list-unstyled why-ip-list selcity">
+                <li class="font-whit bg1"><i class="icon-building rounded"></i><div class="overflow-hidden"><h5 class="no-margin text-uppercase">End-to-end</h5><p class="no-margin">From identifying the right property, making a buying decision to home loans, we are here to help you in every step of the way</p></div></li>
+                <li class="font-whit bg2"><i class="icon-champ rounded"></i><div class="overflow-hidden"><h5 class="no-margin text-uppercase">Experts</h5><p class="no-margin">Get expert assistance and advice to make the right property investment</p></div></li>
+                <li class="font-whit selcity1 bg3"><i class="icon-like rounded"></i><div class="overflow-hidden"><h5 class="no-margin text-uppercase">Extensive</h5><p class="no-margin"> 'We Get You Home' FASTER with close to a million properties to choose from</p></div></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // city popup end -->
+  <!--start section header-->
+  <header id="header-section" class="houzez-header-main header-section-4 not-splash-header nav-left hidden-sm hidden-xs" data-sticky="0">
+    <div class="container">
+      <div class="header-left col-xs-6 nopadding">
+        <div class="">
+          <a href="#">
+            <img src="http://www.hindustanproperty.com/images/logo.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="header-right col-xs-6 nopadding">
+        <div class="user">
+          <a href="javascript:void(0);" class="btn btn-default hidden-xs hidden-sm">Sell/Rent Property for Free</a>
+          <a href="javascript:void(0);" data-toggle="modal" data-target="#pop-login">
+            <i class="fa fa-user hidden-md hidden-lg"></i>
+            <span class="hidden-sm hidden-xs">Sign In / Register</span>
+          </a>
+          <a href="#"><i class="fa fa-navicon"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- // botom nav start -->
+    <div class="col-xs-12 bottom-nav nopadding">
+      <div class="container">
+        <div class="col-xs-7 col-sm-7 nopadding">
+          <ul data-botom-nav-left>
+            <li><a href="#" data-toggle="modal" data-target="#citypopup"><i class="fa fa-map-marker" aria-hidden="true"></i> Mumbai</a></li>
+            <li>Download Our Apps <span><i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-android" aria-hidden="true"></i></span></li>
+            <li><a href="#">7710048300</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-5 col-sm-5 nopadding">
+          <ul data-botom-nav-right>
             <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i> </a></li>
           </ul>
         </div>
       </div>
     </div>
+    <!-- // botom nav end -->
+  </header>
+  <!--end section header-->
+  <!--start advanced search section-->
+  <div class="header-mobile houzez-header-mobile  visible-sm visible-xs"  data-sticky="0">
+    <div class="container">
+      <!--start mobile nav-->
+      <div class="mobile-nav">
+        <span class="nav-trigger">
+          <i class="fa fa-navicon"></i>
+        </span>
+        <div class="nav-dropdown main-nav-dropdown">
+        </div>
+      </div>
+      <!--end mobile nav-->
+      <div class="header-logo">
+        <a href="#">
+          <img src="http://www.hindustanproperty.com/images/logo.png" alt="">
+        </a>
+      </div>
+      <div class="header-user">
+        <div class="user">
+          <a href="#" data-toggle="modal" data-target="#pop-login">
+            <i class="fa fa-user hidden-md hidden-lg">
+            </i>
+            <span class="hidden-sm hidden-xs">Sign In / Register</span>
+          </a>
+          <a href="#" class="btn btn-default hidden-xs hidden-sm">Create Listing</a>
+          <!--<a href="#" data-toggle="modal" data-target="#pop-login"><i class="fa fa-user"></i> <span class="hidden-sm hidden-xs"></span></a>-->
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-<!-- // Advance Search End -->
+  <!--start advanced search section-->
+  <!-- // Advance Search start -->
+  <div class="advanced-search advance-search-header" data-sticky='1'>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="col-xs-2 nopadding">
+            <ul sticky-nav-left>
+              <li><a href="javascript:void(0);" data-toggle="modal" data-target="#citypopup"><i class="fa fa-map-marker" aria-hidden="true"></i> Mumbai</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-8 nopadding">
+            <form method="get" action="#">
+              <div class="form-group search-long">
+                <div class="prop-category">
+                  <a href="javascript:void(0);"><span data-dynamic>Rent</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <ul data-category-block>
+                    <li>Buy</li>
+                    <li>Rent</li>
+                    <li>Buy</li>
+                    <li>Rent</li>
+                  </ul>
+                </div>
+                <div class="search">
+                  <div class="input-search input-icon">
+                    <input class="houzez_geocomplete form-control" type="text" value="" name="keyword" placeholder="Enter an address, town, street, zip or property ID">
+                  </div>
+                </div>
+                <div class="price-list">
+                  <a href="javascript:void(0);"><span>10 L - 20 L</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <ul>
+                    <li data-input>
+                      <input type="text" name="min-price" placeholder="min price" data="minprice">
+                      <input type="text" name="max-price" placeholder="max price" data="maxprice">
+                    </li>
+                    <li data-price-list-left style="display:block;" id="minprice">
+                      <ul>
+                        <li class="active">Any</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                      </ul>
+                    </li>
+                    <li data-price-list-right id="maxprice">
+                      <ul>
+                        <li>Any</li>
+                        <li class="active">20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="property-type">
+                  <a href="javascript:void(0);"><span data-featch>Property Type</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <ul>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" id="allresdi">
+                        <label for="allresdi">Remember me</label>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" id="allresdi2">
+                        <label for="allresdi2">Remember me</label>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" id="allresdi3">
+                        <label for="allresdi3">Remember me</label>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" id="allresdi4">
+                        <label for="allresdi4">Remember me</label>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" id="allresdi5">
+                        <label for="allresdi5">Remember me</label>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" id="allresdi6">
+                        <label for="allresdi6">Remember me</label>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" id="allresdi7">
+                        <label for="allresdi7">Remember me</label>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" id="allresdi8">
+                        <label for="allresdi8">Remember me</label>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" id="allresdi9">
+                        <label for="allresdi9">Remember me</label>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" id="allresdi10">
+                        <label for="allresdi10">Remember me</label>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" id="allresdi11">
+                        <label for="allresdi11">Remember me</label>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" id="allresdi12">
+                        <label for="allresdi12">Remember me</label>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="search-btn">
+                  <button class="btn hp-search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-xs-2 nopadding">
+            <ul sticky-nav-right>
+              <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i> </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // Advance Search End -->
 <!-- // middle content start -->
-<div id="section-body">
+<div id="section-body" class="listingContainer">
   <!-- // Banner Start -->
-  <div class="col-xs-12 banner-container">
+  <div class="col-xs-12 banner-container hide">
     <!-- // Banner Search bar start -->
     <div class="main-search">
       <div class="banner-search-main">
@@ -384,20 +538,13 @@
                     <div id="compare-properties-basket">
                     </div>
                     <!--end Compare Properties-->
-
                     <!--start list tabs-->
-
                     <div class="list-tabs table-list full-width">
                         <div class="tabs table-cell">
                             <ul>
-                                <li><a href="http://houzez01.favethemes.com/simple-listing-list-view/">ALL</a>
-                                </li>
-
-                                <li> <a href="http://houzez01.favethemes.com/simple-listing-list-view/?tab=for-sale" class="active">For Sale</a>
-                                </li>
-
-                                <li><a href="http://houzez01.favethemes.com/simple-listing-list-view/?tab=for-rent">For Rent</a>
-                                </li>
+                                <li><a href="#">ALL</a></li>
+                                <li> <a href="#" class="active">For Sale</a></li>
+                                <li><a href="#">For Rent</a></li>
                             </ul>
                         </div>
                         <div class="sort-tab table-cell text-right">
@@ -409,22 +556,6 @@
                                 <option value="a_date">Date Old to New</option>
                                 <option value="d_date">Date New to Old</option>
                             </select>
-                            <div class="btn-group bootstrap-select">
-                                <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" data-id="sort_properties" title="Default Order"><span class="filter-option pull-left">Default Order</span>&nbsp;<span class="fa fa-sort"></span>
-                                </button>
-                                <div class="dropdown-menu open">
-                                    <ul class="dropdown-menu inner" role="menu">
-                                        <li data-original-index="1"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Price (Low to High)</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
-                                        </li>
-                                        <li data-original-index="2"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Price (High to Low)</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
-                                        </li>
-                                        <li data-original-index="3"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Date Old to New</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
-                                        </li>
-                                        <li data-original-index="4"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Date New to Old</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <!--end list tabs-->
@@ -1968,7 +2099,7 @@
                     <aside id="sidebar" class="sidebar-white">
                         <div id="houzez_mortgage_calculator-2" class="widget widget-calculate">
                             <div class="widget-top">
-                                <h3 class="widget-title">Mortgage Calculator</h3>
+                                <h3 class="widget-title">Quick Refine</h3>
                             </div>
                             <div class="widget-body">
                                 <form method="" action="#">

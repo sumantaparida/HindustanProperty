@@ -3337,7 +3337,7 @@ input[type="button"].btn-block {
 
 .header-section, .header-section-4 {
   background-color: #77c720;
-  z-index: 11;
+  z-index: 500;
 }
 .header-section .header-left, .header-section-4 .header-left {
   float: left;
@@ -3458,12 +3458,14 @@ input[type="button"].btn-block {
   color: #fff;
 }
 .header-right > div > a:active {
-  color: #fff;
-  border-color: #fff;
+  color: #333;
+  border: solid 1px #00bcdb !important;
+  background-color: #cce7ed !important;
 }
 .header-right > div > a:focus {
-  color: #fff;
-  border-color: #fff;
+  color: #333;
+  border: solid 1px #00bcdb !important;
+  background-color: #cce7ed !important;
 }
 .header-right > div > a + a {
   margin-left: 18px;
@@ -5654,7 +5656,7 @@ img {
 .modal-header {
   padding: 0;
   height: 60px;
-  background-color: #393939;
+  background-color: #00a8f2;
 }
 .modal-header .close {
   position: absolute;
@@ -6327,7 +6329,7 @@ img {
 
 .advanced-search {
   position: relative;
-  z-index: 500;
+  z-index: 501;
   -webkit-transform: translate3d(0,-150%,0);
   -moz-transform: translate3d(0,-150%,0);
   -o-transform: translate3d(0,-150%,0);
