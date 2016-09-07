@@ -89,11 +89,22 @@
         }
       }
       > a {
-        color: red;
+        color: #fff;
         padding: 5px;
         float: left;
         width: 100%;
         border-bottom: solid 1px #827f7f;
+        span {
+          float: left;
+          line-height: 20px;
+          &:first-child {
+            border: solid 1px #fff;
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+            margin-top: 2px;
+          }
+        }
       }
     }
   }
