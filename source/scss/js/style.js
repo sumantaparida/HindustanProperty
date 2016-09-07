@@ -1446,18 +1446,13 @@ var nice = false;
       proClick.on("click", function(){
         proClickList.stop(true,false).slideToggle(300, function(){
           //
-          $('html').one('click',function() {
-            proClickList.slideUp();
-          });
+          // $('html').one('click',function() {
+          //   proClickList.slideUp();
+          // });
         });
         //console.log("click");
         $(".price-list > ul").hide();
       });
-      // $(".property-type > ul > li").on("click", function(){
-      //   var check = $(this).children("label").text();
-      //   //$("[data-featch]").append(check);
-      //   console.log(check);
-      // });
     }
     // prop-category
     propcategory();
