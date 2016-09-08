@@ -1482,5 +1482,38 @@ var nice = false;
         $(this).addClass("active");
       });
     }
+    // Read more
+    readMore();
+    function readMore() {
+      $("[read-more]").on("click", function(){
+        var link = $("[read-data]");
+        var text = $(this);
+        $("[read-data]").slideToggle('slow', function(){
+          if ($(this).is(':visible')) {
+               text.text('Less');
+          } else {
+               text.text('Read more.');
+          }
+        });
+      });
+    }
+    // Up Arrow
+    upArrow();
+    function upArrow() {
+      $(document).scroll(function () {
+          var y = $(this).scrollTop();
+          var normalheight = 300;
+          if (y > normalheight) {
+              $("[data-top]").attr("data-top","true");
+          } else {
+              $("[data-top]").attr("data-top","false");
+          }
+      });
+      // Click
+      $("[data-top]").on("click", function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+      });
+    }
 
 })(jQuery);
