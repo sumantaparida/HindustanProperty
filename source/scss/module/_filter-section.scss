@@ -1,0 +1,83 @@
+.filter-section {
+  .btn-toggler {
+    width: 100%;
+    font-size: 11px;
+    background-color: rgba(228,228,228,1);
+    border-color: rgba(228,228,228,1);
+    text-align: left;
+    color: #000;
+    .arrow {
+      float: right;
+      color: #000;
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+  //
+  input[search] {
+    border: solid 1px #dedede;
+    padding: 5px;
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 5px;
+  }
+  //
+  .children {
+    list-style: none;
+    padding: 0px;
+    margin: 8px 0px;
+    float: left;
+    width: 100%;
+    li {
+      margin-bottom: 8px;
+      float: left;
+      width: 100%;
+      a {
+        color: #311b92;
+        font-weight: 700;
+        font-size: 13px;
+      }
+      //
+      label {
+        width: 80%;
+        float: left;
+        margin-bottom: 0px;
+        input[type="checkbox"] {
+          display: none;
+          &:checked {
+            &+i {
+              background-color: red;
+            }
+          }
+        }
+        i {
+          float: left;
+          width: 15px;
+          height: 15px;
+          border: solid 1px red;
+          margin-right: 5px;
+          margin-top: 2px;
+        }
+        span {
+          color: #311b92;
+          font-weight: 700;
+          font-size: 13px;
+        }
+      }
+      //
+      .cat-count {
+        float: right;
+        font-size: 11px;
+        color: #000;
+        font-weight: 400;
+        width: 20%;
+        text-align: right;
+      }
+    }
+  }
+  // collapse
+  .collapse {
+    max-height: 250px;
+    overflow-y: auto;
+  }
+}

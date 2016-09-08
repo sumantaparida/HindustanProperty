@@ -46,6 +46,10 @@
       ul {
         float: left;
         width: 100%;
+        // Drop
+        &[data-brop] {
+          display: none;
+        }
         li {
           border-bottom: solid 1px #827f7f;
           padding: 5px;
@@ -58,7 +62,9 @@
                 &+label {
                   span {
                     &:first-child {
-                      background-color: red;
+                      background-image: url("../img/checked.png");
+                      background-position: center center;
+                      background-repeat: no-repeat;
                     }
                   }
                 }
@@ -90,11 +96,35 @@
       }
       > a {
         color: #fff;
-        padding: 5px;
+        padding: 7px 5px;
         float: left;
         width: 100%;
         border-bottom: solid 1px #827f7f;
-        span {
+        background-color: #464545;
+        i {
+          width: 15px;
+          height: 15px;
+          display: block;
+          float: left;
+          margin-top: 3px;
+          position: relative;
+          margin-right: 5px;
+          > span {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            height: 1px;
+            width: 10px;
+            background-color: #fff;
+            &:first-child {
+              transform: rotate(90deg);
+            }
+          }
+        }
+        > span {
           float: left;
           line-height: 20px;
           &:first-child {
@@ -104,6 +134,21 @@
             margin-right: 5px;
             margin-top: 2px;
           }
+        }
+      }
+      // Active
+      &.active {
+        > a {
+          i[action] {
+            span {
+              &:first-child {
+                transform: rotate(0deg);
+              }
+            }
+          }
+        }
+        [data-brop] {
+          display: block !important;
         }
       }
     }

@@ -8360,7 +8360,7 @@ select.mobile-device {
     width: 20px;
     height: 20px;
 
-    content: 'â€¢';
+    content: '├óΓé¼┬ó';
     text-align: center;
 
     opacity: .25;
@@ -20161,7 +20161,7 @@ img {
 
 @media (min-width: 1200px) {
   .container-sidebar {
-    width: 30%;
+    width: 25%;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -20176,7 +20176,7 @@ img {
 
 @media (min-width: 1200px) {
   .container-contentbar {
-    width: 70%;
+    width: 75%;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -31023,6 +31023,9 @@ header .header-left > div a {
   float: left;
   width: 100%;
 }
+.property-type > ul > li ul[data-brop] {
+  display: none;
+}
 .property-type > ul > li ul li {
   border-bottom: solid 1px #827f7f;
   padding: 5px;
@@ -31035,7 +31038,9 @@ header .header-left > div a {
   display: none;
 }
 .property-type > ul > li ul li label input[type="checkbox"]:checked + label span:first-child {
-  background-color: red;
+  background-image: url("../img/checked.png");
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .property-type > ul > li ul li label label {
   cursor: pointer;
@@ -31060,21 +31065,51 @@ header .header-left > div a {
 }
 .property-type > ul > li > a {
   color: #fff;
-  padding: 5px;
+  padding: 7px 5px;
   float: left;
   width: 100%;
   border-bottom: solid 1px #827f7f;
+  background-color: #464545;
 }
-.property-type > ul > li > a span {
+.property-type > ul > li > a i {
+  width: 15px;
+  height: 15px;
+  display: block;
+  float: left;
+  margin-top: 3px;
+  position: relative;
+  margin-right: 5px;
+}
+.property-type > ul > li > a i > span {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 1px;
+  width: 10px;
+  background-color: #fff;
+}
+.property-type > ul > li > a i > span:first-child {
+  transform: rotate(90deg);
+}
+.property-type > ul > li > a > span {
   float: left;
   line-height: 20px;
 }
-.property-type > ul > li > a span:first-child {
+.property-type > ul > li > a > span:first-child {
   border: solid 1px #fff;
   width: 15px;
   height: 15px;
   margin-right: 5px;
   margin-top: 2px;
+}
+.property-type > ul > li.active > a i[action] span:first-child {
+  transform: rotate(0deg);
+}
+.property-type > ul > li.active [data-brop] {
+  display: block !important;
 }
 
 .prop-category {
@@ -31688,6 +31723,81 @@ header .header-left > div a {
   .listingContainer {
     padding-top: 8px !important;
   }
+}
+
+.filter-section .btn-toggler {
+  width: 100%;
+  font-size: 11px;
+  background-color: #e4e4e4;
+  border-color: #e4e4e4;
+  text-align: left;
+  color: #000;
+}
+.filter-section .btn-toggler .arrow {
+  float: right;
+  color: #000;
+  font-size: 14px;
+  line-height: 14px;
+}
+.filter-section input[search] {
+  border: solid 1px #dedede;
+  padding: 5px;
+  width: 100%;
+  margin-top: 8px;
+  border-radius: 5px;
+}
+.filter-section .children {
+  list-style: none;
+  padding: 0px;
+  margin: 8px 0px;
+  float: left;
+  width: 100%;
+}
+.filter-section .children li {
+  margin-bottom: 8px;
+  float: left;
+  width: 100%;
+}
+.filter-section .children li a {
+  color: #311b92;
+  font-weight: 700;
+  font-size: 13px;
+}
+.filter-section .children li label {
+  width: 80%;
+  float: left;
+  margin-bottom: 0px;
+}
+.filter-section .children li label input[type="checkbox"] {
+  display: none;
+}
+.filter-section .children li label input[type="checkbox"]:checked + i {
+  background-color: red;
+}
+.filter-section .children li label i {
+  float: left;
+  width: 15px;
+  height: 15px;
+  border: solid 1px red;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+.filter-section .children li label span {
+  color: #311b92;
+  font-weight: 700;
+  font-size: 13px;
+}
+.filter-section .children li .cat-count {
+  float: right;
+  font-size: 11px;
+  color: #000;
+  font-weight: 400;
+  width: 20%;
+  text-align: right;
+}
+.filter-section .collapse {
+  max-height: 250px;
+  overflow-y: auto;
 }
 
 [data-top] {
