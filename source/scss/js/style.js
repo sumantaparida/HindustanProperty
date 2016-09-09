@@ -1444,14 +1444,24 @@ var nice = false;
       var proClick = $(".property-type > a");
       var proClickList = $(".property-type > ul");
       proClick.on("click", function(){
-        proClickList.stop(true,false).slideToggle(300, function(){
-          //
-          // $('html').one('click',function() {
-          //   proClickList.slideUp();
-          // });
-        });
+        proClickList.stop(true,false).slideToggle(300);
         //console.log("click");
         $(".price-list > ul").hide();
+      });
+      $("[data-drop]").on("click", function(){
+        var pare = $(this).parent();
+        $(this).parent().toggleClass("active");
+        if (pare.hasClass("active")) {
+          $(this).next().slideToggle(300);
+        } else {
+          $(this).next().slideToggle(300);
+        }
+      });
+      // all check
+      $("[allchecks]").on("click", function(){
+        var pro = $(this).prop('checked');
+        $('[all-check] input').prop('checked',pro);
+        //console.log(pro);
       });
     }
     // prop-category
