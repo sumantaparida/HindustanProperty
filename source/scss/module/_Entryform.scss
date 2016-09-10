@@ -1,0 +1,68 @@
+.entryform_container {
+  padding-left: 4px;
+  padding-right: 4px;
+  margin: 20px 0px 15px 0px;
+  float: left;
+  width: 100%;
+  .entryform {
+    background-color: #fff;
+    margin-top: 15px;
+    border: solid 1px #331d93;
+    border-radius: 5px;
+    position: relative;
+    &::before {
+      font-family: 'FontAwesome';
+      content: "\f0a2";
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: -25px;
+      background-color: #331d93;
+      border-radius: 50%;
+      color: #fff;
+      text-align: center;
+      font-size: 25px;
+      line-height: 50px;
+    }
+    .form_wrapper {
+      @media only screen and (min-width:1025px) {
+        padding: 30px;
+      }
+      padding: 30px 15px 15px 15px;
+      margin: auto;
+      h3 {
+        text-align: center;
+        color: #464141;
+        font-weight: 100;
+        font-size: 24px;
+        span {
+          font-size: 14px;
+          display: block;
+        }
+      }
+    }
+    //
+    .location_search {
+      padding: 0px;
+      margin-bottom: 20px;
+      [small] {
+        font-size: 11px;
+        display: block;
+        margin-bottom: 5px;
+        &[small="center"] {
+          text-align: center;
+        }
+      }
+      .form-control, .btn {
+        border-radius: 0px;
+      }
+    }
+    // get_notified
+    .get_notified {
+      width: 150px;
+    }
+  }
+}

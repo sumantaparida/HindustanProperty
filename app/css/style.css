@@ -31909,4 +31909,90 @@ header .header-left > div a {
   border: none;
 }
 
+.entryform_container {
+  padding-left: 4px;
+  padding-right: 4px;
+  margin: 20px 0px 15px 0px;
+  float: left;
+  width: 100%;
+}
+.entryform_container .entryform {
+  background-color: #fff;
+  margin-top: 15px;
+  border: solid 1px #331d93;
+  border-radius: 5px;
+  position: relative;
+}
+.entryform_container .entryform::before {
+  font-family: 'FontAwesome';
+  content: "\f0a2";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: -25px;
+  background-color: #331d93;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  line-height: 50px;
+}
+.entryform_container .entryform .form_wrapper {
+  padding: 30px 15px 15px 15px;
+  margin: auto;
+}
+@media only screen and (min-width: 1025px) {
+  .entryform_container .entryform .form_wrapper {
+    padding: 30px;
+  }
+}
+.entryform_container .entryform .form_wrapper h3 {
+  text-align: center;
+  color: #464141;
+  font-weight: 100;
+  font-size: 24px;
+}
+.entryform_container .entryform .form_wrapper h3 span {
+  font-size: 14px;
+  display: block;
+}
+.entryform_container .entryform .location_search {
+  padding: 0px;
+  margin-bottom: 20px;
+}
+.entryform_container .entryform .location_search [small] {
+  font-size: 11px;
+  display: block;
+  margin-bottom: 5px;
+}
+.entryform_container .entryform .location_search [small][small="center"] {
+  text-align: center;
+}
+.entryform_container .entryform .location_search .form-control, .entryform_container .entryform .location_search .btn {
+  border-radius: 0px;
+}
+.entryform_container .entryform .get_notified {
+  width: 150px;
+}
+
+.requirement_block .radio_button {
+  float: left;
+  margin-right: 15px;
+}
+
+[postproperty] {
+  position: fixed;
+  right: 0;
+  width: 200px;
+  height: 80px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: solid 1px red;
+  z-index: 999;
+}
+
 /*# sourceMappingURL=style.css.map */
