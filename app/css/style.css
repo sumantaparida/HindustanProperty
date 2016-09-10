@@ -31041,6 +31041,7 @@ header .header-left > div a {
   background-image: url("../img/checked.png");
   background-position: center center;
   background-repeat: no-repeat;
+  background-color: #7daf00;
 }
 .property-type > ul > li ul li label label {
   cursor: pointer;
