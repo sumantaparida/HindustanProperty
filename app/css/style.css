@@ -8360,7 +8360,7 @@ select.mobile-device {
     width: 20px;
     height: 20px;
 
-    content: 'â€¢';
+    content: '├óΓé¼┬ó';
     text-align: center;
 
     opacity: .25;
@@ -12234,10 +12234,10 @@ textarea.wpcf7-form-control, .dsidx-resp-area input[type='text'], .dsidx-resp-ar
   }
 }
 .item-body h2 {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   margin: 0 0 7px 0;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: inherit;
   text-align: inherit;
   /* mini phones and down */
@@ -12253,7 +12253,7 @@ textarea.wpcf7-form-control, .dsidx-resp-area input[type='text'], .dsidx-resp-ar
   font-size: 13px;
   line-height: 13px;
   margin: 0;
-  font-weight: 300;
+  font-weight: 500;
   text-transform: inherit;
   text-align: inherit;
   /* mini phones and down */
@@ -12269,7 +12269,7 @@ textarea.wpcf7-form-control, .dsidx-resp-area input[type='text'], .dsidx-resp-ar
   font-size: 12px;
   line-height: 12px;
   margin: 0;
-  font-weight: 300;
+  font-weight: 600;
   text-transform: inherit;
   text-align: inherit;
 }
@@ -12428,7 +12428,7 @@ textarea.wpcf7-form-control, .dsidx-resp-area input[type='text'], .dsidx-resp-ar
   font-size: 13px;
   line-height: 16px;
   margin: 0 0 5px 0;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: inherit;
   text-align: inherit;
 }
@@ -20029,7 +20029,7 @@ img {
   }
 }
 .item-body h4 {
-  color: #9b9b9b;
+  color: #000;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -31057,7 +31057,7 @@ header .header-left > div a {
   border: solid 1px #dedede;
 }
 .property-type > ul > li ul li label label span:last-child {
-  width: 160px;
+  width: 75%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -31182,6 +31182,20 @@ header .header-left > div a {
 }
 
 ::-webkit-scrollbar-thumb {
+  background-color: #000000 !important;
+}
+
+::-moz-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+  background-color: #F5F5F5 !important;
+}
+
+::-moz-scrollbar {
+  width: 6px !important;
+  background-color: #F5F5F5 !important;
+}
+
+::-moz-scrollbar-thumb {
   background-color: #000000 !important;
 }
 
@@ -31722,6 +31736,15 @@ header .header-left > div a {
   }
 }
 
+.label-status {
+  background-color: #333;
+}
+
+.contact_ajent {
+  background-color: #ea923a;
+  cursor: pointer;
+}
+
 .filter-section .btn-toggler {
   width: 100%;
   font-size: 11px;
@@ -31732,7 +31755,10 @@ header .header-left > div a {
   font-weight: 600;
   font-family: "Open Sans",sans-serif;
 }
-.filter-section .btn-toggler .arrow {
+.filter-section .btn-toggler span:first-child {
+  float: left;
+}
+.filter-section .btn-toggler span:last-child {
   float: right;
   color: #000;
   font-size: 14px;
@@ -31836,6 +31862,50 @@ header .header-left > div a {
 [data-top="true"] {
   display: block;
   cursor: pointer;
+}
+
+#contactAjent .text-area {
+  border-top: 1px solid #ccc;
+}
+#contactAjent .text-area::before {
+  content: '' !important;
+  display: none !important;
+}
+#contactAjent .text-area textarea {
+  width: 100%;
+  border: none;
+  padding: 6px 12px;
+}
+
+[emi-form] .form-group {
+  float: left;
+  width: 100%;
+}
+[emi-form] .form-group .fieldLebel {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0px;
+  line-height: 24px;
+}
+[emi-form] .form-group .form-field {
+  border: solid 1px #dedede;
+  padding: 5px;
+  border-radius: 3px;
+}
+[emi-form] .form-group span[emi-amount] {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+}
+[emi-form] .form-group .form-field {
+  width: 80%;
+}
+[emi-form] hr {
+  width: 100%;
+  height: 1px;
+  background-color: #d4d1d1;
+  float: left;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */

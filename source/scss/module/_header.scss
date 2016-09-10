@@ -297,3 +297,15 @@ header {
 ::-webkit-scrollbar-thumb {
 	background-color: #000000 !important;
 }
+//
+::-moz-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3) !important;
+	background-color: #F5F5F5 !important;
+}
+::-moz-scrollbar {
+	width: 6px !important;
+	background-color: #F5F5F5 !important;
+}
+::-moz-scrollbar-thumb {
+	background-color: #000000 !important;
+}

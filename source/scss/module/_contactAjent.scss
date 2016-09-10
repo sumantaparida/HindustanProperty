@@ -1,0 +1,14 @@
+#contactAjent {
+  .text-area {
+    border-top: 1px solid #ccc;
+    &::before {
+      content: '' !important;
+      display: none !important;
+    }
+    textarea {
+      width: 100%;
+      border: none;
+      padding: 6px 12px;
+    }
+  }
+}

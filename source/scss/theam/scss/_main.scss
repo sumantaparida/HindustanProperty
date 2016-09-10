@@ -622,10 +622,10 @@ textarea.wpcf7-form-control, .dsidx-resp-area input[type='text'], .dsidx-resp-ar
 }
 
 .item-body h2 {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   margin: 0 0 7px 0;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: inherit;
   text-align: inherit;
   /* mini phones and down */
@@ -640,7 +640,7 @@ textarea.wpcf7-form-control, .dsidx-resp-area input[type='text'], .dsidx-resp-ar
   font-size: 13px;
   line-height: 13px;
   margin: 0;
-  font-weight: 300;
+  font-weight: 500;
   text-transform: inherit;
   text-align: inherit;
   /* mini phones and down */
@@ -655,7 +655,7 @@ textarea.wpcf7-form-control, .dsidx-resp-area input[type='text'], .dsidx-resp-ar
   font-size: 12px;
   line-height: 12px;
   margin: 0;
-  font-weight: 300;
+  font-weight: 600;
   text-transform: inherit;
   text-align: inherit;
 }
@@ -806,7 +806,7 @@ textarea.wpcf7-form-control, .dsidx-resp-area input[type='text'], .dsidx-resp-ar
   font-size: 13px;
   line-height: 16px;
   margin: 0 0 5px 0;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: inherit;
   text-align: inherit;
 }
@@ -7880,7 +7880,7 @@ img {
   }
 }
 .item-body h4 {
-  color: #9b9b9b;
+  color: #000;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

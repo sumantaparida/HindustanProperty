@@ -149,7 +149,7 @@
     </div>
   </div>
   <!-- // popup reset end -->
-  <!-- // city popup end -->
+  <!-- // city popup Start -->
   <div class="modal fade" id="citypopup" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-lg">
       <div class="modal-content citypop-container">
@@ -210,6 +210,242 @@
     </div>
   </div>
   <!-- // city popup end -->
+  <!-- // contact ajent Start -->
+  <div class="modal fade" id="contactAjent" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <ul class="login-tabs">
+            <li class="active">Contact Agent</li>
+          </ul>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-close"></i>
+          </button>
+        </div>
+        <div class="modal-body login-block">
+          <div class="tab-content">
+            <div class="tab-pane fade in active">
+              <div class="forget-block clearfix">
+                <form>
+                <div class="form-group pull-left">
+                  <div class="checkbox">
+                    <label>
+                      <input name="remember" id="Individual" type="checkbox">Individual
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group pull-right">
+                  <div class="checkbox">
+                    <label>
+                      <input name="remember" id="Broker" type="checkbox">Broker
+                    </label>
+                  </div>
+                </div>
+              </div>
+                <div class="form-group field-group">
+                  <div class="input-user input-icon">
+                    <input  name="name" placeholder="Name" type="text" />
+                  </div>
+                  <div class="input-pass input-icon">
+                    <input name="Mobile" placeholder="Mobile No" type="text" />
+                  </div>
+                  <div class="input-pass input-icon">
+                    <input name="Email" placeholder="Email" type="text" />
+                  </div>
+                  <div class="input-pass text-area">
+                    <textarea name="message" rows="4" placeholder="Message">I am interested in this property and would like to know more about this property.</textarea>
+                  </div>
+                </div>
+                <div class="forget-block clearfix">
+                  <div class="form-group pull-left">
+                    <div class="checkbox">
+                      <label>
+                        <input name="remember" type="checkbox"> I allow Hindustan Property & affiliates to contact me.
+                      </label>
+                      <label>
+                        <input name="remember" type="checkbox"> Interested in Home Loan?
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group pull-left">
+                    By clicking you agree to
+                    <a href="#">Terms and condition.</a>
+                  </div>
+                </div>
+                <button type="submit" class="fave-login-button btn btn-primary btn-block">Contact</button>
+              </form>
+              <hr>
+            </div>
+            <div class="tab-pane fade">
+              <form>
+                <div class="form-group field-group">
+                  <div class="input-user input-icon">
+                    <input name="Name" placeholder="Name" type="text" />
+                  </div>
+                  <div class="input-email input-icon">
+                    <input name="Email" placeholder="Email" type="text" />
+                  </div>
+                  <div class="input-user input-icon">
+                    <input name="Mobil" placeholder="Mobil No" type="text" />
+                  </div>
+                  <div class="input-pass input-icon">
+                    <input name="password" placeholder="Password" type="password" />
+                  </div>
+                  <div class="input-pass input-icon">
+                    <input name="password" placeholder="Confirm Password" type="password" />
+                  </div>
+                </div>
+                <div class="forget-block clearfix">
+                  <div class="form-group pull-left">
+                    <div class="checkbox">
+                      <label>
+                        <input name="remember" id="remember" type="checkbox">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <input type="hidden" id="houzez_login_security" name="houzez_login_security" value="2de8d1e5a3" />
+                <input type="hidden" name="_wp_http_referer" value="/simple-listing-list-view/" />
+                <input type="hidden" name="action" id="login_action" value="houzez_login">
+                <button type="submit" class="fave-login-button btn btn-primary btn-block">Login
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // contact ajent end -->
+  <!-- // Emi start -->
+  <div class="modal fade" id="emi_calculater" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <ul class="login-tabs">
+            <li class="active">EMI Calculator</li>
+          </ul>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-close"></i>
+          </button>
+        </div>
+        <div class="modal-body login-block">
+          <form emi-form>
+            <div class="form-group">
+              <div class="col-xs-7 nopadding">
+                <div class="col-xs-4 nopadding">
+                  <label class="padding-0 fieldLebel">Property Cost</label>
+                </div>
+                <div class="col-xs-8">
+                  <span emi-amount>9,500,000</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-7 nopadding">
+                <div class="col-xs-4 nopadding">
+                  <label class="padding-0 fieldLebel">Loan Amount</label>
+                </div>
+                <div class="col-xs-8">
+                  <input type="text" class="form-field" placeholder="" >
+                </div>
+              </div>
+              <div class="col-xs-5 nopadding">
+                <div class="col-xs-7 nopadding">
+                  <label class="padding-0 fieldLebel">EMI Amount</label>
+                </div>
+                <div class="col-xs-5 nopadding">
+                  <span emi-amount>81,670</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-7 nopadding">
+                <div class="col-xs-4 nopadding">
+                  <label class="padding-0 fieldLebel">Tenure (yrs)</label>
+                </div>
+                <div class="col-xs-8">
+                  <input type="text" class="form-field" placeholder="" value="15" >
+                </div>
+              </div>
+              <div class="col-xs-5 nopadding">
+                <div class="col-xs-7 nopadding">
+                  <label class="padding-0 fieldLebel">Total Amount Paid</label>
+                </div>
+                <div class="col-xs-5 nopadding">
+                  <span emi-amount>14,700,598</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-7 nopadding">
+                <div class="col-xs-4 nopadding">
+                  <label class="padding-0 fieldLebel">Interest Rate</label>
+                </div>
+                <div class="col-xs-8">
+                  <input type="text" class="form-field" placeholder="" value="10" >
+                </div>
+              </div>
+              <div class="col-xs-5 nopadding">
+                <div class="col-xs-7 nopadding">
+                  <label class="padding-0 fieldLebel">Interest Paid</label>
+                </div>
+                <div class="col-xs-5 nopadding">
+                  <span emi-amount>7,100,598</span>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <button type="button" id="houzez_forgetpass" class="btn btn-primary btn-block">Calculate EMI</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // Emi end -->
+  <!-- // Affordability start -->
+  <div class="modal fade" id="Affordability" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <ul class="login-tabs">
+            <li class="active">Can I Afford This Property?</li>
+          </ul>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-close"></i>
+          </button>
+        </div>
+        <div class="modal-body login-block">
+          <form emi-form>
+            <div class="form-group">
+              <div class="col-xs-12 nopadding">
+                <div class="col-xs-4 nopadding">
+                  <label class="padding-0 fieldLebel">Net Monthly Income</label>
+                </div>
+                <div class="col-xs-8">
+                  <input type="text" class="form-field" placeholder="" >
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-12 nopadding">
+                <div class="col-xs-4 nopadding">
+                  <label class="padding-0 fieldLebel">Existing EMI<br><span style="font-size:11px;">(per month)</span></label>
+                </div>
+                <div class="col-xs-8">
+                  <input type="text" class="form-field" placeholder="" value="15" >
+                </div>
+              </div>
+            </div>
+            <hr>
+            <button type="button" id="houzez_forgetpass" class="btn btn-primary btn-block">Check Affordability</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // Affordability end -->
   <!--start section header-->
   <header id="header-section" class="houzez-header-main header-section-4 not-splash-header nav-left hidden-sm hidden-xs" data-sticky="0">
     <div class="container">
@@ -479,66 +715,7 @@
   <!-- // Advance Search End -->
 <!-- // middle content start -->
 <div id="section-body" class="listingContainer">
-  <!-- // Banner Start -->
-  <div class="col-xs-12 banner-container hide">
-    <!-- // Banner Search bar start -->
-    <div class="main-search">
-      <div class="banner-search-main">
-          <form method="get" action="search" class="form-inline">
-              <div class="form-group">
-                  <ul tab-search>
-                    <li><a class="active" href="#">Buy</a></li>
-                    <li><a href="#">Rent</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Dealers</a></li>
-                  </ul>
-                  <div class="search input-search input-icon">
-                      <input type="text" class="form-control ui-autocomplete-input" name="keyword" placeholder="Enter an address, town, street, zip or property ID" autocomplete="off">
-                  </div>
-                  <div class="search-btn">
-                      <button class="btn btn-hp"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
-                  </div>
-
-              </div>
-          </form>
-      </div>
-    </div>
-    <!-- // Banner Search bar End -->
-    <!-- SLIDER -->
-    <div class="widget-body">
-      <div class="property-widget-slider slide-animated">
-        <div>
-          <div class="figure-block">
-            <figure class="item-thumb">
-              <a href="#" class="hover-effect">
-                <img src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/slider-01.jpg" alt="" class="attachment-property-thumb-image size-property-thumb-image wp-post-image">
-              </a>
-            </figure>
-          </div>
-        </div>
-        <div>
-          <div class="figure-block">
-            <figure class="item-thumb">
-              <a href="#" class="hover-effect">
-                <img src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/slider-01.jpg" alt="" class="attachment-property-thumb-image size-property-thumb-image wp-post-image">
-              </a>
-            </figure>
-          </div>
-        </div>
-        <div>
-          <div class="figure-block">
-            <figure class="item-thumb">
-              <a href="#" class="hover-effect">
-                <img src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/slider-01.jpg" alt="" class="attachment-property-thumb-image size-property-thumb-image wp-post-image">
-              </a>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- // slider End -->
-  </div>
-  <!-- // Banner End -->
+  <section class="hide"></section>
   <!-- // Listing Start -->
   <section>
     <div class="container" style="transform: none;">
@@ -567,11 +744,6 @@
         <div class="row" style="transform: none;">
             <div class="col-lg-8 col-md-8 col-sm-12 list-grid-area container-contentbar">
                 <div id="content-area">
-                    <!--start Compare Properties-->
-                    <div id="compare-properties-messages"></div>
-                    <div id="compare-properties-basket">
-                    </div>
-                    <!--end Compare Properties-->
                     <!--start list tabs-->
                     <div class="list-tabs table-list full-width">
                         <div class="tabs table-cell">
@@ -597,21 +769,16 @@
                     <!--start featured property items-->
                     <div class="property-listing list-view">
                         <div class="row">
-
-
                             <div id="ID-361" class="item-wrap ">
                                 <div class="property-item table-list">
                                     <div class="table-cell">
                                         <div class="figure-block">
                                             <figure class="item-thumb">
-
                                                 <span class="label-featured label label-success">Featured</span>
-
                                                 <div class="label-wrap hide-on-list">
                                                     <span class="label-status label-status-7 label label-default">For Sale</span>
                                                     <span class="label label-default label-color-288">Open House</span>
                                                 </div>
-
                                                 <div class="price hide-on-list">
                                                     <h3>$670,000</h3>
                                                     <p class="rant">$1,300/mo</p>
@@ -621,33 +788,19 @@
                                                 <figcaption class="thumb-caption cap-actions clearfix">
                                                     <ul class="list-unstyled actions pull-right">
                                                         <li>
-                                                            <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
-                <i class="add_fav fa fa-heart-o" data-propid="361"></i>        </span>
-                                                        </li>
-                                                        <!-- <li class="share-btn">
-
-    <div class="share_tooltip fade">
-        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-family-home-4%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook"></i></a>
-                      <a href="https://twitter.com/intent/tweet?text=Luxury+family+home&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-family-home-4%2F&via=Houzez" onclick="if(!document.getElementById('td_social_networks_buttons')){window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;}"><i class="fa fa-twitter"></i></a>
-
-                      <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-family-home-4%2F&amp;media=http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-1024x688.jpg" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-pinterest"></i></a>
-
-                      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-family-home-4%2F&title=Luxury+family+home&source=http%3A%2F%2Fhouzez01.favethemes.com%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-linkedin"></i></a>
-
-                      <a href="http://plus.google.com/share?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-family-home-4%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus"></i></a>
-                      <a href="mailto:example.com?subject=Luxury+family+home&body=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-family-home-4%2F"><i class="fa fa-envelope"></i></a>
-    </div>
-    <span title="" data-placement="top" data-toggle="tooltip" data-original-title="share"><i class="fa fa-share-alt"></i></span>    </li> -->
-                                                        <li>
-                                                            <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
-                <i class="fa fa-camera"></i>
-                <!--<span class="count">() </span>-->
-                                                            </span>
+                                                          <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
+                                                            <i class="add_fav fa fa-heart-o" data-propid="361"></i>
+                                                          </span>
                                                         </li>
                                                         <li>
-                                                            <span id="compare-link-361" class="compare-property" data-propid="361" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                <i class="fa fa-plus"></i>
-            </span>
+                                                          <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
+                                                            <i class="fa fa-camera"></i>
+                                                          </span>
+                                                        </li>
+                                                        <li>
+                                                          <span id="compare-link-361" class="compare-property" data-propid="361" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
+                                                            <i class="fa fa-plus"></i>
+                                                          </span>
                                                         </li>
                                                     </ul>
                                                 </figcaption>
@@ -655,24 +808,22 @@
                                         </div>
                                     </div>
                                     <div class="item-body table-cell">
-
                                         <div class="body-left table-cell">
-                                            <div class="info-row">
-                                                <div class="label-wrap hide-on-grid">
-                                                    <span class="label-status label-status-7 label label-default">For Sale</span>
-                                                    <span class="label label-default label-color-288">Open House</span>
-                                                </div>
-                                                <h2><a href="http://houzez01.favethemes.com/property/luxury-family-home-4/">Luxury family home</a></h2>
-                                                <h4>S Western Ave</h4> </div>
+                                          <div class="info-row">
+                                            <div class="label-wrap hide-on-grid">
+                                                <span class="label-status label-status-7 label label-default">For Sale</span>
+                                                <span class="label label-default contact_ajent" data-toggle="modal" data-target="#contactAjent"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                            </div>
+                                            <h2><a href="#">Luxury family home</a></h2>
+                                            <h4>S Western Ave</h4> </div>
                                             <div class="info-row amenities hide-on-grid">
                                                 <p><span>Beds: 4</span><span>Baths: 2</span><span>Sq Ft: 1200</span>
                                                 </p>
                                                 <p>Single Family Home</p>
                                             </div>
                                             <div class="info-row date hide-on-grid">
-                                                <p><i class="fa fa-user"></i> <a href="http://houzez01.favethemes.com/agent/brittany-watkins/">Brittany Watkins</a>
-                                                </p>
-                                                <p><i class="fa fa-calendar"></i>6 months ago</p>
+                                                <p><i class="fa fa-calculator" aria-hidden="true"></i> <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#emi_calculater">Calculate EMI</a></p>
+                                                <p><i class="fa fa-calendar"></i><a href="#"  data-dismiss="modal" data-toggle="modal" data-target="#Affordability">Check Affordability</a></p>
                                             </div>
                                         </div>
                                         <div class="body-right table-cell hidden-gird-cell">
@@ -690,10 +841,8 @@
                                         <div class="table-list full-width hide-on-list">
                                             <div class="cell">
                                                 <div class="info-row amenities">
-                                                    <p><span>Beds: 4</span><span>Baths: 2</span><span>Sq Ft: 1200</span>
-                                                    </p>
+                                                    <p><span>Beds: 4</span><span>Baths: 2</span><span>Sq Ft: 1200</span></p>
                                                     <p>Single Family Home</p>
-
                                                 </div>
                                             </div>
                                             <div class="cell">
@@ -707,11 +856,10 @@
 
                                 <div class="item-foot date hide-on-list">
                                     <div class="item-foot-left">
-                                        <p><i class="fa fa-user"></i> <a href="http://houzez01.favethemes.com/agent/brittany-watkins/">Brittany Watkins</a>
-                                        </p>
+                                        <p><i class="fa fa-calculator" aria-hidden="true"></i> <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#emi_calculater">Calculate EMI</a></p>
                                     </div>
                                     <div class="item-foot-right">
-                                        <p><i class="fa fa-calendar"></i>6 months ago</p>
+                                      <p><i class="fa fa-calendar"></i><a href="#">Check Affordability</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -2132,7 +2280,7 @@
                             </div>
                             <div class="widget-body">
                               <div class="filter-section">
-                                <a class="btn btn-toggler" data-toggle="collapse" href="#nearby-locality" aria-expanded="true" aria-controls="nearby-locality">TOP/NEARBY LOCALITIES<span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                                <a class="btn btn-toggler" data-toggle="collapse" href="#nearby-locality" aria-expanded="true" aria-controls="nearby-locality"><span>TOP/NEARBY LOCALITIES</span><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
                                   <div class="collapse in" id="nearby-locality" aria-expanded="true">
                                       <input type="text" name="tokenLocality" id="tokenLocality" search>
                                       <ul class="children">
@@ -2168,7 +2316,7 @@
                             <!-- // -->
                             <div class="widget-body">
                               <div class="filter-section">
-                                <a class="btn btn-toggler" data-toggle="collapse" href="#budger-range" aria-expanded="true" aria-controls="nearby-locality">BUDGET RANGE<span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                                <a class="btn btn-toggler" data-toggle="collapse" href="#budger-range" aria-expanded="true" aria-controls="nearby-locality"><span>BUDGET RANGE</span><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
                                   <div class="collapse in" id="budger-range" aria-expanded="true">
                                       <input type="text" name="tokenLocality" id="tokenLocality" search>
                                       <ul class="children">
@@ -2204,7 +2352,7 @@
                             <!-- // -->
                             <div class="widget-body">
                               <div class="filter-section">
-                                <a class="btn btn-toggler" data-toggle="collapse" href="#bhk" aria-expanded="true" aria-controls="nearby-locality">BHK<span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                                <a class="btn btn-toggler" data-toggle="collapse" href="#bhk" aria-expanded="true" aria-controls="nearby-locality"><span>BHK</span><span class="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
                                   <div class="collapse in" id="bhk" aria-expanded="true">
                                       <input type="text" name="tokenLocality" id="tokenLocality" search>
                                       <ul class="children">
