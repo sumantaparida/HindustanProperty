@@ -3,15 +3,17 @@
     float: left;
     margin-right: 15px;
   }
-}
-[postproperty] {
-  position: fixed;
-  right: 0;
-  width: 200px;
-  height: 80px;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  border: solid 1px red;
-  z-index: 999;
+  .min-max {
+    float: left;
+    width: 100%;
+    input[type="text"] {
+      width: 125px;
+      &:first-child {
+        float: left;
+      }
+      &:last-child {
+        float: right;
+      }
+    }
+  }
 }

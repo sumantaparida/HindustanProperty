@@ -1,0 +1,22 @@
+.bottomLine {
+  .heading {
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+    font-weight: 300;
+    position: relative;
+    strong {
+      color: #7daf00 !important;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      width: 150px;
+      height: 1px;
+      background-color: #7daf00;
+      bottom: -10px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+}

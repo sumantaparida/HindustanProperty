@@ -1525,5 +1525,15 @@ var nice = false;
         return false;
       });
     }
+    //Tab close
+    trigger_tabclose();
+    function trigger_tabclose() {
+      var t = $(".projectAccordian .prop-tab-items > .tab-pane");
+      var tn = $(".projectAccordian > .nav-pills > li");
+      $(".closeTab").on("click", function(){
+        t.removeClass("active");
+        tn.removeClass("active");
+      });
+    }
 
 })(jQuery);

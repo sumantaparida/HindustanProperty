@@ -1,0 +1,38 @@
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none
+}
+
+.list-inline>li {
+    display: inline-block;
+    padding-right: 2px;
+    padding-left: 5px
+}
+.prop-tab-items .table {
+    margin: 20px 0 0;
+    max-width: 860px
+}
+
+.prop-tab-items .table>thead>tr>th {
+    border-bottom-width: 1px;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 6px 0
+}
+
+.prop-tab-items .table>tbody>tr>td {
+    border-bottom: 1px solid #ddd;
+    border-top: 0;
+    font-weight: 300;
+    font-size: 13px;
+    padding: 6px 0
+}
+
+.prop-tab-items .table strong {
+    font-weight: 600
+}
+
+.prop-tab-items .table .price {
+    color: #6fc045
+}
