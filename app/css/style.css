@@ -8596,7 +8596,7 @@ select.mobile-device {
     width: 20px;
     height: 20px;
 
-    content: '├óΓé¼┬ó';
+    content: 'â€¢';
     text-align: center;
 
     opacity: .25;
@@ -32241,7 +32241,7 @@ header .header-left > div a {
 [right-sticky] {
   position: fixed;
   right: 0;
-  width: 50px;
+  width: 35px;
   height: 200px;
   top: 0;
   bottom: 0;
@@ -32258,27 +32258,65 @@ header .header-left > div a {
 [right-sticky] ul li {
   float: left;
   width: 100%;
-  height: 33px;
-}
-[right-sticky] ul li:nth-child(odd) {
+  height: 40px;
   background-color: #dedede;
 }
 [right-sticky] ul li a {
   display: block;
   height: 100%;
   text-align: center;
+  position: relative;
+}
+[right-sticky] ul li a [postProperty] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 8px;
+  height: 100%;
+  width: 156px;
+  line-height: 30px;
+  background-color: #dedede;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transition: transform .5s ease 0s;
+  background-color: #331d93;
+  color: #fff;
+}
+[right-sticky] ul li a [postProperty] .fa {
+  float: left;
+  margin-right: 15px;
+  margin-top: 8px;
+  margin-left: 4px;
+}
+[right-sticky] ul li a [postProperty] span {
+  float: left;
+  font-weight: 600;
+}
+[right-sticky] ul li a [postProperty]:hover {
+  -webkit-transform: translate3d(-120px, 0, 0);
+  -moz-transform: translate3d(-120px, 0, 0);
+  -o-transform: translate3d(-120px, 0, 0);
+  -ms-transform: translate3d(-120px, 0, 0);
+  transform: translate3d(-120px, 0, 0);
 }
 
-.bottomLine .heading {
+.property_section .location-block {
+  height: 190px;
+  overflow: hidden;
+}
+.property_section .bottomLine .heading {
   text-align: center;
   margin: 10px 0px 0px 0px;
   font-weight: 300;
   position: relative;
 }
-.bottomLine .heading strong {
+.property_section .bottomLine .heading strong {
   color: #7daf00 !important;
 }
-.bottomLine .heading::before {
+.property_section .bottomLine .heading::before {
   content: '';
   position: absolute;
   width: 150px;
@@ -32305,7 +32343,14 @@ header .header-left > div a {
 .project_listing .property-item:hover ~ .projectAccordian {
   border-left: solid 1px #414446;
   border-right: solid 1px #414446;
-  border-bottom: solid 1px 414446;
+  border-bottom: solid 1px #414446;
+}
+
+.projectAccordian {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .list-view .projectAccordian {
