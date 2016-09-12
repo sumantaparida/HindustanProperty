@@ -32273,7 +32273,7 @@ header .header-left > div a {
   left: 0;
   padding: 5px 8px;
   height: 100%;
-  width: 156px;
+  width: 225px;
   line-height: 30px;
   background-color: #dedede;
   -webkit-transform: translate3d(0, 0, 0);
@@ -32294,13 +32294,14 @@ header .header-left > div a {
 [right-sticky] ul li a [postProperty] span {
   float: left;
   font-weight: 600;
+  text-transform: uppercase;
 }
 [right-sticky] ul li a [postProperty]:hover {
-  -webkit-transform: translate3d(-120px, 0, 0);
-  -moz-transform: translate3d(-120px, 0, 0);
-  -o-transform: translate3d(-120px, 0, 0);
-  -ms-transform: translate3d(-120px, 0, 0);
-  transform: translate3d(-120px, 0, 0);
+  -webkit-transform: translate3d(-190px, 0, 0);
+  -moz-transform: translate3d(-190px, 0, 0);
+  -o-transform: translate3d(-190px, 0, 0);
+  -ms-transform: translate3d(-190px, 0, 0);
+  transform: translate3d(-190px, 0, 0);
 }
 
 .property_section .location-block {
