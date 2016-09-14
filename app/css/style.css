@@ -15462,13 +15462,7 @@ input[type="button"].btn-block {
   color: #fff;
 }
 
-.header-right > div > a:active {
-  color: #333;
-  border: solid 1px #00bcdb !important;
-  background-color: #cce7ed !important;
-}
-
-.header-right > div > a:focus {
+.header-right > div > a:first-child:active, .header-right > div > a:first-child:focus {
   color: #333;
   border: solid 1px #00bcdb !important;
   background-color: #cce7ed !important;
@@ -31006,10 +31000,10 @@ section {
   padding: 35px 0px;
 }
 section:nth-child(even) {
-  background-color: #f7f7f7;
+  background-color: #ffffff;
 }
 section:nth-child(odd) {
-  background-color: #ffffff;
+  background-color: #f7f7f7;
 }
 
 .nopadding {
@@ -31624,6 +31618,12 @@ header .header-left > div a {
   color: #fff;
 }
 
+#owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 [headding] {
   margin: 6px 0 25px;
   position: relative;
@@ -31967,6 +31967,12 @@ header .header-left > div a {
   background-color: transparent;
 }
 
+[select-dropdown] {
+  width: 100%;
+  border: solid 1px #ccc;
+  height: 42px;
+}
+
 @media only screen and (min-width: 1025px) {
   .listingContainer {
     padding-top: 8px !important;
@@ -32241,7 +32247,7 @@ header .header-left > div a {
 [right-sticky] {
   position: fixed;
   right: 0;
-  width: 50px;
+  width: 35px;
   height: 200px;
   top: 0;
   bottom: 0;
@@ -32258,27 +32264,68 @@ header .header-left > div a {
 [right-sticky] ul li {
   float: left;
   width: 100%;
-  height: 33px;
-}
-[right-sticky] ul li:nth-child(odd) {
+  height: 40px;
   background-color: #dedede;
 }
 [right-sticky] ul li a {
   display: block;
   height: 100%;
   text-align: center;
+  position: relative;
+}
+[right-sticky] ul li a [postProperty] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 8px;
+  height: 100%;
+  width: 225px;
+  line-height: 30px;
+  background-color: #dedede;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transition: transform .5s ease 0s;
+  background-color: #331d93;
+  color: #fff;
+}
+[right-sticky] ul li a [postProperty] .fa {
+  float: left;
+  margin-right: 15px;
+  margin-top: 8px;
+  margin-left: 4px;
+}
+[right-sticky] ul li a [postProperty] span {
+  float: left;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+[right-sticky] ul li a [postProperty]:hover {
+  -webkit-transform: translate3d(-190px, 0, 0);
+  -moz-transform: translate3d(-190px, 0, 0);
+  -o-transform: translate3d(-190px, 0, 0);
+  -ms-transform: translate3d(-190px, 0, 0);
+  transform: translate3d(-190px, 0, 0);
 }
 
-.bottomLine .heading {
+.multiple_location .location-block {
+  height: 170px;
+}
+.multiple_location .houzez-module {
+  padding: 0px;
+}
+.multiple_location .bottomLine .heading {
   text-align: center;
   margin: 10px 0px 0px 0px;
   font-weight: 300;
   position: relative;
 }
-.bottomLine .heading strong {
+.multiple_location .bottomLine .heading strong {
   color: #7daf00 !important;
 }
-.bottomLine .heading::before {
+.multiple_location .bottomLine .heading::before {
   content: '';
   position: absolute;
   width: 150px;

@@ -12,7 +12,7 @@ jQuery(document).ready( function($){
             dots = parseBool( obj.slide_dots),
             slide_infinite =  parseBool( obj.slide_infinite );
 
-        var houzez_rtl = HOUZEZ_ajaxcalls_vars.houzez_rtl;
+        var houzez_rtl = hindustan.houzez_rtl;
 
         if( houzez_rtl == 'yes' ) {
             houzez_rtl = true;

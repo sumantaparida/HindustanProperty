@@ -3457,12 +3457,7 @@ input[type="button"].btn-block {
 .header-right > div > a:hover {
   color: #fff;
 }
-.header-right > div > a:active {
-  color: #333;
-  border: solid 1px #00bcdb !important;
-  background-color: #cce7ed !important;
-}
-.header-right > div > a:focus {
+.header-right > div > a:first-child:active, .header-right > div > a:first-child:focus {
   color: #333;
   border: solid 1px #00bcdb !important;
   background-color: #cce7ed !important;

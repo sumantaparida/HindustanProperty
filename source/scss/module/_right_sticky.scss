@@ -1,7 +1,7 @@
 [right-sticky] {
   position: fixed;
   right: 0;
-  width: 50px;
+  width: 35px;
   height: 200px;
   top: 0;
   bottom: 0;
@@ -16,15 +16,50 @@
     li {
       float: left;
       width: 100%;
-      height: 33px;
-      &:nth-child(odd) {
-        background-color: #dedede;
-      }
+      height: 40px;
+      background-color: #dedede;
       a {
         display: block;
         height: 100%;
         //border: solid 1px red;
         text-align: center;
+        position: relative;
+        [postProperty] {
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 5px 8px;
+          height: 100%;
+          width: 225px;
+          line-height: 30px;
+          background-color: #dedede;
+          -webkit-transform: translate3d(0,0,0);
+          -moz-transform: translate3d(0,0,0);
+          -o-transform: translate3d(0,0,0);
+          -ms-transform: translate3d(0,0,0);
+          transform: translate3d(0,0,0);
+          transition: transform .5s ease 0s;
+          background-color: #331d93;
+          color: #fff;
+          .fa {
+            float: left;
+            margin-right: 15px;
+            margin-top: 8px;
+            margin-left: 4px;
+          }
+          span {
+            float: left;
+            font-weight: 600;
+            text-transform: uppercase;
+          }
+          &:hover {
+            -webkit-transform: translate3d(-190px,0,0);
+            -moz-transform: translate3d(-190px,0,0);
+            -o-transform: translate3d(-190px,0,0);
+            -ms-transform: translate3d(-190px,0,0);
+            transform: translate3d(-190px,0,0);
+          }
+        }
       }
     }
   }
