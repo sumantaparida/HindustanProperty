@@ -32352,7 +32352,14 @@ header .header-left > div a {
 .project_listing .property-item:hover ~ .projectAccordian {
   border-left: solid 1px #414446;
   border-right: solid 1px #414446;
-  border-bottom: solid 1px 414446;
+  border-bottom: solid 1px #414446;
+}
+
+.projectAccordian {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .list-view .projectAccordian {
