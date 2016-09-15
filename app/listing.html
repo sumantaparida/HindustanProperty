@@ -475,45 +475,27 @@
               </div>
             </div>
             <div class="form-group">
-              <div class="btn-group bootstrap-select">
-                <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" title="Chicago" aria-expanded="false"><span class="filter-option pull-left"> Select Property Type</span>&nbsp;<span class="fa fa-sort"></span></button>
-                <div class="dropdown-menu open">
-                  <ul class="dropdown-menu inner" role="menu">
-                    <li data-original-index="0" class=""><a tabindex="0" class="" style="" data-tokens="null"><span class="text">All Cities</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
-                    </li>
-                    <li data-original-index="1" class="selected"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> Chicago</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
-                    </li>
-                    <li data-original-index="2"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> Los Angeles</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
-                    </li>
-                    <li data-original-index="3"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> Miami</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
-                    </li>
-                    <li data-original-index="4"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> New York</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <select select-dropdown="">
+                <option value="cheese">Cheese</option>
+                <option value="tomatoes">Tomatoes</option>
+                <option value="mozarella">Mozzarella</option>
+                <option value="mushrooms">Mushrooms</option>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="onions">Onions</option>
+              </select>
             </div>
             <div class="form-group">
               <input class="form-control" name="phone" type="text" placeholder="Phone">
             </div>
             <div class="form-group">
-              <div class="btn-group bootstrap-select">
-                <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" title="Chicago" aria-expanded="false"><span class="filter-option pull-left"> Select No Of Bed</span>&nbsp;<span class="fa fa-sort"></span></button>
-                <div class="dropdown-menu open">
-                  <ul class="dropdown-menu inner" role="menu">
-                    <li data-original-index="0" class=""><a tabindex="0" class="" style="" data-tokens="null"><span class="text">All Cities</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
-                    </li>
-                    <li data-original-index="1" class="selected"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> Chicago</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
-                    </li>
-                    <li data-original-index="2"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> Los Angeles</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
-                    </li>
-                    <li data-original-index="3"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> Miami</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
-                    </li>
-                    <li data-original-index="4"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> New York</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <select select-dropdown="">
+                <option value="cheese">Cheese</option>
+                <option value="tomatoes">Tomatoes</option>
+                <option value="mozarella">Mozzarella</option>
+                <option value="mushrooms">Mushrooms</option>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="onions">Onions</option>
+              </select>
             </div>
             <div class="form-group min-max">
               <input class="form-control" name="" type="text" placeholder="Min">
@@ -841,7 +823,7 @@
                         </div>
                         <div class="sort-tab table-cell text-right">
                             Sort by:
-                            <select id="sort_properties" class="selectpicker bs-select-hidden" title="Default Order" data-live-search-style="begins" data-live-search="false">
+                            <select class="sortBy" title="Default Order">
                                 <option class="bs-title-option" value="">Default Order</option>
                                 <option value="a_price">Price (Low to High)</option>
                                 <option value="d_price">Price (High to Low)</option>
@@ -937,36 +919,37 @@
                                     <div class="table-cell">
                                         <div class="figure-block">
                                             <figure class="item-thumb">
-                                                <span class="label-featured label label-success">Featured</span>
-                                                <div class="label-wrap hide-on-list">
-                                                    <span class="label-status label-status-7 label label-default">For Sale</span>
-                                                    <span class="label label-default label-color-288">Open House</span>
-                                                </div>
-                                                <div class="price hide-on-list">
-                                                    <h3>$670,000</h3>
-                                                    <p class="rant">$1,300/mo</p>
-                                                </div>
-                                                <a class="hover-effect" href="http://houzez01.favethemes.com/property/luxury-family-home-4/">
-                                                    <img width="385" height="258" src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg" class="attachment-houzez-property-thumb-image size-houzez-property-thumb-image wp-post-image" alt="chicago-06" srcset="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg 385w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-300x202.jpg 300w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-768x516.jpg 768w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-1024x688.jpg 1024w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-150x101.jpg 150w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-350x235.jpg 350w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06.jpg 1170w" sizes="(max-width: 385px) 100vw, 385px"> </a>
-                                                <figcaption class="thumb-caption cap-actions clearfix">
-                                                    <ul class="list-unstyled actions pull-right">
-                                                        <li>
-                                                          <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
-                                                            <i class="add_fav fa fa-heart-o" data-propid="361"></i>
-                                                          </span>
-                                                        </li>
-                                                        <li>
-                                                          <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
-                                                            <i class="fa fa-camera"></i>
-                                                          </span>
-                                                        </li>
-                                                        <li>
-                                                          <span id="compare-link-361" class="compare-property" data-propid="361" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                            <i class="fa fa-plus"></i>
-                                                          </span>
-                                                        </li>
-                                                    </ul>
-                                                </figcaption>
+                                              <span class="label-featured label label-success">Featured</span>
+                                              <div class="label-wrap hide-on-list">
+                                                  <span class="label-status label-status-7 label label-default">For Sale</span>
+                                                  <span class="label label-default label-color-288">Open House</span>
+                                              </div>
+                                              <div class="price hide-on-list">
+                                                  <h3>$670,000</h3>
+                                                  <p class="rant">$1,300/mo</p>
+                                              </div>
+                                              <a class="hover-effect" href="http://houzez01.favethemes.com/property/luxury-family-home-4/">
+                                                  <img width="385" height="258" src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg" class="attachment-houzez-property-thumb-image size-houzez-property-thumb-image wp-post-image" alt="chicago-06" srcset="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg 385w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-300x202.jpg 300w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-768x516.jpg 768w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-1024x688.jpg 1024w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-150x101.jpg 150w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-350x235.jpg 350w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06.jpg 1170w" sizes="(max-width: 385px) 100vw, 385px">
+                                              </a>
+                                              <figcaption class="thumb-caption cap-actions clearfix">
+                                                <ul class="list-unstyled actions pull-right">
+                                                  <li>
+                                                    <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
+                                                      <i class="add_fav fa fa-heart-o" data-propid="361"></i>
+                                                    </span>
+                                                  </li>
+                                                  <li>
+                                                    <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
+                                                      <i class="fa fa-camera"></i>
+                                                    </span>
+                                                  </li>
+                                                  <li>
+                                                    <span id="compare-link-361" class="compare-property" data-propid="361" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
+                                                      <i class="fa fa-plus"></i>
+                                                    </span>
+                                                  </li>
+                                                </ul>
+                                              </figcaption>
                                             </figure>
                                         </div>
                                     </div>
@@ -1051,32 +1034,18 @@
                                                     <ul class="list-unstyled actions pull-right">
                                                         <li>
                                                             <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
-                <i class="add_fav fa fa-heart-o" data-propid="419"></i>        </span>
+                                                              <i class="add_fav fa fa-heart-o" data-propid="419"></i>
+                                                            </span>
                                                         </li>
-                                                        <!-- <li class="share-btn">
-
-    <div class="share_tooltip fade">
-        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-family-home-3%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook"></i></a>
-                      <a href="https://twitter.com/intent/tweet?text=Awesome+family+home&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-family-home-3%2F&via=Houzez" onclick="if(!document.getElementById('td_social_networks_buttons')){window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;}"><i class="fa fa-twitter"></i></a>
-
-                      <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-family-home-3%2F&amp;media=http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-07-1024x688.jpg" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-pinterest"></i></a>
-
-                      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-family-home-3%2F&title=Awesome+family+home&source=http%3A%2F%2Fhouzez01.favethemes.com%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-linkedin"></i></a>
-
-                      <a href="http://plus.google.com/share?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-family-home-3%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus"></i></a>
-                      <a href="mailto:example.com?subject=Awesome+family+home&body=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-family-home-3%2F"><i class="fa fa-envelope"></i></a>
-    </div>
-    <span title="" data-placement="top" data-toggle="tooltip" data-original-title="share"><i class="fa fa-share-alt"></i></span>    </li> -->
                                                         <li>
                                                             <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
-                <i class="fa fa-camera"></i>
-                <!--<span class="count">() </span>-->
+                                                              <i class="fa fa-camera"></i>
                                                             </span>
                                                         </li>
                                                         <li>
                                                             <span id="compare-link-419" class="compare-property" data-propid="419" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                <i class="fa fa-plus"></i>
-            </span>
+                                                              <i class="fa fa-plus"></i>
+                                                            </span>
                                                         </li>
                                                     </ul>
                                                 </figcaption>
@@ -1084,7 +1053,6 @@
                                         </div>
                                     </div>
                                     <div class="item-body table-cell">
-
                                         <div class="body-left table-cell">
                                             <div class="info-row">
                                                 <div class="label-wrap hide-on-grid">
@@ -1169,24 +1137,9 @@
                                                             <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
                 <i class="add_fav fa fa-heart-o" data-propid="412"></i>        </span>
                                                         </li>
-                                                        <!-- <li class="share-btn">
-
-    <div class="share_tooltip fade">
-        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-villa-with-pool%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook"></i></a>
-                      <a href="https://twitter.com/intent/tweet?text=Luxury+villa+with+pool&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-villa-with-pool%2F&via=Houzez" onclick="if(!document.getElementById('td_social_networks_buttons')){window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;}"><i class="fa fa-twitter"></i></a>
-
-                      <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-villa-with-pool%2F&amp;media=http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-05-1024x688.jpg" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-pinterest"></i></a>
-
-                      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-villa-with-pool%2F&title=Luxury+villa+with+pool&source=http%3A%2F%2Fhouzez01.favethemes.com%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-linkedin"></i></a>
-
-                      <a href="http://plus.google.com/share?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-villa-with-pool%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus"></i></a>
-                      <a href="mailto:example.com?subject=Luxury+villa+with+pool&body=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-villa-with-pool%2F"><i class="fa fa-envelope"></i></a>
-    </div>
-    <span title="" data-placement="top" data-toggle="tooltip" data-original-title="share"><i class="fa fa-share-alt"></i></span>    </li> -->
                                                         <li>
                                                             <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
                 <i class="fa fa-camera"></i>
-                <!--<span class="count">() </span>-->
                                                             </span>
                                                         </li>
                                                         <li>
@@ -1285,24 +1238,9 @@
                                                             <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
                 <i class="add_fav fa fa-heart-o" data-propid="405"></i>        </span>
                                                         </li>
-                                                        <!-- <li class="share-btn">
-
-    <div class="share_tooltip fade">
-        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fample-apartment-at-last-floor-2%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook"></i></a>
-                      <a href="https://twitter.com/intent/tweet?text=Ample+apartment+at+last+floor&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fample-apartment-at-last-floor-2%2F&via=Houzez" onclick="if(!document.getElementById('td_social_networks_buttons')){window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;}"><i class="fa fa-twitter"></i></a>
-
-                      <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fample-apartment-at-last-floor-2%2F&amp;media=http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-04-1024x688.jpg" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-pinterest"></i></a>
-
-                      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fample-apartment-at-last-floor-2%2F&title=Ample+apartment+at+last+floor&source=http%3A%2F%2Fhouzez01.favethemes.com%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-linkedin"></i></a>
-
-                      <a href="http://plus.google.com/share?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fample-apartment-at-last-floor-2%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus"></i></a>
-                      <a href="mailto:example.com?subject=Ample+apartment+at+last+floor&body=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fample-apartment-at-last-floor-2%2F"><i class="fa fa-envelope"></i></a>
-    </div>
-    <span title="" data-placement="top" data-toggle="tooltip" data-original-title="share"><i class="fa fa-share-alt"></i></span>    </li> -->
                                                         <li>
                                                             <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
                 <i class="fa fa-camera"></i>
-                <!--<span class="count">() </span>-->
                                                             </span>
                                                         </li>
                                                         <li>
@@ -1411,24 +1349,9 @@
                                                             <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
                 <i class="add_fav fa fa-heart-o" data-propid="445"></i>        </span>
                                                         </li>
-                                                        <!-- <li class="share-btn">
-
-    <div class="share_tooltip fade">
-        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-apartment-ocean-view-3%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook"></i></a>
-                      <a href="https://twitter.com/intent/tweet?text=Luxury+apartment+ocean+view&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-apartment-ocean-view-3%2F&via=Houzez" onclick="if(!document.getElementById('td_social_networks_buttons')){window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;}"><i class="fa fa-twitter"></i></a>
-
-                      <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-apartment-ocean-view-3%2F&amp;media=http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-14-1024x688.jpg" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-pinterest"></i></a>
-
-                      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-apartment-ocean-view-3%2F&title=Luxury+apartment+ocean+view&source=http%3A%2F%2Fhouzez01.favethemes.com%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-linkedin"></i></a>
-
-                      <a href="http://plus.google.com/share?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-apartment-ocean-view-3%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus"></i></a>
-                      <a href="mailto:example.com?subject=Luxury+apartment+ocean+view&body=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-apartment-ocean-view-3%2F"><i class="fa fa-envelope"></i></a>
-    </div>
-    <span title="" data-placement="top" data-toggle="tooltip" data-original-title="share"><i class="fa fa-share-alt"></i></span>    </li> -->
                                                         <li>
                                                             <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
                 <i class="fa fa-camera"></i>
-                <!--<span class="count">() </span>-->
                                                             </span>
                                                         </li>
                                                         <li>
@@ -1525,24 +1448,9 @@
                                                             <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
                 <i class="add_fav fa fa-heart-o" data-propid="429"></i>        </span>
                                                         </li>
-                                                        <!-- <li class="share-btn">
-
-    <div class="share_tooltip fade">
-        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fgorgeous-villa-bay-view%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook"></i></a>
-                      <a href="https://twitter.com/intent/tweet?text=Gorgeous+villa+bay+view&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fgorgeous-villa-bay-view%2F&via=Houzez" onclick="if(!document.getElementById('td_social_networks_buttons')){window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;}"><i class="fa fa-twitter"></i></a>
-
-                      <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fgorgeous-villa-bay-view%2F&amp;media=http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-10-1024x688.jpg" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-pinterest"></i></a>
-
-                      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fgorgeous-villa-bay-view%2F&title=Gorgeous+villa+bay+view&source=http%3A%2F%2Fhouzez01.favethemes.com%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-linkedin"></i></a>
-
-                      <a href="http://plus.google.com/share?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fgorgeous-villa-bay-view%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus"></i></a>
-                      <a href="mailto:example.com?subject=Gorgeous+villa+bay+view&body=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fgorgeous-villa-bay-view%2F"><i class="fa fa-envelope"></i></a>
-    </div>
-    <span title="" data-placement="top" data-toggle="tooltip" data-original-title="share"><i class="fa fa-share-alt"></i></span>    </li> -->
                                                         <li>
                                                             <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
                 <i class="fa fa-camera"></i>
-                <!--<span class="count">() </span>-->
                                                             </span>
                                                         </li>
                                                         <li>
@@ -1639,24 +1547,9 @@
                                                             <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
                 <i class="add_fav fa fa-heart-o" data-propid="425"></i>        </span>
                                                         </li>
-                                                        <!-- <li class="share-btn">
-
-    <div class="share_tooltip fade">
-        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fgorgeous-villa-for-sale%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook"></i></a>
-                      <a href="https://twitter.com/intent/tweet?text=Gorgeous+villa+for+sale&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fgorgeous-villa-for-sale%2F&via=Houzez" onclick="if(!document.getElementById('td_social_networks_buttons')){window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;}"><i class="fa fa-twitter"></i></a>
-
-                      <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fgorgeous-villa-for-sale%2F&amp;media=http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-09-1024x688.jpg" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-pinterest"></i></a>
-
-                      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fgorgeous-villa-for-sale%2F&title=Gorgeous+villa+for+sale&source=http%3A%2F%2Fhouzez01.favethemes.com%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-linkedin"></i></a>
-
-                      <a href="http://plus.google.com/share?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fgorgeous-villa-for-sale%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus"></i></a>
-                      <a href="mailto:example.com?subject=Gorgeous+villa+for+sale&body=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fgorgeous-villa-for-sale%2F"><i class="fa fa-envelope"></i></a>
-    </div>
-    <span title="" data-placement="top" data-toggle="tooltip" data-original-title="share"><i class="fa fa-share-alt"></i></span>    </li> -->
                                                         <li>
                                                             <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
                 <i class="fa fa-camera"></i>
-                <!--<span class="count">() </span>-->
                                                             </span>
                                                         </li>
                                                         <li>
@@ -1753,24 +1646,9 @@
                                                             <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
                 <i class="add_fav fa fa-heart-o" data-propid="400"></i>        </span>
                                                         </li>
-                                                        <!-- <li class="share-btn">
-
-    <div class="share_tooltip fade">
-        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-apartment-ocean-view-2%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook"></i></a>
-                      <a href="https://twitter.com/intent/tweet?text=luxury+home+ocean+view&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-apartment-ocean-view-2%2F&via=Houzez" onclick="if(!document.getElementById('td_social_networks_buttons')){window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;}"><i class="fa fa-twitter"></i></a>
-
-                      <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-apartment-ocean-view-2%2F&amp;media=http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-03-1024x688.jpg" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-pinterest"></i></a>
-
-                      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-apartment-ocean-view-2%2F&title=luxury+home+ocean+view&source=http%3A%2F%2Fhouzez01.favethemes.com%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-linkedin"></i></a>
-
-                      <a href="http://plus.google.com/share?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-apartment-ocean-view-2%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus"></i></a>
-                      <a href="mailto:example.com?subject=luxury+home+ocean+view&body=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-apartment-ocean-view-2%2F"><i class="fa fa-envelope"></i></a>
-    </div>
-    <span title="" data-placement="top" data-toggle="tooltip" data-original-title="share"><i class="fa fa-share-alt"></i></span>    </li> -->
                                                         <li>
                                                             <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
                 <i class="fa fa-camera"></i>
-                <!--<span class="count">() </span>-->
                                                             </span>
                                                         </li>
                                                         <li>
@@ -1867,24 +1745,9 @@
                                                             <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
                 <i class="add_fav fa fa-heart-o" data-propid="390"></i>        </span>
                                                         </li>
-                                                        <!-- <li class="share-btn">
-
-    <div class="share_tooltip fade">
-        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fmodern-apartment-2%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook"></i></a>
-                      <a href="https://twitter.com/intent/tweet?text=Modern+apartment&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fmodern-apartment-2%2F&via=Houzez" onclick="if(!document.getElementById('td_social_networks_buttons')){window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;}"><i class="fa fa-twitter"></i></a>
-
-                      <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fmodern-apartment-2%2F&amp;media=http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-1-1024x581.jpg" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-pinterest"></i></a>
-
-                      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fmodern-apartment-2%2F&title=Modern+apartment&source=http%3A%2F%2Fhouzez01.favethemes.com%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-linkedin"></i></a>
-
-                      <a href="http://plus.google.com/share?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fmodern-apartment-2%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus"></i></a>
-                      <a href="mailto:example.com?subject=Modern+apartment&body=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fmodern-apartment-2%2F"><i class="fa fa-envelope"></i></a>
-    </div>
-    <span title="" data-placement="top" data-toggle="tooltip" data-original-title="share"><i class="fa fa-share-alt"></i></span>    </li> -->
                                                         <li>
                                                             <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
                 <i class="fa fa-camera"></i>
-                <!--<span class="count">() </span>-->
                                                             </span>
                                                         </li>
                                                         <li>
@@ -1981,24 +1844,9 @@
                                                             <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
                 <i class="add_fav fa fa-heart-o" data-propid="379"></i>        </span>
                                                         </li>
-                                                        <!-- <li class="share-btn">
-
-    <div class="share_tooltip fade">
-        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Frelaxing-apartment-ocean-view%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook"></i></a>
-                      <a href="https://twitter.com/intent/tweet?text=Relaxing+apartment+ocean+view&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Frelaxing-apartment-ocean-view%2F&via=Houzez" onclick="if(!document.getElementById('td_social_networks_buttons')){window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;}"><i class="fa fa-twitter"></i></a>
-
-                      <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Frelaxing-apartment-ocean-view%2F&amp;media=http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-13-1024x688.jpg" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-pinterest"></i></a>
-
-                      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Frelaxing-apartment-ocean-view%2F&title=Relaxing+apartment+ocean+view&source=http%3A%2F%2Fhouzez01.favethemes.com%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-linkedin"></i></a>
-
-                      <a href="http://plus.google.com/share?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Frelaxing-apartment-ocean-view%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus"></i></a>
-                      <a href="mailto:example.com?subject=Relaxing+apartment+ocean+view&body=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Frelaxing-apartment-ocean-view%2F"><i class="fa fa-envelope"></i></a>
-    </div>
-    <span title="" data-placement="top" data-toggle="tooltip" data-original-title="share"><i class="fa fa-share-alt"></i></span>    </li> -->
                                                         <li>
                                                             <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
                 <i class="fa fa-camera"></i>
-                <!--<span class="count">() </span>-->
                                                             </span>
                                                         </li>
                                                         <li>
@@ -2095,24 +1943,9 @@
                                                             <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
                 <i class="add_fav fa fa-heart-o" data-propid="373"></i>        </span>
                                                         </li>
-                                                        <!-- <li class="share-btn">
-
-    <div class="share_tooltip fade">
-        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Famazing-villa-bay-front%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook"></i></a>
-                      <a href="https://twitter.com/intent/tweet?text=Amazing+villa+bay+front&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Famazing-villa-bay-front%2F&via=Houzez" onclick="if(!document.getElementById('td_social_networks_buttons')){window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;}"><i class="fa fa-twitter"></i></a>
-
-                      <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Famazing-villa-bay-front%2F&amp;media=http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-11-1024x688.jpg" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-pinterest"></i></a>
-
-                      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Famazing-villa-bay-front%2F&title=Amazing+villa+bay+front&source=http%3A%2F%2Fhouzez01.favethemes.com%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-linkedin"></i></a>
-
-                      <a href="http://plus.google.com/share?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Famazing-villa-bay-front%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus"></i></a>
-                      <a href="mailto:example.com?subject=Amazing+villa+bay+front&body=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Famazing-villa-bay-front%2F"><i class="fa fa-envelope"></i></a>
-    </div>
-    <span title="" data-placement="top" data-toggle="tooltip" data-original-title="share"><i class="fa fa-share-alt"></i></span>    </li> -->
                                                         <li>
                                                             <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
                 <i class="fa fa-camera"></i>
-                <!--<span class="count">() </span>-->
                                                             </span>
                                                         </li>
                                                         <li>
@@ -2209,24 +2042,9 @@
                                                             <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
                 <i class="add_fav fa fa-heart-o" data-propid="365"></i>        </span>
                                                         </li>
-                                                        <!-- <li class="share-btn">
-
-    <div class="share_tooltip fade">
-        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fcomfortable-family-home%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook"></i></a>
-                      <a href="https://twitter.com/intent/tweet?text=Comfortable+family+home&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fcomfortable-family-home%2F&via=Houzez" onclick="if(!document.getElementById('td_social_networks_buttons')){window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;}"><i class="fa fa-twitter"></i></a>
-
-                      <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fcomfortable-family-home%2F&amp;media=http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-08-1024x688.jpg" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-pinterest"></i></a>
-
-                      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fcomfortable-family-home%2F&title=Comfortable+family+home&source=http%3A%2F%2Fhouzez01.favethemes.com%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-linkedin"></i></a>
-
-                      <a href="http://plus.google.com/share?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fcomfortable-family-home%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus"></i></a>
-                      <a href="mailto:example.com?subject=Comfortable+family+home&body=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fcomfortable-family-home%2F"><i class="fa fa-envelope"></i></a>
-    </div>
-    <span title="" data-placement="top" data-toggle="tooltip" data-original-title="share"><i class="fa fa-share-alt"></i></span>    </li> -->
                                                         <li>
                                                             <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
                 <i class="fa fa-camera"></i>
-                <!--<span class="count">() </span>-->
                                                             </span>
                                                         </li>
                                                         <li>
@@ -2323,24 +2141,9 @@
                                                             <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
                 <i class="add_fav fa fa-heart-o" data-propid="357"></i>        </span>
                                                         </li>
-                                                        <!-- <li class="share-btn">
-
-    <div class="share_tooltip fade">
-        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-family-home-2%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook"></i></a>
-                      <a href="https://twitter.com/intent/tweet?text=Luxury+family+home&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-family-home-2%2F&via=Houzez" onclick="if(!document.getElementById('td_social_networks_buttons')){window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;}"><i class="fa fa-twitter"></i></a>
-
-                      <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-family-home-2%2F&amp;media=http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-1024x688.jpg" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-pinterest"></i></a>
-
-                      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-family-home-2%2F&title=Luxury+family+home&source=http%3A%2F%2Fhouzez01.favethemes.com%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-linkedin"></i></a>
-
-                      <a href="http://plus.google.com/share?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-family-home-2%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus"></i></a>
-                      <a href="mailto:example.com?subject=Luxury+family+home&body=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-family-home-2%2F"><i class="fa fa-envelope"></i></a>
-    </div>
-    <span title="" data-placement="top" data-toggle="tooltip" data-original-title="share"><i class="fa fa-share-alt"></i></span>    </li> -->
                                                         <li>
                                                             <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
                 <i class="fa fa-camera"></i>
-                <!--<span class="count">() </span>-->
                                                             </span>
                                                         </li>
                                                         <li>
