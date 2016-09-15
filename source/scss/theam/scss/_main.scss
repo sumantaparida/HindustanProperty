@@ -7691,6 +7691,9 @@ img {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
+.item-thumb img {
+  height: 195px;
+}
 .item-thumb .label-featured, figure .label-featured, .carousel-module .carousel .item figure .label-featured {
   position: absolute;
   top: 12px;
@@ -7819,6 +7822,7 @@ img {
 }
 .label-wrap .label:last-child {
   margin: 0;
+  padding: 3px 6px;
 }
 
 .label-featured {
@@ -8443,7 +8447,7 @@ img {
 }
 .property-listing.list-view .figure-block {
   width: 254px;
-  height: 170px;
+  height: 195px;
 }
 .property-listing.list-view .hide-on-grid {
   display: block;
