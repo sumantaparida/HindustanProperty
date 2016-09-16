@@ -8596,7 +8596,7 @@ select.mobile-device {
     width: 20px;
     height: 20px;
 
-    content: '├óΓé¼┬ó';
+    content: 'â€¢';
     text-align: center;
 
     opacity: .25;
@@ -20051,7 +20051,7 @@ img {
   transform: translateX(-50%);
 }
 
-.item-thumb img {
+.property_listing .item-thumb img {
   height: 195px;
 }
 
