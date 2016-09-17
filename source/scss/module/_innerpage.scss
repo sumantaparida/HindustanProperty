@@ -1,0 +1,174 @@
+@import "social_media.scss";
+@import "_artical.scss";
+//
+.innerLefter {
+  @media (min-width: 1200px) {
+    width: 70%;
+  }
+  .article-main {
+    float: left;
+    width: 100%;
+    hr {
+      float: left;
+      width: 100%;
+    }
+  }
+}
+//
+.innerRighter {
+  @media (min-width: 1200px) {
+    width: 30%;
+  }
+}
+//
+.helpForm {
+  .form-group {
+    input {
+      height: auto;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-radius: 0;
+      padding: 2px 0px 5px 4px;
+      font-size: 10pt;
+    }
+    textarea {
+      width: 100%;
+      height: 90px;
+      border: solid 1px #ccc;
+      padding: 3px 5px 5px 5px;
+      &:focus {
+        border: solid 1px #00aeef;
+      }
+    }
+  }
+}
+// Inner page Two
+.categoryBox .post .featured-image img {
+    border-radius: 20px;
+    height: 200px;
+    width: auto
+}
+
+.categoryBox .post {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(226,226,226,.3)
+}
+
+.categoryBox .post .title-area {
+    font-size: 15px;
+    margin-bottom: 15px
+}
+
+.categoryBox .post .title-area i {
+    font-size: 36px;
+    float: left
+}
+
+.categoryBox .post .image,.categoryBox .post .image a {
+    position: relative;
+    max-height: 200px;
+    display: inline-block
+}
+
+.categoryBox .post .image a.videoBtn {
+    position: absolute;
+    top: 32%;
+    left: 39%;
+    font-size: 68px;
+    color: #eee;
+    box-shadow: 0 0 2px 2px rgba(250,250,250,.7);
+    border-radius: 50%
+}
+
+.categoryBox .post .title-area .right {
+    margin-left: 40px;
+    position: relative
+}
+
+.categoryBox .post .title-area .right .fbSaveDiv {
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.categoryBox .post .title-area .title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.categoryBox .post .title-area .date {
+    font-size: 12px;
+    color: #555;
+    line-height: normal
+}
+
+.categoryBox .post .post-title {
+    margin: 20px 0 10px;
+    color: #222;
+    font-size: 18pt;
+    line-height: 23pt;
+    font-weight: 400;
+}
+
+.categoryBox .post .post-title a {
+    color: #222
+}
+
+.categoryBox .post .post-title a:hover {
+    color: #e81c28
+}
+
+.categoryBox .post p {
+    font-size: 16px;
+    line-height: 24px
+}
+
+.categoryBox .post p+p {
+    margin: 0;
+    margin-top: 10px
+}
+
+.categoryBox .post .article_content p {
+    line-height: 18pt;
+    margin-top: 15pt;
+    margin-bottom: 0;
+    font-size: 11pt;
+}
+.categoryBox .post .article_content p strong {
+  font-weight: bold;
+}
+
+.categoryBox .post .user-inputs {
+    padding-top: 14px;
+    padding-right: 10px;
+    font-size: 16px;
+    text-align: right
+}
+
+.categoryBox .post .user-inputs i {
+    color: #fba511
+}
+
+.categoryBox .post .user-inputs span {
+    padding-left: 10px;
+    cursor: pointer
+}
+.icon-profile {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #dedede;
+}
+.fbSaveDiv {
+  margin-top: 15px;
+}
+.share_btn {
+  border: solid 1px red;
+  float: left;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+}

@@ -230,7 +230,7 @@
           <i class="fa fa-user hidden-md hidden-lg"></i>
           <span class="hidden-sm hidden-xs">Sign In / Register</span>
         </a>
-        <a href="#"><i class="fa fa-navicon"></i></a>
+        <a href="#" onclick="sidenav();"><i class="fa fa-navicon"></i></a>
       </div>
     </div>
   </div>
@@ -382,7 +382,7 @@
                   </li>
                   <li>
                     <a href="javascript:void(0)" data-drop><i action><span></span><span></span></i><span>Dropdown</span></a>
-                    <ul data-brop>
+                    <ul data-brop-data>
                       <li>
                         <label>
                           <input type="checkbox" id="5">
@@ -423,7 +423,7 @@
                   </li>
                   <li>
                     <a href="javascript:void(0)" data-drop><i action><span></span><span></span></i><span>Dropdown</span></a>
-                    <ul data-brop>
+                    <ul data-brop-data>
                       <li>
                         <label>
                           <input type="checkbox" id="11">
@@ -480,6 +480,34 @@
   </div>
 </div>
 <!-- // Advance Search End -->
+<!-- // Top nav Start -->
+<div class="col-xs-12 topNav">
+  <ul data-top-nav>
+    <li><a href="#">Home</a></li>
+    <li>
+      <a href="#"><span>Property</span><span><i class="fa fa-angle-down"></i></span></a>
+      <ul>
+        <li><a href="#">Post Property </a></li>
+        <li><a href="#">Post Property </a></li>
+        <li><a href="#">Post Property </a></li>
+      </ul>
+    </li>
+    <li><a href="#"><span>Home Finance</span></a></li>
+    <li>
+      <a href="#"><span>Know Real Estate</span> <span><i class="fa fa-angle-down"></i></span></a>
+      <ul>
+        <li><a href="#">Area Converter</a></li>
+        <li><a href="#">Property Agreement</a></li>
+        <li><a href="#">Property Documentation</a></li>
+        <li><a href="#">Stamp Duty</a></li>
+      </ul>
+    </li>
+    <li><a href="#"><span>About Us</span></a></li>
+    <li><a href="#"><span>Contact</span></a></li>
+    <li><a href="#"><span>Blog</span></a></li>
+  </ul>
+</div>
+<!-- // Top nav End -->
 <!-- // middle content start -->
 <div id="section-body">
   <!-- // Banner Start -->
@@ -1645,9 +1673,35 @@
   <i class="fa fa-angle-up" aria-hidden="true"></i>
 </div>
 <!-- // Page Up Arrow End -->
+<!-- // Right Sticky Start -->
+<div right-sticky>
+  <ul>
+    <li>
+      <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#postProperty">
+        <span postProperty><i class="fa fa-user"></i> <span>Book My Requirement</span></span>
+      </a>
+    </li>
+    <li>
+      <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#postProperty">
+        <span data-online><i class="fa fa-comments-o" aria-hidden="true"></i> <span>online</span></span>
+      </a>
+    </li>
+    <li>
+      <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#postProperty">
+        <span postProperty><i class="fa fa-calculator" aria-hidden="true"></i> <span>Emi Calculater</span></span>
+      </a>
+    </li>
+    <li>
+      <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#postProperty">
+        <span postProperty><i class="fa fa-phone-square" aria-hidden="true"></i> <span>Contact</span></span>
+      </a>
+    </li>
+  </ul>
+</div>
+<!-- // Right Sticky End -->
 <!-- // Javascript start -->
 <script type='text/javascript' src='js/lib/jquery.form.min.js'></script>
-<script type='text/javascript' src='js/lib/scripts.js?ver=4.5'></script>
+<!-- <script type='text/javascript' src='js/lib/scripts.js?ver=4.5'></script> -->
 <script type='text/javascript' src='js/lib/bootstrap.min.js?ver=3.3.5'></script>
 <script type='text/javascript' src='js/lib/slick.min.js?ver=1.6.0'></script>
 <script type='text/javascript' src='js/lib/Chart.min.js?ver=2.2.1'></script>

@@ -1,0 +1,21 @@
+.widget_social_media {
+  .widget-top {
+    button {
+      margin-bottom: 10px;
+      width: 100%;
+      &.btn {
+        color: #fff;
+        text-align: left;
+      }
+    }
+  }
+}
+.btn-fb {
+  background-color: #4264aa;
+}
+.btn-tw {
+  background-color: #6cb7f0;
+}
+.btn-gplus {
+  background-color: #DD4B39;
+}

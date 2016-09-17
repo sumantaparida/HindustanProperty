@@ -378,6 +378,7 @@ console.log($.fn.jquery);
               //$('#section-body').css('padding-top',thisHeight);
           } else {
               search.removeClass("advanced-search-sticky");
+              $(".property-type>ul, .price-list>ul, [data-category-block]").slideUp(300);
               //search.removeAttr("style");
               //$('#section-body').css('padding-top',111);
           }
@@ -1436,17 +1437,29 @@ console.log($.fn.jquery);
       proClickList.stop(true,false).slideToggle(300);
       //console.log("click");
       $(".price-list > ul").hide();
+      // Outer Click
+      $("body").after("<div role='propertyType'></div>");
     });
-    $("[data-drop]").on("click", function(){
+    $(document).on("click","[role='propertyType']", function(){
+      proClickList.stop(true,false).slideToggle(300);
+      $(this).remove();
+    });
+    $(document).on("click","[data-drop]", function(){
       var pare = $(this).parent();
-      $(this).parent().toggleClass("active");
+      //$(this).parent().toggleClass("active");
       if (pare.hasClass("active")) {
-        $(this).next().slideToggle(300);
+        $(this).next().stop(true,false).slideUp(300);
+        pare.removeClass("active");
+        //console.log("if");
       } else {
-        $(this).next().slideToggle(300);
+        $("[data-drop]").parent().removeClass("active");
+        $("[data-drop]").next().stop(true,false).slideUp(300);
+        pare.addClass("active");
+        $(this).next().stop(true,false).slideDown(300);
+        //console.log("else");
       }
     });
-    // all check
+    // All Check
     $("[allchecks]").on("click", function(){
       var pro = $(this).prop('checked');
       $('[all-check] input').prop('checked',pro);
@@ -1524,4 +1537,31 @@ console.log($.fn.jquery);
       tn.removeClass("active");
     });
   }
+
 })(jQuery);
+
+// side nav start
+function sidenav() {
+  var side_nav = $(".topNav");
+  side_nav.after("<div overlay='topnav'></div>");
+  side_nav.addClass("open");
+  $("[overlay='topnav']").on("click", function(){
+    side_nav.removeClass("open");
+    $(this).remove();
+  })
+  //
+  var nav = $("[data-top-nav] > li > a");
+  $(document).on("click","[data-top-nav] > li > a", function(){
+    if ($(this).parent().hasClass('open')){
+      $(this).next().stop(true, false).slideUp();
+      $(this).parent().removeClass("open");
+      console.log("if");
+    } else {
+      console.log("else");
+      nav.next().stop(true, false).slideUp();
+      nav.parent().removeClass("open");
+      $(this).parent().addClass("open");
+      $(this).next().stop(true, false).slideDown();
+    }
+  });
+}

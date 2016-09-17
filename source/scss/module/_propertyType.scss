@@ -40,6 +40,7 @@
     border: solid 1px #827f7f;
     overflow-y: scroll;
     display: none;
+    z-index: 510;
     > li {
       float: left;
       width: 100%;
@@ -47,7 +48,7 @@
         float: left;
         width: 100%;
         // Drop
-        &[data-brop] {
+        &[data-brop-data] {
           display: none;
         }
         li {
@@ -154,4 +155,13 @@
       }
     }
   }
+}
+[role="propertyType"] {
+  background-color: rgba(0,0,0,0);
+  z-index: 500;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

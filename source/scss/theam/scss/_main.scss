@@ -6323,7 +6323,8 @@ img {
 }
 
 .advanced-search {
-  position: relative;
+  //position: relative;
+  position: fixed;
   z-index: 501;
   -webkit-transform: translate3d(0,-150%,0);
   -moz-transform: translate3d(0,-150%,0);
@@ -7421,12 +7422,12 @@ img {
 }
 
 .breadcrumb-top {
-  padding: 30px 0 30px;
+  padding: 15px 0px 30px 0px;
   /* mini phones and down */
   /* mini phones and down */
 }
 .breadcrumb-top .breadcrumb {
-  padding: 0 0 20px;
+  padding: 0 0 15px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .breadcrumb-top {
@@ -7979,7 +7980,7 @@ img {
   float: left;
   width: 100%;
   @media only screen and (min-width:1025px) {
-    padding-top: 43px;
+    padding-top: 110px !important;
   }
 }
 
@@ -16908,7 +16909,7 @@ textarea.IDX-leadLoginTextInput {
 
 .footer {
   background-color: #363636;
-  padding: 100px 0 70px;
+  padding: 30pt 0pt;
   /* mini phones and down */
 }
 @media (max-width: 767px) {
