@@ -4354,15 +4354,11 @@ input[type="button"].btn-block {
 }
 
 .property-menu-wrap {
-  background-color: rgba(255, 255, 255, 0.9);
-  position: fixed;
+  background-color: rgba(255, 255, 255, 1);
   left: 0;
   right: 0;
   top: 0;
-  display: none;
   z-index: 9;
-  /* mini phones and down */
-  /* mini phones and down */
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .property-menu-wrap {
@@ -4397,7 +4393,7 @@ input[type="button"].btn-block {
 .property-menu a {
   display: block;
   font-size: 14px;
-  line-height: 60px;
+  line-height: 40px;
   color: rgba(0, 0, 0, 0.5);
   font-weight: 500;
   /* mini phones and down */
@@ -12047,8 +12043,8 @@ body.transparent-yes .banner-caption {
 }
 
 .detail-title {
-  padding-bottom: 40px;
-  margin-bottom: 25px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
   border-bottom: 1px solid #e5e5e5;
   /* mini phones and down */
 }

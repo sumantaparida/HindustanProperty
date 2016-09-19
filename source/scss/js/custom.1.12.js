@@ -374,11 +374,13 @@ console.log($.fn.jquery);
           //if( admin_nav == 'nullpx' ) { admin_nav = '0px'; }
           if (scroll >= ser ) {
               search.addClass("advanced-search-sticky");
+              $(".property-menu-wrap").addClass("open");
               //search.css('top', admin_nav);
               //$('#section-body').css('padding-top',thisHeight);
           } else {
               search.removeClass("advanced-search-sticky");
               $(".property-type>ul, .price-list>ul, [data-category-block]").slideUp(300);
+              $(".property-menu-wrap").removeClass("open");
               //search.removeAttr("style");
               //$('#section-body').css('padding-top',111);
           }
@@ -1539,7 +1541,6 @@ console.log($.fn.jquery);
   }
 
 })(jQuery);
-
 // side nav start
 function sidenav() {
   var side_nav = $(".topNav");
@@ -1564,4 +1565,46 @@ function sidenav() {
       $(this).next().stop(true, false).slideDown();
     }
   });
+}
+
+//
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+
+    //smoothscroll
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+
+        $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top-200
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
+});
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('#menu-center a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+          // console.log("0");
+          //   $('#menu-center ul li a').removeClass("active");
+          //   currLink.addClass("active");
+        }
+        else{
+            //currLink.removeClass("active");
+        }
+    });
 }

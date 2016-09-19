@@ -1,0 +1,172 @@
+.top-section {
+    background: #fff;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 100
+}
+
+.top-section .rent-property-title {
+    padding: 5px 0
+}
+
+.top-section .rent-property-title h1 {
+    margin-bottom: 10px;
+    font-size: 30px
+}
+
+.top-section .ip-notification {
+    padding-top: 15px;
+    margin-bottom: 0
+}
+.top-section .text-right .btn {
+    height: 39px;
+    line-height: 24px
+}
+.rent-property-title h1 {
+  margin: 0 20px 0 0;
+  font-weight: 300;
+  float: left;
+  line-height: 36px;
+}
+.mrgr10 {
+    margin-right: 10px!important;
+}
+.loction1 {
+    float: left;
+    width: 75px;
+    padding: 5px 2px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+.rent-property-title .ip-badge {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.vdh2 {
+    border-left: 1px solid #e7e7e7;
+    color: #414446;
+    float: left;
+    font-size: 12px;
+    height: 23px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+}
+.rent-property-title .rp-price {
+    font-size: 18px;
+    color: #7daf00;
+    border-right: 1px solid #e2e2e2;
+    padding-right: 8px;
+    margin-right: 10px;
+    line-height: 16px;
+    display: inline-block;
+    font-weight: 100;
+}
+.rent-property-title .rp-price span {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 20px
+}
+.rent-property-title .rp-growth {
+    position: relative;
+    padding-right: 18px;
+    display: inline-block;
+    line-height: 12px
+}
+.rent-property-title .rp-growth:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-width: 0 6px 7px;
+    border-color: transparent transparent #53ca67;
+    border-style: solid
+}
+.rent-property-title .rp-location {
+    margin-left: 10px
+}
+.rent-property-title .rp-location i {
+    font-size: 16px;
+    margin-left: 8px
+}
+.fnt400 {
+    font-weight: 400!important;
+}
+.vdh3 {
+    border-left: 1px solid #e7e7e7;
+    padding-left: 10px;
+    color: #414446;
+    font-size: 12px;
+    margin-left: 15px!important;
+}
+.vdh4 {
+    color: #414446;
+    font-size: 12px;
+    margin-left: 5px!important;
+}
+.pointer {
+    cursor: pointer;
+}
+.color-green-l {
+    color: #7daf00;
+}
+.font-semi-bold {
+    font-weight: 600;
+}
+.WebRupee {
+  font-size: 13px;
+  font-weight: 100;
+}
+.ip-notification {
+  list-style: none;
+  float: right;
+  li {
+    float: left;
+    margin-left: 10px;
+    a {
+      float: left;
+      padding: 5px;
+      border: solid 1px #ff6950;
+      text-align: center;
+      border-radius: 4px;
+      white-space: nowrap;
+      line-height: 19px;
+      vertical-align: middle;
+      cursor: pointer;
+      -webkit-transition: all .3s ease;
+      -moz-transition: all .3s ease;
+      -ms-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease;
+      &.shortlisttag, &.sharebutton, &.flagbutton {
+        width: 35px;
+        height: 30px;
+        color: #ff6950;
+        font-size: 16px;
+        &:hover {
+          background-color: #ff6950;
+          color: #fff;
+        }
+      }
+      &.vcontact {
+        background-color: #ff6950;
+        color: #fff;
+        font-size: 13px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 5px 8px;
+        font-weight: 400;
+        &:hover {
+          background-color: #ff6950;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

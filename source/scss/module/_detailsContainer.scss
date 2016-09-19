@@ -1,0 +1,42 @@
+@import "topPropertyname.scss";
+@import "property-menu.scss";
+.detailsContainer {
+  section {
+    &:first-child {
+      padding: 0px !important;
+    }
+  }
+  .breadcrumb-top {
+    padding: 8px 0px 0px;
+    .breadcrumb {
+      padding: 0px 0px 10px;
+    }
+  }
+  .entryform_container {
+    margin: 0px 0 15px;
+  }
+  .details-gutter {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+  .property-listing {
+    &.list-view {
+      .figure-block {
+        height: auto !important;
+      }
+    }
+  }
+}
+.property-menu-wrap {
+  &.open {
+    position: fixed;
+    top: 110px;
+    box-shadow: 0px 5px 6px rgb(216, 214, 214);
+  }
+}
+//
+.aminity-features {
+  float: left;
+  width: 100%;
+  background-color: transparent;
+}

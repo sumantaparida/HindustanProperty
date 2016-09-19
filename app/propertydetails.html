@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HP</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- JS Start -->
+  <script type='text/javascript' src='js/lib/jquery.js?ver=1.12.4'></script>
+  <script type='text/javascript' src='js/lib/jquery-migrate.min.js?ver=1.4.1'></script>
+  <script type='text/javascript' src='js/lib/jquery.themepunch.tools.min.js?ver=5.2.6'></script>
+  <script type='text/javascript' src='js/lib/jquery.themepunch.revolution.min.js?ver=5.2.6'></script>
+  <!-- JS End -->
+</head>
+<body>
+  <!-- // Login popup Strat -->
+  <div class="modal fade" id="pop-login" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <ul class="login-tabs">
+            <li class="active">Login</li>
+            <li>Register</li>
+          </ul>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-close">
+            </i>
+          </button>
+        </div>
+        <div class="modal-body login-block">
+          <div class="tab-content">
+            <div class="tab-pane fade in active">
+              <div id="houzez_messages" class="houzez_messages message">
+              </div>
+              <form>
+                <div class="form-group field-group">
+                  <div class="input-user input-icon">
+                    <input id="login_username" name="username" placeholder="Username" type="text" />
+                  </div>
+                  <div class="input-pass input-icon">
+                    <input id="password" name="password" placeholder="Password" type="password" />
+                  </div>
+                </div>
+                <div class="forget-block clearfix">
+                  <div class="form-group pull-left">
+                    <div class="checkbox">
+                      <label>
+                        <input name="remember" id="remember" type="checkbox">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group pull-right">
+                    <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#pop-reset-pass">Lost your password?
+                    </a>
+                  </div>
+                </div>
+                <input type="hidden" id="houzez_login_security" name="houzez_login_security" value="2de8d1e5a3" />
+                <input type="hidden" name="_wp_http_referer" value="/simple-listing-list-view/" />
+                <input type="hidden" name="action" id="login_action" value="houzez_login">
+                <button type="submit" class="fave-login-button btn btn-primary btn-block">Login
+                </button>
+              </form>
+              <hr>
+              <button class="facebook-login btn btn-social btn-bg-facebook btn-block">
+                <i class="fa fa-facebook">
+                </i> login with facebook
+              </button>
+              <button class="google-login btn btn-social btn-bg-google-plus btn-block">
+                <i class="fa fa-google-plus">
+                </i> login with google
+              </button>
+            </div>
+            <div class="tab-pane fade">
+              <form>
+                <div class="form-group field-group">
+                  <div class="input-user input-icon">
+                    <input name="Name" placeholder="Name" type="text" />
+                  </div>
+                  <div class="input-email input-icon">
+                    <input name="Email" placeholder="Email" type="text" />
+                  </div>
+                  <div class="input-user input-icon">
+                    <input name="Mobil" placeholder="Mobil No" type="text" />
+                  </div>
+                  <div class="input-pass input-icon">
+                    <input name="password" placeholder="Password" type="password" />
+                  </div>
+                  <div class="input-pass input-icon">
+                    <input name="password" placeholder="Confirm Password" type="password" />
+                  </div>
+                </div>
+                <div class="forget-block clearfix">
+                  <div class="form-group pull-left">
+                    <div class="checkbox">
+                      <label>
+                        <input name="remember" id="remember" type="checkbox">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <input type="hidden" id="houzez_login_security" name="houzez_login_security" value="2de8d1e5a3" />
+                <input type="hidden" name="_wp_http_referer" value="/simple-listing-list-view/" />
+                <input type="hidden" name="action" id="login_action" value="houzez_login">
+                <button type="submit" class="fave-login-button btn btn-primary btn-block">Login
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // Login popup End -->
+  <!-- // popup reset start -->
+  <div class="modal fade" id="pop-reset-pass" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <ul class="login-tabs">
+            <li class="active">Reset Password
+            </li>
+          </ul>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-close">
+            </i>
+          </button>
+        </div>
+        <div class="modal-body login-block">
+          <p>Please enter your username or email address. You will receive a link to create a new password via email.
+          </p>
+          <div id="houzez_msg_reset" class="message">
+          </div>
+          <form>
+            <div class="form-group">
+              <div class="input-user input-icon">
+                <input name="user_login_forgot" id="user_login_forgot" placeholder="Enter your username or email" class="form-control">
+              </div>
+            </div>
+            <input type="hidden" id="fave_resetpassword_security" name="fave_resetpassword_security" value="76b9d91536" />
+            <input type="hidden" name="_wp_http_referer" value="/simple-listing-list-view/" />
+            <button type="button" id="houzez_forgetpass" class="btn btn-primary btn-block">Get new password
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // popup reset end -->
+  <!-- // city popup Start -->
+  <div class="modal fade" id="citypopup" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content citypop-container">
+        <div class="col-xs-7 left-property">
+          <h1>Select your City</h1>
+          <div class="col-xs-12 nopadding">
+            <form method="get" action="search" class="form-inline">
+                <div class="form-group col-xs-12 city-search-list">
+                  <label for="">Search from over 1500 cities </label>
+                    <div class="search input-search input-icon col-xs-12 nopadding">
+                        <input data-autosuggest type="text" class="form-control ui-autocomplete-input" placeholder="Property" autocomplete="off">
+                    </div>
+                </div>
+            </form>
+          </div>
+          <div class="col-xs-12 nopadding popular">
+            <h6>POPULAR CITIES</h6>
+            <ul>
+              <li><a href="#">Chennai</a></li>
+              <li><a href="#">Bangalore</a></li>
+              <li><a href="#">Mumbai</a></li>
+              <li><a href="#">Chennai</a></li>
+              <li><a href="#">Bangalore</a></li>
+              <li><a href="#">Mumbai</a></li>
+              <li><a href="#">Chennai</a></li>
+              <li><a href="#">Bangalore</a></li>
+              <li><a href="#">Mumbai</a></li>
+              <li><a href="#">Mumbai</a></li>
+            </ul>
+            <ul data-botom>
+              <li><a href="#">Chennai</a></li>
+              <li><a href="#">Bangalore</a></li>
+              <li><a href="#">Mumbai</a></li>
+              <li><a href="#">Chennai</a></li>
+              <li><a href="#">Bangalore</a></li>
+              <li><a href="#">Mumbai</a></li>
+              <li><a href="#">Chennai</a></li>
+              <li><a href="#">Bangalore</a></li>
+              <li><a href="#">Mumbai</a></li>
+              <li><a href="#">Mumbai</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-5 right-property">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
+          <h3>Why India Property ?</h3>
+          <div class="row">
+            <div class="col-xs-12 nopadding">
+              <ul class="list-unstyled why-ip-list selcity">
+                <li class="font-whit bg1"><i class="icon-building rounded"></i><div class="overflow-hidden"><h5 class="no-margin text-uppercase">End-to-end</h5><p class="no-margin">From identifying the right property, making a buying decision to home loans, we are here to help you in every step of the way</p></div></li>
+                <li class="font-whit bg2"><i class="icon-champ rounded"></i><div class="overflow-hidden"><h5 class="no-margin text-uppercase">Experts</h5><p class="no-margin">Get expert assistance and advice to make the right property investment</p></div></li>
+                <li class="font-whit selcity1 bg3"><i class="icon-like rounded"></i><div class="overflow-hidden"><h5 class="no-margin text-uppercase">Extensive</h5><p class="no-margin"> 'We Get You Home' FASTER with close to a million properties to choose from</p></div></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // city popup end -->
+  <!-- // contact ajent Start -->
+  <div class="modal fade" id="contactAjent" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <ul class="login-tabs">
+            <li class="active">Contact Agent</li>
+          </ul>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-close"></i>
+          </button>
+        </div>
+        <div class="modal-body login-block">
+          <div class="tab-content">
+            <div class="tab-pane fade in active">
+              <div class="forget-block clearfix">
+                <form>
+                <div class="form-group pull-left">
+                  <div class="checkbox">
+                    <label>
+                      <input name="remember" id="Individual" type="checkbox">Individual
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group pull-right">
+                  <div class="checkbox">
+                    <label>
+                      <input name="remember" id="Broker" type="checkbox">Broker
+                    </label>
+                  </div>
+                </div>
+              </div>
+                <div class="form-group field-group">
+                  <div class="input-user input-icon">
+                    <input  name="name" placeholder="Name" type="text" />
+                  </div>
+                  <div class="input-pass input-icon">
+                    <input name="Mobile" placeholder="Mobile No" type="text" />
+                  </div>
+                  <div class="input-pass input-icon">
+                    <input name="Email" placeholder="Email" type="text" />
+                  </div>
+                  <div class="input-pass text-area">
+                    <textarea name="message" rows="4" placeholder="Message">I am interested in this property and would like to know more about this property.</textarea>
+                  </div>
+                </div>
+                <div class="forget-block clearfix">
+                  <div class="form-group pull-left">
+                    <div class="checkbox">
+                      <label>
+                        <input name="remember" type="checkbox"> I allow Hindustan Property & affiliates to contact me.
+                      </label>
+                      <label>
+                        <input name="remember" type="checkbox"> Interested in Home Loan?
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group pull-left">
+                    By clicking you agree to
+                    <a href="#">Terms and condition.</a>
+                  </div>
+                </div>
+                <button type="submit" class="fave-login-button btn btn-primary btn-block">Contact</button>
+              </form>
+              <hr>
+            </div>
+            <div class="tab-pane fade">
+              <form>
+                <div class="form-group field-group">
+                  <div class="input-user input-icon">
+                    <input name="Name" placeholder="Name" type="text" />
+                  </div>
+                  <div class="input-email input-icon">
+                    <input name="Email" placeholder="Email" type="text" />
+                  </div>
+                  <div class="input-user input-icon">
+                    <input name="Mobil" placeholder="Mobil No" type="text" />
+                  </div>
+                  <div class="input-pass input-icon">
+                    <input name="password" placeholder="Password" type="password" />
+                  </div>
+                  <div class="input-pass input-icon">
+                    <input name="password" placeholder="Confirm Password" type="password" />
+                  </div>
+                </div>
+                <div class="forget-block clearfix">
+                  <div class="form-group pull-left">
+                    <div class="checkbox">
+                      <label>
+                        <input name="remember" id="remember" type="checkbox">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <input type="hidden" id="houzez_login_security" name="houzez_login_security" value="2de8d1e5a3" />
+                <input type="hidden" name="_wp_http_referer" value="/simple-listing-list-view/" />
+                <input type="hidden" name="action" id="login_action" value="houzez_login">
+                <button type="submit" class="fave-login-button btn btn-primary btn-block">Login
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // contact ajent end -->
+  <!-- // Emi start -->
+  <div class="modal fade" id="emi_calculater" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <ul class="login-tabs">
+            <li class="active">EMI Calculator</li>
+          </ul>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-close"></i>
+          </button>
+        </div>
+        <div class="modal-body login-block">
+          <form emi-form>
+            <div class="form-group">
+              <div class="col-xs-7 nopadding">
+                <div class="col-xs-4 nopadding">
+                  <label class="padding-0 fieldLebel">Property Cost</label>
+                </div>
+                <div class="col-xs-8">
+                  <span emi-amount>9,500,000</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-7 nopadding">
+                <div class="col-xs-4 nopadding">
+                  <label class="padding-0 fieldLebel">Loan Amount</label>
+                </div>
+                <div class="col-xs-8">
+                  <input type="text" class="form-field" placeholder="" >
+                </div>
+              </div>
+              <div class="col-xs-5 nopadding">
+                <div class="col-xs-7 nopadding">
+                  <label class="padding-0 fieldLebel">EMI Amount</label>
+                </div>
+                <div class="col-xs-5 nopadding">
+                  <span emi-amount>81,670</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-7 nopadding">
+                <div class="col-xs-4 nopadding">
+                  <label class="padding-0 fieldLebel">Tenure (yrs)</label>
+                </div>
+                <div class="col-xs-8">
+                  <input type="text" class="form-field" placeholder="" value="15" >
+                </div>
+              </div>
+              <div class="col-xs-5 nopadding">
+                <div class="col-xs-7 nopadding">
+                  <label class="padding-0 fieldLebel">Total Amount Paid</label>
+                </div>
+                <div class="col-xs-5 nopadding">
+                  <span emi-amount>14,700,598</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-7 nopadding">
+                <div class="col-xs-4 nopadding">
+                  <label class="padding-0 fieldLebel">Interest Rate</label>
+                </div>
+                <div class="col-xs-8">
+                  <input type="text" class="form-field" placeholder="" value="10" >
+                </div>
+              </div>
+              <div class="col-xs-5 nopadding">
+                <div class="col-xs-7 nopadding">
+                  <label class="padding-0 fieldLebel">Interest Paid</label>
+                </div>
+                <div class="col-xs-5 nopadding">
+                  <span emi-amount>7,100,598</span>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <button type="button" id="houzez_forgetpass" class="btn btn-primary btn-block">Calculate EMI</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // Emi end -->
+  <!-- // Affordability start -->
+  <div class="modal fade" id="Affordability" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <ul class="login-tabs">
+            <li class="active">Can I Afford This Property?</li>
+          </ul>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-close"></i>
+          </button>
+        </div>
+        <div class="modal-body login-block">
+          <form emi-form>
+            <div class="form-group">
+              <div class="col-xs-12 nopadding">
+                <div class="col-xs-4 nopadding">
+                  <label class="padding-0 fieldLebel">Net Monthly Income</label>
+                </div>
+                <div class="col-xs-8">
+                  <input type="text" class="form-field" placeholder="" >
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-12 nopadding">
+                <div class="col-xs-4 nopadding">
+                  <label class="padding-0 fieldLebel">Existing EMI<br><span style="font-size:11px;">(per month)</span></label>
+                </div>
+                <div class="col-xs-8">
+                  <input type="text" class="form-field" placeholder="" value="15" >
+                </div>
+              </div>
+            </div>
+            <hr>
+            <button type="button" id="houzez_forgetpass" class="btn btn-primary btn-block">Check Affordability</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // Affordability end -->
+  <!-- // Post Property Start -->
+  <div class="modal fade" id="postProperty" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <ul class="login-tabs">
+            <li class="active">Requirement</li>
+          </ul>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fa fa-close"></i>
+          </button>
+        </div>
+        <div class="modal-body requirement_block">
+          <form method="post" action="#">
+            <div class="form-group radio_button">
+              <div class="checkbox">
+                <label>
+                  <input name="remember" id="Individual" type="checkbox">Individual
+                </label>
+              </div>
+            </div>
+            <div class="form-group radio_button">
+              <div class="checkbox">
+                <label>
+                  <input name="remember" id="Broker" type="checkbox">Broker
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <select select-dropdown="">
+                <option value="cheese">Cheese</option>
+                <option value="tomatoes">Tomatoes</option>
+                <option value="mozarella">Mozzarella</option>
+                <option value="mushrooms">Mushrooms</option>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="onions">Onions</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input class="form-control" name="phone" type="text" placeholder="Phone">
+            </div>
+            <div class="form-group">
+              <select select-dropdown="">
+                <option value="cheese">Cheese</option>
+                <option value="tomatoes">Tomatoes</option>
+                <option value="mozarella">Mozzarella</option>
+                <option value="mushrooms">Mushrooms</option>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="onions">Onions</option>
+              </select>
+            </div>
+            <div class="form-group min-max">
+              <input class="form-control" name="" type="text" placeholder="Min">
+              <input class="form-control" name="" type="text" placeholder="Max">
+            </div>
+            <div class="form-group">
+              <input class="form-control" name="" type="text" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <input class="form-control" name="" type="text" placeholder="Mobile No">
+            </div>
+            <hr>
+            <button type="button" class="btn btn-primary btn-block">POST REQUIRMENT</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // Post Property end -->
+  <!--start section header-->
+  <header id="header-section" class="houzez-header-main header-section-4 not-splash-header nav-left hidden-sm hidden-xs" data-sticky="0">
+    <div class="container">
+      <div class="header-left col-xs-6 nopadding">
+        <div class="">
+          <a href="#">
+            <img src="http://www.hindustanproperty.com/images/logo.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="header-right col-xs-6 nopadding">
+        <div class="user">
+          <a href="javascript:void(0);" class="btn btn-default hidden-xs hidden-sm">Sell/Rent Property for Free</a>
+          <a href="javascript:void(0);" data-toggle="modal" data-target="#pop-login">
+            <i class="fa fa-user hidden-md hidden-lg"></i>
+            <span class="hidden-sm hidden-xs">Sign In / Register</span>
+          </a>
+          <a href="#" onclick="sidenav();"><i class="fa fa-navicon"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- // botom nav start -->
+    <div class="col-xs-12 bottom-nav nopadding">
+      <div class="container">
+        <div class="col-xs-7 col-sm-7 nopadding">
+          <ul data-botom-nav-left>
+            <li><a href="#" data-toggle="modal" data-target="#citypopup"><i class="fa fa-map-marker" aria-hidden="true"></i> Mumbai</a></li>
+            <li>Download Our Apps <span><i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-android" aria-hidden="true"></i></span></li>
+            <li><a href="#">7710048300</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-5 col-sm-5 nopadding">
+          <ul data-botom-nav-right>
+            <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i> </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- // botom nav end -->
+  </header>
+  <!--end section header-->
+  <!--start advanced search section-->
+  <div class="header-mobile houzez-header-mobile  visible-sm visible-xs"  data-sticky="0">
+    <div class="container">
+      <!--start mobile nav-->
+      <div class="mobile-nav">
+        <span class="nav-trigger">
+          <i class="fa fa-navicon"></i>
+        </span>
+        <div class="nav-dropdown main-nav-dropdown">
+        </div>
+      </div>
+      <!--end mobile nav-->
+      <div class="header-logo">
+        <a href="#">
+          <img src="http://www.hindustanproperty.com/images/logo.png" alt="">
+        </a>
+      </div>
+      <div class="header-user">
+        <div class="user">
+          <a href="#" data-toggle="modal" data-target="#pop-login">
+            <i class="fa fa-user hidden-md hidden-lg">
+            </i>
+            <span class="hidden-sm hidden-xs">Sign In / Register</span>
+          </a>
+          <a href="#" class="btn btn-default hidden-xs hidden-sm">Create Listing</a>
+          <!--<a href="#" data-toggle="modal" data-target="#pop-login"><i class="fa fa-user"></i> <span class="hidden-sm hidden-xs"></span></a>-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--start advanced search section-->
+  <!-- // Advance Search start -->
+  <div class="advanced-search advance-search-header" data-sticky='1'>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="col-xs-2 nopadding">
+            <ul sticky-nav-left>
+              <li><a href="javascript:void(0);" data-toggle="modal" data-target="#citypopup"><i class="fa fa-map-marker" aria-hidden="true"></i> Mumbai</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-8 nopadding">
+            <form method="get" action="#">
+              <div class="form-group search-long">
+                <div class="prop-category">
+                  <a href="javascript:void(0);"><span data-dynamic>Rent</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <ul data-category-block>
+                    <li>Buy</li>
+                    <li>Rent</li>
+                    <li>Buy</li>
+                    <li>Rent</li>
+                  </ul>
+                </div>
+                <div class="search">
+                  <div class="input-search input-icon">
+                    <input data-autosuggest class="houzez_geocomplete form-control" type="text" value="" placeholder="Enter an address, town, street, zip or property ID">
+                  </div>
+                </div>
+                <div class="price-list">
+                  <a href="javascript:void(0);"><span>10 L - 20 L</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <ul>
+                    <li data-input>
+                      <input type="text" name="min-price" placeholder="min price" data="minprice">
+                      <input type="text" name="max-price" placeholder="max price" data="maxprice">
+                    </li>
+                    <li data-price-list-left style="display:block;" id="minprice">
+                      <ul>
+                        <li class="active">Any</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                      </ul>
+                    </li>
+                    <li data-price-list-right id="maxprice">
+                      <ul>
+                        <li>Any</li>
+                        <li class="active">20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                        <li>20 Lk</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="property-type">
+                  <a href="javascript:void(0);"><span data-featch>Saree Type</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <ul>
+                    <li>
+                      <ul all-check>
+                        <li >
+                          <label >
+                            <input allchecks type="checkbox" id="1">
+                            <label for="1"><span></span><span>All Saree</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="2">
+                            <label for="2"><span></span><span>Craftsvilla</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="3">
+                            <label for="3"><span></span><span>Craftsvilla</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="4">
+                            <label for="4"><span></span><span>Craftsvilla</span></label>
+                          </label>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" data-drop><i action><span></span><span></span></i><span>Dropdown</span></a>
+                      <ul data-brop-data>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="5">
+                            <label for="5"><span></span><span>Craftsvilla</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="6">
+                            <label for="6"><span></span><span>Craftsvilla</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="7">
+                            <label for="7"><span></span><span>Craftsvilla</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="8">
+                            <label for="8"><span></span><span>Craftsvilla</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="9">
+                            <label for="9"><span></span><span>Craftsvilla</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="10">
+                            <label for="10"><span></span><span>Craftsvilla</span></label>
+                          </label>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" data-drop><i action><span></span><span></span></i><span>Dropdown</span></a>
+                      <ul data-brop-data>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="11">
+                            <label for="11"><span></span><span>Craftsvilla</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="12">
+                            <label for="12"><span></span><span>Craftsvilla</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="13">
+                            <label for="13"><span></span><span>Craftsvilla</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="14">
+                            <label for="14"><span></span><span>Craftsvilla</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="15">
+                            <label for="15"><span></span><span>Craftsvilla</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="16">
+                            <label for="16"><span></span><span>Craftsvilla</span></label>
+                          </label>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="search-btn">
+                  <button class="btn hp-search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-xs-2 nopadding">
+            <ul sticky-nav-right>
+              <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i> </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // Advance Search End -->
+  <!-- // Top nav Start -->
+  <div class="col-xs-12 topNav">
+    <ul data-top-nav>
+      <li><a href="#">Home</a></li>
+      <li>
+        <a href="#">Property <span><i class="fa fa-angle-down"></i></span></a>
+        <ul>
+          <li><a href="#">Post Property </a></li>
+          <li><a href="#">Post Property </a></li>
+          <li><a href="#">Post Property </a></li>
+        </ul>
+      </li>
+      <li><a href="#">Home Finance</a></li>
+      <li>
+        <a href="#">Know Real Estate <span><i class="fa fa-angle-down"></i></span></a>
+        <ul>
+          <li><a href="#">Area Converter</a></li>
+          <li><a href="#">Property Agreement</a></li>
+          <li><a href="#">Property Documentation</a></li>
+          <li><a href="#">Stamp Duty</a></li>
+        </ul>
+      </li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+  </div>
+  <!-- // Top nav End -->
+<!-- // middle content start -->
+<div id="section-body" class="listingContainer detailsContainer">
+  <section>
+    <div class="nopadding top-section">
+      <div class="container">
+        <!-- // Breadcrumbs strat -->
+        <div class="page-title breadcrumb-top">
+            <div class="row">
+                <div class="col-sm-12">
+                    <ol class="breadcrumb">
+                        <li><a href="#">HindustanProperty</a></li>
+                        <li><a href="#">Mumbai</a></li>
+                        <li class="active">Mark Ventures Nautilus, Alibagh, Mumbai</li>
+                    </ol>
+                    <!-- // Top nav start -->
+                    <!-- // top nav end -->
+                </div>
+            </div>
+        </div>
+        <!-- // Breadcrumbs end -->
+      </div>
+    </div>
+    <div class="top-section nopadding">
+      <div class="container">
+        <div class="rent-property-title row">
+          <div class="col-sm-7 col-xs-12 clearfix">
+            <div class="clear"></div>
+            <div class="loction1" style="padding:0; width: 82px;">
+              <img style="width: 82px; height: 45px;" src="http://imgsj.ipstaticcnt.com/property-images/275/4215275/t_4215275_kExJu_6540.jpg">
+            </div>
+            <h1 class="mrgr10" style="margin-left:-3px;">Nautilus</h1>
+            <ul class="list-inline ip-badge clearfix">
+              <div class="vdh2">Apartment</div>
+            </ul>
+            <p style="padding-top:5px;">
+              <span class="rp-price"><span class="WebRupee txt18 fnt400">₹</span><span>17.62</span> L - <span>34.49</span> L </span>
+              <span class="rp-location vdh4 fnt400"> Alibagh </span>
+              <span class="rp-location vdh3 fnt400">EMI Starting: </span><span class="font-semi-bold color-green-l ip-tooltip pointer "><span class="WebRupee">₹</span> 13,182 </span>
+            </p>
+          </div>
+          <div class="col-sm-5 col-xs-12 text-right mrgt10">
+            <ul class="ip-notification">
+              <li><a href="#" class="shortlisttag"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+              <li><a href="#" class="vcontact"><i class="fa fa-phone" aria-hidden="true"></i> contact</a></li>
+              <li><a href="#" class="sharebutton"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+              <li><a href="#" class="flagbutton"><i class="fa fa-flag-o" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="top-section nopadding">
+      <div class="property-menu-wrap">
+        <div class="container" id="menu-center">
+          <ul class="property-menu">
+            <li><a class="target active" href="#overview">Overview</a></li>
+            <li><a class="target" href="#gallery">Gallery</a></li>
+            <li><a class="target" href="#amenities">Amenities</a></li>
+            <li><a class="target" href="#builder">About The Builder</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // text Start -->
+  <section class="hide"></section>
+  <!-- // Description start -->
+  <section>
+    <div class="container">
+      <div id="overview" class="property-overview">
+        <!-- // Entry Form Start -->
+        <div class="entryform_container">
+          <div class="entryform">
+            <div class="form_wrapper">
+              <div class="form-group">
+                <h3>Sorry, No property found for your search <span style="color:#00aeef;">Let us find the property for you</span><span>Get notified when properties matching your requirement are available</span></h3>
+              </div>
+              <!-- // -->
+              <div class="col-xs-12 location_search">
+                <div class="col-xs-12 nopadding"><span small>MUMBAI</span></div>
+                <div class="col-xs-6 nopadding">
+                  <input class="form-control" name="search" type="text" placeholder="Search">
+                </div>
+                <div class="col-xs-2 nopadding">
+                  <select select-dropdown>
+                      <option value="cheese">Cheese</option>
+                      <option value="tomatoes">Tomatoes</option>
+                      <option value="mozarella">Mozzarella</option>
+                      <option value="mushrooms">Mushrooms</option>
+                      <option value="pepperoni">Pepperoni</option>
+                      <option value="onions">Onions</option>
+                  </select>
+                </div>
+                <div class="col-xs-2 nopadding">
+                  <select select-dropdown>
+                      <option value="cheese">Cheese</option>
+                      <option value="tomatoes">Tomatoes</option>
+                      <option value="mozarella">Mozzarella</option>
+                      <option value="mushrooms">Mushrooms</option>
+                      <option value="pepperoni">Pepperoni</option>
+                      <option value="onions">Onions</option>
+                  </select>
+                </div>
+                <div class="col-xs-2 nopadding">
+                  <select select-dropdown>
+                      <option value="cheese">Cheese</option>
+                      <option value="tomatoes">Tomatoes</option>
+                      <option value="mozarella">Mozzarella</option>
+                      <option value="mushrooms">Mushrooms</option>
+                      <option value="pepperoni">Pepperoni</option>
+                      <option value="onions">Onions</option>
+                  </select>
+                </div>
+              </div>
+              <!-- // -->
+              <div class="col-xs-12 location_search">
+                <div class="col-xs-12 nopadding"><span small="center">CONTACT DETAILS</span></div>
+                <form method="post" action="#">
+                <div class="col-xs-5 nopadding">
+                  <input class="form-control" name="search" type="text" value="NAME">
+                </div>
+                <div class="col-xs-4 nopadding">
+                  <input class="form-control" name="search" type="text" value="EMAIL">
+                </div>
+                <div class="col-xs-1 nopadding">
+                  <select select-dropdown>
+                      <option value="cheese">+91</option>
+                      <option value="tomatoes">+91</option>
+                      <option value="mozarella">+91</option>
+                      <option value="mushrooms">+91</option>
+                      <option value="pepperoni">+91</option>
+                      <option value="onions">+91</option>
+                  </select>
+                </div>
+                <div class="col-xs-2 nopadding">
+                  <input class="form-control" name="search" type="text" value="MOBILE NUMBER">
+                </div>
+              </div>
+              <!-- // -->
+              <button class="get_notified btn btn-primary btn-block">GET NOTIFIED</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- // Entry Form End -->
+        <!-- // Listing start -->
+        <div class="property-listing list-view">
+          <div class="row">
+            <div class="col-xs-12 col-sm-3">
+              <div class="row">
+                <div class="item-wrap">
+                    <div class="property-item-box">
+                        <!-- SLIDER -->
+                        <div class="widget-body">
+                          <div class="property-widget-slider slide-animated">
+                            <div>
+                              <div class="figure-block">
+                                <figure class="item-thumb">
+                                  <a href="#" class="hover-effect">
+                                    <img width="385" height="258" src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg" class="attachment-houzez-property-thumb-image size-houzez-property-thumb-image wp-post-image" alt="chicago-06" srcset="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg 385w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-300x202.jpg 300w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-768x516.jpg 768w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-1024x688.jpg 1024w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-150x101.jpg 150w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-350x235.jpg 350w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06.jpg 1170w" sizes="(max-width: 385px) 100vw, 385px">
+                                  </a>
+                                </figure>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="figure-block">
+                                <figure class="item-thumb">
+                                  <a href="#" class="hover-effect">
+                                    <img width="385" height="258" src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg" class="attachment-houzez-property-thumb-image size-houzez-property-thumb-image wp-post-image" alt="chicago-06" srcset="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg 385w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-300x202.jpg 300w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-768x516.jpg 768w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-1024x688.jpg 1024w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-150x101.jpg 150w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-350x235.jpg 350w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06.jpg 1170w" sizes="(max-width: 385px) 100vw, 385px">
+                                  </a>
+                                </figure>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="figure-block">
+                                <figure class="item-thumb">
+                                  <a href="#" class="hover-effect">
+                                    <img width="385" height="258" src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg" class="attachment-houzez-property-thumb-image size-houzez-property-thumb-image wp-post-image" alt="chicago-06" srcset="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg 385w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-300x202.jpg 300w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-768x516.jpg 768w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-1024x688.jpg 1024w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-150x101.jpg 150w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-350x235.jpg 350w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06.jpg 1170w" sizes="(max-width: 385px) 100vw, 385px">
+                                  </a>
+                                </figure>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- // slider End -->
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-9 details-gutter">
+              <div class="row">
+                <div class="item-wrap ">
+                    <div class="property-item table-list">
+                        <div class="item-body table-cell">
+                            <div class="body-left table-cell">
+                              <div class="info-row">
+                                <h2><a href="#">Luxury family home</a></h2>
+                                <h4>S Western Ave</h4> </div>
+                                <div class="info-row amenities hide-on-grid">
+                                    <p><span>Beds: 4</span><span>Baths: 2</span><span>Sq Ft: 1200</span></p>
+                                    <p>Single Family Home</p>
+                                </div>
+                                <div class="info-row date hide-on-grid amenityContainer">
+                                    <p><i class="amenity-icon icon icon-lift"></i></p>
+                                    <p><i class="amenity-icon icon icon-kids-play-area"></i></p>
+                                    <p><i class="amenity-icon icon icon-np-earthquake"></i></p>
+                                    <p><i class="amenity-icon icon icon-np-firefight"></i></p>
+                                    <p><i class="amenity-icon icon icon-security"></i></p>
+                                </div>
+                                <div class="info-row date hide-on-grid">
+                                    <p>Green home villas 88 kilometers away from the hustle and bustle of city life replete with the monotonous humdrum of endless traffic and concrete jungles, escape into the peaceful and calming environs of endless greenery, into your dream weekend home at the green home villas into your dream weekend home at the green home villas into your dream weekend home at the green home villas into your dream weekend home at the green home villas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- // Listing end -->
+      </div>
+    </div>
+  </section>
+  <!-- // Description end -->
+  <!-- // Gallery start -->
+  <section>
+    <div class="container">
+      <div id="gallery" class="property-Gallery">
+        <div id="carousel-module-4" class="col-xs-12 agent-slider houzez-module caption-bottom carousel-module">
+          <div class="col-xs-12 nopadding">
+            <h2 headding> Gallery</h2>
+          </div>
+          <div class="col-xs-12 nopadding">
+            <button class="leftArrow btn-prev-e9ukE"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+            <button class="rightArrow btn-next-e9ukE"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+            <div id="properties-carousel-v1-e9ukE"data-token="e9ukE" class="carousel slide-animated">
+              <!-- // -->
+              <div class="figure-block">
+                <figure class="item-thumb">
+                  <a href="#" class="hover-effect">
+                    <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                  </a>
+                </figure>
+              </div>
+              <!-- // -->
+              <!-- // -->
+              <div class="figure-block">
+                <figure class="item-thumb">
+                  <a href="#" class="hover-effect">
+                    <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                  </a>
+                </figure>
+              </div>
+              <!-- // -->
+              <!-- // -->
+              <div class="figure-block">
+                <figure class="item-thumb">
+                  <a href="#" class="hover-effect">
+                    <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                  </a>
+                </figure>
+              </div>
+              <!-- // -->
+              <!-- // -->
+              <div class="figure-block">
+                <figure class="item-thumb">
+                  <a href="#" class="hover-effect">
+                    <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                  </a>
+                </figure>
+              </div>
+              <!-- // -->
+              <!-- // -->
+              <div class="figure-block">
+                <figure class="item-thumb">
+                  <a href="#" class="hover-effect">
+                    <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                  </a>
+                </figure>
+              </div>
+              <!-- // -->
+              <!-- // -->
+              <div class="figure-block">
+                <figure class="item-thumb">
+                  <a href="#" class="hover-effect">
+                    <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                  </a>
+                </figure>
+              </div>
+              <!-- // -->
+              <!-- // -->
+              <div class="figure-block">
+                <figure class="item-thumb">
+                  <a href="#" class="hover-effect">
+                    <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                  </a>
+                </figure>
+              </div>
+              <!-- // -->
+              <!-- // -->
+              <div class="figure-block">
+                <figure class="item-thumb">
+                  <a href="#" class="hover-effect">
+                    <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                  </a>
+                </figure>
+              </div>
+              <!-- // -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // Gallery end -->
+  <!-- // Aminities start -->
+  <section>
+    <div class="container">
+      <div id="amenities">
+        <div class="col-xs-12 nopadding">
+          <h2 headding> Amenities</h2>
+        </div>
+        <div class="aminity-features detail-block">
+          <ul class="list-three-col list-features">
+            <li><a href="http://houzez01.favethemes.com/feature/air-conditioning/"><i class="fa fa-check"></i>Air Conditioning</a>
+            </li>
+            <li><a href="http://houzez01.favethemes.com/feature/barbeque/"><i class="fa fa-check"></i>Barbeque</a>
+            </li>
+            <li><a href="http://houzez01.favethemes.com/feature/dryer/"><i class="fa fa-check"></i>Dryer</a>
+            </li>
+            <li><a href="http://houzez01.favethemes.com/feature/gym/"><i class="fa fa-check"></i>Gym</a>
+            </li>
+            <li><a href="http://houzez01.favethemes.com/feature/laundry/"><i class="fa fa-check"></i>Laundry</a>
+            </li>
+            <li><a href="http://houzez01.favethemes.com/feature/lawn/"><i class="fa fa-check"></i>Lawn</a>
+            </li>
+            <li><a href="http://houzez01.favethemes.com/feature/microwave/"><i class="fa fa-check"></i>Microwave</a>
+            </li>
+            <li><a href="http://houzez01.favethemes.com/feature/outdoor-shower/"><i class="fa fa-check"></i>Outdoor Shower</a>
+            </li>
+            <li><a href="http://houzez01.favethemes.com/feature/refrigerator/"><i class="fa fa-check"></i>Refrigerator</a>
+            </li>
+            <li><a href="http://houzez01.favethemes.com/feature/sauna/"><i class="fa fa-check"></i>Sauna</a>
+            </li>
+            <li><a href="http://houzez01.favethemes.com/feature/swimming-pool/"><i class="fa fa-check"></i>Swimming Pool</a>
+            </li>
+            <li><a href="http://houzez01.favethemes.com/feature/tv-cable/"><i class="fa fa-check"></i>TV Cable</a>
+            </li>
+            <li><a href="http://houzez01.favethemes.com/feature/washer/"><i class="fa fa-check"></i>Washer</a>
+            </li>
+            <li><a href="http://houzez01.favethemes.com/feature/wifi/"><i class="fa fa-check"></i>WiFi</a>
+            </li>
+            <li><a href="http://houzez01.favethemes.com/feature/window-coverings/"><i class="fa fa-check"></i>Window Coverings</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // Aminities end -->
+  <!-- // Contact start -->
+  <section>
+    <div class="container">
+      <div id="builder">
+        <div class="col-xs-12 nopadding">
+          <h2 headding> About The Builder</h2>
+        </div>
+        <div class="detail-contact detail-block" style="float:left; width:100%;">
+          <div class="media agent-media">
+            <div class="media-left">
+              <a href="http://houzez01.favethemes.com/agent/brittany-watkins/">
+                <img src="http://houzez01.favethemes.com/wp-content/uploads/2016/02/agent-2-150x150.jpg" alt="Brittany Watkins" width="75" height="75">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">CONTACT AGENT</h4>
+              <ul>
+                <li><i class="fa fa-user"></i> Brittany Watkins</li>
+                <li>
+
+                  <span><i class="fa fa-mobile"></i> 321 456 9874</span>
+
+
+                </li>
+                <li>
+                  <span><a class="btn-facebook" target="_blank" href="#"><i class="fa fa-facebook-square"></i> <span>Facebook</span>
+                  </a>
+                  </span>
+
+                  <span><a class="btn-twitter" target="_blank" href="#"><i class="fa fa-twitter-square"></i> <span>Twitter</span>
+                  </a>
+                  </span>
+
+                  <span><a class="btn-linkedin" target="_blank" href="#"><i class="fa fa-linkedin-square"></i> <span>Linkedin</span>
+                  </a>
+                  </span>
+
+                  <span><a class="btn-google-plus" target="_blank" href="#"><i class="fa fa-google-plus-square"></i> <span>Google Plus</span>
+                  </a>
+                  </span>
+
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="detail-title-inner">
+            <h4 class="title-inner">Inquire about this property</h4>
+          </div>
+          <form method="post" action="#">
+            <input type="hidden" name="target_email" value="brittany@houzez.com">
+            <input type="hidden" name="agent_contact_form_ajax" value="8fb4c53a80">
+            <input type="hidden" name="property_permalink" value="http://houzez01.favethemes.com/property/luxury-apartment-bay-view/">
+            <input type="hidden" name="property_title" value="Luxury apartment bay view">
+            <input type="hidden" name="action" value="houzez_agent_send_message">
+
+            <div class="row">
+              <div class="col-sm-4 col-xs-12">
+                <div class="form-group">
+                  <input class="form-control" name="name" placeholder="Your Name" type="text">
+                </div>
+              </div>
+              <div class="col-sm-4 col-xs-12">
+                <div class="form-group">
+                  <input class="form-control" name="phone" placeholder="Phone" type="text">
+                </div>
+              </div>
+              <div class="col-sm-4 col-xs-12">
+                <div class="form-group">
+                  <input class="form-control" name="email" placeholder="Email" type="email">
+                </div>
+              </div>
+              <div class="col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message">Hello, I'm interested in [Luxury apartment bay view]</textarea>
+                </div>
+              </div>
+            </div>
+            <button class="agent_contact_form btn btn-orange">Request info</button>
+            <div class="form_messages"></div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // Contact end -->
+  <section>
+    <div class="container text-container">
+      <div class="error-404-page text-center">
+        <h1>Property in Mumbai : an overview</h1>
+        <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud text link exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate...</p>
+        <div read-data style="display:none">
+          <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud text link exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate...</p>
+          <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud text link exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate...</p>
+          <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud text link exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate...</p>
+        </div>
+        <a  read-more class="btn btn-link" href="javascript:void("0");">Read more.</a>
+      </div>
+    </div>
+  </section>
+  <!-- // text end -->
+</div>
+<!-- // middle content end -->
+<!--start footer section-->
+<footer id="footer-section">
+  <div class="footer footer-v2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div id="houzez_about_widget-3" class="footer-widget widget-about">
+            <div class="widget-top">
+              <h3 class="widget-title">About Site</h3>
+            </div>
+            <div class="widget-body">
+              <p>HindustanProperty theme for real estate where modern aesthetics are combined with tasteful simplicity.
+              </p>
+              <p class="read">
+                <a href="#">Read more
+                  <i class="fa fa-caret-right">
+                  </i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div id="houzez_contact-5" class="footer-widget widget-contact">
+            <div class="widget-top">
+              <h3 class="widget-title">Contact Us
+              </h3>
+            </div>
+            <div class="widget-body">
+              <p>
+              </p>
+              <ul class="list-unstyled">
+                <li>
+                  <i class="fa fa-location-arrow">
+                  </i> 774 NE 84th St Miami, FL 33879
+                </li>
+                <li>
+                  <i class="fa fa-phone">
+                  </i> Call us FREE +1 (800) 990 8877
+                </li>
+                <li>
+                  <i class="fa fa-envelope-o">
+                  </i>
+                  <a href="mailt:email@email.com">email@email.com
+                  </a>
+                </li>
+              </ul>
+              <p class="read">
+                <a href="http://houzez01.favethemes.com/contact/">Contact us
+                  <i class="fa fa-caret-right">
+                  </i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div id="mc4wp_form_widget-2" class="footer-widget widget_mc4wp_form_widget">
+            <div class="widget-top">
+              <h3 class="widget-title">Newsletter Subscribe
+              </h3>
+            </div>
+            <script type="text/javascript">(function() {
+                if (!window.mc4wp) {
+                  window.mc4wp = {
+                    listeners: [],
+                    forms    : {
+                      on: function (event, callback) {
+                        window.mc4wp.listeners.push({
+                          event   : event,
+                          callback: callback
+                        }
+                                                   );
+                      }
+                    }
+                  }
+                }
+              }
+                                           )();
+            </script>
+            <!-- MailChimp for WordPress v3.1.11 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
+            <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-1251" method="post" data-id="1251" data-name="Footer Form" >
+              <div class="mc4wp-form-fields">
+                <div class="table-list">
+                  <div class="form-group table-cell">
+                    <div class="input-email input-icon">
+                      <input class="form-control" type="email" name="EMAIL" required placeholder="Enter your email">
+                    </div>
+                  </div>
+                  <div class="table-cell">
+                    <button type="submit" class="btn btn-primary">Submit
+                    </button>
+                  </div>
+                </div>
+                <p>Houzez is a premium WordPress theme for real estate agents.
+                  <br>Don’t forget to fullow us on:
+                </p>
+                <ul class="social">
+                  <li>
+                    <a href="#" class="btn-facebook">
+                      <i class="fa fa-facebook-square">
+                      </i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn-twitter">
+                      <i class="fa fa-twitter-square">
+                      </i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn-google-plus">
+                      <i class="fa fa-google-plus-square">
+                      </i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn-linkedin">
+                      <i class="fa fa-linkedin-square">
+                      </i>
+                    </a>
+                  </li>
+                </ul>
+                <div style="display: none;">
+                  <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" />
+                </div>
+                <input type="hidden" name="_mc4wp_timestamp" value="1472490866" />
+                <input type="hidden" name="_mc4wp_form_id" value="1251" />
+                <input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" />
+              </div>
+              <div class="mc4wp-response">
+              </div>
+            </form>
+            <!-- / MailChimp for WordPress Plugin -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-3">
+          <div class="footer-col">
+            <p>HP - All rights reserved
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="footer-col">
+            <div class="navi">
+              <ul id="footer-menu" class="">
+                <li id="menu-item-750" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-750">
+                  <a href="http://houzez01.favethemes.com/privacy/">Privacy
+                  </a>
+                </li>
+                <li id="menu-item-751" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-751">
+                  <a href="http://houzez01.favethemes.com/terms-and-conditions/">Terms and Conditions
+                  </a>
+                </li>
+                <li id="menu-item-1181" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1181">
+                  <a href="http://houzez01.favethemes.com/contact/">Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3">
+          <div class="footer-col foot-social">
+            <p>
+              Follow us
+              <a target="_blank" href="https://facebook.com/Favethemes">
+                <i class="fa fa-facebook-square">
+                </i>
+              </a>
+              <a target="_blank" href="https://twitter.com/favethemes">
+                <i class="fa fa-twitter-square">
+                </i>
+              </a>
+              <a target="_blank" href="http://linkedin.com">
+                <i class="fa fa-linkedin-square">
+                </i>
+              </a>
+              <a target="_blank" href="http://google.com">
+                <i class="fa fa-google-plus-square">
+                </i>
+              </a>
+              <a target="_blank" href="http://instagram.com">
+                <i class="fa fa-instagram">
+                </i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--end footer section-->
+<!-- // Page Up Arrow Start -->
+<div data-top="false">
+  <i class="fa fa-angle-up" aria-hidden="true"></i>
+</div>
+<!-- // Page Up Arrow End -->
+<!-- // Right Sticky Start -->
+<div right-sticky>
+  <ul>
+    <li>
+      <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#postProperty">
+        <span postProperty><i class="fa fa-user"></i> <span>Book My Requirement</span></span>
+      </a>
+    </li>
+    <li>
+      <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#postProperty">
+        <span data-online><i class="fa fa-comments-o" aria-hidden="true"></i> <span>online</span></span>
+      </a>
+    </li>
+    <li>
+      <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#postProperty">
+        <span postProperty><i class="fa fa-calculator" aria-hidden="true"></i> <span>Emi Calculater</span></span>
+      </a>
+    </li>
+    <li>
+      <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#postProperty">
+        <span postProperty><i class="fa fa-phone-square" aria-hidden="true"></i> <span>Contact</span></span>
+      </a>
+    </li>
+  </ul>
+</div>
+<!-- // Right Sticky End -->
+<!-- // Javascript start -->
+<script type='text/javascript' src='js/lib/jquery.form.min.js'></script>
+<script type='text/javascript' src='js/lib/bootstrap.min.js?ver=3.3.5'></script>
+<script type='text/javascript' src='js/lib/slick.min.js?ver=1.6.0'></script>
+<script type='text/javascript' src='js/lib/jquery-ui.js?ver=1.11.4'></script>
+<script type='text/javascript' src='js/lib/jquery.nicescroll.js?ver=3.5.0'></script>
+<script type='text/javascript' src='js/lib/moment.js?ver=2.11.1'></script>
+<script type='text/javascript' src='js/lib/plugins.js?ver=1.3.0'></script>
+<script type='text/javascript' src='js/lib/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='js/lib/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='js/lib/position.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='js/lib/menu.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='js/lib/wp-a11y.min.js?ver=4.5.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var hindustan = {};
+var prop_carousel_4Igsq = {"slides_to_show":"1","slides_to_scroll":"1","slide_auto":"false","auto_speed":"3000","slide_dots":"true","slide_infinite":"true"};
+var prop_carousel_LM2cx = {"slides_to_show":"2","slides_to_scroll":"1","slide_auto":"false","auto_speed":"3000","slide_dots":"true","slide_infinite":"true"};
+var prop_carousel_NuXif = {"slides_to_show":"3","slides_to_scroll":"1","slide_auto":"false","auto_speed":"3000","slide_dots":"true","slide_infinite":"true"};
+var prop_carousel_jzIrA = {"slides_to_show":"4","slides_to_scroll":"1","slide_auto":"false","auto_speed":"3000","slide_dots":"true","slide_infinite":"true"};
+var prop_carousel_e9ukE = {"slides_to_show":"5","slides_to_scroll":"1","slide_auto":"true","auto_speed":"3000","slide_dots":"true","slide_infinite":"true"};
+var prop_carousel_e9ukE2 = {"slides_to_show":"5","slides_to_scroll":"1","slide_auto":"true","auto_speed":"3000","slide_dots":"false","slide_infinite":"true"};
+var prop_carousel_QyLtz = {"slides_to_show":"6","slides_to_scroll":"1","slide_auto":"false","auto_speed":"3000","slide_dots":"true","slide_infinite":"true"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='js/lib/property-carousels.js?ver=1.3.0'></script>
+<script type='text/javascript' src='js/lib/forms-api.min.js?ver=3.1.11'></script>
+<script type='text/javascript' src='js/custom.1.12.min.js?ver=1.3.0'></script>
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.8.0.min.js'></script>
+<script type='text/javascript' src='js/lib/jquery-ui.js?ver=1.11.4'></script>
+<script type='text/javascript' src='js/lib/bootstrap-multiselect.js?ver=1.11.4'></script>
+<script type='text/javascript' src='js/custom.1.8.min.js?ver=1.3.0'></script>
+<!--[if lte IE 9]>
+  <script type='text/javascript' src='http://houzez01.favethemes.com/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=3.1.11'></script>
+<![endif]-->
+<script type="text/javascript">
+(function() {
+  function addEventListener(element,event,handler) {
+    if(element.addEventListener) {
+      element.addEventListener(event,handler, false);
+    }
+    else if(element.attachEvent) {
+      element.attachEvent('on'+event,handler);
+    }
+  }
+})();
+</script>
+<!-- // Javascript end -->
+</body>
+</html>
