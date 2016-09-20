@@ -832,7 +832,7 @@
         <!-- // Breadcrumbs end -->
       </div>
     </div>
-    <div class="top-section nopadding">
+    <div class="top-section nopadding property-menu-wrap">
       <div class="container">
         <div class="rent-property-title row">
           <div class="col-sm-7 col-xs-12 clearfix">
@@ -860,14 +860,16 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="top-section nopadding">
-      <div class="property-menu-wrap">
+      <div class="property-menu-wrap-rap">
         <div class="container" id="menu-center">
           <ul class="property-menu">
             <li><a class="target active" href="#overview">Overview</a></li>
             <li><a class="target" href="#gallery">Gallery</a></li>
             <li><a class="target" href="#amenities">Amenities</a></li>
+            <li><a class="target" href="#Configurations">Configurations</a></li>
+            <li><a class="target" href="#Specifications">Specifications</a></li>
+            <li><a class="target" href="#Locality">Locality Info</a></li>
+            <li><a class="target" href="#Finance">Home Finance</a></li>
             <li><a class="target" href="#builder">About The Builder</a></li>
           </ul>
         </div>
@@ -881,7 +883,7 @@
     <div class="container">
       <div id="overview" class="property-overview">
         <!-- // Entry Form Start -->
-        <div class="entryform_container">
+        <div class="entryform_container hide">
           <div class="entryform">
             <div class="form_wrapper">
               <div class="form-group">
@@ -955,82 +957,87 @@
           </div>
         </div>
         <!-- // Entry Form End -->
-        <!-- // Listing start -->
-        <div class="property-listing list-view">
-          <div class="row">
-            <div class="col-xs-12 col-sm-3">
-              <div class="row">
-                <div class="item-wrap">
-                    <div class="property-item-box">
-                        <!-- SLIDER -->
-                        <div class="widget-body">
-                          <div class="property-widget-slider slide-animated">
-                            <div>
-                              <div class="figure-block">
-                                <figure class="item-thumb">
-                                  <a href="#" class="hover-effect">
-                                    <img width="385" height="258" src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg" class="attachment-houzez-property-thumb-image size-houzez-property-thumb-image wp-post-image" alt="chicago-06" srcset="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg 385w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-300x202.jpg 300w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-768x516.jpg 768w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-1024x688.jpg 1024w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-150x101.jpg 150w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-350x235.jpg 350w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06.jpg 1170w" sizes="(max-width: 385px) 100vw, 385px">
-                                  </a>
-                                </figure>
-                              </div>
-                            </div>
-                            <div>
-                              <div class="figure-block">
-                                <figure class="item-thumb">
-                                  <a href="#" class="hover-effect">
-                                    <img width="385" height="258" src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg" class="attachment-houzez-property-thumb-image size-houzez-property-thumb-image wp-post-image" alt="chicago-06" srcset="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg 385w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-300x202.jpg 300w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-768x516.jpg 768w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-1024x688.jpg 1024w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-150x101.jpg 150w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-350x235.jpg 350w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06.jpg 1170w" sizes="(max-width: 385px) 100vw, 385px">
-                                  </a>
-                                </figure>
-                              </div>
-                            </div>
-                            <div>
-                              <div class="figure-block">
-                                <figure class="item-thumb">
-                                  <a href="#" class="hover-effect">
-                                    <img width="385" height="258" src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg" class="attachment-houzez-property-thumb-image size-houzez-property-thumb-image wp-post-image" alt="chicago-06" srcset="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg 385w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-300x202.jpg 300w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-768x516.jpg 768w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-1024x688.jpg 1024w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-150x101.jpg 150w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-350x235.jpg 350w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06.jpg 1170w" sizes="(max-width: 385px) 100vw, 385px">
-                                  </a>
-                                </figure>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- // slider End -->
-                    </div>
+        <!-- // -->
+        <div class="row">
+          <div class="col-xs-12 overviewWrapper">
+            <div class="col-xs-12 boxModel">
+              <div class="col-xs-12 col-sm-3 boxleft">
+                <a href="#">
+                  <img src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg" alt="">
+                  <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
+                </a>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <span><i class="fa fa-columns" aria-hidden="true"></i></span>
+                      <span>Floor plans</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span><i class="fa fa-signal" aria-hidden="true"></i></span>
+                      <span>Virtual Tours</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                      <span>Location Map</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-sm-6 boxcenter">
+                <p description>Bagli Fortuna is an ongoing residential project developed by Baglihousing Pvt Ltd, located at Bommasandra, Electronic City. The project is equipped with quality products and offers 1BHK and 2BHK apartments designed with basic amenities. The unit options are thoughtfully designed to cater to the needs of the residents. Various facilities offered by the project make it an option worth considering....</p>
+                <div class="info-row">
+                  <!-- <p>
+                    <span><code>4</code><i class="amenity-icon icon icon-bedroom"></i></span>
+                    <span><code>2</code><i class="amenity-icon icon icon-shower"></i></span>
+                    <span><code>- <strong>Sq.Ft: 1200</strong></code></span>
+                  </p> -->
+                  <p><span>Beds: 4</span><span>Baths: 2</span><span>Sq Ft: 1200</span> <span><a href="#">View All</a></span></p>
                 </div>
               </div>
-            </div>
-            <div class="col-xs-12 col-sm-9 details-gutter">
-              <div class="row">
-                <div class="item-wrap ">
-                    <div class="property-item table-list">
-                        <div class="item-body table-cell">
-                            <div class="body-left table-cell">
-                              <div class="info-row">
-                                <h2><a href="#">Luxury family home</a></h2>
-                                <h4>S Western Ave</h4> </div>
-                                <div class="info-row amenities hide-on-grid">
-                                    <p><span>Beds: 4</span><span>Baths: 2</span><span>Sq Ft: 1200</span></p>
-                                    <p>Single Family Home</p>
-                                </div>
-                                <div class="info-row date hide-on-grid amenityContainer">
-                                    <p><i class="amenity-icon icon icon-lift"></i></p>
-                                    <p><i class="amenity-icon icon icon-kids-play-area"></i></p>
-                                    <p><i class="amenity-icon icon icon-np-earthquake"></i></p>
-                                    <p><i class="amenity-icon icon icon-np-firefight"></i></p>
-                                    <p><i class="amenity-icon icon icon-security"></i></p>
-                                </div>
-                                <div class="info-row date hide-on-grid">
-                                    <p>Green home villas 88 kilometers away from the hustle and bustle of city life replete with the monotonous humdrum of endless traffic and concrete jungles, escape into the peaceful and calming environs of endless greenery, into your dream weekend home at the green home villas into your dream weekend home at the green home villas into your dream weekend home at the green home villas into your dream weekend home at the green home villas.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              <div class="col-xs-12 col-sm-3 boxright">
+                <div class="info-row">
+                  <h2><span color>Project ID: PL4709285</span><span color>Last Updated: Sep 15, 2016</span></h2>
+                  <p class="mbot8"><i class="fa fa-map-marker" aria-hidden="true"></i> <strong color>Location</strong></p>
+                  <p>BAGLI FORTUNA</p>
+                  <p>Near D- Mart, Bommasandra flyover, Electronic City</p>
+                </div>
+                <div class="info-row">
+                  <p class="mbot8"><strong>STAGE OF COMPLETION</strong></p>
+                  <h2><span green>Under construction</span><span>Possession: Feb 2017</span></h2>
+                </div>
+                <div class="info-row" style="border: none;">
+                  <p class="mbot8"><strong>CONFIGURATIONS</strong></p>
+                  <div class="roww">
+                    <div class="col-xs-4"><strong>1</strong> BHK</div>
+                    <div class="col-xs-4"><strong>600</strong> Sq.ft</div>
+                    <div class="col-xs-4"><strong>&#8377;</strong> BHK</div>
+                  </div>
+                  <div class="roww">
+                    <div class="col-xs-4"><strong>1</strong> BHK</div>
+                    <div class="col-xs-4"><strong>600</strong> Sq.ft</div>
+                    <div class="col-xs-4"><strong>&#8377;</strong> BHK</div>
+                  </div>
+                  <div class="roww">
+                    <div class="col-xs-4"><strong>1</strong> BHK</div>
+                    <div class="col-xs-4"><strong>600</strong> Sq.ft</div>
+                    <div class="col-xs-4"><strong>&#8377;</strong> BHK</div>
+                  </div>
+                  <div class="roww">
+                    <div class="col-xs-4"><strong>1</strong> BHK</div>
+                    <div class="col-xs-4"><strong>600</strong> Sq.ft</div>
+                    <div class="col-xs-4"><strong>&#8377;</strong> BHK</div>
+                  </div>
+                  <p all><a href="#" class="pull-right">View all configurations</a></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- // Listing end -->
+        <!-- // -->
       </div>
     </div>
   </section>
@@ -1038,89 +1045,193 @@
   <!-- // Gallery start -->
   <section>
     <div class="container">
-      <div id="gallery" class="property-Gallery">
-        <div id="carousel-module-4" class="col-xs-12 agent-slider houzez-module caption-bottom carousel-module">
+      <div id="gallery" class="property-gallery">
+        <div class="col-xs-12 agent-slider houzez-module caption-bottom carousel-module detail-content-tabber locality-container">
           <div class="col-xs-12 nopadding">
             <h2 headding> Gallery</h2>
           </div>
-          <div class="col-xs-12 nopadding">
-            <button class="leftArrow btn-prev-e9ukE"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-            <button class="rightArrow btn-next-e9ukE"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
-            <div id="properties-carousel-v1-e9ukE"data-token="e9ukE" class="carousel slide-animated">
-              <!-- // -->
-              <div class="figure-block">
-                <figure class="item-thumb">
-                  <a href="#" class="hover-effect">
-                    <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
-                  </a>
-                </figure>
+          <!--start detail tabs-->
+          <ul class="detail-tabs">
+              <li class="active">PHOTOS</li>
+              <li>FLOOR PLANS</li>
+              <li>LOCATION MAP</li>
+              <li>LAYOUT PLAN</li>
+          </ul>
+          <!--end detail tabs-->
+          <!--start tab-content-->
+          <div class="tab-content">
+              <div class="tab-pane fade active in">
+                  <div id="description" class="property-description detail-block">
+                      <div class="alert alert-info">
+                        <div class="col-xs-12 nopadding">
+                          <button class="leftArrow btn-prev-e9ukE"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                          <button class="rightArrow btn-next-e9ukE"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                          <div id="properties-carousel-v1-e9ukE"data-token="e9ukE" class="carousel slide-animated">
+                            <!-- // -->
+                            <div class="figure-block">
+                              <figure class="item-thumb">
+                                <a rel="prettyPhoto[myGallery]" href="http://demo.weblizar.com/lightbox-slider-pro-demo/wp-content/uploads/sites/24/2014/08/balboa_park_reflecting_pool-wallpaper-1280x720.jpg" class="hover-effect">
+                                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                                </a>
+                              </figure>
+                              <figure class="item-thumb">
+                                <a rel="prettyPhoto[myGallery]" href="http://demo.weblizar.com/lightbox-slider-pro-demo/wp-content/uploads/sites/24/2014/08/balboa_park_reflecting_pool-wallpaper-1280x720.jpg" class="hover-effect">
+                                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                                </a>
+                              </figure>
+                            </div>
+                            <!-- // -->
+                            <!-- // -->
+                            <div class="figure-block">
+                              <figure class="item-thumb">
+                                <a href="#" class="hover-effect">
+                                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                                </a>
+                              </figure>
+                              <figure class="item-thumb">
+                                <a href="#" class="hover-effect">
+                                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                                </a>
+                              </figure>
+                            </div>
+                            <!-- // -->
+                            <!-- // -->
+                            <div class="figure-block">
+                              <figure class="item-thumb">
+                                <a href="#" class="hover-effect">
+                                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                                </a>
+                              </figure>
+                              <figure class="item-thumb">
+                                <a href="#" class="hover-effect">
+                                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                                </a>
+                              </figure>
+                            </div>
+                            <!-- // -->
+                            <!-- // -->
+                            <div class="figure-block">
+                              <figure class="item-thumb">
+                                <a href="#" class="hover-effect">
+                                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                                </a>
+                              </figure>
+                              <figure class="item-thumb">
+                                <a href="#" class="hover-effect">
+                                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                                </a>
+                              </figure>
+                            </div>
+                            <!-- // -->
+                            <!-- // -->
+                            <div class="figure-block">
+                              <figure class="item-thumb">
+                                <a href="#" class="hover-effect">
+                                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                                </a>
+                              </figure>
+                              <figure class="item-thumb">
+                                <a href="#" class="hover-effect">
+                                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                                </a>
+                              </figure>
+                            </div>
+                            <!-- // -->
+                            <!-- // -->
+                            <div class="figure-block">
+                              <figure class="item-thumb">
+                                <a href="#" class="hover-effect">
+                                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                                </a>
+                              </figure>
+                              <figure class="item-thumb">
+                                <a href="#" class="hover-effect">
+                                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                                </a>
+                              </figure>
+                            </div>
+                            <!-- // -->
+                            <!-- // -->
+                            <div class="figure-block">
+                              <figure class="item-thumb">
+                                <a href="#" class="hover-effect">
+                                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                                </a>
+                              </figure>
+                              <figure class="item-thumb">
+                                <a href="#" class="hover-effect">
+                                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                                </a>
+                              </figure>
+                            </div>
+                            <!-- // -->
+                            <!-- // -->
+                            <div class="figure-block">
+                              <figure class="item-thumb">
+                                <a href="#" class="hover-effect">
+                                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                                </a>
+                              </figure>
+                              <figure class="item-thumb">
+                                <a href="#" class="hover-effect">
+                                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                                </a>
+                              </figure>
+                            </div>
+                            <!-- // -->
+                          </div>
+                        </div>
+                      </div>
+                  </div>
               </div>
-              <!-- // -->
-              <!-- // -->
-              <div class="figure-block">
-                <figure class="item-thumb">
-                  <a href="#" class="hover-effect">
-                    <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
-                  </a>
-                </figure>
+              <div class="tab-pane fade">
+                <div id="floorPlans" class="property-description detail-block">
+                    <div class="alert alert-info">
+                      <div class="col-xs-12 nopadding">
+                        <div class="col-xs-4 imgBox">
+                          <a href="#">
+                            <img src="img/florplan.jpg" alt="">
+                          </a>
+                        </div>
+                        <div class="col-xs-4 imgBox">
+                          <a href="#">
+                            <img src="img/florplan.jpg" alt="">
+                          </a>
+                        </div>
+                        <div class="col-xs-4 imgBox">
+                          <a href="#">
+                            <img src="img/florplan.jpg" alt="">
+                          </a>
+                        </div>
+                        <div class="col-xs-4 imgBox">
+                          <a href="#">
+                            <img src="img/florplan.jpg" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
               </div>
-              <!-- // -->
-              <!-- // -->
-              <div class="figure-block">
-                <figure class="item-thumb">
-                  <a href="#" class="hover-effect">
-                    <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
-                  </a>
-                </figure>
+              <div class="tab-pane fade">
+                  <div id="detail" class="detail-list detail-block">
+                    <div class="alert alert-info">
+                      <div class="col-xs-12 nopadding text-center">
+                        <img src="img/map.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
               </div>
-              <!-- // -->
-              <!-- // -->
-              <div class="figure-block">
-                <figure class="item-thumb">
-                  <a href="#" class="hover-effect">
-                    <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
-                  </a>
-                </figure>
+              <div class="tab-pane fade">
+                  <div id="features" class="detail-features detail-block">
+                    <div class="alert alert-info">
+                      <div class="col-xs-12 nopadding text-center">
+                        <img src="img/PJ000311_layout_1.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
               </div>
-              <!-- // -->
-              <!-- // -->
-              <div class="figure-block">
-                <figure class="item-thumb">
-                  <a href="#" class="hover-effect">
-                    <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
-                  </a>
-                </figure>
-              </div>
-              <!-- // -->
-              <!-- // -->
-              <div class="figure-block">
-                <figure class="item-thumb">
-                  <a href="#" class="hover-effect">
-                    <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
-                  </a>
-                </figure>
-              </div>
-              <!-- // -->
-              <!-- // -->
-              <div class="figure-block">
-                <figure class="item-thumb">
-                  <a href="#" class="hover-effect">
-                    <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
-                  </a>
-                </figure>
-              </div>
-              <!-- // -->
-              <!-- // -->
-              <div class="figure-block">
-                <figure class="item-thumb">
-                  <a href="#" class="hover-effect">
-                    <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
-                  </a>
-                </figure>
-              </div>
-              <!-- // -->
-            </div>
           </div>
+          <!--end tab-content-->
         </div>
       </div>
     </div>
@@ -1135,42 +1246,100 @@
         </div>
         <div class="aminity-features detail-block">
           <ul class="list-three-col list-features">
-            <li><a href="http://houzez01.favethemes.com/feature/air-conditioning/"><i class="fa fa-check"></i>Air Conditioning</a>
-            </li>
-            <li><a href="http://houzez01.favethemes.com/feature/barbeque/"><i class="fa fa-check"></i>Barbeque</a>
-            </li>
-            <li><a href="http://houzez01.favethemes.com/feature/dryer/"><i class="fa fa-check"></i>Dryer</a>
-            </li>
-            <li><a href="http://houzez01.favethemes.com/feature/gym/"><i class="fa fa-check"></i>Gym</a>
-            </li>
-            <li><a href="http://houzez01.favethemes.com/feature/laundry/"><i class="fa fa-check"></i>Laundry</a>
-            </li>
-            <li><a href="http://houzez01.favethemes.com/feature/lawn/"><i class="fa fa-check"></i>Lawn</a>
-            </li>
-            <li><a href="http://houzez01.favethemes.com/feature/microwave/"><i class="fa fa-check"></i>Microwave</a>
-            </li>
-            <li><a href="http://houzez01.favethemes.com/feature/outdoor-shower/"><i class="fa fa-check"></i>Outdoor Shower</a>
-            </li>
-            <li><a href="http://houzez01.favethemes.com/feature/refrigerator/"><i class="fa fa-check"></i>Refrigerator</a>
-            </li>
-            <li><a href="http://houzez01.favethemes.com/feature/sauna/"><i class="fa fa-check"></i>Sauna</a>
-            </li>
-            <li><a href="http://houzez01.favethemes.com/feature/swimming-pool/"><i class="fa fa-check"></i>Swimming Pool</a>
-            </li>
-            <li><a href="http://houzez01.favethemes.com/feature/tv-cable/"><i class="fa fa-check"></i>TV Cable</a>
-            </li>
-            <li><a href="http://houzez01.favethemes.com/feature/washer/"><i class="fa fa-check"></i>Washer</a>
-            </li>
-            <li><a href="http://houzez01.favethemes.com/feature/wifi/"><i class="fa fa-check"></i>WiFi</a>
-            </li>
-            <li><a href="http://houzez01.favethemes.com/feature/window-coverings/"><i class="fa fa-check"></i>Window Coverings</a>
-            </li>
+            <li><a href="#"><i class="amenity-icon icon icon-lift"></i> <span>Lift</span></a></li>
+            <li><a href="#"><i class="amenity-icon icon icon-swimming"></i> <span>Swimming</span></a></li>
+            <li><a href="#"><i class="amenity-icon icon icon-lift"></i> <span>Lift</span></a></li>
+            <li><a href="#"><i class="amenity-icon icon icon-lift"></i> <span>Lift</span></a></li>
+            <li><a href="#"><i class="amenity-icon icon icon-lift"></i> <span>Lift</span></a></li>
+            <li><a href="#"><i class="amenity-icon icon icon-lift"></i> <span>Lift</span></a></li>
           </ul>
         </div>
       </div>
     </div>
   </section>
   <!-- // Aminities end -->
+  <!-- // Configurations start -->
+  <section>
+    <div class="container">
+      <div id="Configurations">
+        <div class="col-xs-12 nopadding">
+          <h2 headding> Configurations</h2>
+        </div>
+        <div class="aminity-features detail-block">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // Configurations end -->
+  <!-- // Specifications start -->
+  <section>
+    <div class="container">
+      <div id="Specifications">
+        <div class="col-xs-12 nopadding">
+          <h2 headding> Specifications</h2>
+          <ul class="ip-notification">
+            <li><a href="#" class="vcontact"><i class="fa fa-phone" aria-hidden="true"></i> contact</a></li>
+          </ul>
+        </div>
+        <div class="aminity-features detail-block">
+          <div class="col-xs-4">
+            <h4>Flooring</h4>
+            <p>Balcony: Imported Marble</p>
+            <p>Kitchen: Imported Marble</p>
+            <p>Living/Dining: Imported Marble</p>
+            <p>Master Bedroom: Imported Marble</p>
+            <p>Other Bedroom: Imported Marble</p>
+          </div>
+          <div class="col-xs-4">
+            <h4>Fitting</h4>
+            <p>Balcony: Imported Marble</p>
+            <p>Balcony: Imported Marble</p>
+            <p>Balcony: Imported Marble</p>
+            <p>Balcony: Imported Marble</p>
+            <p>Balcony: Imported Marble</p>
+          </div>
+          <div class="col-xs-4">
+            <h4>Flooring</h4>
+            <p>Balcony: Imported Marble</p>
+            <p>Kitchen: Imported Marble</p>
+            <p>Living/Dining: Imported Marble</p>
+            <p>Master Bedroom: Imported Marble</p>
+            <p>Other Bedroom: Imported Marble</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // Specifications end -->
+  <!-- // Locality start -->
+  <section>
+    <div class="container">
+      <div id="Locality">
+        <div class="col-xs-12 nopadding">
+          <h2 headding> Locality Info</h2>
+        </div>
+        <div class="aminity-features detail-block">
+          <div id="map" style="width:100%;height:400px;background:yellow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // Locality end -->
+  <!-- // Home Finance start -->
+  <section>
+    <div class="container">
+      <div id="Finance">
+        <div class="col-xs-12 nopadding">
+          <h2 headding> Home Finance</h2>
+        </div>
+        <div class="aminity-features detail-block">
+          <div style="width:100%;height:400px;background:#dedede"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // Home Finance end -->
   <!-- // Contact start -->
   <section>
     <div class="container">
@@ -1190,9 +1359,7 @@
               <ul>
                 <li><i class="fa fa-user"></i> Brittany Watkins</li>
                 <li>
-
                   <span><i class="fa fa-mobile"></i> 321 456 9874</span>
-
 
                 </li>
                 <li>
@@ -1524,7 +1691,7 @@ var hindustan = {};
 var prop_carousel_4Igsq = {"slides_to_show":"1","slides_to_scroll":"1","slide_auto":"false","auto_speed":"3000","slide_dots":"true","slide_infinite":"true"};
 var prop_carousel_LM2cx = {"slides_to_show":"2","slides_to_scroll":"1","slide_auto":"false","auto_speed":"3000","slide_dots":"true","slide_infinite":"true"};
 var prop_carousel_NuXif = {"slides_to_show":"3","slides_to_scroll":"1","slide_auto":"false","auto_speed":"3000","slide_dots":"true","slide_infinite":"true"};
-var prop_carousel_jzIrA = {"slides_to_show":"4","slides_to_scroll":"1","slide_auto":"false","auto_speed":"3000","slide_dots":"true","slide_infinite":"true"};
+var prop_carousel_jzIrA = {"slides_to_show":"1","slides_to_scroll":"1","slide_auto":"true","auto_speed":"3000","slide_dots":"false","slide_infinite":"true"};
 var prop_carousel_e9ukE = {"slides_to_show":"5","slides_to_scroll":"1","slide_auto":"true","auto_speed":"3000","slide_dots":"true","slide_infinite":"true"};
 var prop_carousel_e9ukE2 = {"slides_to_show":"5","slides_to_scroll":"1","slide_auto":"true","auto_speed":"3000","slide_dots":"false","slide_infinite":"true"};
 var prop_carousel_QyLtz = {"slides_to_show":"6","slides_to_scroll":"1","slide_auto":"false","auto_speed":"3000","slide_dots":"true","slide_infinite":"true"};
@@ -1553,5 +1720,29 @@ var prop_carousel_QyLtz = {"slides_to_show":"6","slides_to_scroll":"1","slide_au
 })();
 </script>
 <!-- // Javascript end -->
+<script type="text/javascript">
+  jQuery(function($) {
+    // Tap
+    featureService();
+    function featureService() {
+      var datDetailsId = $("[feature-service-details] > div")
+      var dataclick = $("[data-feature-service] > li")
+      dataclick.on("click", function(){
+        datDetailsId.removeClass("active");
+        var id = $(this).attr("data-route")
+        $(id).addClass("active");
+      });
+    }
+  });
+  //
+  function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 </body>
 </html>

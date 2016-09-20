@@ -11,6 +11,7 @@ console.log($.fn.jquery);
       trigger: "hover",
       html: true,
   });
+  $("a[rel^='prettyPhoto']").prettyPhoto();
   /* ------------------------------------------------------------------------ */
   /*  BODY LOAD
    /* ------------------------------------------------------------------------ */
@@ -371,6 +372,7 @@ console.log($.fn.jquery);
           var admin_nav = $('#wpadminbar').height() + 'px';
           //var ser = $(".banner-search-main").offset().top - 100;
           var ser = 500;
+          var sum = $("#header-section").height() + 10;
           //if( admin_nav == 'nullpx' ) { admin_nav = '0px'; }
           if (scroll >= ser ) {
               search.addClass("advanced-search-sticky");
@@ -383,6 +385,11 @@ console.log($.fn.jquery);
               $(".property-menu-wrap").removeClass("open");
               //search.removeAttr("style");
               //$('#section-body').css('padding-top',111);
+          }
+          if (scroll >= sum ) {
+              $(".property-menu-wrap").addClass("open");
+          } else {
+              $(".property-menu-wrap").removeClass("open");
           }
       });
   }
@@ -496,6 +503,7 @@ console.log($.fn.jquery);
           $(this).addClass('active');
           $('.detail-content-tabber .tab-pane').removeClass('active in');
           $('.detail-content-tabber .tab-pane').eq($(this).index()).addClass('active in');
+          console.log("checked");
       }
   });
 
@@ -1599,9 +1607,9 @@ function onScroll(event){
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-          // console.log("0");
-          //   $('#menu-center ul li a').removeClass("active");
-          //   currLink.addClass("active");
+          //console.log("0");
+            // $('#menu-center ul li a').removeClass("active");
+            // currLink.addClass("active");
         }
         else{
             //currLink.removeClass("active");

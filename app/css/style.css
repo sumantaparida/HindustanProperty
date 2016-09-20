@@ -10639,17 +10639,17 @@ div.pp_default .pp_bottom .pp_right {
 }
 
 div.pp_default .pp_top .pp_left {
-  background: url(../images/prettyPhoto/default/sprite.png) -78px -93px no-repeat;
+  background: url(../img/prettyPhoto/default/sprite.png) -78px -93px no-repeat;
 }
 
 /* Top left corner */
 div.pp_default .pp_top .pp_middle {
-  background: url(../images/prettyPhoto/default/sprite_x.png) top left repeat-x;
+  background: url(../img/prettyPhoto/default/sprite_x.png) top left repeat-x;
 }
 
 /* Top pattern/color */
 div.pp_default .pp_top .pp_right {
-  background: url(../images/prettyPhoto/default/sprite.png) -112px -93px no-repeat;
+  background: url(../img/prettyPhoto/default/sprite.png) -112px -93px no-repeat;
 }
 
 /* Top right corner */
@@ -10658,12 +10658,12 @@ div.pp_default .pp_content .ppt {
 }
 
 div.pp_default .pp_content_container .pp_left {
-  background: url(../images/prettyPhoto/default/sprite_y.png) -7px 0 repeat-y;
+  background: url(../img/prettyPhoto/default/sprite_y.png) -7px 0 repeat-y;
   padding-left: 13px;
 }
 
 div.pp_default .pp_content_container .pp_right {
-  background: url(../images/prettyPhoto/default/sprite_y.png) top right repeat-y;
+  background: url(../img/prettyPhoto/default/sprite_y.png) top right repeat-y;
   padding-right: 13px;
 }
 
@@ -10673,19 +10673,19 @@ div.pp_default .pp_content {
 
 /* Content background */
 div.pp_default .pp_next:hover {
-  background: url(../images/prettyPhoto/default/sprite_next.png) center right no-repeat;
+  background: url(../img/prettyPhoto/default/sprite_next.png) center right no-repeat;
   cursor: pointer;
 }
 
 /* Next button */
 div.pp_default .pp_previous:hover {
-  background: url(../images/prettyPhoto/default/sprite_prev.png) center left no-repeat;
+  background: url(../img/prettyPhoto/default/sprite_prev.png) center left no-repeat;
   cursor: pointer;
 }
 
 /* Previous button */
 div.pp_default .pp_expand {
-  background: url(../images/prettyPhoto/default/sprite.png) 0 -29px no-repeat;
+  background: url(../img/prettyPhoto/default/sprite.png) 0 -29px no-repeat;
   cursor: pointer;
   width: 28px;
   height: 28px;
@@ -10693,13 +10693,13 @@ div.pp_default .pp_expand {
 
 /* Expand button */
 div.pp_default .pp_expand:hover {
-  background: url(../images/prettyPhoto/default/sprite.png) 0 -56px no-repeat;
+  background: url(../img/prettyPhoto/default/sprite.png) 0 -56px no-repeat;
   cursor: pointer;
 }
 
 /* Expand button hover */
 div.pp_default .pp_contract {
-  background: url(../images/prettyPhoto/default/sprite.png) 0 -84px no-repeat;
+  background: url(../img/prettyPhoto/default/sprite.png) 0 -84px no-repeat;
   cursor: pointer;
   width: 28px;
   height: 28px;
@@ -10707,7 +10707,7 @@ div.pp_default .pp_contract {
 
 /* Contract button */
 div.pp_default .pp_contract:hover {
-  background: url(../images/prettyPhoto/default/sprite.png) 0 -113px no-repeat;
+  background: url(../img/prettyPhoto/default/sprite.png) 0 -113px no-repeat;
   cursor: pointer;
 }
 
@@ -10715,7 +10715,7 @@ div.pp_default .pp_contract:hover {
 div.pp_default .pp_close {
   width: 30px;
   height: 30px;
-  background: url(../images/prettyPhoto/default/sprite.png) 2px 1px no-repeat;
+  background: url(../img/prettyPhoto/default/sprite.png) 2px 1px no-repeat;
   cursor: pointer;
 }
 
@@ -10725,7 +10725,7 @@ div.pp_default #pp_full_res .pp_inline {
 }
 
 div.pp_default .pp_gallery ul li a {
-  background: url(../images/prettyPhoto/default/default_thumb.png) center center #f8f8f8;
+  background: url(../img/prettyPhoto/default/default_thumb.png) center center #f8f8f8;
   border: 1px solid #aaa;
 }
 
@@ -10746,7 +10746,7 @@ div.pp_default .pp_gallery a.pp_arrow_next {
 
 div.pp_default .pp_nav .pp_play,
 div.pp_default .pp_nav .pp_pause {
-  background: url(../images/prettyPhoto/default/sprite.png) -51px 1px no-repeat;
+  background: url(../img/prettyPhoto/default/sprite.png) -51px 1px no-repeat;
   height: 30px;
   width: 30px;
 }
@@ -10761,7 +10761,7 @@ div.pp_default .pp_details {
 
 div.pp_default a.pp_arrow_previous,
 div.pp_default a.pp_arrow_next {
-  background: url(../images/prettyPhoto/default/sprite.png) -31px -3px no-repeat;
+  background: url(../img/prettyPhoto/default/sprite.png) -31px -3px no-repeat;
   height: 20px;
   margin: 4px 0 0 0;
   width: 20px;
@@ -10809,22 +10809,22 @@ div.pp_default .pp_description {
 }
 
 div.pp_default .pp_bottom .pp_left {
-  background: url(../images/prettyPhoto/default/sprite.png) -78px -127px no-repeat;
+  background: url(../img/prettyPhoto/default/sprite.png) -78px -127px no-repeat;
 }
 
 /* Bottom left corner */
 div.pp_default .pp_bottom .pp_middle {
-  background: url(../images/prettyPhoto/default/sprite_x.png) bottom left repeat-x;
+  background: url(../img/prettyPhoto/default/sprite_x.png) bottom left repeat-x;
 }
 
 /* Bottom pattern/color */
 div.pp_default .pp_bottom .pp_right {
-  background: url(../images/prettyPhoto/default/sprite.png) -112px -127px no-repeat;
+  background: url(../img/prettyPhoto/default/sprite.png) -112px -127px no-repeat;
 }
 
 /* Bottom right corner */
 div.pp_default .pp_loaderIcon {
-  background: url(../images/prettyPhoto/default/loader.gif) center center no-repeat;
+  background: url(../img/prettyPhoto/default/loader.gif) center center no-repeat;
 }
 
 /* Loader icon */
@@ -10832,7 +10832,7 @@ div.pp_default .pp_loaderIcon {
 	Light Rounded Theme
 ----------------------------------- */
 div.light_rounded .pp_top .pp_left {
-  background: url(../images/prettyPhoto/light_rounded/sprite.png) -88px -53px no-repeat;
+  background: url(../img/prettyPhoto/light_rounded/sprite.png) -88px -53px no-repeat;
 }
 
 /* Top left corner */
@@ -10842,7 +10842,7 @@ div.light_rounded .pp_top .pp_middle {
 
 /* Top pattern/color */
 div.light_rounded .pp_top .pp_right {
-  background: url(../images/prettyPhoto/light_rounded/sprite.png) -110px -53px no-repeat;
+  background: url(../img/prettyPhoto/light_rounded/sprite.png) -110px -53px no-repeat;
 }
 
 /* Top right corner */
@@ -10861,37 +10861,37 @@ div.light_rounded .pp_content {
 
 /* Content background */
 div.light_rounded .pp_next:hover {
-  background: url(../images/prettyPhoto/light_rounded/btnNext.png) center right no-repeat;
+  background: url(../img/prettyPhoto/light_rounded/btnNext.png) center right no-repeat;
   cursor: pointer;
 }
 
 /* Next button */
 div.light_rounded .pp_previous:hover {
-  background: url(../images/prettyPhoto/light_rounded/btnPrevious.png) center left no-repeat;
+  background: url(../img/prettyPhoto/light_rounded/btnPrevious.png) center left no-repeat;
   cursor: pointer;
 }
 
 /* Previous button */
 div.light_rounded .pp_expand {
-  background: url(../images/prettyPhoto/light_rounded/sprite.png) -31px -26px no-repeat;
+  background: url(../img/prettyPhoto/light_rounded/sprite.png) -31px -26px no-repeat;
   cursor: pointer;
 }
 
 /* Expand button */
 div.light_rounded .pp_expand:hover {
-  background: url(../images/prettyPhoto/light_rounded/sprite.png) -31px -47px no-repeat;
+  background: url(../img/prettyPhoto/light_rounded/sprite.png) -31px -47px no-repeat;
   cursor: pointer;
 }
 
 /* Expand button hover */
 div.light_rounded .pp_contract {
-  background: url(../images/prettyPhoto/light_rounded/sprite.png) 0 -26px no-repeat;
+  background: url(../img/prettyPhoto/light_rounded/sprite.png) 0 -26px no-repeat;
   cursor: pointer;
 }
 
 /* Contract button */
 div.light_rounded .pp_contract:hover {
-  background: url(../images/prettyPhoto/light_rounded/sprite.png) 0 -47px no-repeat;
+  background: url(../img/prettyPhoto/light_rounded/sprite.png) 0 -47px no-repeat;
   cursor: pointer;
 }
 
@@ -10899,7 +10899,7 @@ div.light_rounded .pp_contract:hover {
 div.light_rounded .pp_close {
   width: 75px;
   height: 22px;
-  background: url(../images/prettyPhoto/light_rounded/sprite.png) -1px -1px no-repeat;
+  background: url(../img/prettyPhoto/light_rounded/sprite.png) -1px -1px no-repeat;
   cursor: pointer;
 }
 
@@ -10922,19 +10922,19 @@ div.light_rounded .pp_gallery a.pp_arrow_next {
 }
 
 div.light_rounded .pp_nav .pp_play {
-  background: url(../images/prettyPhoto/light_rounded/sprite.png) -1px -100px no-repeat;
+  background: url(../img/prettyPhoto/light_rounded/sprite.png) -1px -100px no-repeat;
   height: 15px;
   width: 14px;
 }
 
 div.light_rounded .pp_nav .pp_pause {
-  background: url(../images/prettyPhoto/light_rounded/sprite.png) -24px -100px no-repeat;
+  background: url(../img/prettyPhoto/light_rounded/sprite.png) -24px -100px no-repeat;
   height: 15px;
   width: 14px;
 }
 
 div.light_rounded .pp_arrow_previous {
-  background: url(../images/prettyPhoto/light_rounded/sprite.png) 0 -71px no-repeat;
+  background: url(../img/prettyPhoto/light_rounded/sprite.png) 0 -71px no-repeat;
 }
 
 /* The previous arrow in the bottom nav */
@@ -10944,7 +10944,7 @@ div.light_rounded .pp_arrow_previous.disabled {
 }
 
 div.light_rounded .pp_arrow_next {
-  background: url(../images/prettyPhoto/light_rounded/sprite.png) -22px -71px no-repeat;
+  background: url(../img/prettyPhoto/light_rounded/sprite.png) -22px -71px no-repeat;
 }
 
 /* The next arrow in the bottom nav */
@@ -10954,7 +10954,7 @@ div.light_rounded .pp_arrow_next.disabled {
 }
 
 div.light_rounded .pp_bottom .pp_left {
-  background: url(../images/prettyPhoto/light_rounded/sprite.png) -88px -80px no-repeat;
+  background: url(../img/prettyPhoto/light_rounded/sprite.png) -88px -80px no-repeat;
 }
 
 /* Bottom left corner */
@@ -10964,12 +10964,12 @@ div.light_rounded .pp_bottom .pp_middle {
 
 /* Bottom pattern/color */
 div.light_rounded .pp_bottom .pp_right {
-  background: url(../images/prettyPhoto/light_rounded/sprite.png) -110px -80px no-repeat;
+  background: url(../img/prettyPhoto/light_rounded/sprite.png) -110px -80px no-repeat;
 }
 
 /* Bottom right corner */
 div.light_rounded .pp_loaderIcon {
-  background: url(../images/prettyPhoto/light_rounded/loader.gif) center center no-repeat;
+  background: url(../img/prettyPhoto/light_rounded/loader.gif) center center no-repeat;
 }
 
 /* Loader icon */
@@ -10977,67 +10977,67 @@ div.light_rounded .pp_loaderIcon {
 	Dark Rounded Theme
 ----------------------------------- */
 div.dark_rounded .pp_top .pp_left {
-  background: url(../images/prettyPhoto/dark_rounded/sprite.png) -88px -53px no-repeat;
+  background: url(../img/prettyPhoto/dark_rounded/sprite.png) -88px -53px no-repeat;
 }
 
 /* Top left corner */
 div.dark_rounded .pp_top .pp_middle {
-  background: url(../images/prettyPhoto/dark_rounded/contentPattern.png) top left repeat;
+  background: url(../img/prettyPhoto/dark_rounded/contentPattern.png) top left repeat;
 }
 
 /* Top pattern/color */
 div.dark_rounded .pp_top .pp_right {
-  background: url(../images/prettyPhoto/dark_rounded/sprite.png) -110px -53px no-repeat;
+  background: url(../img/prettyPhoto/dark_rounded/sprite.png) -110px -53px no-repeat;
 }
 
 /* Top right corner */
 div.dark_rounded .pp_content_container .pp_left {
-  background: url(../images/prettyPhoto/dark_rounded/contentPattern.png) top left repeat-y;
+  background: url(../img/prettyPhoto/dark_rounded/contentPattern.png) top left repeat-y;
 }
 
 /* Left Content background */
 div.dark_rounded .pp_content_container .pp_right {
-  background: url(../images/prettyPhoto/dark_rounded/contentPattern.png) top right repeat-y;
+  background: url(../img/prettyPhoto/dark_rounded/contentPattern.png) top right repeat-y;
 }
 
 /* Right Content background */
 div.dark_rounded .pp_content {
-  background: url(../images/prettyPhoto/dark_rounded/contentPattern.png) top left repeat;
+  background: url(../img/prettyPhoto/dark_rounded/contentPattern.png) top left repeat;
 }
 
 /* Content background */
 div.dark_rounded .pp_next:hover {
-  background: url(../images/prettyPhoto/dark_rounded/btnNext.png) center right no-repeat;
+  background: url(../img/prettyPhoto/dark_rounded/btnNext.png) center right no-repeat;
   cursor: pointer;
 }
 
 /* Next button */
 div.dark_rounded .pp_previous:hover {
-  background: url(../images/prettyPhoto/dark_rounded/btnPrevious.png) center left no-repeat;
+  background: url(../img/prettyPhoto/dark_rounded/btnPrevious.png) center left no-repeat;
   cursor: pointer;
 }
 
 /* Previous button */
 div.dark_rounded .pp_expand {
-  background: url(../images/prettyPhoto/dark_rounded/sprite.png) -31px -26px no-repeat;
+  background: url(../img/prettyPhoto/dark_rounded/sprite.png) -31px -26px no-repeat;
   cursor: pointer;
 }
 
 /* Expand button */
 div.dark_rounded .pp_expand:hover {
-  background: url(../images/prettyPhoto/dark_rounded/sprite.png) -31px -47px no-repeat;
+  background: url(../img/prettyPhoto/dark_rounded/sprite.png) -31px -47px no-repeat;
   cursor: pointer;
 }
 
 /* Expand button hover */
 div.dark_rounded .pp_contract {
-  background: url(../images/prettyPhoto/dark_rounded/sprite.png) 0 -26px no-repeat;
+  background: url(../img/prettyPhoto/dark_rounded/sprite.png) 0 -26px no-repeat;
   cursor: pointer;
 }
 
 /* Contract button */
 div.dark_rounded .pp_contract:hover {
-  background: url(../images/prettyPhoto/dark_rounded/sprite.png) 0 -47px no-repeat;
+  background: url(../img/prettyPhoto/dark_rounded/sprite.png) 0 -47px no-repeat;
   cursor: pointer;
 }
 
@@ -11045,7 +11045,7 @@ div.dark_rounded .pp_contract:hover {
 div.dark_rounded .pp_close {
   width: 75px;
   height: 22px;
-  background: url(../images/prettyPhoto/dark_rounded/sprite.png) -1px -1px no-repeat;
+  background: url(../img/prettyPhoto/dark_rounded/sprite.png) -1px -1px no-repeat;
   cursor: pointer;
 }
 
@@ -11076,19 +11076,19 @@ div.dark_rounded .pp_gallery a.pp_arrow_next {
 }
 
 div.dark_rounded .pp_nav .pp_play {
-  background: url(../images/prettyPhoto/dark_rounded/sprite.png) -1px -100px no-repeat;
+  background: url(../img/prettyPhoto/dark_rounded/sprite.png) -1px -100px no-repeat;
   height: 15px;
   width: 14px;
 }
 
 div.dark_rounded .pp_nav .pp_pause {
-  background: url(../images/prettyPhoto/dark_rounded/sprite.png) -24px -100px no-repeat;
+  background: url(../img/prettyPhoto/dark_rounded/sprite.png) -24px -100px no-repeat;
   height: 15px;
   width: 14px;
 }
 
 div.dark_rounded .pp_arrow_previous {
-  background: url(../images/prettyPhoto/dark_rounded/sprite.png) 0 -71px no-repeat;
+  background: url(../img/prettyPhoto/dark_rounded/sprite.png) 0 -71px no-repeat;
 }
 
 /* The previous arrow in the bottom nav */
@@ -11098,7 +11098,7 @@ div.dark_rounded .pp_arrow_previous.disabled {
 }
 
 div.dark_rounded .pp_arrow_next {
-  background: url(../images/prettyPhoto/dark_rounded/sprite.png) -22px -71px no-repeat;
+  background: url(../img/prettyPhoto/dark_rounded/sprite.png) -22px -71px no-repeat;
 }
 
 /* The next arrow in the bottom nav */
@@ -11108,22 +11108,22 @@ div.dark_rounded .pp_arrow_next.disabled {
 }
 
 div.dark_rounded .pp_bottom .pp_left {
-  background: url(../images/prettyPhoto/dark_rounded/sprite.png) -88px -80px no-repeat;
+  background: url(../img/prettyPhoto/dark_rounded/sprite.png) -88px -80px no-repeat;
 }
 
 /* Bottom left corner */
 div.dark_rounded .pp_bottom .pp_middle {
-  background: url(../images/prettyPhoto/dark_rounded/contentPattern.png) top left repeat;
+  background: url(../img/prettyPhoto/dark_rounded/contentPattern.png) top left repeat;
 }
 
 /* Bottom pattern/color */
 div.dark_rounded .pp_bottom .pp_right {
-  background: url(../images/prettyPhoto/dark_rounded/sprite.png) -110px -80px no-repeat;
+  background: url(../img/prettyPhoto/dark_rounded/sprite.png) -110px -80px no-repeat;
 }
 
 /* Bottom right corner */
 div.dark_rounded .pp_loaderIcon {
-  background: url(../images/prettyPhoto/dark_rounded/loader.gif) center center no-repeat;
+  background: url(../img/prettyPhoto/dark_rounded/loader.gif) center center no-repeat;
 }
 
 /* Loader icon */
@@ -11146,30 +11146,30 @@ div.dark_square .pp_description {
 }
 
 div.dark_square .pp_loaderIcon {
-  background: url(../images/prettyPhoto/dark_square/loader.gif) center center no-repeat;
+  background: url(../img/prettyPhoto/dark_square/loader.gif) center center no-repeat;
 }
 
 /* Loader icon */
 div.dark_square .pp_expand {
-  background: url(../images/prettyPhoto/dark_square/sprite.png) -31px -26px no-repeat;
+  background: url(../img/prettyPhoto/dark_square/sprite.png) -31px -26px no-repeat;
   cursor: pointer;
 }
 
 /* Expand button */
 div.dark_square .pp_expand:hover {
-  background: url(../images/prettyPhoto/dark_square/sprite.png) -31px -47px no-repeat;
+  background: url(../img/prettyPhoto/dark_square/sprite.png) -31px -47px no-repeat;
   cursor: pointer;
 }
 
 /* Expand button hover */
 div.dark_square .pp_contract {
-  background: url(../images/prettyPhoto/dark_square/sprite.png) 0 -26px no-repeat;
+  background: url(../img/prettyPhoto/dark_square/sprite.png) 0 -26px no-repeat;
   cursor: pointer;
 }
 
 /* Contract button */
 div.dark_square .pp_contract:hover {
-  background: url(../images/prettyPhoto/dark_square/sprite.png) 0 -47px no-repeat;
+  background: url(../img/prettyPhoto/dark_square/sprite.png) 0 -47px no-repeat;
   cursor: pointer;
 }
 
@@ -11177,7 +11177,7 @@ div.dark_square .pp_contract:hover {
 div.dark_square .pp_close {
   width: 75px;
   height: 22px;
-  background: url(../images/prettyPhoto/dark_square/sprite.png) -1px -1px no-repeat;
+  background: url(../img/prettyPhoto/dark_square/sprite.png) -1px -1px no-repeat;
   cursor: pointer;
 }
 
@@ -11204,19 +11204,19 @@ div.dark_square .pp_nav {
 }
 
 div.dark_square .pp_nav .pp_play {
-  background: url(../images/prettyPhoto/dark_square/sprite.png) -1px -100px no-repeat;
+  background: url(../img/prettyPhoto/dark_square/sprite.png) -1px -100px no-repeat;
   height: 15px;
   width: 14px;
 }
 
 div.dark_square .pp_nav .pp_pause {
-  background: url(../images/prettyPhoto/dark_square/sprite.png) -24px -100px no-repeat;
+  background: url(../img/prettyPhoto/dark_square/sprite.png) -24px -100px no-repeat;
   height: 15px;
   width: 14px;
 }
 
 div.dark_square .pp_arrow_previous {
-  background: url(../images/prettyPhoto/dark_square/sprite.png) 0 -71px no-repeat;
+  background: url(../img/prettyPhoto/dark_square/sprite.png) 0 -71px no-repeat;
 }
 
 /* The previous arrow in the bottom nav */
@@ -11226,7 +11226,7 @@ div.dark_square .pp_arrow_previous.disabled {
 }
 
 div.dark_square .pp_arrow_next {
-  background: url(../images/prettyPhoto/dark_square/sprite.png) -22px -71px no-repeat;
+  background: url(../img/prettyPhoto/dark_square/sprite.png) -22px -71px no-repeat;
 }
 
 /* The next arrow in the bottom nav */
@@ -11236,13 +11236,13 @@ div.dark_square .pp_arrow_next.disabled {
 }
 
 div.dark_square .pp_next:hover {
-  background: url(../images/prettyPhoto/dark_square/btnNext.png) center right no-repeat;
+  background: url(../img/prettyPhoto/dark_square/btnNext.png) center right no-repeat;
   cursor: pointer;
 }
 
 /* Next button */
 div.dark_square .pp_previous:hover {
-  background: url(../images/prettyPhoto/dark_square/btnPrevious.png) center left no-repeat;
+  background: url(../img/prettyPhoto/dark_square/btnPrevious.png) center left no-repeat;
   cursor: pointer;
 }
 
@@ -11262,25 +11262,25 @@ div.light_square .pp_content .ppt {
 }
 
 div.light_square .pp_expand {
-  background: url(../images/prettyPhoto/light_square/sprite.png) -31px -26px no-repeat;
+  background: url(../img/prettyPhoto/light_square/sprite.png) -31px -26px no-repeat;
   cursor: pointer;
 }
 
 /* Expand button */
 div.light_square .pp_expand:hover {
-  background: url(../images/prettyPhoto/light_square/sprite.png) -31px -47px no-repeat;
+  background: url(../img/prettyPhoto/light_square/sprite.png) -31px -47px no-repeat;
   cursor: pointer;
 }
 
 /* Expand button hover */
 div.light_square .pp_contract {
-  background: url(../images/prettyPhoto/light_square/sprite.png) 0 -26px no-repeat;
+  background: url(../img/prettyPhoto/light_square/sprite.png) 0 -26px no-repeat;
   cursor: pointer;
 }
 
 /* Contract button */
 div.light_square .pp_contract:hover {
-  background: url(../images/prettyPhoto/light_square/sprite.png) 0 -47px no-repeat;
+  background: url(../img/prettyPhoto/light_square/sprite.png) 0 -47px no-repeat;
   cursor: pointer;
 }
 
@@ -11288,7 +11288,7 @@ div.light_square .pp_contract:hover {
 div.light_square .pp_close {
   width: 75px;
   height: 22px;
-  background: url(../images/prettyPhoto/light_square/sprite.png) -1px -1px no-repeat;
+  background: url(../img/prettyPhoto/light_square/sprite.png) -1px -1px no-repeat;
   cursor: pointer;
 }
 
@@ -11311,19 +11311,19 @@ div.light_square .pp_gallery a.pp_arrow_next {
 }
 
 div.light_square .pp_nav .pp_play {
-  background: url(../images/prettyPhoto/light_square/sprite.png) -1px -100px no-repeat;
+  background: url(../img/prettyPhoto/light_square/sprite.png) -1px -100px no-repeat;
   height: 15px;
   width: 14px;
 }
 
 div.light_square .pp_nav .pp_pause {
-  background: url(../images/prettyPhoto/light_square/sprite.png) -24px -100px no-repeat;
+  background: url(../img/prettyPhoto/light_square/sprite.png) -24px -100px no-repeat;
   height: 15px;
   width: 14px;
 }
 
 div.light_square .pp_arrow_previous {
-  background: url(../images/prettyPhoto/light_square/sprite.png) 0 -71px no-repeat;
+  background: url(../img/prettyPhoto/light_square/sprite.png) 0 -71px no-repeat;
 }
 
 /* The previous arrow in the bottom nav */
@@ -11333,7 +11333,7 @@ div.light_square .pp_arrow_previous.disabled {
 }
 
 div.light_square .pp_arrow_next {
-  background: url(../images/prettyPhoto/light_square/sprite.png) -22px -71px no-repeat;
+  background: url(../img/prettyPhoto/light_square/sprite.png) -22px -71px no-repeat;
 }
 
 /* The next arrow in the bottom nav */
@@ -11343,19 +11343,19 @@ div.light_square .pp_arrow_next.disabled {
 }
 
 div.light_square .pp_next:hover {
-  background: url(../images/prettyPhoto/light_square/btnNext.png) center right no-repeat;
+  background: url(../img/prettyPhoto/light_square/btnNext.png) center right no-repeat;
   cursor: pointer;
 }
 
 /* Next button */
 div.light_square .pp_previous:hover {
-  background: url(../images/prettyPhoto/light_square/btnPrevious.png) center left no-repeat;
+  background: url(../img/prettyPhoto/light_square/btnPrevious.png) center left no-repeat;
   cursor: pointer;
 }
 
 /* Previous button */
 div.light_square .pp_loaderIcon {
-  background: url(../images/prettyPhoto/light_rounded/loader.gif) center center no-repeat;
+  background: url(../img/prettyPhoto/light_rounded/loader.gif) center center no-repeat;
 }
 
 /* Loader icon */
@@ -11363,17 +11363,17 @@ div.light_square .pp_loaderIcon {
 	Facebook style Theme
 ----------------------------------- */
 div.facebook .pp_top .pp_left {
-  background: url(../images/prettyPhoto/facebook/sprite.png) -88px -53px no-repeat;
+  background: url(../img/prettyPhoto/facebook/sprite.png) -88px -53px no-repeat;
 }
 
 /* Top left corner */
 div.facebook .pp_top .pp_middle {
-  background: url(../images/prettyPhoto/facebook/contentPatternTop.png) top left repeat-x;
+  background: url(../img/prettyPhoto/facebook/contentPatternTop.png) top left repeat-x;
 }
 
 /* Top pattern/color */
 div.facebook .pp_top .pp_right {
-  background: url(../images/prettyPhoto/facebook/sprite.png) -110px -53px no-repeat;
+  background: url(../img/prettyPhoto/facebook/sprite.png) -110px -53px no-repeat;
 }
 
 /* Top right corner */
@@ -11382,12 +11382,12 @@ div.facebook .pp_content .ppt {
 }
 
 div.facebook .pp_content_container .pp_left {
-  background: url(../images/prettyPhoto/facebook/contentPatternLeft.png) top left repeat-y;
+  background: url(../img/prettyPhoto/facebook/contentPatternLeft.png) top left repeat-y;
 }
 
 /* Content background */
 div.facebook .pp_content_container .pp_right {
-  background: url(../images/prettyPhoto/facebook/contentPatternRight.png) top right repeat-y;
+  background: url(../img/prettyPhoto/facebook/contentPatternRight.png) top right repeat-y;
 }
 
 /* Content background */
@@ -11397,25 +11397,25 @@ div.facebook .pp_content {
 
 /* Content background */
 div.facebook .pp_expand {
-  background: url(../images/prettyPhoto/facebook/sprite.png) -31px -26px no-repeat;
+  background: url(../img/prettyPhoto/facebook/sprite.png) -31px -26px no-repeat;
   cursor: pointer;
 }
 
 /* Expand button */
 div.facebook .pp_expand:hover {
-  background: url(../images/prettyPhoto/facebook/sprite.png) -31px -47px no-repeat;
+  background: url(../img/prettyPhoto/facebook/sprite.png) -31px -47px no-repeat;
   cursor: pointer;
 }
 
 /* Expand button hover */
 div.facebook .pp_contract {
-  background: url(../images/prettyPhoto/facebook/sprite.png) 0 -26px no-repeat;
+  background: url(../img/prettyPhoto/facebook/sprite.png) 0 -26px no-repeat;
   cursor: pointer;
 }
 
 /* Contract button */
 div.facebook .pp_contract:hover {
-  background: url(../images/prettyPhoto/facebook/sprite.png) 0 -47px no-repeat;
+  background: url(../img/prettyPhoto/facebook/sprite.png) 0 -47px no-repeat;
   cursor: pointer;
 }
 
@@ -11423,7 +11423,7 @@ div.facebook .pp_contract:hover {
 div.facebook .pp_close {
   width: 22px;
   height: 22px;
-  background: url(../images/prettyPhoto/facebook/sprite.png) -1px -1px no-repeat;
+  background: url(../img/prettyPhoto/facebook/sprite.png) -1px -1px no-repeat;
   cursor: pointer;
 }
 
@@ -11441,12 +11441,12 @@ div.facebook #pp_full_res .pp_inline {
 }
 
 div.facebook .pp_loaderIcon {
-  background: url(../images/prettyPhoto/facebook/loader.gif) center center no-repeat;
+  background: url(../img/prettyPhoto/facebook/loader.gif) center center no-repeat;
 }
 
 /* Loader icon */
 div.facebook .pp_arrow_previous {
-  background: url(../images/prettyPhoto/facebook/sprite.png) 0 -71px no-repeat;
+  background: url(../img/prettyPhoto/facebook/sprite.png) 0 -71px no-repeat;
   height: 22px;
   margin-top: 0;
   width: 22px;
@@ -11459,7 +11459,7 @@ div.facebook .pp_arrow_previous.disabled {
 }
 
 div.facebook .pp_arrow_next {
-  background: url(../images/prettyPhoto/facebook/sprite.png) -32px -71px no-repeat;
+  background: url(../img/prettyPhoto/facebook/sprite.png) -32px -71px no-repeat;
   height: 22px;
   margin-top: 0;
   width: 22px;
@@ -11481,41 +11481,41 @@ div.facebook .pp_nav p {
 }
 
 div.facebook .pp_nav .pp_play {
-  background: url(../images/prettyPhoto/facebook/sprite.png) -1px -123px no-repeat;
+  background: url(../img/prettyPhoto/facebook/sprite.png) -1px -123px no-repeat;
   height: 22px;
   width: 22px;
 }
 
 div.facebook .pp_nav .pp_pause {
-  background: url(../images/prettyPhoto/facebook/sprite.png) -32px -123px no-repeat;
+  background: url(../img/prettyPhoto/facebook/sprite.png) -32px -123px no-repeat;
   height: 22px;
   width: 22px;
 }
 
 div.facebook .pp_next:hover {
-  background: url(../images/prettyPhoto/facebook/btnNext.png) center right no-repeat;
+  background: url(../img/prettyPhoto/facebook/btnNext.png) center right no-repeat;
   cursor: pointer;
 }
 
 /* Next button */
 div.facebook .pp_previous:hover {
-  background: url(../images/prettyPhoto/facebook/btnPrevious.png) center left no-repeat;
+  background: url(../img/prettyPhoto/facebook/btnPrevious.png) center left no-repeat;
   cursor: pointer;
 }
 
 /* Previous button */
 div.facebook .pp_bottom .pp_left {
-  background: url(../images/prettyPhoto/facebook/sprite.png) -88px -80px no-repeat;
+  background: url(../img/prettyPhoto/facebook/sprite.png) -88px -80px no-repeat;
 }
 
 /* Bottom left corner */
 div.facebook .pp_bottom .pp_middle {
-  background: url(../images/prettyPhoto/facebook/contentPatternBottom.png) top left repeat-x;
+  background: url(../img/prettyPhoto/facebook/contentPatternBottom.png) top left repeat-x;
 }
 
 /* Bottom pattern/color */
 div.facebook .pp_bottom .pp_right {
-  background: url(../images/prettyPhoto/facebook/sprite.png) -110px -80px no-repeat;
+  background: url(../img/prettyPhoto/facebook/sprite.png) -110px -80px no-repeat;
 }
 
 /* Bottom right corner */
@@ -11719,7 +11719,7 @@ a.pp_arrow_next {
 }
 
 .pp_gallery li.default a {
-  background: url(../images/prettyPhoto/facebook/default_thumbnail.gif) 0 0 no-repeat;
+  background: url(../img/prettyPhoto/facebook/default_thumbnail.gif) 0 0 no-repeat;
   display: block;
   height: 33px;
   width: 50px;
@@ -11735,7 +11735,7 @@ a.pp_arrow_next {
 }
 
 a.pp_next {
-  background: url(../images/prettyPhoto/light_rounded/btnNext.png) 10000px 10000px no-repeat;
+  background: url(../img/prettyPhoto/light_rounded/btnNext.png) 10000px 10000px no-repeat;
   display: block;
   float: right;
   height: 100%;
@@ -11744,7 +11744,7 @@ a.pp_next {
 }
 
 a.pp_previous {
-  background: url(../images/prettyPhoto/light_rounded/btnNext.png) 10000px 10000px no-repeat;
+  background: url(../img/prettyPhoto/light_rounded/btnNext.png) 10000px 10000px no-repeat;
   display: block;
   float: left;
   height: 100%;
@@ -34412,7 +34412,7 @@ header .header-left > div a {
   position: relative;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 600;
 }
 
 .top-section .rent-property-title {
@@ -34601,6 +34601,197 @@ header .header-left > div a {
   color: #fff;
 }
 
+.property-overview .overviewWrapper > div {
+  background-color: #fff;
+  padding: 10px !important;
+}
+
+.boxModel .boxleft {
+  padding: 0px;
+}
+.boxModel .boxleft > a {
+  position: relative;
+  display: block;
+}
+.boxModel .boxleft > a > img {
+  border: solid 5px #0096AF;
+}
+.boxModel .boxleft > a > span {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #7daf00;
+  border: solid 1px #668c07;
+  top: -7px;
+  left: -7px;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.boxModel .boxleft > a > span .fa {
+  color: #fff;
+  font-size: 18px;
+  line-height: 37px;
+}
+.boxModel .boxleft > a > span:hover {
+  background-color: #668c07;
+}
+.boxModel .boxleft ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  float: left;
+  width: 100%;
+}
+.boxModel .boxleft ul > li {
+  float: left;
+  width: 33.3333%;
+}
+.boxModel .boxleft ul > li > a {
+  background-color: #e5f6fe;
+  color: #0096AF;
+  float: left;
+  width: 100%;
+  padding: 8px 0px;
+  text-align: center;
+  border-right: solid 2px #fff;
+}
+.boxModel .boxleft ul > li > a:hover {
+  background-color: #a7d9f1;
+}
+.boxModel .boxleft ul > li > a > span {
+  float: left;
+  width: 100%;
+}
+.boxModel .boxleft ul > li > a > span .fa {
+  color: #221f1f;
+}
+.boxModel .boxleft ul > li > a > span:last-child {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.boxModel .boxleft ul > li:last-child a {
+  border: none;
+}
+.boxModel .boxcenter p[description] {
+  line-height: 20px;
+  padding: 0px 0px 10px 0px;
+  border-bottom: dotted 1px #000;
+}
+.boxModel .boxcenter .info-row > p span {
+  font-weight: 600;
+  margin-right: 8px;
+}
+.boxModel .boxcenter .info-row > p span a {
+  font-size: 10px;
+  text-transform: uppercase;
+  border: dotted 1px #ff6950;
+  padding: 2px 5px;
+}
+.boxModel .boxcenter .info-row > p span a:hover {
+  background-color: #ff6950;
+  color: #fff !important;
+}
+.boxModel .boxright {
+  border: dotted 1px #000;
+  padding: 10px !important;
+}
+.boxModel .boxright .info-row {
+  float: left;
+  width: 100%;
+  border-bottom: dotted 1px #000;
+  margin-bottom: 5px;
+  padding-bottom: 8px;
+}
+.boxModel .boxright .info-row > h2 {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+  line-height: 8px;
+}
+.boxModel .boxright .info-row > h2 > span {
+  float: left;
+  width: 50%;
+  font-size: 11px;
+  font-weight: 400;
+  color: #000;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.boxModel .boxright .info-row > h2 > span[color] {
+  color: #0096AF;
+}
+.boxModel .boxright .info-row > h2 > span[green] {
+  color: #53ca67;
+}
+.boxModel .boxright .info-row > h2 > span:last-child {
+  float: right;
+}
+.boxModel .boxright .info-row p {
+  float: left;
+  width: 100%;
+  margin-bottom: 0px;
+  font-size: 11px;
+}
+.boxModel .boxright .info-row p strong {
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.boxModel .boxright .info-row p strong[color] {
+  color: #ff6950;
+}
+.boxModel .boxright .info-row p.mbot8 {
+  margin-bottom: 5px !important;
+}
+.boxModel .boxright .info-row p[all] {
+  margin-top: 8px;
+}
+.boxModel .boxright .info-row .roww {
+  border-bottom: solid 1px #dedede;
+  float: left;
+  width: 100%;
+  padding-bottom: 2px;
+}
+.boxModel .boxright .info-row .roww > div {
+  font-size: 10px;
+}
+.boxModel .boxright .info-row .roww > div > strong {
+  font-weight: 600;
+}
+
+.property-gallery .tab-content .tab-pane .alert-info {
+  float: left;
+  width: 100%;
+}
+.property-gallery .locality-container .detail-tabs li.active {
+  background-color: #007183;
+  color: #fff;
+}
+.property-gallery .figure-block {
+  border: none;
+}
+.property-gallery .figure-block .item-thumb {
+  margin: 5px 0px;
+}
+
+.imgBox {
+  margin-bottom: 15px;
+}
+.imgBox a {
+  display: block;
+}
+.imgBox a img {
+  width: 100%;
+}
+
 .detailsContainer section:first-child {
   padding: 0px !important;
 }
@@ -34625,12 +34816,49 @@ header .header-left > div a {
   position: fixed;
   top: 110px;
   box-shadow: 0px 5px 6px #d8d6d6;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .aminity-features {
   float: left;
   width: 100%;
   background-color: transparent;
+}
+.aminity-features p strong {
+  font-weight: 600;
+}
+.aminity-features .list-features li {
+  float: left;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.aminity-features .list-features li a {
+  float: left;
+  width: 100%;
+}
+.aminity-features .list-features li a i {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  font-size: 30px;
+  margin-top: 2px;
+}
+.aminity-features .list-features li a span {
+  float: left;
+}
+
+#Specifications .ip-notification {
+  float: none;
+  text-align: center;
+}
+#Specifications .ip-notification li {
+  display: inline-block;
+  float: none;
 }
 
 /*# sourceMappingURL=style.css.map */

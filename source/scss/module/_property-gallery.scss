@@ -1,0 +1,36 @@
+.property-gallery {
+  .tab-content {
+    .tab-pane {
+      .alert-info {
+        float: left;
+        width: 100%;
+      }
+    }
+  }
+  .locality-container {
+    .detail-tabs {
+      li {
+        &.active {
+          background-color: #007183;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .figure-block {
+    border: none;
+    .item-thumb {
+      margin: 5px 0px;
+    }
+  }
+}
+//
+.imgBox {
+  margin-bottom: 15px;
+  a {
+    display: block;
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,195 @@
+.property-overview {
+  .overviewWrapper {
+    > div {
+      background-color: #fff;
+      padding: 10px !important;
+    }
+  }
+}
+//
+.boxModel {
+  .boxleft {
+    padding: 0px;
+    > a {
+      position: relative;
+      display: block;
+      > img {
+        border: solid 5px #0096AF;
+      }
+      > span {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #7daf00;
+        border: solid 1px #668c07;
+        top: -7px;
+        left: -7px;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+        .fa {
+          color: #fff;
+          font-size: 18px;
+          line-height: 37px;
+        }
+        &:hover {
+          background-color: #668c07;
+        }
+      }
+    }
+    ul {
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+      float: left;
+      width: 100%;
+      > li {
+        float: left;
+        width: 33.3333%;
+        > a {
+          background-color: #e5f6fe;
+          color: #0096AF;
+          float: left;
+          width: 100%;
+          padding: 8px 0px;
+          text-align: center;
+          border-right: solid 2px #fff;
+          &:hover {
+            background-color: #a7d9f1;
+          }
+          > span {
+            float: left;
+            width: 100%;
+            .fa {
+              color: #221f1f;
+            }
+            &:last-child {
+              font-size: 11px;
+              text-transform: uppercase;
+              font-weight: 600;
+            }
+          }
+        }
+        &:last-child {
+          a {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  //
+  .boxcenter {
+    p[description] {
+      line-height: 20px;
+      padding: 0px 0px 10px 0px;
+      border-bottom: dotted 1px #000;
+    }
+    .info-row {
+      > p {
+        span {
+          font-weight: 600;
+          margin-right: 8px;
+          a {
+            font-size: 10px;
+            text-transform: uppercase;
+            border: dotted 1px #ff6950;
+            padding: 2px 5px;
+            &:hover {
+              background-color: #ff6950;
+              color: #fff !important;
+            }
+          }
+        }
+        // span {
+        //   float: left;
+        //   margin-right: 10px;
+        //   .amenity-icon {
+        //     font-size: 20px;
+        //     display: block;
+        //     text-align: center;
+        //   }
+        //   code {
+        //     font-size: 16px;
+        //     display: block;
+        //     text-align: center;
+        //   }
+        // }
+      }
+    }
+  }
+  //
+  .boxright {
+    border: dotted 1px #000;
+    padding: 10px !important;
+    .info-row {
+      float: left;
+      width: 100%;
+      border-bottom: dotted 1px #000;
+      margin-bottom: 5px;
+      padding-bottom: 8px;
+      > h2 {
+        float: left;
+        width: 100%;
+        margin-bottom: 10px;
+        line-height: 8px;
+        > span {
+          float: left;
+          width: 50%;
+          font-size: 11px;
+          font-weight: 400;
+          color: #000;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          &[color] {
+            color: #0096AF;
+          }
+          &[green] {
+            color: #53ca67;
+          }
+          &:last-child {
+            float: right;
+          }
+        }
+      }
+      p {
+        float: left;
+        width: 100%;
+        margin-bottom: 0px;
+        strong {
+          font-weight: 600;
+          font-size: 13px;
+          text-transform: uppercase;
+          &[color] {
+            color: #ff6950;
+          }
+        }
+        font-size: 11px;
+        &.mbot8 {
+          margin-bottom: 5px !important;
+        }
+        &[all]{
+          margin-top: 8px;
+        }
+      }
+      .roww {
+        border-bottom: solid 1px #dedede;
+        float: left;
+        width: 100%;
+        padding-bottom: 2px;
+        > div {
+          font-size: 10px;
+          > strong {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
