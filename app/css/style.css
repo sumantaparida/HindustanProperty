@@ -32757,7 +32757,7 @@ header .header-left > div a {
 
 [role="propertyType"] {
   background-color: transparent;
-  z-index: 501;
+  z-index: 490;
   position: fixed;
   top: 0;
   left: 0;
@@ -34859,6 +34859,19 @@ header .header-left > div a {
 #Specifications .ip-notification li {
   display: inline-block;
   float: none;
+}
+
+.postpropertyContainer .form-group strong {
+  font-weight: 700;
+}
+.postpropertyContainer .form-check-inline {
+  margin-right: 10px;
+}
+
+.postpropertyMap {
+  height: 350px;
+  background-color: #dedede;
+  margin-top: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
