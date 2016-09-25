@@ -1425,17 +1425,20 @@ console.log($.fn.jquery);
     var pClickList = $(".price-list > ul");
     pClick.on("click", function(){
       $(".property-type > ul").hide();
-      pClickList.slideToggle(300, function(){
-        // $('html').one('click',function() {
-        //   pClickList.slideUp();
-        // });
-      });
+      pClickList.stop(true,false).slideToggle(300);
+      $(".property-type > ul").stop(true,false).slideUp(300);
+      $("[role='propertyType']").remove();
+      $("body").after("<div role='priceType'></div>");
       $("[data-input] > input").on("click", function(){
         var id = $(this).attr("data");
         var att = $("[data-price-list-left], [data-price-list-right]");
         att.hide();
         $("#" + id).show();
       });
+    });
+    $(document).on("click","[role='priceType']", function(){
+      pClickList.stop(true,false).slideToggle(300);
+      $(this).remove();
     });
   }
   // Property Type
@@ -1447,6 +1450,7 @@ console.log($.fn.jquery);
       proClickList.stop(true,false).slideToggle(300);
       //console.log("click");
       $(".price-list > ul").hide();
+      $("[role='priceType']").remove();
       // Outer Click
       $("body").after("<div role='propertyType'></div>");
     });

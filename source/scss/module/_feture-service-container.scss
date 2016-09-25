@@ -55,4 +55,12 @@
   .houzez-module {
     padding: 15px 0px;
   }
+  .location-block {
+    a {
+      &::before {
+        background: none !important;
+        border: solid 1px #cecdcd;
+      }
+    }
+  }
 }
