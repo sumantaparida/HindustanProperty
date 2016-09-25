@@ -8435,17 +8435,6 @@ select.mobile-device {
   background: #fff url("./ajax-loader.gif") center center no-repeat;
 }
 
-/* Icons */
-/*@font-face
-{
-    font-family: 'slick';
-    font-weight: normal;
-    font-style: normal;
-
-    src: url('./fonts/slick.eot');
-    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
-}*/
-/* Arrows */
 .slick-prev,
 .slick-next {
   font-size: 0;
@@ -8583,28 +8572,6 @@ select.mobile-device {
   opacity: 1;
 }
 
-/*.slick-dots li button:before
-{
-    font-family: 'slick';
-    font-size: 6px;
-    line-height: 20px;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 20px;
-    height: 20px;
-
-    content: '├óΓé¼┬ó';
-    text-align: center;
-
-    opacity: .25;
-    color: black;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}*/
 .slick-dots li.slick-active button {
   /*opacity: .75;*/
   background: none;
@@ -34897,14 +34864,13 @@ header .header-left > div a {
 
 .property-menu-wrap.open {
   position: fixed;
-  top: 0px;
   box-shadow: 0px 5px 6px #d8d6d6;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
-  z-index: 501;
+  z-index: 600;
 }
 
 .aminity-features {
