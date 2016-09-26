@@ -52,7 +52,7 @@
     border: 3px solid #4cc6f4;
     background-color: white;
     padding: 15px;
-    border-radius: 10px;
+    //border-radius: 10px;
     @media only screen and (max-width:768px) {
       margin-bottom: 15px;
     }
@@ -110,3 +110,7 @@
     }
   }
 }
+.bg1 { background-color: #331d93; }
+.bg2 { background-color: #00aeef; }
+.bg3 { background-color: #2e6da4; }
+.bg4 { background-color: #77c720; }

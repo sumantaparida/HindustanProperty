@@ -17126,12 +17126,12 @@ textarea.wpcf7-form-control, .dsidx-resp-area input[type='text'], .dsidx-resp-ar
 .impress-lead-login input[type='password'],
 .impress-lead-login input[type='tel'], #IDX-listingID, #IDX-streetNumber,
 #IDX-streetDirection, #IDX-streetName, .IDX-wrapper-standard .IDX-cczList select, #ihf-main-container .form-control {
-  height: 42px;
+  height: 35px;
   width: 100%;
   box-shadow: none;
   font-size: 15px;
   font-weight: 400;
-  color: #959595;
+  color: #000;
   padding: 6px 12px;
   line-height: 1.42857143;
   background-color: #fff;
@@ -17455,7 +17455,7 @@ img {
 
 .field-group input {
   display: block;
-  height: 43px;
+  height: 35px;
   border: none;
   font-size: 14px;
   line-height: 1.42857;
@@ -17484,7 +17484,7 @@ img {
 .input-icon input {
   padding-left: 40px !important;
   position: relative;
-  color: #959595;
+  color: #000;
 }
 
 .input-icon + .input-icon {
@@ -17495,9 +17495,9 @@ img {
   color: #959595;
   text-align: center;
   font-family: "FontAwesome";
-  height: 43px;
+  height: 35px;
   width: 40px;
-  line-height: 43px;
+  line-height: 35px;
   position: absolute;
   left: 0;
   top: 0;
@@ -32952,7 +32952,7 @@ header .header-left > div a {
   background-color: #01567b;
 }
 #citypopup .citypop-container .right-property .why-ip-list li.bg3 {
-  background-color: #004c6d;
+  background-color: #0371a0;
 }
 #citypopup .citypop-container .right-property .why-ip-list li:last-child {
   border: none;
@@ -33215,10 +33215,6 @@ header .header-left > div a {
 .feture-service-container .houzez-module {
   padding: 15px 0px;
 }
-.feture-service-container .location-block a::before {
-  background: none !important;
-  border: solid 1px #cecdcd;
-}
 
 @media only screen and (min-width: 1025px) {
   .agent-slider .owl-carousel {
@@ -33421,7 +33417,7 @@ header .header-left > div a {
 [select-dropdown] {
   width: 100%;
   border: solid 1px #ccc;
-  height: 42px;
+  height: 35px;
 }
 
 .sortBy {
@@ -34793,7 +34789,7 @@ header .header-left > div a {
   font-weight: 600;
 }
 
-#properties-carousel-v1-e9ukE2 .owl-stage-outer {
+.small-slider .owl-stage-outer {
   border: 5px solid #0096AF;
 }
 
@@ -34828,18 +34824,83 @@ header .header-left > div a {
 }
 
 #Configurations .item-wrap {
-  background-color: #dedede;
+  background-color: #f5f5f5;
 }
 #Configurations .item-wrap .property-item {
-  background-color: #dedede;
+  background-color: #ededed;
 }
 #Configurations .item-wrap .item-foot {
-  background-color: #dedede;
+  background-color: #ededed;
 }
-#Configurations .headHeight {
+#Configurations .item-wrap .item-thumb {
   height: 60px;
   display: block;
-  background-color: #999;
+  background-color: #5f5f5f;
+}
+#Configurations .item-wrap .item-thumb .price {
+  top: 24px;
+}
+#Configurations .item-wrap .item-thumb .price h3 {
+  font-weight: 700;
+  font-size: 22px;
+}
+#Configurations .item-wrap .item-body {
+  background-color: #fff;
+}
+#Configurations .partion ul {
+  list-style: none;
+  padding: 0px;
+  float: left;
+  width: 100%;
+}
+#Configurations .partion ul li {
+  width: 50%;
+  float: left;
+  padding: 5px 8px;
+  text-align: center;
+  background-color: #9fb0b9;
+}
+#Configurations .partion ul li:first-child {
+  position: relative;
+}
+#Configurations .partion ul li:first-child::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+}
+#Configurations .partion ul li span {
+  display: block;
+  text-align: center;
+  color: #fff;
+}
+#Configurations .partion ul li span:first-child {
+  font-weight: 700;
+  font-size: 18px;
+}
+#Configurations .partion ul li span:last-child {
+  font-weight: 400;
+}
+#Configurations .infobutton {
+  border: 1px solid #3F51B5;
+  padding: 7px 6px;
+  margin: auto;
+  display: block;
+  width: 160px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 13px;
+  background-color: #3F51B5;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+#Configurations .cell {
+  display: inline-block;
 }
 
 .detailsContainer section:first-child {
@@ -34882,7 +34943,6 @@ header .header-left > div a {
   border: 3px solid #4cc6f4;
   background-color: white;
   padding: 15px;
-  border-radius: 10px;
 }
 @media only screen and (max-width: 768px) {
   .aminity-features [amBox] {
@@ -34934,6 +34994,22 @@ header .header-left > div a {
 #Specifications .ip-notification li {
   display: inline-block;
   float: none;
+}
+
+.bg1 {
+  background-color: #331d93;
+}
+
+.bg2 {
+  background-color: #00aeef;
+}
+
+.bg3 {
+  background-color: #2e6da4;
+}
+
+.bg4 {
+  background-color: #77c720;
 }
 
 .postpropertyContainer .form-group strong {

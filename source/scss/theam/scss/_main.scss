@@ -4992,12 +4992,12 @@ textarea.wpcf7-form-control, .dsidx-resp-area input[type='text'], .dsidx-resp-ar
 .impress-lead-login input[type='password'],
 .impress-lead-login input[type='tel'], #IDX-listingID, #IDX-streetNumber,
 #IDX-streetDirection, #IDX-streetName, .IDX-wrapper-standard .IDX-cczList select, #ihf-main-container .form-control {
-  height: 42px;
+  height: 35px;
   width: 100%;
   box-shadow: none;
   font-size: 15px;
   font-weight: 400;
-  color: #959595;
+  color: #000;
   padding: 6px 12px;
   line-height: 1.42857143;
   background-color: #fff;
@@ -5304,7 +5304,7 @@ img {
 }
 .field-group input {
   display: block;
-  height: 43px;
+  height: 35px;
   border: none;
   font-size: 14px;
   line-height: 1.42857;
@@ -5331,7 +5331,7 @@ img {
 .input-icon input {
   padding-left: 40px !important;
   position: relative;
-  color: #959595;
+  color: #000;
 }
 .input-icon + .input-icon {
   border-top: 1px solid #cccccc;
@@ -5340,9 +5340,9 @@ img {
   color: #959595;
   text-align: center;
   font-family: "FontAwesome";
-  height: 43px;
+  height: 35px;
   width: 40px;
-  line-height: 43px;
+  line-height: 35px;
   position: absolute;
   left: 0;
   top: 0;
