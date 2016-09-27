@@ -12123,7 +12123,7 @@ strong, b {
 }
 /*START PAGE TITLE AND BREADCRUMBS TYPO*/
 .page-title h2 {
-  font-size: 30px;
+  font-size: 22px;
   line-height: 36px;
   margin: 0;
   font-weight: 500;
@@ -12136,12 +12136,12 @@ strong, b {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .page-title h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 @media (max-width: 767px) {
   .page-title h2 {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 28px;
   }
 }
@@ -33022,7 +33022,7 @@ header .header-left > div a {
   padding-bottom: 13px;
   font-weight: 200;
   text-align: center;
-  font-size: 36px;
+  font-size: 26px;
   color: #414446;
 }
 [headding]:after {
@@ -33051,7 +33051,7 @@ header .header-left > div a {
     padding: 10px;
     text-transform: inherit;
     position: relative;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     color: #414446;
   }
@@ -33091,7 +33091,7 @@ header .header-left > div a {
 .locality-container .tab-content .detail-block .alert-info li a {
   color: #000;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 13px;
 }
 .locality-container .tab-content .detail-block .alert-info li a:hover {
   opacity: 0.7;
@@ -33280,6 +33280,7 @@ header .header-left > div a {
 .feature-circle ul > li > ul > li a {
   display: block;
   color: #007183;
+  font-size: 12px;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -33346,7 +33347,7 @@ header .header-left > div a {
   font-weight: 300;
 }
 .text-container .error-404-page p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   text-align: justify;
 }
@@ -33614,10 +33615,10 @@ header .header-left > div a {
   text-align: center;
   color: #464141;
   font-weight: 100;
-  font-size: 24px;
+  font-size: 20px;
 }
 .entryform_container .entryform .form_wrapper h3 span {
-  font-size: 14px;
+  font-size: 13px;
   display: block;
 }
 .entryform_container .entryform .location_search {
@@ -33775,6 +33776,7 @@ header .header-left > div a {
   margin: 10px 0px 0px 0px;
   font-weight: 300;
   position: relative;
+  font-size: 18px;
 }
 .multiple_location .bottomLine .heading strong {
   color: #7daf00 !important;

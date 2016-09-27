@@ -312,7 +312,7 @@ strong, b {
 
 /*START PAGE TITLE AND BREADCRUMBS TYPO*/
 .page-title h2 {
-  font-size: 30px;
+  font-size: 22px;
   line-height: 36px;
   margin: 0;
   font-weight: 500;
@@ -324,12 +324,12 @@ strong, b {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .page-title h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 @media (max-width: 767px) {
   .page-title h2 {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 28px;
   }
 }
@@ -2015,7 +2015,7 @@ textarea.wpcf7-form-control, .dsidx-resp-area input[type='text'], .dsidx-resp-ar
   }
 }
 #sidebar .widget-title {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   margin: 0 0 20px 0;
   font-weight: 700;
@@ -4392,7 +4392,7 @@ input[type="button"].btn-block {
 }
 .property-menu a {
   display: block;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 40px;
   color: rgba(0, 0, 0, 0.5);
   font-weight: 500;
