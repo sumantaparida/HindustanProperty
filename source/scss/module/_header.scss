@@ -152,6 +152,7 @@ header {
     height: 200px;
     border: solid 1px #827f7f;
     overflow-y: scroll;
+    overflow-x: hidden;
     display: none;
     li {
       float: left;

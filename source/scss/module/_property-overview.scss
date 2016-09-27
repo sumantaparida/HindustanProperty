@@ -32,6 +32,7 @@
         -ms-transition: all .3s ease;
         -o-transition: all .3s ease;
         transition: all .3s ease;
+        z-index: 99;
         .fa {
           color: #fff;
           font-size: 18px;
@@ -191,5 +192,16 @@
         }
       }
     }
+  }
+}
+.small-slider {
+  .owl-stage-outer {
+    border: 5px solid #0096AF;
+  }
+}
+.boxModel {
+  .leftArrow, .rightArrow {
+    color: #fff !important;
+    font-size: 40px;
   }
 }

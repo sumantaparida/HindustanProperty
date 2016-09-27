@@ -318,9 +318,7 @@ strong, b {
   font-weight: 500;
   text-transform: capitalize;
   text-align: inherit;
-  /* mini phones and down */
-  /* mini phones and down */
-  /* mini phones and down */
+  color: #311b92;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .page-title h2 {
@@ -3128,7 +3126,7 @@ input[type="button"].btn-block {
 .header-mobile {
   z-index: 11;
   height: 60px;
-  background-color: #1a237e;
+  background-color: #ffffff;
   /* mini phones and down */
 }
 .header-mobile > .container {
@@ -3143,24 +3141,24 @@ input[type="button"].btn-block {
   }
 }
 .header-mobile .mobile-nav {
-  width: 25%;
+  width: 20%;
   line-height: 60px;
   float: left;
   z-index: 999;
 }
 .header-mobile .header-logo {
   float: left;
-  width: 50%;
+  width: 60%;
   text-align: center;
   line-height: 55px;
 }
 .header-mobile .header-logo img {
-  max-height: 20px;
+  width: 100%;
 }
 .header-mobile .header-user {
   text-align: right;
   float: left;
-  width: 25%;
+  width: 20%;
   line-height: 55px;
 }
 .header-mobile .user-image {
@@ -3170,7 +3168,7 @@ input[type="button"].btn-block {
   line-height: 58px !important;
 }
 .header-mobile .user a {
-  color: #fff;
+  color: #000;
   margin-right: 3px;
 }
 .header-mobile .user a:hover {
@@ -3211,7 +3209,7 @@ input[type="button"].btn-block {
 }
 .mobile-nav .nav-trigger {
   cursor: pointer;
-  color: #fff;
+  color: #000;
   line-height: 18px;
   height: 18px;
   width: 18px;
@@ -3219,6 +3217,10 @@ input[type="button"].btn-block {
   display: inline-block;
   position: relative;
   top: 1px;
+}
+.mobile-nav .nav-trigger a {
+  color: #000;
+  text-decoration: none;
 }
 .mobile-nav .nav-trigger.mobile-open + .nav-dropdown {
   opacity: 1;
@@ -4491,8 +4493,8 @@ hr {
   color: #707070;
 }
 .breadcrumb li a {
-  color: #707070;
-  font-weight: 400;
+  color: #331d93;
+  font-weight: 700;
 }
 .breadcrumb li a:hover {
   color: #00aeef;
@@ -4990,12 +4992,12 @@ textarea.wpcf7-form-control, .dsidx-resp-area input[type='text'], .dsidx-resp-ar
 .impress-lead-login input[type='password'],
 .impress-lead-login input[type='tel'], #IDX-listingID, #IDX-streetNumber,
 #IDX-streetDirection, #IDX-streetName, .IDX-wrapper-standard .IDX-cczList select, #ihf-main-container .form-control {
-  height: 42px;
+  height: 35px;
   width: 100%;
   box-shadow: none;
   font-size: 15px;
   font-weight: 400;
-  color: #959595;
+  color: #000;
   padding: 6px 12px;
   line-height: 1.42857143;
   background-color: #fff;
@@ -5302,7 +5304,7 @@ img {
 }
 .field-group input {
   display: block;
-  height: 43px;
+  height: 35px;
   border: none;
   font-size: 14px;
   line-height: 1.42857;
@@ -5329,7 +5331,7 @@ img {
 .input-icon input {
   padding-left: 40px !important;
   position: relative;
-  color: #959595;
+  color: #000;
 }
 .input-icon + .input-icon {
   border-top: 1px solid #cccccc;
@@ -5338,9 +5340,9 @@ img {
   color: #959595;
   text-align: center;
   font-family: "FontAwesome";
-  height: 43px;
+  height: 35px;
   width: 40px;
-  line-height: 43px;
+  line-height: 35px;
   position: absolute;
   left: 0;
   top: 0;
@@ -7477,7 +7479,7 @@ img {
 .figure-block .detail-bottom ul {
   color: #000;
 }
-.figure-block a {
+.figure-block span {
   color: #fff;
 }
 
@@ -7921,7 +7923,7 @@ img {
 .impress-lead-login .item-body .phone input[type='submit'] + p, .item-body .phone .IDX-saveProperty + p, .item-body .phone .IDX-resultsDetailsLink a + p, .IDX-resultsDetailsLink .item-body .phone a + p, .item-body .phone #IDX-formReset + p, .item-body .phone #IDX-formSubmit + p, .item-body .phone #ihf-main-container .btn + p, #ihf-main-container .item-body .phone .btn + p, .item-body .phone #ihf-main-container .btn-primary + p, #ihf-main-container .item-body .phone .btn-primary + p, .item-body .phone #ihf-main-container .ihf-map-search-refine-link + p, #ihf-main-container .item-body .phone .ihf-map-search-refine-link + p {
   margin-top: 12px;
 }
-.item-body .date a {
+.item-body .date span {
   color: #9b9b9b;
 }
 .item-body .date p {
@@ -8429,6 +8431,9 @@ img {
   padding-left: 4px;
   padding-right: 4px;
   margin-bottom: 8px;
+}
+.property-listing .item-wrap > a {
+  display: block;
 }
 .property-listing .grid-row {
   margin-left: -4px;
