@@ -1551,6 +1551,15 @@ console.log($.fn.jquery);
       tn.removeClass("active");
     });
   }
+  // Prevent default
+  //Tab close
+  prevent();
+  function prevent() {
+    $("[data-toggle='modal']").on("click", function(link){
+      link.preventDefault();
+    });
+  }
+
 
 })(jQuery);
 // side nav start
@@ -1596,8 +1605,9 @@ $(document).ready(function () {
         var target = this.hash,
             menu = target;
         $target = $(target);
+        var hjk = $(".property-menu-wrap").outerHeight();
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top-200
+            'scrollTop': $target.offset().top - hjk
         }, 500, 'swing', function () {
             window.location.hash = target;
             $(document).on("scroll", onScroll);
