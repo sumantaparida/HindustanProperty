@@ -20017,7 +20017,7 @@ img {
   transform: translateX(-50%);
 }
 
-.property_listing .item-thumb img {
+.property_listing .item-thumb img, .ajentDetails .item-thumb img {
   height: 195px;
 }
 
@@ -25705,9 +25705,8 @@ body.transparent-yes .banner-caption {
 
 /*START PROFILE DETAIL PAGE STYLE*/
 .profile-detail-block {
-  padding: 40px;
+  padding: 20px;
   background-color: #fff;
-  margin-bottom: 40px;
   /* mini phones and down */
 }
 
@@ -26796,7 +26795,7 @@ body.transparent-yes .banner-caption {
 }
 
 .error-404-page h1, .error-404-page h4 {
-  font-size: 40px;
+  font-size: 25px;
   line-height: 40px;
 }
 
@@ -33428,6 +33427,7 @@ header .header-left > div a {
   border-radius: 5px;
   color: #000;
   border: none;
+  padding: 0px 12px;
 }
 
 .property_listing .property-item {
@@ -33858,6 +33858,7 @@ header .header-left > div a {
   border-top: solid 1px #414446;
   border-left: solid 1px #414446;
   border-right: solid 1px #414446;
+  border-bottom: solid 1px #414446;
 }
 .project_listing .property-item:hover ~ .projectAccordian {
   border-left: solid 1px #414446;
@@ -36289,6 +36290,21 @@ header .header-left > div a {
   right: 0;
   bottom: 0;
   margin: auto;
+}
+
+.ajentProfile {
+  margin-bottom: 15px;
+}
+.ajentProfile .profile-image > img {
+  border: solid 10px #ebebeb;
+}
+
+.ajentGrid {
+  margin-top: 10px;
+  text-align: right;
+}
+.ajentGrid .btn-grid {
+  margin-right: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

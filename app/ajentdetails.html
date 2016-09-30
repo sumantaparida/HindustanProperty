@@ -160,7 +160,7 @@
                 <div class="form-group col-xs-12 city-search-list">
                   <label for="">Search from over 1500 cities </label>
                     <div class="search input-search input-icon col-xs-12 nopadding">
-                        <input data-autosuggest type="text" class="form-control ui-autocomplete-input" placeholder="Property" autocomplete="off">
+                        <input type="text" class="form-control ui-autocomplete-input" placeholder="Property" autocomplete="off">
                     </div>
                 </div>
             </form>
@@ -475,27 +475,45 @@
               </div>
             </div>
             <div class="form-group">
-              <select select-dropdown="">
-                <option value="cheese">Cheese</option>
-                <option value="tomatoes">Tomatoes</option>
-                <option value="mozarella">Mozzarella</option>
-                <option value="mushrooms">Mushrooms</option>
-                <option value="pepperoni">Pepperoni</option>
-                <option value="onions">Onions</option>
-              </select>
+              <div class="btn-group bootstrap-select">
+                <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" title="Chicago" aria-expanded="false"><span class="filter-option pull-left"> Select Property Type</span>&nbsp;<span class="fa fa-sort"></span></button>
+                <div class="dropdown-menu open">
+                  <ul class="dropdown-menu inner" role="menu">
+                    <li data-original-index="0" class=""><a tabindex="0" class="" style="" data-tokens="null"><span class="text">All Cities</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                    </li>
+                    <li data-original-index="1" class="selected"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> Chicago</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                    </li>
+                    <li data-original-index="2"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> Los Angeles</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                    </li>
+                    <li data-original-index="3"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> Miami</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                    </li>
+                    <li data-original-index="4"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> New York</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <div class="form-group">
               <input class="form-control" name="phone" type="text" placeholder="Phone">
             </div>
             <div class="form-group">
-              <select select-dropdown="">
-                <option value="cheese">Cheese</option>
-                <option value="tomatoes">Tomatoes</option>
-                <option value="mozarella">Mozzarella</option>
-                <option value="mushrooms">Mushrooms</option>
-                <option value="pepperoni">Pepperoni</option>
-                <option value="onions">Onions</option>
-              </select>
+              <div class="btn-group bootstrap-select">
+                <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" title="Chicago" aria-expanded="false"><span class="filter-option pull-left"> Select No Of Bed</span>&nbsp;<span class="fa fa-sort"></span></button>
+                <div class="dropdown-menu open">
+                  <ul class="dropdown-menu inner" role="menu">
+                    <li data-original-index="0" class=""><a tabindex="0" class="" style="" data-tokens="null"><span class="text">All Cities</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                    </li>
+                    <li data-original-index="1" class="selected"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> Chicago</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                    </li>
+                    <li data-original-index="2"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> Los Angeles</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                    </li>
+                    <li data-original-index="3"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> Miami</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                    </li>
+                    <li data-original-index="4"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> New York</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <div class="form-group min-max">
               <input class="form-control" name="" type="text" placeholder="Min">
@@ -611,7 +629,7 @@
                 </div>
                 <div class="search">
                   <div class="input-search input-icon">
-                    <input data-autosuggest class="houzez_geocomplete form-control" type="text" value="" placeholder="Enter an address, town, street, zip or property ID">
+                    <input class="houzez_geocomplete form-control" type="text" value="" name="keyword" placeholder="Enter an address, town, street, zip or property ID">
                   </div>
                 </div>
                 <div class="price-list">
@@ -819,26 +837,86 @@
             <div class="row">
                 <div class="col-sm-12">
                     <ol class="breadcrumb">
-                        <li itemscope><a itemprop="url" href="#"><i class="fa fa-home"></i></a></li>
-                        <li itemscope><a itemprop="url" href="#">Mumbai</i></a></li>
+                        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://houzez01.favethemes.com/"><i class="fa fa-home"></i></a>
+                        </li>
                         <li class="active">Simple Listing – List View</li>
                     </ol>
                     <div class="page-title-left">
-                        <h2>Simple Listing – List View</h2>
+                        <h2>Ajent Details</h2>
                     </div>
-                    <div class="page-title-right">
+                    <!-- <div class="page-title-right">
                         <div class="view hidden-xs">
                             <div class="table-cell">
                                 <span class="view-btn btn-list active"><i class="fa fa-th-list"></i></span>
                                 <span class="view-btn btn-grid "><i class="fa fa-th-large"></i></span>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-8 col-md-8 col-sm-12 list-grid-area container-contentbar property_listing">
+            <!-- // Ajent Profile Strat -->
+            <div class="col-xs-12 ajentProfile">
+              <div class="profile-detail-block">
+                <div class="row">
+                  <div class="col-sm-4 col-xs-12">
+                    <div class="profile-image">
+                      <img width="350" height="350" src="http://houzez01.favethemes.com/wp-content/uploads/2016/02/agent-2-350x350.jpg" class="attachment-houzez-image350_350 size-houzez-image350_350 wp-post-image" alt="agent-2" srcset="http://houzez01.favethemes.com/wp-content/uploads/2016/02/agent-2-350x350.jpg 350w, http://houzez01.favethemes.com/wp-content/uploads/2016/02/agent-2-150x150.jpg 150w, http://houzez01.favethemes.com/wp-content/uploads/2016/02/agent-2-300x300.jpg 300w, http://houzez01.favethemes.com/wp-content/uploads/2016/02/agent-2-768x768.jpg 768w, http://houzez01.favethemes.com/wp-content/uploads/2016/02/agent-2.jpg 800w" sizes="(max-width: 350px) 100vw, 350px">
+                      <div class="company-logo">
+                        <img src="" alt="" width="105" height="75">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-8 col-xs-12">
+                    <div class="profile-description">
+                      <h3>Brittany Watkins</h3>
+                      <h4 class="position">
+                        Company Agent at Smart Houses Inc.                            </h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus ligula ac faucibus faucibus. Cras in nisi in turpis eleifend vehicula at at massa. Vivamus aliquet porttitor odio sed imperdiet.</p>
+                      <ul class="profile-contact">
+                        <li><span>OFFICE:</span> <a href="tel:7894563210">789 456 3210</a></li>
+                        <li><span>MOBILE:</span> <a href="tel:3214569874">321 456 9874</a></li>
+                        <li><span>FAX:</span> <a>897 654 1258</a></li>
+                        <li class="email"><span>Email:</span> <a href="mailto:brittany@hindustanproperty.comm">brittany@hindustanproperty.comm</a></li>
+                      </ul>
+                      <ul class="profile-social">
+                        <li><a class="btn-facebook" href="#" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+                        <li><a class="btn-twitter" href="#" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+                        <li><a class="btn-linkedin" href="#" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+                        <li><a class="btn-google-plus" href="#" target="_blank"><i class="fa fa-google-plus-square"></i></a></li>
+                        <li><a class="btn-youtube" href="#" target="_blank"><i class="fa fa-youtube-square"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="form-small">
+                      <h3>CONTACT Brittany Watkins</h3>
+                      <form method="post" action="" id="agent_detail_contact_form">
+                        <input type="hidden" id="target_email" name="target_email" value="brittany@houzez.com">
+                        <input type="hidden" id="agent_detail_ajax_nonce" value="40fc632260">
+                        <div class="form-group">
+                          <input type="text" name="name" id="name" placeholder="Your Name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <input type="text" id="phone" placeholder="Phone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <input type="email" name="email" id="email" placeholder="Email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <textarea id="message" rows="3" class="form-control">Hi Brittany Watkins, I saw your profile on Houzez and wanted to see if you could help me</textarea>
+                        </div>
+                        <button type="submit" id="agent_detail_contact_btn" class="btn btn-primary btn-block">SEND MESSAGE</button>
+                      </form>
+                      <div id="form_messages"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- // Ajent Profile End -->
+            <div class="col-lg-8 col-md-8 col-sm-12 list-grid-area container-contentbar project_listing ajentDetails">
                 <div id="content-area">
                     <!--start list tabs-->
                     <div class="list-tabs table-list full-width">
@@ -858,6 +936,10 @@
                                 <option value="a_date">Date Old to New</option>
                                 <option value="d_date">Date New to Old</option>
                             </select>
+                        </div>
+                        <div class="ajentGrid">
+                          <span class="view-btn btn-list active"><i class="fa fa-th-list"></i></span>
+                          <span class="view-btn btn-grid "><i class="fa fa-th-large"></i></span>
                         </div>
                     </div>
                     <!--end list tabs-->
@@ -879,34 +961,61 @@
                                   <input class="form-control" name="search" type="text" placeholder="Search">
                                 </div>
                                 <div class="col-xs-2 nopadding">
-                                  <select select-dropdown>
-                                      <option value="cheese">Cheese</option>
-                                      <option value="tomatoes">Tomatoes</option>
-                                      <option value="mozarella">Mozzarella</option>
-                                      <option value="mushrooms">Mushrooms</option>
-                                      <option value="pepperoni">Pepperoni</option>
-                                      <option value="onions">Onions</option>
-                                  </select>
+                                  <div class="btn-group bootstrap-select">
+                                    <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" title="Chicago" aria-expanded="false"><span class="filter-option pull-left"> Mumbai</span>&nbsp;<span class="fa fa-sort"></span></button>
+                                    <div class="dropdown-menu open">
+                                      <ul class="dropdown-menu inner" role="menu" style="max-height: 240px; overflow-y: auto; min-height: 119px;">
+                                        <li data-original-index="0" class=""><a tabindex="0" class="" style="" data-tokens="null"><span class="text">All Cities</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                                        </li>
+                                        <li data-original-index="1" class="selected"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> Chicago</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                                        </li>
+                                        <li data-original-index="2"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> Los Angeles</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                                        </li>
+                                        <li data-original-index="3"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> Miami</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                                        </li>
+                                        <li data-original-index="4"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> New York</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
                                 </div>
                                 <div class="col-xs-2 nopadding">
-                                  <select select-dropdown>
-                                      <option value="cheese">Cheese</option>
-                                      <option value="tomatoes">Tomatoes</option>
-                                      <option value="mozarella">Mozzarella</option>
-                                      <option value="mushrooms">Mushrooms</option>
-                                      <option value="pepperoni">Pepperoni</option>
-                                      <option value="onions">Onions</option>
-                                  </select>
+                                  <div class="btn-group bootstrap-select">
+                                    <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" title="Chicago" aria-expanded="false"><span class="filter-option pull-left"> Mumbai</span>&nbsp;<span class="fa fa-sort"></span></button>
+                                    <div class="dropdown-menu open">
+                                      <ul class="dropdown-menu inner" role="menu" style="max-height: 240px; overflow-y: auto; min-height: 119px;">
+                                        <li data-original-index="0" class=""><a tabindex="0" class="" style="" data-tokens="null"><span class="text">All Cities</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                                        </li>
+                                        <li data-original-index="1" class="selected"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> Chicago</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                                        </li>
+                                        <li data-original-index="2"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> Los Angeles</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                                        </li>
+                                        <li data-original-index="3"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> Miami</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                                        </li>
+                                        <li data-original-index="4"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> New York</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
                                 </div>
                                 <div class="col-xs-2 nopadding">
-                                  <select select-dropdown>
-                                      <option value="cheese">Cheese</option>
-                                      <option value="tomatoes">Tomatoes</option>
-                                      <option value="mozarella">Mozzarella</option>
-                                      <option value="mushrooms">Mushrooms</option>
-                                      <option value="pepperoni">Pepperoni</option>
-                                      <option value="onions">Onions</option>
-                                  </select>
+                                  <div class="btn-group bootstrap-select">
+                                    <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" title="Chicago" aria-expanded="false"><span class="filter-option pull-left"> Mumbai</span>&nbsp;<span class="fa fa-sort"></span></button>
+                                    <div class="dropdown-menu open">
+                                      <ul class="dropdown-menu inner" role="menu">
+                                        <li data-original-index="0" class=""><a tabindex="0" class="" style="" data-tokens="null"><span class="text">All Cities</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                                        </li>
+                                        <li data-original-index="1" class="selected"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> Chicago</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                                        </li>
+                                        <li data-original-index="2"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> Los Angeles</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                                        </li>
+                                        <li data-original-index="3"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> Miami</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                                        </li>
+                                        <li data-original-index="4"><a tabindex="0" class="" style="" data-tokens="null"><span class="text"> New York</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                               <!-- // -->
@@ -920,14 +1029,23 @@
                                   <input class="form-control" name="search" type="text" value="EMAIL">
                                 </div>
                                 <div class="col-xs-1 nopadding">
-                                  <select select-dropdown>
-                                      <option value="cheese">+91</option>
-                                      <option value="tomatoes">+91</option>
-                                      <option value="mozarella">+91</option>
-                                      <option value="mushrooms">+91</option>
-                                      <option value="pepperoni">+91</option>
-                                      <option value="onions">+91</option>
-                                  </select>
+                                  <div class="btn-group bootstrap-select">
+                                    <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" title="Chicago" aria-expanded="false"><span class="filter-option pull-left"> +91</span>&nbsp;<span class="fa fa-sort"></span></button>
+                                    <div class="dropdown-menu open">
+                                      <ul class="dropdown-menu inner" role="menu">
+                                        <li data-original-index="0" class=""><a tabindex="0" class="" style="" data-tokens="null"><span class="text">+21</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                                        </li>
+                                        <li data-original-index="1" class="selected"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">+21</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                                        </li>
+                                        <li data-original-index="2"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">+21</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                                        </li>
+                                        <li data-original-index="3"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">+21</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                                        </li>
+                                        <li data-original-index="4"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">+21</span><span class="glyphicon glyphicon-ok check-mark"></span></a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
                                 </div>
                                 <div class="col-xs-2 nopadding">
                                   <input class="form-control" name="search" type="text" value="MOBILE NUMBER">
@@ -942,406 +1060,206 @@
                       </div>
                       <!-- // Entry Form End -->
                         <div class="row">
-                            <div id="ID-361" class="item-wrap ">
-                              <a href="www.hindustanproperty.com" target="_blank">
-                                <div class="property-item table-list">
-                                    <div class="table-cell">
-                                        <div class="figure-block">
-                                            <figure class="item-thumb">
-                                              <span class="label-featured label label-success">Featured</span>
-                                              <div class="label-wrap hide-on-list">
+                          <div id="ID-361" class="item-wrap ">
+                            <a href="www.hindustanproperty.com" target="_blank">
+                              <div class="property-item table-list">
+                                  <div class="table-cell">
+                                      <div class="figure-block">
+                                          <figure class="item-thumb">
+                                            <span class="label-featured label label-success">Featured</span>
+                                            <div class="label-wrap hide-on-list">
+                                              <span class="label-status label-status-7 label bg1">For Sale</span>
+                                              <span class="label label-default bg2">Open House</span>
+                                            </div>
+                                            <div class="price hide-on-list">
+                                                <h3>$670,000</h3>
+                                                <p class="rant">$1,300/mo</p>
+                                            </div>
+                                            <span class="hover-effect" href="http://houzez01.favethemes.com/property/luxury-family-home-4/">
+                                                <img width="385" height="258" src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg" class="attachment-houzez-property-thumb-image size-houzez-property-thumb-image wp-post-image" alt="chicago-06" srcset="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg 385w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-300x202.jpg 300w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-768x516.jpg 768w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-1024x688.jpg 1024w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-150x101.jpg 150w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-350x235.jpg 350w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06.jpg 1170w" sizes="(max-width: 385px) 100vw, 385px">
+                                            </span>
+                                            <figcaption class="thumb-caption cap-actions clearfix">
+                                              <ul class="list-unstyled actions pull-right">
+                                                <li>
+                                                  <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
+                                                    <i class="add_fav fa fa-heart-o" data-propid="361"></i>
+                                                  </span>
+                                                </li>
+                                                <li>
+                                                  <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
+                                                    <i class="fa fa-camera"></i>
+                                                  </span>
+                                                </li>
+                                                <li>
+                                                  <span id="compare-link-361" class="compare-property" data-propid="361" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
+                                                    <i class="fa fa-plus"></i>
+                                                  </span>
+                                                </li>
+                                              </ul>
+                                            </figcaption>
+                                          </figure>
+                                      </div>
+                                  </div>
+                                  <div class="item-body table-cell">
+                                      <div class="body-left table-cell">
+                                        <div class="info-row">
+                                          <div class="label-wrap hide-on-grid">
+                                              <span class="label-status label-status-7 label bg1">For Sale</span>
+                                              <span class="label label-default contact_outline" data-toggle="modal" data-target="#contactAjent">
+                                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                                CONTACT
+                                              </span>
+                                          </div>
+                                          <h2>Luxury family home</h2>
+                                          <h4>S Western Ave</h4> </div>
+                                          <div class="info-row amenities hide-on-grid">
+                                              <p><span>Beds: 4</span><span>Baths: 2</span><span>Sq Ft: 1200</span></p>
+                                              <p>Single Family Home</p>
+                                          </div>
+                                          <div class="info-row date hide-on-grid amenityContainer">
+                                              <p><i class="amenity-icon icon icon-lift"></i></p>
+                                              <p><i class="amenity-icon icon icon-kids-play-area"></i></p>
+                                              <p><i class="amenity-icon icon icon-np-earthquake"></i></p>
+                                              <p><i class="amenity-icon icon icon-np-firefight"></i></p>
+                                              <p><i class="amenity-icon icon icon-security"></i></p>
+                                          </div>
+                                          <div class="info-row date hide-on-grid">
+                                              <p>
+                                                <i class="fa fa-calculator" aria-hidden="true"></i>
+                                                <span href="#" data-dismiss="modal" data-toggle="modal" data-target="#emi_calculater">Calculate EMI</span>
+                                              </p>
+                                              <p>
+                                                <i class="fa fa-calendar"></i>
+                                                <span href="#"  data-dismiss="modal" data-toggle="modal" data-target="#Affordability">Check Affordability</span>
+                                              </p>
+                                          </div>
+                                      </div>
+                                      <div class="body-right table-cell hidden-gird-cell">
+                                          <div class="info-row price">
+                                              <h3>$670,000</h3>
+                                              <p class="rant">$1,300/mo</p>
+                                          </div>
+                                      </div>
+                                      <div class="table-list full-width hide-on-list">
+                                          <div class="cell">
+                                              <div class="info-row amenities">
+                                                  <p><span>Beds: 4</span><span>Baths: 2</span><span>Sq Ft: 1200</span></p>
+                                                  <p>Single Family Home</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="item-foot date hide-on-list">
+                                  <div class="item-foot-left">
+                                      <p><i class="fa fa-calculator" aria-hidden="true"></i> <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#emi_calculater">Calculate EMI</a></p>
+                                  </div>
+                                  <div class="item-foot-right">
+                                    <p><i class="fa fa-calendar"></i><a href="#">Check Affordability</a></p>
+                                  </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div id="ID-419" class="item-wrap ">
+                            <a href="#" target="_blank">
+                              <div class="property-item table-list">
+                                  <div class="table-cell">
+                                      <div class="figure-block">
+                                          <figure class="item-thumb">
+                                            <span class="label-featured label label-success">Featured</span>
+                                            <div class="label-wrap hide-on-list">
                                                 <span class="label-status label-status-7 label bg1">For Sale</span>
                                                 <span class="label label-default bg2">Open House</span>
-                                              </div>
-                                              <div class="price hide-on-list">
-                                                  <h3>$670,000</h3>
-                                                  <p class="rant">$1,300/mo</p>
-                                              </div>
-                                              <span class="hover-effect" href="http://houzez01.favethemes.com/property/luxury-family-home-4/">
-                                                  <img width="385" height="258" src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg" class="attachment-houzez-property-thumb-image size-houzez-property-thumb-image wp-post-image" alt="chicago-06" srcset="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg 385w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-300x202.jpg 300w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-768x516.jpg 768w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-1024x688.jpg 1024w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-150x101.jpg 150w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-350x235.jpg 350w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06.jpg 1170w" sizes="(max-width: 385px) 100vw, 385px">
-                                              </span>
-                                              <figcaption class="thumb-caption cap-actions clearfix">
-                                                <ul class="list-unstyled actions pull-right">
-                                                  <li>
-                                                    <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
-                                                      <i class="add_fav fa fa-heart-o" data-propid="361"></i>
-                                                    </span>
-                                                  </li>
-                                                  <li>
-                                                    <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
-                                                      <i class="fa fa-camera"></i>
-                                                    </span>
-                                                  </li>
-                                                  <li>
-                                                    <span id="compare-link-361" class="compare-property" data-propid="361" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                      <i class="fa fa-plus"></i>
-                                                    </span>
-                                                  </li>
-                                                </ul>
-                                              </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="item-body table-cell">
-                                        <div class="body-left table-cell">
-                                          <div class="info-row">
-                                            <div class="label-wrap hide-on-grid">
-                                                <span class="label-status label-status-7 label bg1">For Sale</span>
-                                                <span class="label label-default contact_outline" data-toggle="modal" data-target="#contactAjent">
-                                                  <i class="fa fa-phone" aria-hidden="true"></i>
-                                                  CONTACT
-                                                </span>
                                             </div>
-                                            <h2>Luxury family home</h2>
-                                            <h4>S Western Ave</h4> </div>
-                                            <div class="info-row amenities hide-on-grid">
-                                                <p><span>Beds: 4</span><span>Baths: 2</span><span>Sq Ft: 1200</span></p>
-                                                <p>Single Family Home</p>
-                                            </div>
-                                            <div class="info-row date hide-on-grid amenityContainer">
-                                                <p><i class="amenity-icon icon icon-lift"></i></p>
-                                                <p><i class="amenity-icon icon icon-kids-play-area"></i></p>
-                                                <p><i class="amenity-icon icon icon-np-earthquake"></i></p>
-                                                <p><i class="amenity-icon icon icon-np-firefight"></i></p>
-                                                <p><i class="amenity-icon icon icon-security"></i></p>
-                                            </div>
-                                            <div class="info-row date hide-on-grid">
-                                                <p>
-                                                  <i class="fa fa-calculator" aria-hidden="true"></i>
-                                                  <span href="#" data-dismiss="modal" data-toggle="modal" data-target="#emi_calculater">Calculate EMI</span>
-                                                </p>
-                                                <p>
-                                                  <i class="fa fa-calendar"></i>
-                                                  <span href="#"  data-dismiss="modal" data-toggle="modal" data-target="#Affordability">Check Affordability</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="body-right table-cell hidden-gird-cell">
-                                            <div class="info-row price">
+                                            <div class="price hide-on-list">
                                                 <h3>$670,000</h3>
                                                 <p class="rant">$1,300/mo</p>
                                             </div>
-                                        </div>
-                                        <div class="table-list full-width hide-on-list">
-                                            <div class="cell">
-                                                <div class="info-row amenities">
-                                                    <p><span>Beds: 4</span><span>Baths: 2</span><span>Sq Ft: 1200</span></p>
-                                                    <p>Single Family Home</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item-foot date hide-on-list">
-                                    <div class="item-foot-left">
-                                        <p><i class="fa fa-calculator" aria-hidden="true"></i> <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#emi_calculater">Calculate EMI</a></p>
-                                    </div>
-                                    <div class="item-foot-right">
-                                      <p><i class="fa fa-calendar"></i><a href="#">Check Affordability</a></p>
-                                    </div>
-                                </div>
-                              </a>
-                            </div>
-                            <div id="ID-419" class="item-wrap ">
-                              <a href="#" target="_blank">
-                                <div class="property-item table-list">
-                                    <div class="table-cell">
-                                        <div class="figure-block">
-                                            <figure class="item-thumb">
-                                              <span class="label-featured label label-success">Featured</span>
-                                              <div class="label-wrap hide-on-list">
-                                                  <span class="label-status label-status-7 label bg1">For Sale</span>
-                                                  <span class="label label-default bg2">Open House</span>
-                                              </div>
-                                              <div class="price hide-on-list">
-                                                  <h3>$670,000</h3>
-                                                  <p class="rant">$1,300/mo</p>
-                                              </div>
-                                              <span class="hover-effect" href="http://houzez01.favethemes.com/property/luxury-family-home-4/">
-                                                  <img width="385" height="258" src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg" class="attachment-houzez-property-thumb-image size-houzez-property-thumb-image wp-post-image" alt="chicago-06" srcset="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg 385w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-300x202.jpg 300w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-768x516.jpg 768w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-1024x688.jpg 1024w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-150x101.jpg 150w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-350x235.jpg 350w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06.jpg 1170w" sizes="(max-width: 385px) 100vw, 385px">
+                                            <span class="hover-effect" href="http://houzez01.favethemes.com/property/luxury-family-home-4/">
+                                                <img width="385" height="258" src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg" class="attachment-houzez-property-thumb-image size-houzez-property-thumb-image wp-post-image" alt="chicago-06" srcset="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg 385w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-300x202.jpg 300w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-768x516.jpg 768w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-1024x688.jpg 1024w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-150x101.jpg 150w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-350x235.jpg 350w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06.jpg 1170w" sizes="(max-width: 385px) 100vw, 385px">
+                                            </span>
+                                            <figcaption class="thumb-caption cap-actions clearfix">
+                                              <ul class="list-unstyled actions pull-right">
+                                                <li>
+                                                  <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
+                                                    <i class="add_fav fa fa-heart-o" data-propid="361"></i>
+                                                  </span>
+                                                </li>
+                                                <li>
+                                                  <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
+                                                    <i class="fa fa-camera"></i>
+                                                  </span>
+                                                </li>
+                                                <li>
+                                                  <span id="compare-link-361" class="compare-property" data-propid="361" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
+                                                    <i class="fa fa-plus"></i>
+                                                  </span>
+                                                </li>
+                                              </ul>
+                                            </figcaption>
+                                          </figure>
+                                      </div>
+                                  </div>
+                                  <div class="item-body table-cell">
+                                      <div class="body-left table-cell">
+                                        <div class="info-row">
+                                          <div class="label-wrap hide-on-grid">
+                                              <span class="label-status label-status-7 label bg1">For Sale</span>
+                                              <span class="label label-default contact_outline" data-toggle="modal" data-target="#contactAjent">
+                                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                                CONTACT
                                               </span>
-                                              <figcaption class="thumb-caption cap-actions clearfix">
-                                                <ul class="list-unstyled actions pull-right">
-                                                  <li>
-                                                    <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
-                                                      <i class="add_fav fa fa-heart-o" data-propid="361"></i>
-                                                    </span>
-                                                  </li>
-                                                  <li>
-                                                    <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
-                                                      <i class="fa fa-camera"></i>
-                                                    </span>
-                                                  </li>
-                                                  <li>
-                                                    <span id="compare-link-361" class="compare-property" data-propid="361" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                      <i class="fa fa-plus"></i>
-                                                    </span>
-                                                  </li>
-                                                </ul>
-                                              </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="item-body table-cell">
-                                        <div class="body-left table-cell">
-                                          <div class="info-row">
-                                            <div class="label-wrap hide-on-grid">
-                                                <span class="label-status label-status-7 label bg1">For Sale</span>
-                                                <span class="label label-default contact_outline" data-toggle="modal" data-target="#contactAjent">
-                                                  <i class="fa fa-phone" aria-hidden="true"></i>
-                                                  CONTACT
-                                                </span>
-                                            </div>
-                                            <h2>Luxury family home</h2>
-                                            <h4>S Western Ave</h4> </div>
-                                            <div class="info-row amenities hide-on-grid">
-                                                <p><span>Beds: 4</span><span>Baths: 2</span><span>Sq Ft: 1200</span></p>
-                                                <p>Single Family Home</p>
-                                            </div>
-                                            <div class="info-row date hide-on-grid amenityContainer">
-                                                <p><i class="amenity-icon icon icon-lift"></i></p>
-                                                <p><i class="amenity-icon icon icon-kids-play-area"></i></p>
-                                                <p><i class="amenity-icon icon icon-np-earthquake"></i></p>
-                                                <p><i class="amenity-icon icon icon-np-firefight"></i></p>
-                                                <p><i class="amenity-icon icon icon-security"></i></p>
-                                            </div>
-                                            <div class="info-row date hide-on-grid">
-                                                <p>
-                                                  <i class="fa fa-calculator" aria-hidden="true"></i>
-                                                  <span href="#" data-dismiss="modal" data-toggle="modal" data-target="#emi_calculater">Calculate EMI</span>
-                                                </p>
-                                                <p>
-                                                  <i class="fa fa-calendar"></i>
-                                                  <span href="#"  data-dismiss="modal" data-toggle="modal" data-target="#Affordability">Check Affordability</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="body-right table-cell hidden-gird-cell">
-                                            <div class="info-row price">
-                                                <h3>$670,000</h3>
-                                                <p class="rant">$1,300/mo</p>
-                                            </div>
-                                        </div>
-                                        <div class="table-list full-width hide-on-list">
-                                            <div class="cell">
-                                                <div class="info-row amenities">
-                                                    <p><span>Beds: 4</span><span>Baths: 2</span><span>Sq Ft: 1200</span></p>
-                                                    <p>Single Family Home</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item-foot date hide-on-list">
-                                    <div class="item-foot-left">
-                                        <p><i class="fa fa-calculator" aria-hidden="true"></i> <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#emi_calculater">Calculate EMI</a></p>
-                                    </div>
-                                    <div class="item-foot-right">
-                                      <p><i class="fa fa-calendar"></i><a href="#">Check Affordability</a></p>
-                                    </div>
-                                </div>
-                              </a>
-                            </div>
-                            <div id="ID-412" class="item-wrap ">
-                              <a href="#" target="_blank">
-                                <div class="property-item table-list">
-                                    <div class="table-cell">
-                                        <div class="figure-block">
-                                            <figure class="item-thumb">
-                                              <span class="label-featured label label-success">Featured</span>
-                                              <div class="label-wrap hide-on-list">
-                                                  <span class="label-status label-status-7 label label-default">For Sale</span>
-                                                  <span class="label label-default label-color-288">Open House</span>
+                                          </div>
+                                          <h2>Luxury family home</h2>
+                                          <h4>S Western Ave</h4> </div>
+                                          <div class="info-row amenities hide-on-grid">
+                                              <p><span>Beds: 4</span><span>Baths: 2</span><span>Sq Ft: 1200</span></p>
+                                              <p>Single Family Home</p>
+                                          </div>
+                                          <div class="info-row date hide-on-grid amenityContainer">
+                                              <p><i class="amenity-icon icon icon-lift"></i></p>
+                                              <p><i class="amenity-icon icon icon-kids-play-area"></i></p>
+                                              <p><i class="amenity-icon icon icon-np-earthquake"></i></p>
+                                              <p><i class="amenity-icon icon icon-np-firefight"></i></p>
+                                              <p><i class="amenity-icon icon icon-security"></i></p>
+                                          </div>
+                                          <div class="info-row date hide-on-grid">
+                                              <p>
+                                                <i class="fa fa-calculator" aria-hidden="true"></i>
+                                                <span href="#" data-dismiss="modal" data-toggle="modal" data-target="#emi_calculater">Calculate EMI</span>
+                                              </p>
+                                              <p>
+                                                <i class="fa fa-calendar"></i>
+                                                <span href="#"  data-dismiss="modal" data-toggle="modal" data-target="#Affordability">Check Affordability</span>
+                                              </p>
+                                          </div>
+                                      </div>
+                                      <div class="body-right table-cell hidden-gird-cell">
+                                          <div class="info-row price">
+                                              <h3>$670,000</h3>
+                                              <p class="rant">$1,300/mo</p>
+                                          </div>
+                                      </div>
+                                      <div class="table-list full-width hide-on-list">
+                                          <div class="cell">
+                                              <div class="info-row amenities">
+                                                  <p><span>Beds: 4</span><span>Baths: 2</span><span>Sq Ft: 1200</span></p>
+                                                  <p>Single Family Home</p>
                                               </div>
-                                              <div class="price hide-on-list">
-                                                  <h3>$670,000</h3>
-                                                  <p class="rant">$1,300/mo</p>
-                                              </div>
-                                              <span class="hover-effect" href="http://houzez01.favethemes.com/property/luxury-family-home-4/">
-                                                  <img width="385" height="258" src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg" class="attachment-houzez-property-thumb-image size-houzez-property-thumb-image wp-post-image" alt="chicago-06" srcset="http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-385x258.jpg 385w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-300x202.jpg 300w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-768x516.jpg 768w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-1024x688.jpg 1024w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-150x101.jpg 150w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-350x235.jpg 350w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06.jpg 1170w" sizes="(max-width: 385px) 100vw, 385px">
-                                              </span>
-                                              <figcaption class="thumb-caption cap-actions clearfix">
-                                                <ul class="list-unstyled actions pull-right">
-                                                  <li>
-                                                    <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
-                                                      <i class="add_fav fa fa-heart-o" data-propid="361"></i>
-                                                    </span>
-                                                  </li>
-                                                  <li>
-                                                    <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
-                                                      <i class="fa fa-camera"></i>
-                                                    </span>
-                                                  </li>
-                                                  <li>
-                                                    <span id="compare-link-361" class="compare-property" data-propid="361" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                      <i class="fa fa-plus"></i>
-                                                    </span>
-                                                  </li>
-                                                </ul>
-                                              </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="item-body table-cell">
-                                        <div class="body-left table-cell">
-                                          <div class="info-row">
-                                            <div class="label-wrap hide-on-grid">
-                                                <span class="label-status label-status-7 label label-default">For Sale</span>
-                                                <span class="label label-default contact_outline" data-toggle="modal" data-target="#contactAjent">
-                                                  <i class="fa fa-phone" aria-hidden="true"></i>
-                                                  CONTACT
-                                                </span>
-                                            </div>
-                                            <h2>Luxury family home</h2>
-                                            <h4>S Western Ave</h4> </div>
-                                            <div class="info-row amenities hide-on-grid">
-                                                <p><span>Beds: 4</span><span>Baths: 2</span><span>Sq Ft: 1200</span></p>
-                                                <p>Single Family Home</p>
-                                            </div>
-                                            <div class="info-row date hide-on-grid amenityContainer">
-                                                <p><i class="amenity-icon icon icon-lift"></i></p>
-                                                <p><i class="amenity-icon icon icon-kids-play-area"></i></p>
-                                                <p><i class="amenity-icon icon icon-np-earthquake"></i></p>
-                                                <p><i class="amenity-icon icon icon-np-firefight"></i></p>
-                                                <p><i class="amenity-icon icon icon-security"></i></p>
-                                            </div>
-                                            <div class="info-row date hide-on-grid">
-                                                <p>
-                                                  <i class="fa fa-calculator" aria-hidden="true"></i>
-                                                  <span href="#" data-dismiss="modal" data-toggle="modal" data-target="#emi_calculater">Calculate EMI</span>
-                                                </p>
-                                                <p>
-                                                  <i class="fa fa-calendar"></i>
-                                                  <span href="#"  data-dismiss="modal" data-toggle="modal" data-target="#Affordability">Check Affordability</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="body-right table-cell hidden-gird-cell">
-                                            <div class="info-row price">
-                                                <h3>$670,000</h3>
-                                                <p class="rant">$1,300/mo</p>
-                                            </div>
-                                        </div>
-                                        <div class="table-list full-width hide-on-list">
-                                            <div class="cell">
-                                                <div class="info-row amenities">
-                                                    <p><span>Beds: 4</span><span>Baths: 2</span><span>Sq Ft: 1200</span></p>
-                                                    <p>Single Family Home</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item-foot date hide-on-list">
-                                    <div class="item-foot-left">
-                                        <p><i class="fa fa-calculator" aria-hidden="true"></i> <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#emi_calculater">Calculate EMI</a></p>
-                                    </div>
-                                    <div class="item-foot-right">
-                                      <p><i class="fa fa-calendar"></i><a href="#">Check Affordability</a></p>
-                                    </div>
-                                </div>
-                              </a>
-                            </div>
-                            <div id="ID-405" class="item-wrap ">
-                                <div class="property-item table-list">
-                                    <div class="table-cell">
-                                        <div class="figure-block">
-                                            <figure class="item-thumb">
-
-                                                <span class="label-featured label label-success">Featured</span>
-
-                                                <div class="label-wrap hide-on-list">
-                                                    <span class="label-status label-status-7 label label-default">For Sale</span>
-                                                </div>
-
-                                                <div class="price hide-on-list">
-                                                    <h3>$245,000</h3>
-                                                    <p class="rant">$1,800/sq ft</p>
-                                                </div>
-                                                <a class="hover-effect" href="http://houzez01.favethemes.com/property/ample-apartment-at-last-floor-2/">
-                                                    <img width="385" height="258" src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-04-385x258.jpg" class="attachment-houzez-property-thumb-image size-houzez-property-thumb-image wp-post-image" alt="los-angeles-04" srcset="http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-04-385x258.jpg 385w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-04-300x202.jpg 300w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-04-768x516.jpg 768w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-04-1024x688.jpg 1024w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-04-150x101.jpg 150w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-04-350x235.jpg 350w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-04.jpg 1170w" sizes="(max-width: 385px) 100vw, 385px"> </a>
-                                                <figcaption class="thumb-caption cap-actions clearfix">
-                                                    <ul class="list-unstyled actions pull-right">
-                                                        <li>
-                                                            <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
-                <i class="add_fav fa fa-heart-o" data-propid="405"></i>        </span>
-                                                        </li>
-                                                        <li>
-                                                            <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
-                <i class="fa fa-camera"></i>
-                                                            </span>
-                                                        </li>
-                                                        <li>
-                                                            <span id="compare-link-405" class="compare-property" data-propid="405" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                <i class="fa fa-plus"></i>
-            </span>
-                                                        </li>
-                                                    </ul>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="item-body table-cell">
-
-                                        <div class="body-left table-cell">
-                                            <div class="info-row">
-                                                <div class="label-wrap hide-on-grid">
-                                                    <span class="label-status label-status-7 label label-default">For Sale</span>
-                                                </div>
-                                                <h2><a href="http://houzez01.favethemes.com/property/ample-apartment-at-last-floor-2/">Ample apartment at last floor</a></h2>
-                                                <h4>S Central Ave</h4> </div>
-                                            <div class="info-row amenities hide-on-grid">
-                                                <p><span>Beds: 4</span><span>Baths: 2</span><span>Sq Ft: 2100</span>
-                                                </p>
-                                                <p>Apartment</p>
-                                            </div>
-                                            <div class="info-row date hide-on-grid">
-                                                <p><i class="fa fa-user"></i> <a href="http://houzez01.favethemes.com/agent/brittany-watkins/">Brittany Watkins</a>
-                                                </p>
-                                                <p><i class="fa fa-calendar"></i>6 months ago</p>
-                                            </div>
-                                        </div>
-                                        <div class="body-right table-cell hidden-gird-cell">
-
-                                            <div class="info-row price">
-                                                <h3>$245,000</h3>
-                                                <p class="rant">$1,800/sq ft</p>
-                                            </div>
-
-                                            <div class="info-row phone text-right">
-                                                <a href="http://houzez01.favethemes.com/property/ample-apartment-at-last-floor-2/" class="btn btn-primary">Details <i class="fa fa-angle-right fa-right"></i></a>
-                                            </div>
-                                        </div>
-
-                                        <div class="table-list full-width hide-on-list">
-                                            <div class="cell">
-                                                <div class="info-row amenities">
-                                                    <p><span>Beds: 4</span><span>Baths: 2</span><span>Sq Ft: 2100</span>
-                                                    </p>
-                                                    <p>Apartment</p>
-
-                                                </div>
-                                            </div>
-                                            <div class="cell">
-                                                <div class="phone">
-                                                    <a href="http://houzez01.favethemes.com/property/ample-apartment-at-last-floor-2/" class="btn btn-primary"> Details <i class="fa fa-angle-right fa-right"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item-foot date hide-on-list">
-                                    <div class="item-foot-left">
-                                        <p><i class="fa fa-user"></i> <a href="http://houzez01.favethemes.com/agent/brittany-watkins/">Brittany Watkins</a>
-                                        </p>
-                                    </div>
-                                    <div class="item-foot-right">
-                                        <p><i class="fa fa-calendar"></i>6 months ago</p>
-                                    </div>
-                                </div>
-                            </div>
-
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="item-foot date hide-on-list">
+                                  <div class="item-foot-left">
+                                      <p><i class="fa fa-calculator" aria-hidden="true"></i> <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#emi_calculater">Calculate EMI</a></p>
+                                  </div>
+                                  <div class="item-foot-right">
+                                    <p><i class="fa fa-calendar"></i><a href="#">Check Affordability</a></p>
+                                  </div>
+                              </div>
+                            </a>
+                          </div>
                         </div>
                     </div>
                     <hr>
@@ -1377,9 +1295,24 @@
                                                             <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
                 <i class="add_fav fa fa-heart-o" data-propid="445"></i>        </span>
                                                         </li>
+                                                        <!-- <li class="share-btn">
+
+    <div class="share_tooltip fade">
+        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-apartment-ocean-view-3%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook"></i></a>
+                      <a href="https://twitter.com/intent/tweet?text=Luxury+apartment+ocean+view&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-apartment-ocean-view-3%2F&via=Houzez" onclick="if(!document.getElementById('td_social_networks_buttons')){window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;}"><i class="fa fa-twitter"></i></a>
+
+                      <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-apartment-ocean-view-3%2F&amp;media=http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-14-1024x688.jpg" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-pinterest"></i></a>
+
+                      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-apartment-ocean-view-3%2F&title=Luxury+apartment+ocean+view&source=http%3A%2F%2Fhouzez01.favethemes.com%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+                      <a href="http://plus.google.com/share?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-apartment-ocean-view-3%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus"></i></a>
+                      <a href="mailto:example.com?subject=Luxury+apartment+ocean+view&body=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-apartment-ocean-view-3%2F"><i class="fa fa-envelope"></i></a>
+    </div>
+    <span title="" data-placement="top" data-toggle="tooltip" data-original-title="share"><i class="fa fa-share-alt"></i></span>    </li> -->
                                                         <li>
                                                             <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
                 <i class="fa fa-camera"></i>
+                <!--<span class="count">() </span>-->
                                                             </span>
                                                         </li>
                                                         <li>
@@ -1476,9 +1409,24 @@
                                                             <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
                 <i class="add_fav fa fa-heart-o" data-propid="429"></i>        </span>
                                                         </li>
+                                                        <!-- <li class="share-btn">
+
+    <div class="share_tooltip fade">
+        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fgorgeous-villa-bay-view%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook"></i></a>
+                      <a href="https://twitter.com/intent/tweet?text=Gorgeous+villa+bay+view&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fgorgeous-villa-bay-view%2F&via=Houzez" onclick="if(!document.getElementById('td_social_networks_buttons')){window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;}"><i class="fa fa-twitter"></i></a>
+
+                      <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fgorgeous-villa-bay-view%2F&amp;media=http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-10-1024x688.jpg" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-pinterest"></i></a>
+
+                      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fgorgeous-villa-bay-view%2F&title=Gorgeous+villa+bay+view&source=http%3A%2F%2Fhouzez01.favethemes.com%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+                      <a href="http://plus.google.com/share?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fgorgeous-villa-bay-view%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus"></i></a>
+                      <a href="mailto:example.com?subject=Gorgeous+villa+bay+view&body=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fgorgeous-villa-bay-view%2F"><i class="fa fa-envelope"></i></a>
+    </div>
+    <span title="" data-placement="top" data-toggle="tooltip" data-original-title="share"><i class="fa fa-share-alt"></i></span>    </li> -->
                                                         <li>
                                                             <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
                 <i class="fa fa-camera"></i>
+                <!--<span class="count">() </span>-->
                                                             </span>
                                                         </li>
                                                         <li>
@@ -1575,9 +1523,24 @@
                                                             <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
                 <i class="add_fav fa fa-heart-o" data-propid="425"></i>        </span>
                                                         </li>
+                                                        <!-- <li class="share-btn">
+
+    <div class="share_tooltip fade">
+        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fgorgeous-villa-for-sale%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook"></i></a>
+                      <a href="https://twitter.com/intent/tweet?text=Gorgeous+villa+for+sale&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fgorgeous-villa-for-sale%2F&via=Houzez" onclick="if(!document.getElementById('td_social_networks_buttons')){window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;}"><i class="fa fa-twitter"></i></a>
+
+                      <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fgorgeous-villa-for-sale%2F&amp;media=http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-09-1024x688.jpg" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-pinterest"></i></a>
+
+                      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fgorgeous-villa-for-sale%2F&title=Gorgeous+villa+for+sale&source=http%3A%2F%2Fhouzez01.favethemes.com%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+                      <a href="http://plus.google.com/share?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fgorgeous-villa-for-sale%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus"></i></a>
+                      <a href="mailto:example.com?subject=Gorgeous+villa+for+sale&body=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fgorgeous-villa-for-sale%2F"><i class="fa fa-envelope"></i></a>
+    </div>
+    <span title="" data-placement="top" data-toggle="tooltip" data-original-title="share"><i class="fa fa-share-alt"></i></span>    </li> -->
                                                         <li>
                                                             <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
                 <i class="fa fa-camera"></i>
+                <!--<span class="count">() </span>-->
                                                             </span>
                                                         </li>
                                                         <li>
@@ -1674,9 +1637,24 @@
                                                             <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
                 <i class="add_fav fa fa-heart-o" data-propid="400"></i>        </span>
                                                         </li>
+                                                        <!-- <li class="share-btn">
+
+    <div class="share_tooltip fade">
+        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-apartment-ocean-view-2%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook"></i></a>
+                      <a href="https://twitter.com/intent/tweet?text=luxury+home+ocean+view&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-apartment-ocean-view-2%2F&via=Houzez" onclick="if(!document.getElementById('td_social_networks_buttons')){window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;}"><i class="fa fa-twitter"></i></a>
+
+                      <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-apartment-ocean-view-2%2F&amp;media=http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-03-1024x688.jpg" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-pinterest"></i></a>
+
+                      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-apartment-ocean-view-2%2F&title=luxury+home+ocean+view&source=http%3A%2F%2Fhouzez01.favethemes.com%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+                      <a href="http://plus.google.com/share?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-apartment-ocean-view-2%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus"></i></a>
+                      <a href="mailto:example.com?subject=luxury+home+ocean+view&body=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-apartment-ocean-view-2%2F"><i class="fa fa-envelope"></i></a>
+    </div>
+    <span title="" data-placement="top" data-toggle="tooltip" data-original-title="share"><i class="fa fa-share-alt"></i></span>    </li> -->
                                                         <li>
                                                             <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
                 <i class="fa fa-camera"></i>
+                <!--<span class="count">() </span>-->
                                                             </span>
                                                         </li>
                                                         <li>
@@ -1773,9 +1751,24 @@
                                                             <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
                 <i class="add_fav fa fa-heart-o" data-propid="390"></i>        </span>
                                                         </li>
+                                                        <!-- <li class="share-btn">
+
+    <div class="share_tooltip fade">
+        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fmodern-apartment-2%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook"></i></a>
+                      <a href="https://twitter.com/intent/tweet?text=Modern+apartment&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fmodern-apartment-2%2F&via=Houzez" onclick="if(!document.getElementById('td_social_networks_buttons')){window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;}"><i class="fa fa-twitter"></i></a>
+
+                      <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fmodern-apartment-2%2F&amp;media=http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-1-1024x581.jpg" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-pinterest"></i></a>
+
+                      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fmodern-apartment-2%2F&title=Modern+apartment&source=http%3A%2F%2Fhouzez01.favethemes.com%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+                      <a href="http://plus.google.com/share?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fmodern-apartment-2%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus"></i></a>
+                      <a href="mailto:example.com?subject=Modern+apartment&body=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fmodern-apartment-2%2F"><i class="fa fa-envelope"></i></a>
+    </div>
+    <span title="" data-placement="top" data-toggle="tooltip" data-original-title="share"><i class="fa fa-share-alt"></i></span>    </li> -->
                                                         <li>
                                                             <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
                 <i class="fa fa-camera"></i>
+                <!--<span class="count">() </span>-->
                                                             </span>
                                                         </li>
                                                         <li>
@@ -1872,9 +1865,24 @@
                                                             <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
                 <i class="add_fav fa fa-heart-o" data-propid="379"></i>        </span>
                                                         </li>
+                                                        <!-- <li class="share-btn">
+
+    <div class="share_tooltip fade">
+        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Frelaxing-apartment-ocean-view%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook"></i></a>
+                      <a href="https://twitter.com/intent/tweet?text=Relaxing+apartment+ocean+view&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Frelaxing-apartment-ocean-view%2F&via=Houzez" onclick="if(!document.getElementById('td_social_networks_buttons')){window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;}"><i class="fa fa-twitter"></i></a>
+
+                      <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Frelaxing-apartment-ocean-view%2F&amp;media=http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-13-1024x688.jpg" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-pinterest"></i></a>
+
+                      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Frelaxing-apartment-ocean-view%2F&title=Relaxing+apartment+ocean+view&source=http%3A%2F%2Fhouzez01.favethemes.com%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+                      <a href="http://plus.google.com/share?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Frelaxing-apartment-ocean-view%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus"></i></a>
+                      <a href="mailto:example.com?subject=Relaxing+apartment+ocean+view&body=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Frelaxing-apartment-ocean-view%2F"><i class="fa fa-envelope"></i></a>
+    </div>
+    <span title="" data-placement="top" data-toggle="tooltip" data-original-title="share"><i class="fa fa-share-alt"></i></span>    </li> -->
                                                         <li>
                                                             <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
                 <i class="fa fa-camera"></i>
+                <!--<span class="count">() </span>-->
                                                             </span>
                                                         </li>
                                                         <li>
@@ -1971,9 +1979,24 @@
                                                             <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
                 <i class="add_fav fa fa-heart-o" data-propid="373"></i>        </span>
                                                         </li>
+                                                        <!-- <li class="share-btn">
+
+    <div class="share_tooltip fade">
+        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Famazing-villa-bay-front%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook"></i></a>
+                      <a href="https://twitter.com/intent/tweet?text=Amazing+villa+bay+front&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Famazing-villa-bay-front%2F&via=Houzez" onclick="if(!document.getElementById('td_social_networks_buttons')){window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;}"><i class="fa fa-twitter"></i></a>
+
+                      <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Famazing-villa-bay-front%2F&amp;media=http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-11-1024x688.jpg" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-pinterest"></i></a>
+
+                      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Famazing-villa-bay-front%2F&title=Amazing+villa+bay+front&source=http%3A%2F%2Fhouzez01.favethemes.com%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+                      <a href="http://plus.google.com/share?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Famazing-villa-bay-front%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus"></i></a>
+                      <a href="mailto:example.com?subject=Amazing+villa+bay+front&body=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Famazing-villa-bay-front%2F"><i class="fa fa-envelope"></i></a>
+    </div>
+    <span title="" data-placement="top" data-toggle="tooltip" data-original-title="share"><i class="fa fa-share-alt"></i></span>    </li> -->
                                                         <li>
                                                             <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
                 <i class="fa fa-camera"></i>
+                <!--<span class="count">() </span>-->
                                                             </span>
                                                         </li>
                                                         <li>
@@ -2070,9 +2093,24 @@
                                                             <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
                 <i class="add_fav fa fa-heart-o" data-propid="365"></i>        </span>
                                                         </li>
+                                                        <!-- <li class="share-btn">
+
+    <div class="share_tooltip fade">
+        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fcomfortable-family-home%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook"></i></a>
+                      <a href="https://twitter.com/intent/tweet?text=Comfortable+family+home&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fcomfortable-family-home%2F&via=Houzez" onclick="if(!document.getElementById('td_social_networks_buttons')){window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;}"><i class="fa fa-twitter"></i></a>
+
+                      <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fcomfortable-family-home%2F&amp;media=http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-08-1024x688.jpg" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-pinterest"></i></a>
+
+                      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fcomfortable-family-home%2F&title=Comfortable+family+home&source=http%3A%2F%2Fhouzez01.favethemes.com%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+                      <a href="http://plus.google.com/share?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fcomfortable-family-home%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus"></i></a>
+                      <a href="mailto:example.com?subject=Comfortable+family+home&body=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fcomfortable-family-home%2F"><i class="fa fa-envelope"></i></a>
+    </div>
+    <span title="" data-placement="top" data-toggle="tooltip" data-original-title="share"><i class="fa fa-share-alt"></i></span>    </li> -->
                                                         <li>
                                                             <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
                 <i class="fa fa-camera"></i>
+                <!--<span class="count">() </span>-->
                                                             </span>
                                                         </li>
                                                         <li>
@@ -2169,9 +2207,24 @@
                                                             <span data-placement="top" data-toggle="tooltip" data-original-title="Favorite">
                 <i class="add_fav fa fa-heart-o" data-propid="357"></i>        </span>
                                                         </li>
+                                                        <!-- <li class="share-btn">
+
+    <div class="share_tooltip fade">
+        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-family-home-2%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook"></i></a>
+                      <a href="https://twitter.com/intent/tweet?text=Luxury+family+home&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-family-home-2%2F&via=Houzez" onclick="if(!document.getElementById('td_social_networks_buttons')){window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;}"><i class="fa fa-twitter"></i></a>
+
+                      <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-family-home-2%2F&amp;media=http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago-06-1024x688.jpg" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-pinterest"></i></a>
+
+                      <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-family-home-2%2F&title=Luxury+family+home&source=http%3A%2F%2Fhouzez01.favethemes.com%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+                      <a href="http://plus.google.com/share?url=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-family-home-2%2F" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus"></i></a>
+                      <a href="mailto:example.com?subject=Luxury+family+home&body=http%3A%2F%2Fhouzez01.favethemes.com%2Fproperty%2Fluxury-family-home-2%2F"><i class="fa fa-envelope"></i></a>
+    </div>
+    <span title="" data-placement="top" data-toggle="tooltip" data-original-title="share"><i class="fa fa-share-alt"></i></span>    </li> -->
                                                         <li>
                                                             <span data-toggle="tooltip" data-placement="top" title="" data-original-title="(7) Photos">
                 <i class="fa fa-camera"></i>
+                <!--<span class="count">() </span>-->
                                                             </span>
                                                         </li>
                                                         <li>
@@ -2385,34 +2438,14 @@
                         </div>
                         <div id="houzez_property_taxonomies-7" class="widget">
                             <div class="widget-top">
-                                <h3 class="widget-title">MARKET TRENDS</h3>
+                                <h3 class="widget-title">CONTACT US</h3>
                             </div>
                             <div class="widget-body">
-                              <div class="filter-section">
-                                  <div class="collapse in" id="bhk" aria-expanded="true">
-                                      <ul class="children">
-                                        <li>
-                                          <label for="sumanta">
-                                            <span>Andheri</span>
-                                          </label>
-                                          <span class="cat-count">(30)</span>
-                                        </li>
-                                        <li>
-                                          <label for="sumanta2">
-                                            <span>Andheri</span>
-                                          </label>
-                                          <span class="cat-count">(30)</span>
-                                        </li>
-                                        <li>
-                                          <label for="sumanta3">
-                                            <span>Andheri</span>
-                                          </label>
-                                          <span class="cat-count">(30)</span>
-                                        </li>
-                                      </ul>
-                                      <button id="locrefinebtn" class="btn refine-button">REFINE LOCALITY</button>
-                                  </div>
-                              </div>
+                              <ul class="list-unstyled">
+                                <li><i class="fa fa-location-arrow"></i> 774 NE 84th St Miami, FL 33879</li>
+                                <li><i class="fa fa-phone"></i> Call us FREE +1 (800) 990 8877</li>
+                              </ul>
+                              <p class="read"><a href="#">Contact us <i class="fa fa-caret-right"></i></a></p>
                             </div>
                         </div>
                     </aside>
@@ -2672,13 +2705,6 @@
   </ul>
 </div>
 <!-- // Right Sticky End -->
-<!-- // loader start -->
-<div page-loader="true">
-  <div class="loaderBlock">
-    <img src="img/loader.svg" alt="">
-  </div>
-</div>
-<!-- // loader end -->
 <!-- // Javascript start -->
 <script type='text/javascript' src='js/lib/jquery.form.min.js'></script>
 <script type='text/javascript' src='js/lib/bootstrap.min.js?ver=3.3.5'></script>

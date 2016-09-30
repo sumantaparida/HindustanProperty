@@ -1,0 +1,19 @@
+.ajentProfile {
+  margin-bottom: 15px;
+  > div {
+
+  }
+  //
+  .profile-image {
+    > img {
+      border: solid 10px #ebebeb;
+    }
+  }
+}
+.ajentGrid {
+  margin-top: 10px;
+  text-align: right;
+  .btn-grid {
+    margin-right: 0px;
+  }
+}
