@@ -36271,4 +36271,24 @@ header .header-left > div a {
   margin-top: 15px;
 }
 
+[page-loader] {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 800;
+}
+[page-loader] .loaderBlock {
+  position: fixed;
+  width: 350px;
+  height: 275px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
 /*# sourceMappingURL=style.css.map */
