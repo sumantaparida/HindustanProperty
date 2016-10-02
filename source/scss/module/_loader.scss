@@ -1,6 +1,6 @@
 [page-loader] {
   position: fixed;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(250,250,250,1);
   top: 0px;
   left: 0px;
   width: 100%;
@@ -8,7 +8,7 @@
   z-index: 800;
   .loaderBlock {
     position: fixed;
-    width: 350px;
+    width: 600px;
     height: 275px;
     top: 0;
     left: 0;

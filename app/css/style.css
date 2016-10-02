@@ -33053,7 +33053,7 @@ header .header-left > div a {
     padding: 6px 12px;
   }
 }
-.banner-container .main-search .banner-search-main ul[tab-search] li a.active {
+.banner-container .main-search .banner-search-main ul[tab-search] li a.tabactive {
   background-color: rgba(0, 0, 0, 0.66);
   color: #fff;
 }
@@ -36274,7 +36274,7 @@ header .header-left > div a {
 
 [page-loader] {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #fafafa;
   top: 0px;
   left: 0px;
   width: 100%;
@@ -36283,7 +36283,7 @@ header .header-left > div a {
 }
 [page-loader] .loaderBlock {
   position: fixed;
-  width: 350px;
+  width: 600px;
   height: 275px;
   top: 0;
   left: 0;

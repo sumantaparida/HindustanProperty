@@ -1503,9 +1503,9 @@ console.log($.fn.jquery);
   // tab-search
   tabSearch();
   function tabSearch(){
-    $("[tab-search] > li > a").on("click", function(){
-      $("[tab-search] > li > a").removeClass("active");
-      $(this).addClass("active");
+    $("[tab-value]").on("click", function(){
+      $("[tab-value]").removeClass("tabactive");
+      $(this).addClass("tabactive");
     });
   }
   // Read more

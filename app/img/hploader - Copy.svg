@@ -4,135 +4,8 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="1142.667px" height="647.665px" viewBox="0 0 1142.667 647.665" enable-background="new 0 0 1142.667 647.665"
 	 xml:space="preserve">
-	 <defs>
-     <style>
-         .cls-1 {
-             fill: #eff0f5;
-         }
-         .cls-2 {
-             fill: #cdd3e3;
-         }
-         .cls-3 {
-             fill: none;
-         }
-         .cls-4 {
-             fill: #333;
-         }
-         .cls-5 {
-             fill: #f9a972;
-         }
-         .cls-6 {
-             opacity: 0.4;
-         }
-         .cls-7 {
-             fill: #010101;
-         }
-         .cls-8 {
-             fill: #fff;
-         }
-         .cls-9 {
-             fill: #3d3c3b;
-         }
-         .cls-10 {
-             fill: #58595b;
-         }
-         .cls-11 {
-             fill: #808285;
-         }
-         .cls-12 {
-             fill: #d3d3d3;
-         }
-         .cls-13 {
-             fill: url("#Fade_to_Black");
-         }
-         .cls-14 {
-             fill: #484748;
-         }
-         .cls-15 {
-             fill: #303030;
-         }
-         .cls-16 {
-             fill: #b0aeaf;
-         }
-         .cls-17 {
-             fill: #434343;
-         }
-         .cls-18 {
-             fill: #232323;
-         }
-         .cls-19 {
-             fill: #939598;
-         }
-         .cls-20 {
-             fill: #323233;
-         }
-         .cls-21 {
-             fill: #f1f2f2;
-         }
-         .cls-22 {
-             fill: #2d2d2d;
-         }
-         .rotate-gear-animation {
-           -webkit-animation: rotateGear 8s infinite linear;
-           -moz-animation: rotateGear 8s infinite linear;
-           -o-animation: rotateGear 8s infinite linear;
-           -ms-animation: rotateGear 8s infinite linear;
-           animation: rotateGear 8s infinite linear;
-           -webkit-transform-origin: center center;
-           transform-origin: center center;
-         }
-
-         .minute-hand-animation {
-           -webkit-animation: rotateClock 20s infinite linear;
-           -moz-animation: rotateClock 20s infinite linear;
-           -o-animation: rotateClock 20s infinite linear;
-           -ms-animation: rotateClock 20s infinite linear;
-           animation: rotateClock 20s infinite linear;
-           -webkit-transform-origin: 0% 100%;
-         }
-         .hour-hand-animation {
-           -webkit-animation: rotateClock 8s infinite linear;
-           -moz-animation: rotateClock 8s infinite linear;
-           -o-animation: rotateClock 8s infinite linear;
-           -ms-animation: rotateClock 8s infinite linear;
-           animation: rotateClock 8s infinite linear;
-           -webkit-transform-origin: 0% 100%;
-         }
-
-         @-webkit-keyframes rotateClock {
-           0% { -webkit-transform: rotate(0deg);}
-           100% { -webkit-transform: rotate(360deg);}
-         }
-
-         @-keyframes rotateClock {
-           0% { transform: rotate(0deg);}
-           100% { transform: rotate(360deg);}
-         }
-
-         @-webkit-keyframes rotateGear {
-           0% { -webkit-transform: rotate(0deg);}
-           100% { -webkit-transform: rotate(360deg);}
-         }
-
-         @-keyframes rotateGear {
-           0% { transform: rotate(0deg);}
-           100% { transform: rotate(360deg);}
-         }
-
-         @-webkit-keyframes rotateHour {
-           0% { -webkit-transform: rotate(0deg);}
-           100% { -webkit-transform: rotate(360deg);}
-         }
-
-         @-keyframes rotateHour {
-           0% { transform: rotate(0deg);}
-           100% { transform: rotate(360deg);}
-         }
-       </style>
-       <linearGradient id="Fade_to_Black" x1="4525.27" y1="310.49" x2="4529.94" y2="310.49" gradientTransform="translate(-4245.69)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#231f20"/><stop offset="0.09" stop-color="#231f20"/><stop offset="1" stop-color="#231f20"/></linearGradient>
-   </defs>
 <g id="Gear_1_15_">
-	<path class="cls-2 rotate-gear-animation" fill="#CDD3E3" stroke="#CDD3E3" stroke-miterlimit="10" d="M320.167,410.86c0.001-4.834-0.276-9.661-0.83-14.461
+	<path fill="#CDD3E3" stroke="#CDD3E3" stroke-miterlimit="10" d="M320.167,410.86c0.001-4.834-0.276-9.661-0.83-14.461
 		l22.658-2.615l-0.214-1.834l-0.298-2.099l-0.179-1.295c-0.071-0.452-0.151-0.928-0.23-1.427c-0.313-1.99-0.744-4.305-1.259-6.775
 		c-0.517-2.471-1.161-5.086-1.84-7.687l-0.527-1.942c-0.181-0.645-0.376-1.282-0.582-1.921l-0.581-1.885l-0.578-1.827
 		c-0.199-0.579-0.384-1.189-0.581-1.74l-0.582-1.676l-0.578-1.59l-0.581-1.473c-0.702-1.893-1.358-3.44-1.798-4.531
@@ -182,7 +55,7 @@
 </g>
 <g id="Clock_background">
 	<circle fill="#DF1F33" cx="195.26" cy="410.851" r="106.42"/>
-
+	
 		<image overflow="visible" width="96" height="74" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEALwAvAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA
 EAMCAwYAAALcAAAEOgAACDf/2wCEABALCwsMCxAMDBAXDw0PFxsUEBAUGx8XFxcXFx8eFxoaGhoX
 Hh4jJSclIx4vLzMzLy9AQEBAQEBAQEBAQEBAQEABEQ8PERMRFRISFRQRFBEUGhQWFhQaJhoaHBoa
@@ -223,7 +96,7 @@ QOEFRlEyOx7U11f54zHD9yOH7kcP78cL3I4XuRw/cjh+5HC89pHC8tpHD+/HD9yOH7kf/9k=" transf
 	</image>
 </g>
 <g id="Gear_1_1_">
-	<path class="cls-2 rotate-gear-animation" fill="#CDD3E3" stroke="#CDD3E3" stroke-miterlimit="10" d="M705.791,393.9c0.001-4.834-0.276-9.661-0.83-14.461l22.657-2.615
+	<path fill="#CDD3E3" stroke="#CDD3E3" stroke-miterlimit="10" d="M705.791,393.9c0.001-4.834-0.276-9.661-0.83-14.461l22.657-2.615
 		l-0.214-1.834l-0.298-2.1l-0.179-1.295c-0.071-0.451-0.151-0.927-0.23-1.426c-0.313-1.99-0.744-4.305-1.259-6.775
 		c-0.517-2.471-1.161-5.086-1.84-7.687l-0.527-1.942c-0.181-0.645-0.376-1.282-0.581-1.921l-0.581-1.886l-0.578-1.826
 		c-0.199-0.579-0.384-1.189-0.581-1.74l-0.582-1.676l-0.578-1.59l-0.581-1.473c-0.701-1.893-1.358-3.44-1.798-4.531
@@ -294,7 +167,7 @@ eoiwPuoaZnpNpi+qnx0GmZ6TaDPmYFIW+SMHj1DtbQaZnpNp9eBujFXhMT4W8o56DTJgiF5JI2VR
 3mjG6lXU2ZTwINDDjUy4zcXH8fmvoNRPj2jyhYEnZxz5ihDCLk8Xc7sdB7f/2Q==" transform="matrix(1.4924 0 0 1.4924 546.1787 331.082)">
 </image>
 <g id="Gear_1_2_">
-	<path class="cls-2 rotate-gear-animation" fill="#CDD3E3" stroke="#CDD3E3" stroke-miterlimit="10" d="M1081.83,401.094c0-4.833-0.277-9.66-0.831-14.46l22.657-2.615
+	<path fill="#CDD3E3" stroke="#CDD3E3" stroke-miterlimit="10" d="M1081.83,401.094c0-4.833-0.277-9.66-0.831-14.46l22.657-2.615
 		l-0.213-1.834l-0.299-2.1l-0.178-1.295c-0.072-0.451-0.15-0.927-0.231-1.426c-0.313-1.99-0.744-4.305-1.259-6.775
 		s-1.159-5.086-1.84-7.687l-0.527-1.942c-0.181-0.645-0.376-1.283-0.581-1.921l-0.581-1.886l-0.578-1.826
 		c-0.199-0.58-0.383-1.189-0.581-1.74l-0.581-1.676l-0.579-1.591l-0.581-1.472c-0.701-1.894-1.357-3.441-1.798-4.531
@@ -343,7 +216,7 @@ eoiwPuoaZnpNpi+qnx0GmZ6TaDPmYFIW+SMHj1DtbQaZnpNp9eBujFXhMT4W8o56DTJgiF5JI2VR
 </g>
 <g id="Clock_background_2_">
 	<circle fill="#FFFFFF" cx="956.923" cy="401.084" r="106.42"/>
-
+	
 		<image overflow="visible" width="120" height="120" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEAOgA6AAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA
 EAMCAwYAAAMZAAAEVAAAB57/2wCEABALCwsMCxAMDBAXDw0PFxsUEBAUGx8XFxcXFx8eFxoaGhoX
 Hh4jJSclIx4vLzMzLy9AQEBAQEBAQEBAQEBAQEABEQ8PERMRFRISFRQRFBEUGhQWFhQaJhoaHBoa
