@@ -1562,6 +1562,13 @@ console.log($.fn.jquery);
 
 
 })(jQuery);
+//Tab close
+dddd();
+function dddd() {
+  $(".projectAccordian>ul>li>a").on("click", function(link){
+    link.preventDefault();
+  });
+}
 // side nav start
 function sidenav() {
   var side_nav = $(".topNav");
@@ -1591,7 +1598,6 @@ function sidenav() {
 //
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
-
     //smoothscroll
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();

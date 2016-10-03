@@ -13,7 +13,23 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: auto;
     margin: auto;
+    .load_dedding {
+      margin-bottom: 15px;
+      p {
+        text-align: center;
+        font-size: 14px;
+        strong {
+          font-weight: bold;
+          color: #1276a7;
+        }
+      }
+    }
+    .figure-block {
+      float: left;
+      width: 190px;
+      margin: 0px 5px;
+    }
   }
 }

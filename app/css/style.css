@@ -36288,8 +36288,24 @@ header .header-left > div a {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: auto;
   margin: auto;
+}
+[page-loader] .loaderBlock .load_dedding {
+  margin-bottom: 15px;
+}
+[page-loader] .loaderBlock .load_dedding p {
+  text-align: center;
+  font-size: 14px;
+}
+[page-loader] .loaderBlock .load_dedding p strong {
+  font-weight: bold;
+  color: #1276a7;
+}
+[page-loader] .loaderBlock .figure-block {
+  float: left;
+  width: 190px;
+  margin: 0px 5px;
 }
 
 .ajentProfile {
