@@ -3543,7 +3543,7 @@ tbody.collapse.in {
   color: #ccc;
 }
 .breadcrumb > .active {
-  color: #777777;
+  color: #000;
 }
 
 .pagination {
@@ -20308,7 +20308,7 @@ img {
 }
 
 .price .rant {
-  color: #aeaeae;
+  color: #000;
 }
 
 .item-foot {
@@ -32467,7 +32467,7 @@ header .header-left > div a {
 [data-botom-nav-left] li {
   float: left;
   margin-right: 25px;
-  color: #252a2c;
+  color: #000;
   line-height: 3.8;
   vertical-align: middle;
 }
@@ -32476,7 +32476,7 @@ header .header-left > div a {
   line-height: 3.5;
 }
 [data-botom-nav-left] li a {
-  color: #252a2c;
+  color: #000;
 }
 [data-botom-nav-left] li span .fa {
   font-size: 20px;
@@ -33911,6 +33911,7 @@ header .header-left > div a {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 12px;
+  color: #000 !important;
 }
 .projectAccordian .tab-content {
   background-color: #fff;
