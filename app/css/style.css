@@ -36341,6 +36341,10 @@ header .header-left > div a {
   margin-top: 15px;
 }
 
+[page-loader="false"] {
+  display: none;
+}
+
 [page-loader="true"] {
   position: fixed;
   background-color: #fafafa;
@@ -36375,6 +36379,47 @@ header .header-left > div a {
   float: left;
   width: 190px;
   margin: 0px 5px;
+}
+
+.Wrapper404 {
+  min-height: 545px !important;
+}
+
+.notfoundContainer {
+  border: solid 1px #331d93;
+  margin-top: 35px;
+  border-radius: 5px;
+  padding: 80px 10px;
+}
+.notfoundContainer .banner-search-main {
+  max-width: 800px;
+  border-top-left-radius: 4px;
+  background: #d8d6d6;
+}
+.notfoundContainer .banner-search-main .input-search::before {
+  height: 42px;
+  line-height: 42px;
+}
+.notfoundContainer h3 {
+  text-align: center;
+  margin: 15px 0px 0px 0px;
+  color: #F44336;
+  font-size: 30px;
+  line-height: 50px;
+}
+.notfoundContainer h5 {
+  text-align: center;
+  margin: 0px 0px 15px 0px;
+}
+.notfoundContainer .search-btn .btn-hp {
+  padding: 6px 30px;
+  height: 42px;
+  width: 100%;
+  background-color: #7daf00;
+  color: #fff;
+  text-transform: uppercase;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .ajentProfile {
