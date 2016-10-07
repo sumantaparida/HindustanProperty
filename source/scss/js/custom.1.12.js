@@ -1425,10 +1425,18 @@ console.log($.fn.jquery);
     var pClickList = $(".price-list > ul");
     pClick.on("click", function(){
       $(".property-type > ul").hide();
-      pClickList.stop(true,false).slideToggle(300);
+      pClickList.stop(true,false).slideToggle(300, function(){
+        if ($(pClickList).is(':visible')) {
+            //console.log("Visible");
+            $("body").after("<div role='priceType'></div>");
+        } else {
+            //console.log("IN Visible");
+            //alert("0");
+            $("[role='priceType']").remove();
+        }
+      });
       $(".property-type > ul").stop(true,false).slideUp(300);
       $("[role='propertyType']").remove();
-      $("body").after("<div role='priceType'></div>");
       $("[data-input] > input").on("click", function(){
         var id = $(this).attr("data");
         var att = $("[data-price-list-left], [data-price-list-right]");
@@ -1447,12 +1455,18 @@ console.log($.fn.jquery);
     var proClick = $(".property-type > a");
     var proClickList = $(".property-type > ul");
     proClick.on("click", function(){
-      proClickList.stop(true,false).slideToggle(300);
+      proClickList.stop(true,false).slideToggle(300, function(){
+        if ($(proClickList).is(':visible')) {
+            //console.log("Visible");
+            $("body").after("<div role='propertyType'></div>");
+        } else {
+            //console.log("IN Visible");
+            //alert("0");
+            $("[role='propertyType']").remove();
+        }
+      });
       //console.log("click");
       $(".price-list > ul").hide();
-      $("[role='priceType']").remove();
-      // Outer Click
-      $("body").after("<div role='propertyType'></div>");
     });
     $(document).on("click","[role='propertyType']", function(){
       proClickList.stop(true,false).slideToggle(300);

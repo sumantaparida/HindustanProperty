@@ -246,7 +246,26 @@
       </div>
       <div class="col-xs-5 col-sm-5 nopadding">
         <ul data-botom-nav-right>
-          <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i> </a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" id="menu1" data-toggle="dropdown"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+            <div class="dropdown-menu" role="menu" aria-labelledby="menu1">
+              <div class="notification-title">
+                <h5>
+                  <a href="javascript:;" id="c_shortlist"> SHORTLISTED PROPERTIES<span class="feed-count">0</span> </a> | <a onclick="cproperties();" href="javascript:;" id="c_contactlist">  CONTACTED PROPERTIES<span class="" id="cntcount"></span></a>
+                  <a href="javascript:;" class="close pull-right"><i class="fa icon-close" aria-hidden="true"></i></a>
+                </h5>
+              </div>
+              <div class="show_shorlist">
+                <div class="col-center text-center">
+                  <p>Keep track of your <br> shortlisted properties here </p>
+                  <p class="devider">Click on <i class="fa fa-star-o gold" aria-hidden="true"></i> to shortlist a property</p>
+                </div>
+              </div>
+              <div class="dropdown-footer">
+                <a href="#">SIGN IN</a> to manage your Property Hunting
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
@@ -1738,7 +1757,7 @@
 </div>
 <!-- // Right Sticky End -->
 <!-- // loader start -->
-<div page-loader="true">
+<div page-loader="false">
   <div class="loaderBlock">
     <img src="img/hploader.svg" alt="">
     <!-- // -->
