@@ -33090,7 +33090,8 @@ header .header-left > div a {
     padding: 8px;
   }
 }
-.banner-container .main-search .banner-search-main ul[tab-search] {
+
+ul[tab-search] {
   float: left;
   width: 100%;
   margin: -44px -10px 0px;
@@ -33098,16 +33099,16 @@ header .header-left > div a {
   list-style: none;
 }
 @media only screen and (max-width: 768px) {
-  .banner-container .main-search .banner-search-main ul[tab-search] {
+  ul[tab-search] {
     margin: -38px -8px 0px;
   }
 }
-.banner-container .main-search .banner-search-main ul[tab-search] li {
+ul[tab-search] li {
   float: left;
   padding: 0px;
   margin-right: 2px;
 }
-.banner-container .main-search .banner-search-main ul[tab-search] li a {
+ul[tab-search] li a {
   color: #000;
   font-size: 16px;
   padding: 6px 15px;
@@ -33116,12 +33117,12 @@ header .header-left > div a {
   height: 100%;
 }
 @media only screen and (max-width: 768px) {
-  .banner-container .main-search .banner-search-main ul[tab-search] li a {
+  ul[tab-search] li a {
     font-size: 13px;
     padding: 6px 12px;
   }
 }
-.banner-container .main-search .banner-search-main ul[tab-search] li a.tabactive {
+ul[tab-search] li a.tabactive {
   background-color: rgba(0, 0, 0, 0.66);
   color: #fff;
 }
@@ -33531,6 +33532,13 @@ header .header-left > div a {
   color: #270a0a !important;
 }
 
+.AddContainer .widget-body {
+  margin-bottom: 0px !important;
+}
+.AddContainer .widget-body img {
+  width: 100%;
+}
+
 .filter-section .btn-toggler {
   width: 100%;
   font-size: 11px;
@@ -33757,6 +33765,7 @@ header .header-left > div a {
 }
 .entryform_container .entryform .location_search .form-control, .entryform_container .entryform .location_search .btn {
   border-radius: 0px;
+  font-size: 11px;
 }
 .entryform_container .entryform .get_notified {
   width: 150px;
@@ -36393,19 +36402,54 @@ header .header-left > div a {
 }
 .notfoundContainer .banner-search-main {
   max-width: 800px;
-  border-top-left-radius: 4px;
-  background: #d8d6d6;
+  margin-top: 60px;
 }
 .notfoundContainer .banner-search-main .input-search::before {
   height: 42px;
   line-height: 42px;
 }
+.notfoundContainer .banner-search-main ul[tab-search] li a {
+  background-color: #d4d4d4;
+}
+.notfoundContainer .banner-search-main ul[tab-search] li a.tabactive {
+  background-color: rgba(0, 0, 0, 0.66);
+  color: #fff;
+}
 .notfoundContainer h3 {
   text-align: center;
   margin: 15px 0px 0px 0px;
-  color: #F44336;
+  color: #9c27b0;
   font-size: 30px;
   line-height: 50px;
+}
+.notfoundContainer h3.goBack {
+  line-height: 18px;
+}
+.notfoundContainer h3.goBack span {
+  display: block;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+}
+.notfoundContainer h3.goBack span .fa {
+  color: #545454;
+  font-size: 30px;
+  padding: 5px;
+  background-color: #dcd9d9;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  line-height: 38px;
+  margin-bottom: 10px;
+}
+.notfoundContainer h3.goBack a {
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.notfoundContainer h3.goBack a:hover span {
+  color: #7daf00;
 }
 .notfoundContainer h5 {
   text-align: center;

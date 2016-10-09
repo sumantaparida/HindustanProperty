@@ -22,7 +22,37 @@
 // main search
 @import "main-search.scss";
 }
-
+ul[tab-search] {
+  float: left;
+  width: 100%;
+  margin: -44px -10px 0px;
+  padding: 0px;
+  list-style: none;
+  @media only screen and (max-width:768px) {
+    margin: -38px -8px 0px;
+  }
+  li {
+    float: left;
+    padding: 0px;
+    margin-right: 2px;
+    a {
+      color: #000;
+      font-size: 16px;
+      padding: 6px 15px;
+      background-color: rgba(255,255,255,.66);
+      display: block;
+      height: 100%;
+      @media only screen and (max-width:768px) {
+        font-size: 13px;
+        padding: 6px 12px;
+      }
+      &.tabactive {
+        background-color: rgba(0,0,0,0.66);
+        color: #fff;
+      }
+    }
+  }
+}
 #owl-demo .item img{
     display: block;
     width: 100%;
