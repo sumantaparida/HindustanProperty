@@ -4396,7 +4396,7 @@ input[type="button"].btn-block {
   display: block;
   font-size: 13px;
   line-height: 40px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 1);
   font-weight: 500;
   /* mini phones and down */
 }
@@ -4501,7 +4501,7 @@ hr {
 }
 .breadcrumb li:after {
   font-family: "FontAwesome";
-  color: #9b9b9b;
+  color: #000;
   content: "\f105";
   padding: 0 5px;
 }
@@ -5742,7 +5742,7 @@ img {
 .input-group-addon {
   padding: 5px 15px;
   background-color: #fff;
-  color: #9b9b9b;
+  color: #000;
 }
 
 .map-info-box {
@@ -5789,7 +5789,7 @@ img {
 
 /*START STARS STYLE*/
 .rating {
-  color: #9b9b9b;
+  color: #000;
 }
 .rating .star-text-right, .rating .star-text-left {
   margin-left: 5px;
@@ -7924,11 +7924,11 @@ img {
   margin-top: 12px;
 }
 .item-body .date span {
-  color: #9b9b9b;
+  color: #000;
 }
 .item-body .date p {
   display: inline-block;
-  color: #9b9b9b;
+  color: #000;
   margin-right: 10px;
 }
 .item-body .date p i {
@@ -7961,10 +7961,10 @@ img {
   float: right;
 }
 .item-foot p {
-  color: #9b9b9b;
+  color: #000;
 }
 .item-foot a {
-  color: #9b9b9b;
+  color: #000;
 }
 .item-foot i {
   margin-right: 5px;
@@ -8320,7 +8320,7 @@ img {
 }
 
 .sort-tab {
-  color: #9b9b9b;
+  color: #000;
   vertical-align: middle;
   font-weight: 500;
   /* mini phones and down */
@@ -12843,7 +12843,7 @@ body.transparent-yes .banner-caption {
 }
 
 .profile-description .position {
-  color: #9b9b9b;
+  color: #000;
 }
 .profile-description .profile-description-left {
   float: left;
@@ -14547,7 +14547,7 @@ body.transparent-yes .banner-caption {
   margin-bottom: 5px;
 }
 .comments-block .media-body .subheading {
-  color: #9b9b9b;
+  color: #000;
   font-size: 14px;
   line-height: 14px;
   margin: 0 0 13px;
@@ -15921,7 +15921,7 @@ textarea.IDX-leadLoginTextInput {
   margin-top: 5px;
 }
 .widget-calculate .morg-summery {
-  color: #9b9b9b;
+  color: #000;
   display: none;
   margin-top: 10px;
   border-top: 1px solid rgba(0, 0, 0, 0.15);
@@ -16029,7 +16029,7 @@ textarea.IDX-leadLoginTextInput {
   width: 100%;
 }
 .widget-categories li, .widget_categories li, .widget_archive li, .widget_meta li, .widget_recent_entries li, .widget_pages li, .widget-pages li, .widget_recent_comments li, .widget_nav_menu li {
-  color: #9b9b9b;
+  color: #000;
   display: block;
   width: 100%;
   padding-left: 10px;

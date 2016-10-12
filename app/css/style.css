@@ -325,7 +325,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 1.42857;
-  color: #414446;
+  color: #000;
   background-color: #fff;
   -webkit-font-smoothing: subpixel-antialiased;
 }
@@ -16492,7 +16492,7 @@ input[type="button"].btn-block {
   display: block;
   font-size: 13px;
   line-height: 40px;
-  color: rgba(0, 0, 0, 0.5);
+  color: black;
   font-weight: 500;
   /* mini phones and down */
 }
@@ -16608,7 +16608,7 @@ hr {
 
 .breadcrumb li:after {
   font-family: "FontAwesome";
-  color: #9b9b9b;
+  color: #000;
   content: "\f105";
   padding: 0 5px;
 }
@@ -17917,7 +17917,7 @@ img {
 .input-group-addon {
   padding: 5px 15px;
   background-color: #fff;
-  color: #9b9b9b;
+  color: #000;
 }
 
 .map-info-box {
@@ -17967,7 +17967,7 @@ img {
 
 /*START STARS STYLE*/
 .rating {
-  color: #9b9b9b;
+  color: #000;
 }
 
 .rating .star-text-right, .rating .star-text-left {
@@ -20281,12 +20281,12 @@ img {
 }
 
 .item-body .date span {
-  color: #9b9b9b;
+  color: #000;
 }
 
 .item-body .date p {
   display: inline-block;
-  color: #9b9b9b;
+  color: #000;
   margin-right: 10px;
 }
 
@@ -20326,11 +20326,11 @@ img {
 }
 
 .item-foot p {
-  color: #9b9b9b;
+  color: #000;
 }
 
 .item-foot a {
-  color: #9b9b9b;
+  color: #000;
 }
 
 .item-foot i {
@@ -20710,7 +20710,7 @@ img {
 }
 
 .sort-tab {
-  color: #9b9b9b;
+  color: #000;
   vertical-align: middle;
   font-weight: 500;
   /* mini phones and down */
@@ -25756,7 +25756,7 @@ body.transparent-yes .banner-caption {
 }
 
 .profile-description .position {
-  color: #9b9b9b;
+  color: #000;
 }
 
 .profile-description .profile-description-left {
@@ -27652,7 +27652,7 @@ body.transparent-yes .banner-caption {
 }
 
 .comments-block .media-body .subheading {
-  color: #9b9b9b;
+  color: #000;
   font-size: 14px;
   line-height: 14px;
   margin: 0 0 13px;
@@ -29099,7 +29099,7 @@ textarea.IDX-leadLoginTextInput {
 }
 
 .widget-calculate .morg-summery {
-  color: #9b9b9b;
+  color: #000;
   display: none;
   margin-top: 10px;
   border-top: 1px solid rgba(0, 0, 0, 0.15);
@@ -29226,7 +29226,7 @@ textarea.IDX-leadLoginTextInput {
 }
 
 .widget-categories li, .widget_categories li, .widget_archive li, .widget_meta li, .widget_recent_entries li, .widget_pages li, .widget-pages li, .widget_recent_comments li, .widget_nav_menu li {
-  color: #9b9b9b;
+  color: #000;
   display: block;
   width: 100%;
   padding-left: 10px;
@@ -32673,7 +32673,7 @@ header .header-left > div a {
 }
 .price-list > ul li[data-price-list-left] > ul li:hover, .price-list > ul li[data-price-list-left] > ul li.active {
   border-left: solid 4px #7daf00;
-  background-color: #414446;
+  background-color: #000;
 }
 .price-list > ul li[data-price-list-right] {
   display: none;
@@ -32695,7 +32695,7 @@ header .header-left > div a {
 }
 .price-list > ul li[data-price-list-right] > ul li:hover, .price-list > ul li[data-price-list-right] > ul li.active {
   border-right: solid 4px #7daf00;
-  background-color: #414446;
+  background-color: #000;
 }
 
 .property-type {
@@ -33140,7 +33140,7 @@ ul[tab-search] li a.tabactive {
   font-weight: 200;
   text-align: center;
   font-size: 26px;
-  color: #414446;
+  color: #000;
 }
 @media only screen and (max-width: 768px) {
   [headding] {
@@ -33175,7 +33175,7 @@ ul[tab-search] li a.tabactive {
     position: relative;
     font-size: 16px;
     font-weight: 600;
-    color: #414446;
+    color: #000;
   }
   .locality-container .detail-tabs li:hover {
     opacity: 0.7;
@@ -33257,7 +33257,7 @@ ul[tab-search] li a.tabactive {
     position: relative;
     font-size: 18px;
     font-weight: 600;
-    color: #414446;
+    color: #000;
   }
   .feture-service-container .section-title-module ul li:hover {
     opacity: 0.7;
@@ -33311,7 +33311,7 @@ ul[tab-search] li a.tabactive {
   margin: 0px 0px 5px 0px;
   padding: 0px;
   width: 100%;
-  color: #656363;
+  color: #000;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -33507,7 +33507,7 @@ ul[tab-search] li a.tabactive {
   transition: all 1s ease-in-out;
 }
 .property_listing .property-item:hover {
-  border: solid 1px #414446;
+  border: solid 1px #000;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -33932,15 +33932,15 @@ ul[tab-search] li a.tabactive {
   transition: all 1s ease-in-out;
 }
 .project_listing .property-item:hover {
-  border-top: solid 1px #414446;
-  border-left: solid 1px #414446;
-  border-right: solid 1px #414446;
-  border-bottom: solid 1px #414446;
+  border-top: solid 1px #000;
+  border-left: solid 1px #000;
+  border-right: solid 1px #000;
+  border-bottom: solid 1px #000;
 }
 .project_listing .property-item:hover ~ .projectAccordian {
-  border-left: solid 1px #414446;
-  border-right: solid 1px #414446;
-  border-bottom: solid 1px #414446;
+  border-left: solid 1px #000;
+  border-right: solid 1px #000;
+  border-bottom: solid 1px #000;
 }
 
 .projectAccordian {
@@ -34107,7 +34107,7 @@ ul[tab-search] li a.tabactive {
 }
 
 .builder-stat-items li a {
-  color: #414446;
+  color: #000;
   display: block;
 }
 
@@ -34166,7 +34166,7 @@ ul[tab-search] li a.tabactive {
 }
 
 .stat-properties li a {
-  color: #414446;
+  color: #000;
 }
 
 .stat-properties li span {
@@ -34567,8 +34567,8 @@ ul[tab-search] li a.tabactive {
 }
 
 .vdh2 {
-  border-left: 1px solid #e7e7e7;
-  color: #414446;
+  border-left: 1px solid #000;
+  color: #000;
   float: left;
   font-size: 12px;
   height: 23px;
@@ -34625,15 +34625,15 @@ ul[tab-search] li a.tabactive {
 }
 
 .vdh3 {
-  border-left: 1px solid #e7e7e7;
+  border-left: 1px solid #000;
   padding-left: 10px;
-  color: #414446;
+  color: #000;
   font-size: 12px;
   margin-left: 15px !important;
 }
 
 .vdh4 {
-  color: #414446;
+  color: #000;
   font-size: 12px;
   margin-left: 5px !important;
 }

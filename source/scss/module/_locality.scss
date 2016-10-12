@@ -5,7 +5,7 @@
   font-weight: 200;
   text-align: center;
   font-size: 26px;
-  color: #414446;
+  color: #000;
   @media only screen and (max-width : 768px) {
     font-size: 26px;
   }
@@ -37,7 +37,7 @@
         position: relative;
         font-size: 16px;
         font-weight: 600;
-        color: #414446;
+        color: #000;
         &:hover {
           opacity: 0.7;
         }
