@@ -279,7 +279,7 @@ header {
             cursor: pointer;
             &:hover, &.active {
               border-left: solid 4px #7daf00;
-              background-color: #414446;
+              background-color: #000;
             }
           }
         }
@@ -302,7 +302,7 @@ header {
             cursor: pointer;
             &:hover, &.active {
               border-right: solid 4px #7daf00;
-              background-color: #414446;
+              background-color: #000;
             }
           }
         }
