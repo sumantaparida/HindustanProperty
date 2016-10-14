@@ -32504,6 +32504,26 @@ header .header-left > div a {
 [data-botom-nav-right] > li a {
   color: #252a2c;
 }
+[data-botom-nav-right] > li a .fa-star-o {
+  float: right;
+  font-size: 20px;
+  margin-top: 13px;
+  margin-right: 5px;
+}
+[data-botom-nav-right] > li a span.addtocart {
+  background-color: #e6573b;
+  width: 18px;
+  height: 18px;
+  float: right;
+  border-radius: 50px;
+  margin-right: -28px;
+  margin-top: 10px;
+  line-height: 16px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+}
 [data-botom-nav-right] .dropdown-menu {
   left: inherit;
   right: -15px;
@@ -32569,8 +32589,8 @@ header .header-left > div a {
   border-style: solid;
   border-color: transparent transparent #00a8f2;
   position: absolute;
-  right: 12px;
-  top: -16px;
+  right: 20px;
+  top: -14px;
 }
 
 .advanced-search ul[sticky-nav-left] {
