@@ -36501,4 +36501,56 @@ ul[tab-search] li a.tabactive {
   margin-right: 0px;
 }
 
+.allcityContainer .breadcrumb-top {
+  padding: 0px 0 30px;
+}
+.allcityContainer .cityBox {
+  margin: 0px 0px 30px 0px;
+  cursor: pointer;
+  transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+}
+.allcityContainer .cityBox .cityBoxLeft {
+  padding: 0px;
+  position: relative;
+  border-radius: 20px;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+.allcityContainer .cityBox .cityBoxLeft img {
+  width: 100%;
+  border-radius: 20px;
+  -webkit-filter: sepia(0.22) brightness(1.1) contrast(0.85) saturate(0.75);
+  filter: sepia(0.22) brightness(1.1) contrast(0.85) saturate(0.75);
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+.allcityContainer .cityBox .cityBoxLeft img:hover {
+  -webkit-filter: none !important;
+  -moz-filter: none !important;
+  filter: none !important;
+}
+.allcityContainer .cityBox .cityBoxLeft .cityName {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  padding: 5px 10px;
+  background-color: #414446;
+  color: #fff;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+.allcityContainer .cityBox .cityBoxLeft:hover {
+  box-shadow: 0px 0px 20px #333;
+}
+.allcityContainer .cityBox .cityBoxLeft:hover .cityName {
+  background-color: #040404;
+  padding: 5px 10px 5px 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 /*# sourceMappingURL=style.css.map */
