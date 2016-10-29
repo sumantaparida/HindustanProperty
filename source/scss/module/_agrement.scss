@@ -2,3 +2,40 @@
   margin-top: 10px;
   line-height: 23px;
 }
+.wrap {
+	padding-right: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  strong {
+    font-weight: 700;
+  }
+}
+.agreementContainer {
+  #sidebar {
+    .widget-top {
+      margin-bottom: 6px;
+    }
+    .widget-title {
+      margin-bottom: 6px;
+    }
+  }
+  .borderLine {
+    float: left;
+    margin: 6px 0px;
+    width: 100%;
+  }
+}
+//
+.agreementBox {
+  margin-top: 15px;
+  max-height: 600px;
+  overflow-x: auto;
+  padding: 0px;
+  background-color: #fff;
+  .agreementBoxData {
+    padding: 15px;
+    text-align: justify;
+  }
+}
