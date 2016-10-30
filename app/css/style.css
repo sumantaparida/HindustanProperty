@@ -17500,7 +17500,7 @@ img {
   line-height: 35px;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 4px;
   z-index: 1;
 }
 
@@ -36591,6 +36591,14 @@ ul[tab-search] li a.tabactive {
 .agreementBox .agreementBoxData {
   padding: 15px;
   text-align: justify;
+}
+
+.rentAgreement .tabs a {
+  width: auto;
+}
+.rentAgreement .tab-content {
+  background-color: #fff;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
