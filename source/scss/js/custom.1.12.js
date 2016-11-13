@@ -1528,13 +1528,23 @@ console.log($.fn.jquery);
     $("[read-more]").on("click", function(){
       var link = $("[read-data]");
       var text = $(this);
-      $("[read-data]").slideToggle('slow', function(){
-        if ($(this).is(':visible')) {
-             text.text('Less');
-        } else {
-             text.text('Read more.');
-        }
-      });
+      if ($(".seoData").attr("read-data") == "false") {
+        console.log("false");
+        $(".seoData").attr("read-data","true");
+        text.text('Less');
+      } else {
+        $(".seoData").attr("read-data","false");
+        text.text('Read more.');
+        console.log("true");
+      }
+      // $("[read-data5]").slideToggle('slow', function(){
+      //   if ($(this).is(':visible')) {
+      //     $(this).css({"visibility":"visible", "height":"auto"});
+      //     text.text('Less');
+      //   } else {
+      //        text.text('Read more.');
+      //   }
+      // });
     });
   }
   // Up Arrow

@@ -32334,6 +32334,16 @@ section:nth-child(odd) {
   background-color: #f7f7f7;
 }
 
+[read-data="false"] {
+  visibility: hidden;
+  height: 1px;
+}
+
+[read-data="true"] {
+  visibility: visible;
+  height: auto;
+}
+
 .nopadding {
   padding: 0px !important;
 }
