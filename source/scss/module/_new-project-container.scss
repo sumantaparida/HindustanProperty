@@ -1,0 +1,101 @@
+.new-project-container {
+  .n-left-project {
+    ul {
+      padding: 0px;
+      margin: 0px;
+      list-style: none;
+      li {
+        float: left;
+        width: 100%;
+        margin: 0px;
+        position: relative;
+        @media only screen and (min-width: 1100px) {
+          width: 33%;
+        }
+        a {
+          padding: 10px;
+          display: block;
+          color: inherit;
+          -webkit-transition: background-color 100ms linear;
+          -moz-transition: background-color 100ms linear;
+          -o-transition: background-color 100ms linear;
+          -ms-transition: background-color 100ms linear;
+          transition: background-color 100ms linear;
+          span {
+            display: block;
+            padding-left: 15px;
+            &:nth-child(2n+1) {
+              color: #054e5c;
+              font-weight: 600;
+              margin-bottom: 5px;
+            }
+            &:nth-child(2n+2) {
+              color: #000;
+              font-weight: 400;
+              font-size: 12px;
+            }
+          }
+          &:hover {
+            background-color: #f1f1f1;
+          }
+        }
+        &::before {
+          position: absolute;
+          content: "";
+          width: 5px;
+          height: 5px;
+          background-color: #054e5c;
+          left: 11px;
+          top: 17px;
+          border-radius: 50%;
+        }
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 1px;
+      background-color: #e9e6e6;
+      right: 5px;
+      top: 0px;
+    }
+  }
+  .n-right-project {
+    ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      li {
+        margin-bottom: 15px;
+        background-color: #f1f1f1;
+        a {
+          padding: 10px;
+          display: block;
+          img {
+            width: 100%;
+            margin-bottom: 5px;
+          }
+          p {
+            margin-bottom: 0px;
+            span {
+              &:nth-child(2n+1) {
+                color: #222b32;
+                font-weight: 600;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+              &:nth-child(2n+2) {
+                color: #097b82;
+                font-weight: 600;
+                font-size: 12px;
+                font-style: italic;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

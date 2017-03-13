@@ -1,0 +1,73 @@
+.projectSlider {
+  display: none;
+  @media only screen and (min-width: 1000px) {
+    display: block;
+    background-color: #f1f1f1;
+    border-bottom: 2px solid #fff;
+    .figure-block {
+      [class*=pro-] {
+        float: left;
+        width: 50%;
+      }
+      .pro-img-box {
+
+      }
+      .pro-desc-box {
+        padding-left: 10px;
+        color: #000;
+        h3 {
+          font-size: 16px;
+          margin-bottom: 5px;
+          line-height: 14px;
+        }
+        p {
+          margin: 0px;
+          span {
+            color: #626262;
+            font-size: 12px;
+            display: block;
+            &:nth-child(2n+1) {
+              color: #626262;
+              line-height: 12px;
+              margin-bottom: 3px;
+              max-height: 25px;
+              overflow: hidden;
+            }
+            &:nth-child(2n+2) {
+              color: #005976;
+              font-weight: 600;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+    .owl-stage {
+      .owl-item {
+        padding: 5px;
+        border-right: solid 3px #fff;
+        &:nth-child(even) {
+          background-color: #f1f1f1;
+        }
+        &:nth-child(odd) {
+          background-color: #e7e5e5;
+        }
+      }
+    }
+    .leftArrow, .rightArrow {
+      height: 100%;
+      width: 25px;
+      .icon {
+        width: 21px;
+        height: 28px;
+        float: left;
+        margin-left: 3px;
+      }
+    }
+    .owl-controls {
+      display: none;
+    }
+  }
+}

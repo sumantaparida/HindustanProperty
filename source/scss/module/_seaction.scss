@@ -1,14 +1,10 @@
-// .listingContainer {
-//   section {
-//     &:first-child {
-//       padding: 0px 0px 35px 0px !important;
-//     }
-//   }
-// }
+.services-container {
+  background-color: #f1f1f1;
+}
 section {
   float: left;
   width: 100%;
-  padding: 35px 0px;
+  padding: 15px 0px;
   &:first-child {
     padding: 0px 0px 35px 0px !important;
   }

@@ -1,0 +1,32 @@
+.propertyDescription {
+  display: none;
+  @media only screen and (min-width: 1000px) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
+  .project-logo {
+    max-width: 270px;
+  }
+  .projectDescription {
+    color: #fff;
+    h3 {
+      font-size: 35px;
+      color: #fff;
+      font-weight: 600;
+    }
+    p {
+      span {
+        max-width: 180px;
+        display: inline-block;
+        float: left;
+        max-height: 45px;
+        overflow: hidden;
+        margin-right: 15px;
+      }
+      .know-more-btn {
+        float: left;
+      }
+    }
+  }
+}

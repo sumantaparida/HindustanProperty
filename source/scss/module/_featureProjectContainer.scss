@@ -1,0 +1,77 @@
+.featureProjectContainer {
+  .figureBox {
+    box-shadow: 0px 0px 7px 1px rgba(170,167,167,0.7);
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(170,167,167,0.7);
+    -moz-box-shadow: 0px 0px 7px 1px rgba(170,167,167,0.7);
+    -ms-box-shadow: 0px 0px 7px 1px rgba(170,167,167,0.7);
+    margin: 7.5px 7.5px 15px 7.5px;
+    background-color: #fff;
+    padding: 7.5px;
+    .fi-prop-details {
+      margin-top: 10px;
+      h5 {
+        font-size: 13px;
+        font-weight: 600;
+        margin: 0px 0px 0px 0px;
+        color: #181818;
+        max-height: 33px;
+        overflow: hidden;
+      }
+      p {
+        margin: 10px 0px 0px 0px;
+        span {
+          color: #000;
+          display: block;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          font-weight: 600;
+          &:nth-child(3n+1) {
+            color: #048437;
+            font-size: 11px;
+            text-transform: uppercase;
+          }
+          &:nth-child(3n+2) {
+            color: #6d6d6d;
+            font-size: 12px;
+          }
+          &:nth-child(3n+3) {
+            color: #000;
+            font-size: 12px;
+            margin-top: 5px;
+          }
+        }
+        a {
+          text-decoration: none;
+          outline: none;
+          color: inherit;
+        }
+      }
+    }
+  }
+  .featureProjectWrapper {
+    .leftArrow, .rightArrow {
+      width: 50px;
+      height: 65px;
+    }
+    .left-arrow-icon {
+      float: left;
+      width: 50px;
+      height: 65px;
+    }
+    .right-arrow-icon {
+      float: right;
+      width: 50px;
+      height: 65px;
+    }
+    .owl-controls {
+      display: none;
+    }
+    .carousel {
+      @media only screen and (min-width: 1024px) {
+        width: 1140px;
+        margin: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.preferred-choice-container {
+  height: 427px;
+  background-color: #9784fb !important;
+  background-image: url("../img/preferred-bg.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  .heading {
+    color: #fff;
+    span {
+      color: #001116;
+    }
+  }
+  .container  {
+    @media only screen and (min-width: 800px) {
+      width: 800px;
+    }
+  }
+  .choice-box {
+    @media only screen and (min-width: 800px) {
+      margin-top: 40px;
+    }
+    p {
+      text-align: center;
+      span {
+        display: block;
+        &:nth-child(3n+1) {
+          .icon {
+            width: 25px;
+            height: 25px;
+            &.agents-icon {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+        &:nth-child(3n+2) {
+          font-weight: 700;
+        }
+        &:nth-child(3n+3) {
+          color: #fff;
+          width: 150px;
+          margin: auto;
+          font-weight: 600;
+        }
+        &.blue {
+          color: #2300d3;
+          font-size: 23px;
+        }
+        &.green {
+          color: #00ff2a;
+          font-size: 23px;
+        }
+        &.yellow {
+          color: #fff000;
+          font-size: 23px;
+        }
+      }
+    }
+  }
+}

@@ -27,7 +27,8 @@ module.exports = function(grunt) {
               style: 'expanded'
             },
             files: {                         // Dictionary of files
-              'app/css/style.css': '<%= project.scss %>'
+              'app/css/style.css': '<%= project.scss %>',
+              'app/css/home.css': '<%= project.src %>/scss/home.scss'
             }
           }
         },
@@ -39,7 +40,8 @@ module.exports = function(grunt) {
             },
             target: {
                 files: {
-                    'app/css/style.min.css': ['app/css/style.css']
+                    'app/css/style.min.css': ['app/css/style.css'],
+                    'app/css/hp.home.min.css': ['app/css/home.css']
                 }
             }
         },
@@ -67,25 +69,20 @@ module.exports = function(grunt) {
         watch: {
           options: {livereload: true},
           uglify: {
-            files: '<%= project.src %>/scss/js/{,*/}*.js',
-            tasks: ['uglify:my_target']
+            files: ['<%= project.src %>/scss/*.js'],
+            tasks: ['uglify:my_target'],
           },
           sass: {
-            files: '<%= project.src %>/scss/{,*/}*.{scss,sass}',
+            files: [
+              '<%= project.src %>/scss/*.scss',
+              '<%= project.src %>/scss/theam/scss/*.scss',
+              '<%= project.src %>/scss/module/*.scss',
+            ],
             tasks: ['sass', 'cssmin'],
           },
           livereload: {
-            options: {
-              livereload: LIVERELOAD_PORT
-            },
-            files: [
-              '<%= project.app %>/{,*/}*.html',
-              '<%= project.app %>/css/*.css',
-              '<%= project.src %>/scss/{,*/}*.scss',
-              '<%= project.src %>/scss/{,*/}*.{saas,scss}',
-              '<%= project.src %>/scss/js/{,*/}*.js',
-              '<%= project.app %>/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
-            ]
+            options: { livereload: true },
+            files: ['<%= project.src %>/**/*','<%= project.app %>/**/*'],
           }
         },
         //  Connect

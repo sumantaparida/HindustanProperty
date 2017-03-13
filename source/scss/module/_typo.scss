@@ -29,3 +29,110 @@
     }
   }
 }
+.heading {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 300;
+  span {
+    font-weight: 600;
+  }
+}
+// Button Style
+.button-outline {
+  border-radius: 4px;
+  color: #fff;
+  border: solid 1px #fff;
+  padding: 6px 10px;
+  font-weight: 600 !important;
+  vertical-align: middle;
+  .free {
+    color: #00fe1e;
+    font-style: normal;
+  }
+  &:focus {
+    color: #fff;
+    border: solid 1px #fff;
+  }
+}
+.know-more-btn {
+  border:solid 2px #00aeef;
+  border-radius: 4px;
+  background-color: #253036;
+  color: #fff;
+  font-weight: 600;
+  padding: 5px 10px;
+  line-height: 22px;
+  .more-icon {
+    width: 15px;
+    height: 22px;
+    float: right;
+    background-position: -7px -4px;
+    margin-left: 5px;
+  }
+}
+// icon
+.icon {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.c-service {
+  width: 20px;
+  height: 22px;
+  margin-right: 5px;
+  float: left;
+  border-radius: 50%;
+  background-position: -63px -4px;
+}
+.download-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 5px;
+  float: left;
+  background-position: -33px -3px;
+}
+.btn-prev {
+  background-position: -4px -39px;
+}
+.btn-next {
+  background-position: -37px -39px;
+}
+.agreement-icon {
+  background-position: -123px -5px;
+}
+.propertyIcon {
+  background-position: -183px -5px;
+}
+.news-icon {
+  background-position: -67px -36px;
+}
+.nri-icon {
+  background-position: -124px -49px;
+}
+.left-arrow-icon {
+  background-position: -6px -92px;
+}
+.right-arrow-icon {
+  background-position: -59px -91px;
+}
+.property-icon {
+  background-position: -188px -59px;
+}
+.project-icon {
+  background-position: -136px -112px;
+}
+.agents-icon {
+  background-position: -184px -106px;
+}
+.p-left-icon {
+  background-position: 0 -168px;
+  width: 48px;
+  height: 48px;
+  float: right;
+}
+.p-right-icon {
+  background-position: -63px -168px;
+  width: 48px;
+  height: 48px;
+  float: left;
+}
