@@ -5,7 +5,7 @@ console.log($.fn.jquery);
   $("[data-autosuggest]").autocomplete({
       source: function (request, response) {
           var param = { Data: $("[data-autosuggest]").val() };
-          alert('sumanta');
+          //alert('sumanta');
           $.ajax({
               url: "http://www.hindustanproperty.com/WebMethodCommon.aspx/GetLocation",
               data: JSON.stringify(param),
@@ -16,18 +16,12 @@ console.log($.fn.jquery);
               success: function (data) {
                   if (data.d.length > 0) {
                       $("[data-autosuggest]").css({ "border-color": "" });
-
-                      //alert(item.split('|')[0]);
                       response($.map(data.d, function (item) {
-                          //alert(item.split('|')[0]);
-                          //.attr('id','id1')
                           return {
                               label: item.split('|')[0],
                               val: item.split('|')[1]
-
                           }
                       }))
-
                   }
                   else {
                       //alert('test');

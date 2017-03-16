@@ -6,17 +6,9 @@
 .header-section-4 {
   z-index: 500;
 }
-.header-section-4 .header-left {
-  float: left;
-  width: 50%;
-}
 .header-section-4 .header-left .navi {
   float: left;
   margin-left: 5%;
-}
-.header-section-4 .header-right {
-  float: right;
-  width: 50%;
 }
 .header-section-4 .header-right .btn-default {
   background-color: rgba(255, 255, 255, 0.2);
@@ -190,7 +182,7 @@ header {
   .user {
     a {
       &.app-download {
-        //
+        line-height: 36px;
         &:hover {
           .DownloadWrapper {
             display: block;
@@ -593,7 +585,7 @@ header {
 .DownloadWrapper {
   position: absolute;
   left: 50%;
-  top: 30px;
+  top: 35px;
   padding: 15px;
   margin-left: -125px;
   width: 250px;
@@ -624,6 +616,42 @@ header {
     text-align: left;
     &:nth-child(2n+1) {
       margin-bottom: 15px;
+    }
+  }
+}
+.bgColor {
+  background-color: #fff;
+  box-shadow: -1px 4px 4px -1px rgba(0,0,0,.5);
+  -webkit-box-shadow: -1px 4px 4px -1px rgba(0,0,0,.5);
+  -moz-box-shadow: -1px 4px 4px -1px rgba(0,0,0,.5);
+  -ms-box-shadow: -1px 4px 4px -1px rgba(0,0,0,.5);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  .user {
+    a {
+      color: #000;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+  .button-outline {
+    border: solid 1px #000;
+  }
+  .header-left-wrapper {
+    a {
+      color: #000 !important;
+      .fa {
+        color: #000;
+      }
     }
   }
 }

@@ -14,7 +14,6 @@
   <script type='text/javascript' src='js/lib/jquery-migrate.min.js?ver=1.4.1'></script>
   <script type='text/javascript' src='js/lib/jquery.themepunch.tools.min.js?ver=5.2.6'></script>
   <script type='text/javascript' src='js/lib/jquery.themepunch.revolution.min.js?ver=5.2.6'></script>
-
   <!-- JS End -->
 </head>
 <body class="homepage">
@@ -217,7 +216,7 @@
 <!--start section header-->
 <header id="header-section" class="houzez-header-main header-section-4 not-splash-header nav-left hidden-sm hidden-xs" data-sticky="0">
   <div class="container-fluid">
-    <div class="header-left col-xs-6 nopadding">
+    <div class="header-left col-xs-6 col-sm-5 nopadding">
       <div class="col-xs-12 nopadding header-left-wrapper">
         <a href="#">
           <img src="http://www.hindustanproperty.com/images/logo.png" alt="">
@@ -225,7 +224,7 @@
         <a href="#" data-toggle="modal" data-target="#citypopup">Mumbai <i class="fa fa-angle-down" aria-hidden="true"></i></a>
       </div>
     </div>
-    <div class="header-right col-xs-6 nopadding">
+    <div class="header-right col-xs-6 col-sm-7 nopadding">
       <div class="user">
         <a href="javascript:void(0);" class="app-download"><i class="icon download-icon"></i> Download App
           <div class="DownloadWrapper">
@@ -318,11 +317,43 @@
               <li><a tab-value href="javascript:void(0);">Dealers</a></li>
             </ul>
             <div class="search input-search input-icon">
-              <input type="text" data-autosuggest class="form-control ui-autocomplete-input" name="keyword" placeholder="Enter an address, town, street, zip or property ID">
+              <input id="search" type="text" data-autosuggest class="form-control ui-autocomplete-input" name="keyword" placeholder="Enter an address, town, street, zip or property ID">
             </div>
             <div class="search-btn">
               <button class="btn btn-hp"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
             </div>
+          </div>
+          <div class="form-group optional-search">
+            <select name="" id="">
+              <option value="">Residental Appertment</option>
+              <option value="">Residental Mumbai</option>
+              <option value="">Residental Andheri</option>
+              <option value="">Residental Kurla</option>
+            </select>
+            <select name="" id="">
+              <option value="">Min Budget</option>
+              <option value="">5 Lacs</option>
+              <option value="">10 Lacs</option>
+              <option value="">15 Lacs</option>
+              <option value="">20 Lacs</option>
+              <option value="">25 Lacs</option>
+            </select>
+            <select name="" id="">
+              <option value="">Max Budget</option>
+              <option value="">10 Lacs</option>
+              <option value="">20 Lacs</option>
+              <option value="">30 Lacs</option>
+              <option value="">40 Lacs</option>
+              <option value="">50 Lacs</option>
+            </select>
+            <select name="" id="">
+              <option value="">Max Budget</option>
+              <option value="">10 Lacs</option>
+              <option value="">20 Lacs</option>
+              <option value="">30 Lacs</option>
+              <option value="">40 Lacs</option>
+              <option value="">50 Lacs</option>
+            </select>
           </div>
         </form>
       </div>
@@ -1451,9 +1482,9 @@
     $(window).scroll(function(){
       var y = $(this).scrollTop();
       if (y > 100) {
-        $("#header-section").css({"background-color":"#253036"});
+        $("#header-section").addClass("bgColor");
       } else {
-        $("#header-section").removeAttr("style");
+        $("#header-section").removeClass("bgColor");
       }
     });
   });

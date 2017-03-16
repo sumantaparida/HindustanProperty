@@ -1,3 +1,16 @@
+document.getElementById('search').onfocus = function(){
+  document.querySelector('.main-search').classList.add("active");
+}
+
+// document.querySelector('.banner-container').onclick = function(e) {
+//   if (e.target != document.querySelector('.main-search')) {
+//     console.log("inner");
+//   } else {
+//     console.log("Outer");
+//   }
+// }
+
+
 var $ = jQuery.noConflict();
 console.log($.fn.jquery);
 (function($){
@@ -18,7 +31,6 @@ console.log($.fn.jquery);
   $(window).on('load',function(){
       jQuery('body').addClass('loaded');
   });
-
   /* ------------------------------------------------------------------------ */
   /*  IF HEADER OR SEARCH STICKY
    /* ------------------------------------------------------------------------ */

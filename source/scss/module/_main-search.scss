@@ -8,6 +8,11 @@
   bottom: 0;
   left: 0;
   z-index: 9;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   .search-btn {
     .btn-hp {
         padding: 6px 30px;
@@ -23,6 +28,275 @@
   .banner-search-main {
     @media only screen and (max-width:768px) {
       padding: 8px;
+    }
+  }
+  &.active {
+    height: 105px;
+    .optional-search {
+      display: block;
+    }
+  }
+}
+//
+/*START BANNER SEARCH STYLE*/
+.banner-search-main {
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.66);
+  padding: 10px;
+  max-width: 810px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  /* mini phones and down */
+}
+.banner-search-main .form-group {
+  /* mini phones and down */
+}
+@media (max-width: 767px) {
+  .banner-search-main .form-group {
+    margin: 0 !important;
+  }
+}
+.banner-search-main .form-group div:not(.dropdown-menu) {
+  display: table-cell;
+  vertical-align: middle;
+  width: 10000px;
+  /* mini phones and down */
+}
+@media (max-width: 991px) {
+  .banner-search-main .form-group div:not(.dropdown-menu) {
+    display: block;
+    width: 100%;
+  }
+  .banner-search-main .form-group div:not(.dropdown-menu) + div {
+    margin-top: 10px;
+  }
+  .banner-search-main .form-group div:not(.dropdown-menu) .dropdown-toggle {
+    float: none;
+    width: 100%;
+    border-radius: 4px;
+  }
+}
+.banner-search-main .form-group .search-btn {
+  /* mini phones and down */
+}
+@media (max-width: 991px) {
+  .banner-search-main .form-group .search-btn {
+    padding-left: 0;
+    display: block;
+    width: 100%;
+  }
+}
+.banner-search-main .form-group .search-btn .btn, .banner-search-main .form-group .search-btn .fave-load-more a, .fave-load-more .banner-search-main .form-group .search-btn a, .banner-search-main .form-group .search-btn .post-password-form input[type='submit'], .post-password-form .banner-search-main .form-group .search-btn input[type='submit'], .banner-search-main .form-group .search-btn .wpcf7-submit, .banner-search-main .form-group .search-btn .dsidx-resp-area-submit input[type='submit'], .dsidx-resp-area-submit .banner-search-main .form-group .search-btn input[type='submit'], .banner-search-main .form-group .search-btn .IDX-leadLoginButtonInput,
+.banner-search-main .form-group .search-btn .IDX-leadLoginTextInput[type='submit'],
+.banner-search-main .form-group .search-btn .IDX-qsButtonInput,
+.banner-search-main .form-group .search-btn .idx-omnibar-form button,
+.idx-omnibar-form .banner-search-main .form-group .search-btn button,
+.banner-search-main .form-group .search-btn .impress-lead-signup input[type='submit'],
+.impress-lead-signup .banner-search-main .form-group .search-btn input[type='submit'],
+.banner-search-main .form-group .search-btn .impress-lead-login input[type='submit'],
+.impress-lead-login .banner-search-main .form-group .search-btn input[type='submit'], .banner-search-main .form-group .search-btn .IDX-saveProperty, .banner-search-main .form-group .search-btn .IDX-resultsDetailsLink a, .IDX-resultsDetailsLink .banner-search-main .form-group .search-btn a, .banner-search-main .form-group .search-btn #IDX-formReset, .banner-search-main .form-group .search-btn #IDX-formSubmit, .banner-search-main .form-group .search-btn #ihf-main-container .btn, #ihf-main-container .banner-search-main .form-group .search-btn .btn, .banner-search-main .form-group .search-btn #ihf-main-container .btn-primary, #ihf-main-container .banner-search-main .form-group .search-btn .btn-primary, .banner-search-main .form-group .search-btn #ihf-main-container .ihf-map-search-refine-link, #ihf-main-container .banner-search-main .form-group .search-btn .ihf-map-search-refine-link {
+  /* mini phones and down */
+}
+@media (max-width: 991px) {
+  .banner-search-main .form-group .search-btn .btn, .banner-search-main .form-group .search-btn .fave-load-more a, .fave-load-more .banner-search-main .form-group .search-btn a, .banner-search-main .form-group .search-btn .post-password-form input[type='submit'], .post-password-form .banner-search-main .form-group .search-btn input[type='submit'], .banner-search-main .form-group .search-btn .wpcf7-submit, .banner-search-main .form-group .search-btn .dsidx-resp-area-submit input[type='submit'], .dsidx-resp-area-submit .banner-search-main .form-group .search-btn input[type='submit'], .banner-search-main .form-group .search-btn .IDX-leadLoginButtonInput,
+  .banner-search-main .form-group .search-btn .IDX-leadLoginTextInput[type='submit'],
+  .banner-search-main .form-group .search-btn .IDX-qsButtonInput,
+  .banner-search-main .form-group .search-btn .idx-omnibar-form button,
+  .idx-omnibar-form .banner-search-main .form-group .search-btn button,
+  .banner-search-main .form-group .search-btn .impress-lead-signup input[type='submit'],
+  .impress-lead-signup .banner-search-main .form-group .search-btn input[type='submit'],
+  .banner-search-main .form-group .search-btn .impress-lead-login input[type='submit'],
+  .impress-lead-login .banner-search-main .form-group .search-btn input[type='submit'], .banner-search-main .form-group .search-btn .IDX-saveProperty, .banner-search-main .form-group .search-btn .IDX-resultsDetailsLink a, .IDX-resultsDetailsLink .banner-search-main .form-group .search-btn a, .banner-search-main .form-group .search-btn #IDX-formReset, .banner-search-main .form-group .search-btn #IDX-formSubmit, .banner-search-main .form-group .search-btn #ihf-main-container .btn, #ihf-main-container .banner-search-main .form-group .search-btn .btn, .banner-search-main .form-group .search-btn #ihf-main-container .btn-primary, #ihf-main-container .banner-search-main .form-group .search-btn .btn-primary, .banner-search-main .form-group .search-btn #ihf-main-container .ihf-map-search-refine-link, #ihf-main-container .banner-search-main .form-group .search-btn .ihf-map-search-refine-link {
+    display: block;
+    width: 100%;
+  }
+}
+.banner-search-main .form-control, .banner-search-main .post-password-form input[type='password'], .post-password-form .banner-search-main input[type='password'], .banner-search-main input[type="text"].wpcf7-form-control,
+.banner-search-main input[type="email"].wpcf7-form-control,
+.banner-search-main input[type="password"].wpcf7-form-control,
+.banner-search-main input[type="tel"].wpcf7-form-control,
+.banner-search-main textarea.wpcf7-form-control, .banner-search-main .dsidx-resp-area input[type='text'], .dsidx-resp-area .banner-search-main input[type='text'], .banner-search-main .dsidx-resp-area input[type='password'], .dsidx-resp-area .banner-search-main input[type='password'], .banner-search-main .dsidx-resp-area input[type='email'], .dsidx-resp-area .banner-search-main input[type='email'], .banner-search-main .dsidx-resp-area select, .dsidx-resp-area .banner-search-main select, .banner-search-main .dsidx-resp-area textarea, .dsidx-resp-area .banner-search-main textarea, .banner-search-main .IDX-leadLoginTextInput[type='text'], .banner-search-main textarea.IDX-leadLoginTextInput,
+.banner-search-main .IDX-qsSelectInput,
+.banner-search-main .IDX-qsTextInput[type='text'], .banner-search-main .idx-omnibar-form input[type='text'], .idx-omnibar-form .banner-search-main input[type='text'],
+.banner-search-main .idx-omnibar-form input[type='password'],
+.idx-omnibar-form .banner-search-main input[type='password'],
+.banner-search-main .idx-omnibar-form input[type='email'],
+.idx-omnibar-form .banner-search-main input[type='email'],
+.banner-search-main .idx-omnibar-form input[type='tel'],
+.idx-omnibar-form .banner-search-main input[type='tel'],
+.banner-search-main .idx-omnibar-form input[type='number'],
+.idx-omnibar-form .banner-search-main input[type='number'], .banner-search-main .impress-lead-signup input[type='text'], .impress-lead-signup .banner-search-main input[type='text'],
+.banner-search-main .impress-lead-signup input[type='email'],
+.impress-lead-signup .banner-search-main input[type='email'],
+.banner-search-main .impress-lead-signup input[type='password'],
+.impress-lead-signup .banner-search-main input[type='password'],
+.banner-search-main .impress-lead-signup input[type='tel'],
+.impress-lead-signup .banner-search-main input[type='tel'], .banner-search-main .impress-lead-login input[type='text'], .impress-lead-login .banner-search-main input[type='text'],
+.banner-search-main .impress-lead-login input[type='email'],
+.impress-lead-login .banner-search-main input[type='email'],
+.banner-search-main .impress-lead-login input[type='password'],
+.impress-lead-login .banner-search-main input[type='password'],
+.banner-search-main .impress-lead-login input[type='tel'],
+.impress-lead-login .banner-search-main input[type='tel'], .banner-search-main #IDX-listingID, .banner-search-main #IDX-streetNumber,
+.banner-search-main #IDX-streetDirection, .banner-search-main #IDX-streetName, .banner-search-main .IDX-wrapper-standard .IDX-cczList select, .IDX-wrapper-standard .IDX-cczList .banner-search-main select, .banner-search-main #ihf-main-container .form-control, #ihf-main-container .banner-search-main .form-control {
+  box-shadow: none;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  -ms-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+  width: 650px;
+  text-align: left;
+  height: 42px;
+  border: none;
+  border-right: 1px solid #dbdbdb;
+  /* mini phones and down */
+  /* mini phones and down */
+}
+@media (max-width: 991px) {
+  .banner-search-main .form-control, .banner-search-main .post-password-form input[type='password'], .post-password-form .banner-search-main input[type='password'], .banner-search-main input[type="text"].wpcf7-form-control,
+  .banner-search-main input[type="email"].wpcf7-form-control,
+  .banner-search-main input[type="password"].wpcf7-form-control,
+  .banner-search-main input[type="tel"].wpcf7-form-control,
+  .banner-search-main textarea.wpcf7-form-control, .banner-search-main .dsidx-resp-area input[type='text'], .dsidx-resp-area .banner-search-main input[type='text'], .banner-search-main .dsidx-resp-area input[type='password'], .dsidx-resp-area .banner-search-main input[type='password'], .banner-search-main .dsidx-resp-area input[type='email'], .dsidx-resp-area .banner-search-main input[type='email'], .banner-search-main .dsidx-resp-area select, .dsidx-resp-area .banner-search-main select, .banner-search-main .dsidx-resp-area textarea, .dsidx-resp-area .banner-search-main textarea, .banner-search-main .IDX-leadLoginTextInput[type='text'], .banner-search-main textarea.IDX-leadLoginTextInput,
+  .banner-search-main .IDX-qsSelectInput,
+  .banner-search-main .IDX-qsTextInput[type='text'], .banner-search-main .idx-omnibar-form input[type='text'], .idx-omnibar-form .banner-search-main input[type='text'],
+  .banner-search-main .idx-omnibar-form input[type='password'],
+  .idx-omnibar-form .banner-search-main input[type='password'],
+  .banner-search-main .idx-omnibar-form input[type='email'],
+  .idx-omnibar-form .banner-search-main input[type='email'],
+  .banner-search-main .idx-omnibar-form input[type='tel'],
+  .idx-omnibar-form .banner-search-main input[type='tel'],
+  .banner-search-main .idx-omnibar-form input[type='number'],
+  .idx-omnibar-form .banner-search-main input[type='number'], .banner-search-main .impress-lead-signup input[type='text'], .impress-lead-signup .banner-search-main input[type='text'],
+  .banner-search-main .impress-lead-signup input[type='email'],
+  .impress-lead-signup .banner-search-main input[type='email'],
+  .banner-search-main .impress-lead-signup input[type='password'],
+  .impress-lead-signup .banner-search-main input[type='password'],
+  .banner-search-main .impress-lead-signup input[type='tel'],
+  .impress-lead-signup .banner-search-main input[type='tel'], .banner-search-main .impress-lead-login input[type='text'], .impress-lead-login .banner-search-main input[type='text'],
+  .banner-search-main .impress-lead-login input[type='email'],
+  .impress-lead-login .banner-search-main input[type='email'],
+  .banner-search-main .impress-lead-login input[type='password'],
+  .impress-lead-login .banner-search-main input[type='password'],
+  .banner-search-main .impress-lead-login input[type='tel'],
+  .impress-lead-login .banner-search-main input[type='tel'], .banner-search-main #IDX-listingID, .banner-search-main #IDX-streetNumber,
+  .banner-search-main #IDX-streetDirection, .banner-search-main #IDX-streetName, .banner-search-main .IDX-wrapper-standard .IDX-cczList select, .IDX-wrapper-standard .IDX-cczList .banner-search-main select, .banner-search-main #ihf-main-container .form-control, #ihf-main-container .banner-search-main .form-control {
+    width: 100%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    border: none;
+  }
+}
+@media (max-width: 767px) {
+  .banner-search-main .form-control, .banner-search-main .post-password-form input[type='password'], .post-password-form .banner-search-main input[type='password'], .banner-search-main input[type="text"].wpcf7-form-control,
+  .banner-search-main input[type="email"].wpcf7-form-control,
+  .banner-search-main input[type="password"].wpcf7-form-control,
+  .banner-search-main input[type="tel"].wpcf7-form-control,
+  .banner-search-main textarea.wpcf7-form-control, .banner-search-main .dsidx-resp-area input[type='text'], .dsidx-resp-area .banner-search-main input[type='text'], .banner-search-main .dsidx-resp-area input[type='password'], .dsidx-resp-area .banner-search-main input[type='password'], .banner-search-main .dsidx-resp-area input[type='email'], .dsidx-resp-area .banner-search-main input[type='email'], .banner-search-main .dsidx-resp-area select, .dsidx-resp-area .banner-search-main select, .banner-search-main .dsidx-resp-area textarea, .dsidx-resp-area .banner-search-main textarea, .banner-search-main .IDX-leadLoginTextInput[type='text'], .banner-search-main textarea.IDX-leadLoginTextInput,
+  .banner-search-main .IDX-qsSelectInput,
+  .banner-search-main .IDX-qsTextInput[type='text'], .banner-search-main .idx-omnibar-form input[type='text'], .idx-omnibar-form .banner-search-main input[type='text'],
+  .banner-search-main .idx-omnibar-form input[type='password'],
+  .idx-omnibar-form .banner-search-main input[type='password'],
+  .banner-search-main .idx-omnibar-form input[type='email'],
+  .idx-omnibar-form .banner-search-main input[type='email'],
+  .banner-search-main .idx-omnibar-form input[type='tel'],
+  .idx-omnibar-form .banner-search-main input[type='tel'],
+  .banner-search-main .idx-omnibar-form input[type='number'],
+  .idx-omnibar-form .banner-search-main input[type='number'], .banner-search-main .impress-lead-signup input[type='text'], .impress-lead-signup .banner-search-main input[type='text'],
+  .banner-search-main .impress-lead-signup input[type='email'],
+  .impress-lead-signup .banner-search-main input[type='email'],
+  .banner-search-main .impress-lead-signup input[type='password'],
+  .impress-lead-signup .banner-search-main input[type='password'],
+  .banner-search-main .impress-lead-signup input[type='tel'],
+  .impress-lead-signup .banner-search-main input[type='tel'], .banner-search-main .impress-lead-login input[type='text'], .impress-lead-login .banner-search-main input[type='text'],
+  .banner-search-main .impress-lead-login input[type='email'],
+  .impress-lead-login .banner-search-main input[type='email'],
+  .banner-search-main .impress-lead-login input[type='password'],
+  .impress-lead-login .banner-search-main input[type='password'],
+  .banner-search-main .impress-lead-login input[type='tel'],
+  .impress-lead-login .banner-search-main input[type='tel'], .banner-search-main #IDX-listingID, .banner-search-main #IDX-streetNumber,
+  .banner-search-main #IDX-streetDirection, .banner-search-main #IDX-streetName, .banner-search-main .IDX-wrapper-standard .IDX-cczList select, .IDX-wrapper-standard .IDX-cczList .banner-search-main select, .banner-search-main #ihf-main-container .form-control, #ihf-main-container .banner-search-main .form-control {
+    height: 38px;
+  }
+}
+.banner-search-main .open .dropdown-toggle {
+  background-color: #fff;
+}
+.banner-search-main .dropdown-toggle {
+  border: none !important;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  -ms-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+  background: #fff;
+  font-size: 14px;
+  /* mini phones and down */
+  /* mini phones and down */
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner-search-main .dropdown-toggle {
+    width: 107px;
+  }
+}
+@media (max-width: 481px) {
+  .banner-search-main .dropdown-toggle {
+    width: 100px;
+    height: 34px;
+  }
+}
+.banner-search-main .dropdown-toggle .caret {
+  margin-left: 10px;
+}
+.banner-search-main .btn-orange {
+  padding: 6px 30px;
+  height: 42px;
+  width: 100%;
+  /* mini phones and down */
+}
+.banner-search-main .btn-orange:hover i {
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+@media (max-width: 767px) {
+  .banner-search-main .btn-orange {
+    height: 38px;
+  }
+}
+.banner-search-main .input-icon:before {
+  /* mini phones and down */
+}
+@media (max-width: 767px) {
+  .banner-search-main .input-icon:before {
+    line-height: 38px;
+    height: 38px;
+  }
+}
+@media (max-width: 991px) {
+  .banner-search-main {
+    width: 75%;
+  }
+  .banner-search-main .form-group {
+    width: 100%;
+  }
+}
+//
+.optional-search {
+  width: 100%;
+  margin-top: 10px;
+  display: none;
+  select {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 6px;
+    option {
+      padding: 6px 10px;
     }
   }
 }
