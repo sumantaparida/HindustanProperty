@@ -32500,6 +32500,7 @@ header .header-left .header-left-wrapper a {
   width: 100%;
   margin-top: 10px;
   display: none;
+  height: 32px;
 }
 .banner-container .optional-search select {
   padding: 6px 10px;
@@ -32907,6 +32908,72 @@ ul[tab-search] li a.tabactive {
   width: 100%;
   border: solid 1px #ccc;
   height: 35px;
+}
+
+.cus-dropdown-list {
+  height: 30px;
+  max-width: 200px;
+  color: #fff;
+  float: left;
+  margin-right: 15px;
+}
+.cus-dropdown-list.dropdown-small {
+  max-width: 125px;
+}
+.cus-dropdown-list .prefield {
+  border: solid 1px #fff;
+  color: #fff;
+}
+.cus-dropdown-list .prefield p {
+  padding: 5px 10px;
+  float: left;
+  width: 100%;
+  margin: 0px;
+  cursor: pointer;
+}
+.cus-dropdown-list .prefield p span {
+  float: left;
+}
+.cus-dropdown-list .prefield p .fa {
+  float: right;
+  margin-top: 3px;
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+.cus-dropdown-list .prefield p.active .fa {
+  transform: rotate(180deg);
+}
+.cus-dropdown-list .prefield p.active + ul {
+  display: block;
+}
+.cus-dropdown-list .prefield ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  float: left;
+  width: 100%;
+  max-height: 200px;
+  overflow-x: auto;
+  background-color: #fff;
+  box-shadow: 0 1px 3px 0 rgba(170, 167, 167, 0.7);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(170, 167, 167, 0.7);
+  -moz-box-shadow: 0 1px 3px 0 rgba(170, 167, 167, 0.7);
+  -ms-box-shadow: 0 1px 3px 0 rgba(170, 167, 167, 0.7);
+  -webkit-transition: all .8s;
+  transition: all .8s;
+  display: none;
+}
+.cus-dropdown-list .prefield ul[data-list="true"] {
+  display: block;
+}
+.cus-dropdown-list .prefield ul li span {
+  color: #000;
+  padding: 5px 10px;
+  display: block;
+  font-size: 13px;
+  cursor: pointer;
 }
 
 .sortBy {

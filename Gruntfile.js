@@ -51,7 +51,7 @@ module.exports = function(grunt) {
             options: {
                 mangle: false
             },
-            my_target: {
+            target: {
                 files: {
                     'app/js/style.min.js': ['<%= project.src %>/scss/js/style.js'],
                     'app/js/custom.1.8.min.js': ['<%= project.src %>/scss/js/custom.1.8.js'],
@@ -69,8 +69,11 @@ module.exports = function(grunt) {
         watch: {
           options: {livereload: true},
           uglify: {
-            files: ['<%= project.src %>/scss/*.js'],
-            tasks: ['uglify:my_target'],
+            files: [
+              '<%= project.src %>/scss/*.js',
+              '<%= project.src %>/scss/js/*.js',
+            ],
+            tasks: ['uglify'],
           },
           sass: {
             files: [
@@ -80,6 +83,14 @@ module.exports = function(grunt) {
             ],
             tasks: ['sass', 'cssmin'],
           },
+          // files: [
+          //   '<%= project.src %>/scss/*.scss',
+          //   '<%= project.src %>/scss/theam/scss/*.scss',
+          //   '<%= project.src %>/scss/module/*.scss',
+          //   '<%= project.src %>/scss/js/*.js',
+          //   '<%= project.src %>/scss/*.js',
+          // ],
+          // tasks: ['sass', 'cssmin', 'uglify'],
           livereload: {
             options: { livereload: true },
             files: ['<%= project.src %>/**/*','<%= project.app %>/**/*'],

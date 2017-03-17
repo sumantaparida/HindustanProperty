@@ -309,51 +309,98 @@
     <div class="main-search">
       <div class="banner-search-main">
         <form method="get" action="search" class="form-inline">
-          <div class="form-group">
-            <ul tab-search>
-              <li><a tab-value class="tabactive" href="javascript:void(0);">Buy</a></li>
-              <li><a tab-value href="javascript:void(0);">Rent</a></li>
-              <li><a tab-value href="javascript:void(0);">Projects</a></li>
-              <li><a tab-value href="javascript:void(0);">Dealers</a></li>
-            </ul>
-            <div class="search input-search input-icon">
-              <input id="search" type="text" data-autosuggest class="form-control ui-autocomplete-input" name="keyword" placeholder="Enter an address, town, street, zip or property ID">
+          <ul tab-search>
+            <li><a tab-value class="tabactive" href="javascript:void(0);">Buy</a></li>
+            <li><a tab-value href="javascript:void(0);">Rent</a></li>
+            <li><a tab-value href="javascript:void(0);">Projects</a></li>
+            <li><a tab-value href="javascript:void(0);">Dealers</a></li>
+          </ul>
+          <div id="search-wrappwr">
+            <div class="form-group">
+              <div class="search input-search input-icon">
+                <input id="search" type="text" data-autosuggest class="form-control ui-autocomplete-input" name="keyword" placeholder="Enter an address, town, street, zip or property ID">
+              </div>
+              <div class="search-btn">
+                <button class="btn btn-hp"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+              </div>
             </div>
-            <div class="search-btn">
-              <button class="btn btn-hp"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+            <div class="form-group optional-search">
+              <div class="cus-dropdown-list">
+                <div class="prefield">
+                  <p data-dropdown='true' ><span>Residential Apartment+7</span><i class="fa fa-angle-down"></i></p>
+                  <ul data-list="false">
+                    <li><span><input type="radio"> New Project</span></li>
+                    <li><span>Property Delears</span></li>
+                    <li><span>Residential</span></li>
+                    <li><span>Commercial</span></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- // -->
+              <div class="cus-dropdown-list dropdown-small">
+                <div class="prefield">
+                  <p data-dropdown='true' ><span>₹ Min Budget</span><i class="fa fa-angle-down"></i></p>
+                  <ul data-list="false">
+                    <li><span>Below 5 Lacs</span></li>
+                    <li><span>5 Lacs</span></li>
+                    <li><span>10 Lacs</span></li>
+                    <li><span>15 Lacs</span></li>
+                    <li><span>20 Lacs</span></li>
+                    <li><span>25 Lacs</span></li>
+                    <li><span>30 Lacs</span></li>
+                    <li><span>35 Lacs</span></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- // -->
+              <!-- // -->
+              <div class="cus-dropdown-list dropdown-small">
+                <div class="prefield">
+                  <p data-dropdown='true' ><span>₹ Max Budget</span><i class="fa fa-angle-down"></i></p>
+                  <ul data-list="false">
+                    <li><span>Below 5 Lacs</span></li>
+                    <li><span>5 Lacs</span></li>
+                    <li><span>10 Lacs</span></li>
+                    <li><span>15 Lacs</span></li>
+                    <li><span>20 Lacs</span></li>
+                    <li><span>25 Lacs</span></li>
+                    <li><span>30 Lacs</span></li>
+                    <li><span>35 Lacs</span></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- // -->
+              <!-- // -->
+              <div class="cus-dropdown-list dropdown-small">
+                <div class="prefield">
+                  <p data-dropdown='true'><span>Bedroom</span><i class="fa fa-angle-down"></i></p>
+                  <ul data-list="false">
+                    <li><span>Any</span></li>
+                    <li><span>1 BHK</span></li>
+                    <li><span>2 BHK</span></li>
+                    <li><span>3 BHK</span></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- // -->
+              <!-- // -->
+              <div class="cus-dropdown-list dropdown-small">
+                <div class="prefield">
+                  <p data-dropdown='true'><span>Posted By</span><i class="fa fa-angle-down"></i></p>
+                  <ul data-list="false">
+                    <li><span>Owner</span></li>
+                    <li><span>Builder</span></li>
+                    <li><span>Dealer</span></li>
+                    <li><span>15 Lacs</span></li>
+                    <li><span>20 Lacs</span></li>
+                    <li><span>25 Lacs</span></li>
+                    <li><span>30 Lacs</span></li>
+                    <li><span>35 Lacs</span></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- // -->
             </div>
-          </div>
-          <div class="form-group optional-search">
-            <select name="" id="">
-              <option value="">Residental Appertment</option>
-              <option value="">Residental Mumbai</option>
-              <option value="">Residental Andheri</option>
-              <option value="">Residental Kurla</option>
-            </select>
-            <select name="" id="">
-              <option value="">Min Budget</option>
-              <option value="">5 Lacs</option>
-              <option value="">10 Lacs</option>
-              <option value="">15 Lacs</option>
-              <option value="">20 Lacs</option>
-              <option value="">25 Lacs</option>
-            </select>
-            <select name="" id="">
-              <option value="">Max Budget</option>
-              <option value="">10 Lacs</option>
-              <option value="">20 Lacs</option>
-              <option value="">30 Lacs</option>
-              <option value="">40 Lacs</option>
-              <option value="">50 Lacs</option>
-            </select>
-            <select name="" id="">
-              <option value="">Max Budget</option>
-              <option value="">10 Lacs</option>
-              <option value="">20 Lacs</option>
-              <option value="">30 Lacs</option>
-              <option value="">40 Lacs</option>
-              <option value="">50 Lacs</option>
-            </select>
           </div>
         </form>
       </div>
@@ -1487,6 +1534,7 @@
         $("#header-section").removeClass("bgColor");
       }
     });
+    //
   });
   //
 </script>

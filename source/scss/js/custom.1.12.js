@@ -1,16 +1,10 @@
-document.getElementById('search').onfocus = function(){
-  document.querySelector('.main-search').classList.add("active");
-}
-
-// document.querySelector('.banner-container').onclick = function(e) {
-//   if (e.target != document.querySelector('.main-search')) {
-//     console.log("inner");
-//   } else {
-//     console.log("Outer");
-//   }
-// }
-
-
+window.addEventListener('click', function(e){
+  if (document.getElementById('search-wrappwr').contains(e.target)){
+    document.querySelector('.main-search').classList.add("active");
+  } else{
+    document.querySelector('.main-search').classList.remove("active");
+  }
+});
 var $ = jQuery.noConflict();
 console.log($.fn.jquery);
 (function($){
@@ -1549,14 +1543,7 @@ console.log($.fn.jquery);
         text.text('Read more.');
         console.log("true");
       }
-      // $("[read-data5]").slideToggle('slow', function(){
-      //   if ($(this).is(':visible')) {
-      //     $(this).css({"visibility":"visible", "height":"auto"});
-      //     text.text('Less');
-      //   } else {
-      //        text.text('Read more.');
-      //   }
-      // });
+
     });
   }
   // Up Arrow
@@ -1595,6 +1582,18 @@ console.log($.fn.jquery);
       link.preventDefault();
     });
   }
+// Dropdown
+$("[data-dropdown='true']").on('click', function(){
+  $(this).toggleClass('active');
+  $("[data-list] li span").on('click', function(){
+    var a = this.innerText
+    var append = $(this).parents('.prefield').children('p').children('span');
+    var chAttr = $(this).parents('.prefield').children('p');
+    append.text(a);
+    chAttr.removeClass("active");
+  });
+});
+
 
 
 })(jQuery);
