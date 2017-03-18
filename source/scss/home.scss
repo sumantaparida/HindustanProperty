@@ -5,19 +5,43 @@
 @import "theam/scss/bootstrap-select.scss";
 @import "theam/scss/font-awesome.scss";
 @import "theam/scss/owl.carousel.scss";
-// @import "theam/scss/slick.scss";
-// @import "theam/scss/slick-theme.scss";
+@import "theam/scss/slick.scss";
+@import "theam/scss/slick-theme.scss";
 @import "theam/scss/jquery-ui.scss";
-// @import "theam/scss/prettyPhoto.scss";
+@import "theam/scss/prettyPhoto.scss";
 @import "theam/scss/main.scss";
-// @import "theam/scss/style2.scss";
+@import "theam/scss/style2.scss";
 @import "module/icommon.scss";
-// @import "module/amenityContainer.scss";
+@import "module/amenityContainer.scss";
 //
 @import "module/seaction.scss";
 @import "module/header.scss";
 @import "module/citypopup.scss";
 @import "module/banner.scss";
+@import "module/locality.scss";
+@import "module/feture-service-container.scss";
+@import "module/agent-slider.scss";
+// @import "module/feature-circle.scss";
+@import "module/feature-project.scss";
+@import "module/text-container.scss";
+// @import "module/graph.scss";
+@import "module/select_dropdown.scss";
+@import "module/sortBy.scss";
+@import "module/listing.scss";
+@import "module/AddContainer.scss";
+@import "module/filter-section.scss";
+@import "module/upArrow.scss";
+// Contact Agent
+@import "module/contactAjent.scss";
+@import "module/emi-form.scss";
+@import "module/Entryform.scss";
+@import "module/postproperty.scss";
+@import "module/right_sticky.scss";
+@import "module/typo.scss";
+@import "module/project_listing.scss";
+@import "module/_table.scss";
+@import "module/builder_info.scss";
+
 @import "module/property-description.scss";
 @import "module/projectSlider.scss";
 @import "module/servicesWrapper.scss";
@@ -27,43 +51,17 @@
 @import "module/new-project-container.scss";
 @import "module/polupar-location-container.scss";
 
-// @import "module/locality.scss";
-// @import "module/feture-service-container.scss";
-@import "module/agent-slider.scss";
-// @import "module/feature-circle.scss";
-@import "module/feature-project.scss";
-// @import "module/text-container.scss";
-// @import "module/graph.scss";
-@import "module/select_dropdown.scss";
-// @import "module/sortBy.scss";
-
-//
-// @import "module/listing.scss";
-// @import "module/AddContainer.scss";
-// @import "module/filter-section.scss";
-@import "module/upArrow.scss";
-// Contact Agent
-@import "module/contactAjent.scss";
-@import "module/emi-form.scss";
-@import "module/Entryform.scss";
-// @import "module/postproperty.scss";
-@import "module/right_sticky.scss";
-@import "module/typo.scss";
-// @import "module/project_listing.scss";
-@import "module/_table.scss";
-// @import "module/builder_info.scss";
-
-// @import "module/innerpage.scss";
+@import "module/innerpage.scss";
 @import "module/detailsContainer.scss";
-// @import "module/postpropertyContainer.scss";
+@import "module/postpropertyContainer.scss";
 @import "module/loader.scss";
-// @import "module/404.scss";
-// @import "module/ajentProfile.scss";
-// @import "module/allcityContainer.scss";
+@import "module/404.scss";
+@import "module/ajentProfile.scss";
+@import "module/allcityContainer.scss";
 
 // Property Agreement
-// @import "module/agrement.scss";
-// @import "module/rentagreement.scss";
+@import "module/agrement.scss";
+@import "module/rentagreement.scss";
 
 @import "module/footer.scss";
 //

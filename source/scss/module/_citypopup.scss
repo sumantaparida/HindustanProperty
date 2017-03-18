@@ -47,7 +47,7 @@
     //
     .right-property {
       background-color: #00a8f2;
-      padding: 15px;
+      padding: 0px 15px;
       color: #fff;
       .close {
         position: absolute;
@@ -58,6 +58,8 @@
         text-align: center;
         background-color: rgba(0,0,0,.1);
         z-index: 99;
+        color: #fff;
+        opacity: 1;
       }
       h3 {
         font-weight: 300;
@@ -78,13 +80,13 @@
           border-bottom: 1px solid rgba(255,255,255,.2);
           padding: 15px;
           &.bg1 {
-            background-color: #004c6d;
+            background-color: #414446;
           }
           &.bg2 {
-            background-color: #01567b;
+            background-color: #00a8f2;
           }
           &.bg3 {
-            background-color: #0371a0;
+            background-color: #311b92;
           }
       }
       .why-ip-list li:last-child {

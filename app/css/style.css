@@ -31142,7 +31142,7 @@ section:nth-child(odd) {
   width: 250px;
   height: 100%;
   padding: 25px 0px 0px 0px;
-  background-color: #191919;
+  background-color: #00aeef;
   z-index: 511;
   -webkit-transform: translate3d(105%, 0, 0);
   -moz-transform: translate3d(105%, 0, 0);
@@ -31172,7 +31172,7 @@ section:nth-child(odd) {
   padding: 0 0 0 15px;
 }
 .topNav [data-top-nav] li.open {
-  background-color: #242424;
+  background-color: #096b90;
 }
 .topNav [data-top-nav] li.open > a > span:nth-of-type(2) {
   -webkit-transform: rotate(180deg);
@@ -31181,15 +31181,15 @@ section:nth-child(odd) {
   transform: rotate(180deg);
 }
 .topNav [data-top-nav] li:hover {
-  background-color: #242424;
+  background-color: rgba(0, 0, 0, 0.66);
 }
 .topNav [data-top-nav] li a {
   display: block;
   float: left;
   width: 100%;
-  padding: 5pt 5pt 6pt;
-  color: #b3b3b3;
-  font-size: 11pt;
+  padding: 5px 5px 6px;
+  color: #fff;
+  font-size: 14px;
   font-weight: 600;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -31208,7 +31208,7 @@ section:nth-child(odd) {
   list-style: none;
   float: left;
   width: 100%;
-  padding: 0pt 0pt 5pt 0pt;
+  padding: 0px 0px 5px 0px;
   margin: 0px;
   display: none;
 }
@@ -31218,8 +31218,8 @@ section:nth-child(odd) {
 }
 .topNav [data-top-nav] li ul li a {
   display: block;
-  padding: 4pt 5pt;
-  font-size: 10.5pt;
+  padding: 4px 5px;
+  font-size: 12px;
 }
 
 [overlay] {
@@ -32072,7 +32072,7 @@ header .header-left .header-left-wrapper a {
 }
 #citypopup .citypop-container .right-property {
   background-color: #00a8f2;
-  padding: 15px;
+  padding: 0px 15px;
   color: #fff;
 }
 #citypopup .citypop-container .right-property .close {
@@ -32084,6 +32084,8 @@ header .header-left .header-left-wrapper a {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.1);
   z-index: 99;
+  color: #fff;
+  opacity: 1;
 }
 #citypopup .citypop-container .right-property h3 {
   font-weight: 300;
@@ -32105,13 +32107,13 @@ header .header-left .header-left-wrapper a {
   padding: 15px;
 }
 #citypopup .citypop-container .right-property .why-ip-list li.bg1 {
-  background-color: #004c6d;
+  background-color: #414446;
 }
 #citypopup .citypop-container .right-property .why-ip-list li.bg2 {
-  background-color: #01567b;
+  background-color: #00a8f2;
 }
 #citypopup .citypop-container .right-property .why-ip-list li.bg3 {
-  background-color: #0371a0;
+  background-color: #311b92;
 }
 #citypopup .citypop-container .right-property .why-ip-list li:last-child {
   border: none;
