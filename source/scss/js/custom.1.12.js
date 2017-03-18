@@ -5,6 +5,7 @@ window.addEventListener('click', function(e){
     document.querySelector('.main-search').classList.remove("active");
   }
 });
+
 var $ = jQuery.noConflict();
 console.log($.fn.jquery);
 (function($){
@@ -25,6 +26,16 @@ console.log($.fn.jquery);
   $(window).on('load',function(){
       jQuery('body').addClass('loaded');
   });
+  //
+  $(window).scroll(function(){
+    var y = jQuery(this).scrollTop();
+    if (y > 100) {
+      jQuery("#header-section").addClass("bgColor");
+    } else {
+      jQuery("#header-section").removeClass("bgColor");
+    }
+  });
+  //
   /* ------------------------------------------------------------------------ */
   /*  IF HEADER OR SEARCH STICKY
    /* ------------------------------------------------------------------------ */

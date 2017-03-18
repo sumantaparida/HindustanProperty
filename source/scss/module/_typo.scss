@@ -1,3 +1,13 @@
+.bgColor {
+  .button-outline {
+    background-color: #363c40;
+    color: #fff !important;
+    &:focus {
+      color: #fff !important;
+      border: solid 1px #363c40;
+    }
+  }
+}
 .multiple_location {
   .location-block {
     height: 170px;
@@ -71,7 +81,7 @@
   }
 }
 // icon
-.icon {
+.sicon {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   display: inline-block;

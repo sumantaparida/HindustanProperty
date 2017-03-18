@@ -33341,22 +33341,22 @@ ul[tab-search] li a.tabactive {
   height: 100%;
   position: relative;
 }
-[right-sticky] ul li a > span .icon {
+[right-sticky] ul li a > span .sicon {
   width: 100%;
   height: 100%;
   float: left;
   border-radius: 50%;
 }
-[right-sticky] ul li a > span .icon.bmr-icon {
+[right-sticky] ul li a > span .sicon.bmr-icon {
   background-position: -190px -185px;
 }
-[right-sticky] ul li a > span .icon.icon-calculator {
+[right-sticky] ul li a > span .sicon.icon-calculator {
   background-position: -8px -227px;
 }
-[right-sticky] ul li a > span .icon.iconcontact {
+[right-sticky] ul li a > span .sicon.iconcontact {
   background-position: -41px -227px;
 }
-[right-sticky] ul li a > span .icon.icon-compare {
+[right-sticky] ul li a > span .sicon.icon-compare {
   background-position: -77px -227px;
 }
 [right-sticky] ul li a > span > span {
@@ -33416,6 +33416,15 @@ ul[tab-search] li a.tabactive {
   -o-transform: translate3d(-110px, 0, 0);
   -ms-transform: translate3d(-110px, 0, 0);
   transform: translate3d(-110px, 0, 0);
+}
+
+.bgColor .button-outline {
+  background-color: #363c40;
+  color: #fff !important;
+}
+.bgColor .button-outline:focus {
+  color: #fff !important;
+  border: solid 1px #363c40;
 }
 
 .multiple_location .location-block {
@@ -33489,7 +33498,7 @@ ul[tab-search] li a.tabactive {
   margin-left: 5px;
 }
 
-.icon {
+.sicon {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   display: inline-block;

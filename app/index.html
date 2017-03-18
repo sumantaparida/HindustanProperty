@@ -216,17 +216,25 @@
 <!-- // city popup end -->
 <!--start section header-->
 <header id="header-section" class="houzez-header-main header-section-4 not-splash-header nav-left hidden-sm hidden-xs" data-sticky="0">
-  <div class="container">
-    <div class="header-left col-xs-6 nopadding">
-      <div class="">
+  <div class="container-fluid">
+    <div class="header-left col-xs-6 col-sm-5 nopadding">
+      <div class="col-xs-12 nopadding header-left-wrapper">
         <a href="#">
           <img src="http://www.hindustanproperty.com/images/logo.png" alt="">
         </a>
+        <a href="#" data-toggle="modal" data-target="#citypopup">Mumbai <i class="fa fa-angle-down" aria-hidden="true"></i></a>
       </div>
     </div>
-    <div class="header-right col-xs-6 nopadding">
+    <div class="header-right col-xs-6 col-sm-7 nopadding">
       <div class="user">
-        <a href="javascript:void(0);" class="btn btn-default hidden-xs hidden-sm">Sell/Rent Property for Free</a>
+        <a href="javascript:void(0);" class="app-download"><i class="icon download-icon"></i> Download App
+          <div class="DownloadWrapper">
+            <p><img src="img/g-app.png" alt=""></p>
+            <p><img src="img/a-app.png" alt=""></p>
+          </div>
+        </a>
+        <a href="javascript:void(0);" class="button-outline"><i class="icon c-service"></i> Customer Service</a>
+        <a href="javascript:void(0);" class="button-outline">Post Property for <i class="free">Free</i></a>
         <a href="javascript:void(0);" data-toggle="modal" data-target="#pop-login">
           <i class="fa fa-user hidden-md hidden-lg"></i>
           <span class="hidden-sm hidden-xs">Sign In / Register</span>
@@ -235,43 +243,6 @@
       </div>
     </div>
   </div>
-  <!-- // botom nav start -->
-  <div class="col-xs-12 bottom-nav nopadding">
-    <div class="container">
-      <div class="col-xs-7 col-sm-7 nopadding">
-        <ul data-botom-nav-left>
-          <li><a href="#" data-toggle="modal" data-target="#citypopup"><i class="fa fa-map-marker" aria-hidden="true"></i> Mumbai</a></li>
-          <li>Download Our Apps <span><i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-android" aria-hidden="true"></i></span></li>
-          <li><a href="#">7710048300</a></li>
-        </ul>
-      </div>
-      <div class="col-xs-5 col-sm-5 nopadding">
-        <ul data-botom-nav-right>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" id="menu1" data-toggle="dropdown"><i class="fa fa-star-o" aria-hidden="true"></i></a>
-            <div class="dropdown-menu" role="menu" aria-labelledby="menu1">
-              <div class="notification-title">
-                <h5>
-                  <a href="javascript:;" id="c_shortlist"> SHORTLISTED PROPERTIES<span class="feed-count">0</span> </a> | <a onclick="cproperties();" href="javascript:;" id="c_contactlist">  CONTACTED PROPERTIES<span class="" id="cntcount"></span></a>
-                  <a href="javascript:;" class="close pull-right"><i class="fa icon-close" aria-hidden="true"></i></a>
-                </h5>
-              </div>
-              <div class="show_shorlist">
-                <div class="col-center text-center">
-                  <p>Keep track of your <br> shortlisted properties here </p>
-                  <p class="devider">Click on <i class="fa fa-star-o gold" aria-hidden="true"></i> to shortlist a property</p>
-                </div>
-              </div>
-              <div class="dropdown-footer">
-                <a href="#">SIGN IN</a> to manage your Property Hunting
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- // botom nav end -->
 </header>
 <!--end section header-->
 <!--start advanced search section-->
