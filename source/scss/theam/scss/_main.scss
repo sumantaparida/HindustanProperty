@@ -3649,7 +3649,7 @@ input[type="button"].btn-block {
   transition: all 0.2s ease-in-out 0s;
 }
 
-.top-bar .dropdown-menu > li, .nav-dropdown a, button, .hover-effect, .slideshow .slideshow-nav-main .slick-slide, a, .login-tabs li, .banner-search-tabs .search-tab, .item-thumb .hover-effect:after, figure .hover-effect:after, .carousel-module .carousel .item figure .hover-effect:after, .item-thumb .slideshow .slideshow-nav-main .slick-slide:after, .slideshow .slideshow-nav-main .item-thumb .slick-slide:after, figure .slideshow .slideshow-nav-main .slick-slide:after, .slideshow .slideshow-nav-main figure .slick-slide:after, .detail-tabs li, .video-thumb, .attachment-houzez-property-detail-gallery, .profile-tabs li, #houzez-gmap-main .map-btn, #transportation, #supermarkets, #schools, #libraries, #pharmacies, #hospitals, .wpcf7-submit, .dsidx-resp-area-submit input[type='submit'], .IDX-leadLoginButtonInput,
+.top-bar .dropdown-menu > li, .nav-dropdown a, button, .hover-effect, .slideshow .slideshow-nav-main .slick-slide, a, .login-tabs li, .banner-search-tabs .search-tab, .item-thumb .hover-effect:after, figure .hover-effect:after, .carousel-module .carousel .item figure .hover-effect:after, .item-thumb .slideshow .slideshow-nav-main .slick-slide:after, .slideshow .slideshow-nav-main .item-thumb .slick-slide:after, figure .slideshow .slideshow-nav-main .slick-slide:after, .slideshow .slideshow-nav-main figure .slick-slide:after, .video-thumb, .attachment-houzez-property-detail-gallery, .profile-tabs li, #houzez-gmap-main .map-btn, #transportation, #supermarkets, #schools, #libraries, #pharmacies, #hospitals, .wpcf7-submit, .dsidx-resp-area-submit input[type='submit'], .IDX-leadLoginButtonInput,
 .IDX-leadLoginTextInput[type='submit'],
 .IDX-qsButtonInput,
 .idx-omnibar-form button,
@@ -6862,11 +6862,14 @@ figure:hover .slideshow .slideshow-nav-main .slick-slide:before,
 
 /*START PAGE BODY AREA STYLE*/
 #section-body {
-  padding-top: 0px;
+  padding-top: 110px;
   position: relative;
   min-height: 700px;
   float: left;
   width: 100%;
+  &.citypage {
+    padding-top: 0px;
+  }
 }
 
 #section-body.landing-page {

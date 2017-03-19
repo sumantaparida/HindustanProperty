@@ -13,9 +13,12 @@
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  @media only screen and (max-width: 768px) {
+    height: 145px;
+  }
   .search-btn {
     .btn-hp {
-        padding: 6px 30px;
+        padding: 6px 27px;
         height: 42px;
         width: 100%;
         background-color: #00aeef;
@@ -268,13 +271,11 @@
     height: 38px;
   }
 }
-.banner-search-main .input-icon:before {
-  /* mini phones and down */
-}
 @media (max-width: 767px) {
   .banner-search-main .input-icon:before {
     line-height: 38px;
     height: 38px;
+    top: 0px;
   }
 }
 @media (max-width: 991px) {

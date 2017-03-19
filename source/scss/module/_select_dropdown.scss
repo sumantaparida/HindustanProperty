@@ -13,14 +13,16 @@
     max-width: 125px;
   }
   .prefield {
-    border: solid 1px #fff;
-    color: #fff;
+    border: solid 1px #f5f5f5;
+    color: #000;
+    background-color: #f5f5f5;
     p {
-      padding: 5px 10px;
+      padding: 7px 10px;
       float: left;
       width: 100%;
       margin: 0px;
       cursor: pointer;
+      font-size: 12px;
       span {
         float: left;
       }
@@ -41,7 +43,7 @@
         }
       }
     }
-    ul {
+    > ul {
       list-style: none;
       padding: 0px;
       margin: 0px;
@@ -61,12 +63,108 @@
         display: block;
       }
       li {
-        span {
+        & > span {
           color: #000;
           padding: 5px 10px;
           display: block;
           font-size: 13px;
           cursor: pointer;
+        }
+      }
+      &.cusDrop {
+        border: solid 1px #dedede;
+        li {
+          float: left;
+          width: 100%;
+          a {
+            float: left;
+            width: 100%;
+            padding: 5px;
+            font-size: 12px;
+            border-bottom: solid 1px #dedede;
+            i[action] {
+              width: 15px;
+              height: 15px;
+              display: block;
+              float: left;
+              margin-top: 2px;
+              position: relative;
+              margin-right: 5px;
+              span {
+                position: absolute;
+                margin: auto;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                height: 1px;
+                width: 10px;
+                background-color: #000;
+                &:first-child {
+                  transform: rotate(90deg);
+                }
+              }
+            }
+          }
+          &.active {
+            a {
+              border-bottom: none;
+            }
+            i[action] {
+              span {
+                &:first-child {
+                  transform: rotate(180deg);
+                }
+              }
+            }
+            [data-drop] {
+              display: block;
+            }
+          }
+        }
+        [data-drop] {
+          float: left;
+          display: none;
+          li {
+            list-style: none;
+            > label {
+              font-size: 12px;
+              float: left;
+              width: 100%;
+              padding-left: 6px;
+              > input {
+                display: none;
+                &:checked {
+                  & + label {
+                    span {
+                      &:first-child {
+                        background-color: #00aeef;
+                        background-image: url('../img/checked.png');
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                      }
+                    }
+                  }
+                }
+              }
+              > label {
+                float: left;
+                width: 100%;
+                margin: 0px;
+                span {
+                  float: left;
+                  font-size: 12px;
+                  cursor: pointer;
+                  &:first-child {
+                    width: 15px;
+                    height: 15px;
+                    border: solid 1px #00aeef;
+                    margin-right: 10px;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }

@@ -64,14 +64,14 @@
       width: 50px;
       height: 65px;
     }
-    .owl-controls {
-      display: none;
-    }
     .carousel {
       @media only screen and (min-width: 1024px) {
         width: 1140px;
         margin: auto;
       }
     }
+  }
+  .owl-controls {
+    display: none;
   }
 }

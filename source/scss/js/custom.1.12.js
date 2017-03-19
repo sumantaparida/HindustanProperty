@@ -1596,7 +1596,7 @@ console.log($.fn.jquery);
 // Dropdown
 $("[data-dropdown='true']").on('click', function(){
   $(this).toggleClass('active');
-  $("[data-list] li span").on('click', function(){
+  $("[data-list] > li > span[option]").on('click', function(){
     var a = this.innerText
     var append = $(this).parents('.prefield').children('p').children('span');
     var chAttr = $(this).parents('.prefield').children('p');

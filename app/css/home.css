@@ -15589,7 +15589,7 @@ input[type="button"].btn-block {
   transition: all 0.2s ease-in-out 0s;
 }
 
-.top-bar .dropdown-menu > li, .nav-dropdown a, button, .hover-effect, .slideshow .slideshow-nav-main .slick-slide, a, .login-tabs li, .banner-search-tabs .search-tab, .item-thumb .hover-effect:after, figure .hover-effect:after, .carousel-module .carousel .item figure .hover-effect:after, .item-thumb .slideshow .slideshow-nav-main .slick-slide:after, .slideshow .slideshow-nav-main .item-thumb .slick-slide:after, figure .slideshow .slideshow-nav-main .slick-slide:after, .slideshow .slideshow-nav-main figure .slick-slide:after, .detail-tabs li, .video-thumb, .attachment-houzez-property-detail-gallery, .profile-tabs li, #houzez-gmap-main .map-btn, #transportation, #supermarkets, #schools, #libraries, #pharmacies, #hospitals, .wpcf7-submit, .dsidx-resp-area-submit input[type='submit'], .IDX-leadLoginButtonInput,
+.top-bar .dropdown-menu > li, .nav-dropdown a, button, .hover-effect, .slideshow .slideshow-nav-main .slick-slide, a, .login-tabs li, .banner-search-tabs .search-tab, .item-thumb .hover-effect:after, figure .hover-effect:after, .carousel-module .carousel .item figure .hover-effect:after, .item-thumb .slideshow .slideshow-nav-main .slick-slide:after, .slideshow .slideshow-nav-main .item-thumb .slick-slide:after, figure .slideshow .slideshow-nav-main .slick-slide:after, .slideshow .slideshow-nav-main figure .slick-slide:after, .video-thumb, .attachment-houzez-property-detail-gallery, .profile-tabs li, #houzez-gmap-main .map-btn, #transportation, #supermarkets, #schools, #libraries, #pharmacies, #hospitals, .wpcf7-submit, .dsidx-resp-area-submit input[type='submit'], .IDX-leadLoginButtonInput,
 .IDX-leadLoginTextInput[type='submit'],
 .IDX-qsButtonInput,
 .idx-omnibar-form button,
@@ -19044,11 +19044,14 @@ figure:hover .slideshow .slideshow-nav-main .slick-slide:before,
 
 /*START PAGE BODY AREA STYLE*/
 #section-body {
-  padding-top: 0px;
+  padding-top: 110px;
   position: relative;
   min-height: 700px;
   float: left;
   width: 100%;
+}
+#section-body.citypage {
+  padding-top: 0px;
 }
 
 #section-body.landing-page {
@@ -32148,8 +32151,13 @@ header .header-left .header-left-wrapper a {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+@media only screen and (max-width: 768px) {
+  .banner-container .main-search {
+    height: 145px;
+  }
+}
 .banner-container .main-search .search-btn .btn-hp {
-  padding: 6px 30px;
+  padding: 6px 27px;
   height: 42px;
   width: 100%;
   background-color: #00aeef;
@@ -32398,13 +32406,11 @@ header .header-left .header-left-wrapper a {
     height: 38px;
   }
 }
-.banner-container .banner-search-main .input-icon:before {
-  /* mini phones and down */
-}
 @media (max-width: 767px) {
   .banner-container .banner-search-main .input-icon:before {
     line-height: 38px;
     height: 38px;
+    top: 0px;
   }
 }
 @media (max-width: 991px) {
@@ -32440,7 +32446,7 @@ ul[tab-search] {
 }
 @media only screen and (max-width: 768px) {
   ul[tab-search] {
-    margin: -38px -8px 0px;
+    margin: -38px 0px 0px;
   }
 }
 ul[tab-search] li {
@@ -32471,6 +32477,13 @@ ul[tab-search] li a.tabactive {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.mobile-drop-down {
+  background-color: #fff;
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 5px;
 }
 
 [headding] {
@@ -32514,17 +32527,15 @@ ul[tab-search] li a.tabactive {
     text-transform: inherit;
     position: relative;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 300;
     color: #000;
-  }
-  .locality-container .detail-tabs li:hover {
-    opacity: 0.7;
   }
 }
 @media only screen and (min-width: 1024px) {
   .locality-container .detail-tabs li.active {
     background-color: transparent;
-    color: #007183;
+    color: #000;
+    font-weight: 600;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -32533,7 +32544,7 @@ ul[tab-search] li a.tabactive {
     position: absolute;
     width: 100%;
     height: 1px;
-    background-color: #3ebfd5;
+    background-color: #000;
     bottom: -1px;
     left: 0;
   }
@@ -32544,8 +32555,7 @@ ul[tab-search] li a.tabactive {
 }
 .locality-container .tab-content .detail-block .alert-info {
   background-color: #F7F7F7;
-  padding: 20px;
-  border-radius: 6px;
+  padding: 0px 10px;
 }
 .locality-container .tab-content .detail-block .alert-info li {
   line-height: 25px;
@@ -32560,7 +32570,7 @@ ul[tab-search] li a.tabactive {
 }
 .locality-container .tab-content .detail-block .alert-info li a strong {
   color: #000;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .detail-content-tabber {
@@ -32744,9 +32754,10 @@ ul[tab-search] li a.tabactive {
   width: 80px;
   margin: auto;
   border: solid 1px #311b92;
-  padding: 5px;
-  border-radius: 0px;
+  padding: 7px 5px 5px 5px;
+  border-radius: 50px;
   text-transform: uppercase;
+  font-size: 12px;
 }
 .view-all-btn a:hover {
   background-color: #311b92;
@@ -32787,15 +32798,17 @@ ul[tab-search] li a.tabactive {
   max-width: 125px;
 }
 .cus-dropdown-list .prefield {
-  border: solid 1px #fff;
-  color: #fff;
+  border: solid 1px #f5f5f5;
+  color: #000;
+  background-color: #f5f5f5;
 }
 .cus-dropdown-list .prefield p {
-  padding: 5px 10px;
+  padding: 7px 10px;
   float: left;
   width: 100%;
   margin: 0px;
   cursor: pointer;
+  font-size: 12px;
 }
 .cus-dropdown-list .prefield p span {
   float: left;
@@ -32814,7 +32827,7 @@ ul[tab-search] li a.tabactive {
 .cus-dropdown-list .prefield p.active + ul {
   display: block;
 }
-.cus-dropdown-list .prefield ul {
+.cus-dropdown-list .prefield > ul {
   list-style: none;
   padding: 0px;
   margin: 0px;
@@ -32831,15 +32844,99 @@ ul[tab-search] li a.tabactive {
   transition: all .8s;
   display: none;
 }
-.cus-dropdown-list .prefield ul[data-list="true"] {
+.cus-dropdown-list .prefield > ul[data-list="true"] {
   display: block;
 }
-.cus-dropdown-list .prefield ul li span {
+.cus-dropdown-list .prefield > ul li > span {
   color: #000;
   padding: 5px 10px;
   display: block;
   font-size: 13px;
   cursor: pointer;
+}
+.cus-dropdown-list .prefield > ul.cusDrop {
+  border: solid 1px #dedede;
+}
+.cus-dropdown-list .prefield > ul.cusDrop li {
+  float: left;
+  width: 100%;
+}
+.cus-dropdown-list .prefield > ul.cusDrop li a {
+  float: left;
+  width: 100%;
+  padding: 5px;
+  font-size: 12px;
+  border-bottom: solid 1px #dedede;
+}
+.cus-dropdown-list .prefield > ul.cusDrop li a i[action] {
+  width: 15px;
+  height: 15px;
+  display: block;
+  float: left;
+  margin-top: 2px;
+  position: relative;
+  margin-right: 5px;
+}
+.cus-dropdown-list .prefield > ul.cusDrop li a i[action] span {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 1px;
+  width: 10px;
+  background-color: #000;
+}
+.cus-dropdown-list .prefield > ul.cusDrop li a i[action] span:first-child {
+  transform: rotate(90deg);
+}
+.cus-dropdown-list .prefield > ul.cusDrop li.active a {
+  border-bottom: none;
+}
+.cus-dropdown-list .prefield > ul.cusDrop li.active i[action] span:first-child {
+  transform: rotate(180deg);
+}
+.cus-dropdown-list .prefield > ul.cusDrop li.active [data-drop] {
+  display: block;
+}
+.cus-dropdown-list .prefield > ul.cusDrop [data-drop] {
+  float: left;
+  display: none;
+}
+.cus-dropdown-list .prefield > ul.cusDrop [data-drop] li {
+  list-style: none;
+}
+.cus-dropdown-list .prefield > ul.cusDrop [data-drop] li > label {
+  font-size: 12px;
+  float: left;
+  width: 100%;
+  padding-left: 6px;
+}
+.cus-dropdown-list .prefield > ul.cusDrop [data-drop] li > label > input {
+  display: none;
+}
+.cus-dropdown-list .prefield > ul.cusDrop [data-drop] li > label > input:checked + label span:first-child {
+  background-color: #00aeef;
+  background-image: url("../img/checked.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.cus-dropdown-list .prefield > ul.cusDrop [data-drop] li > label > label {
+  float: left;
+  width: 100%;
+  margin: 0px;
+}
+.cus-dropdown-list .prefield > ul.cusDrop [data-drop] li > label > label span {
+  float: left;
+  font-size: 12px;
+  cursor: pointer;
+}
+.cus-dropdown-list .prefield > ul.cusDrop [data-drop] li > label > label span:first-child {
+  width: 15px;
+  height: 15px;
+  border: solid 1px #00aeef;
+  margin-right: 10px;
 }
 
 .sortBy {
@@ -33299,7 +33396,7 @@ ul[tab-search] li a.tabactive {
 }
 .multiple_location .bottomLine .heading {
   text-align: center;
-  margin: 10px 0px 0px 0px;
+  margin: 10px 0px 25px 0px;
   font-weight: 300;
   position: relative;
   font-size: 18px;
@@ -33824,7 +33921,7 @@ ul[tab-search] li a.tabactive {
     height: 100%;
     width: 25px;
   }
-  .projectSlider .leftArrow .icon, .projectSlider .rightArrow .icon {
+  .projectSlider .leftArrow .sicon, .projectSlider .rightArrow .sicon {
     width: 21px;
     height: 28px;
     float: left;
@@ -33961,14 +34058,14 @@ ul[tab-search] li a.tabactive {
   width: 50px;
   height: 65px;
 }
-.featureProjectContainer .featureProjectWrapper .owl-controls {
-  display: none;
-}
 @media only screen and (min-width: 1024px) {
   .featureProjectContainer .featureProjectWrapper .carousel {
     width: 1140px;
     margin: auto;
   }
+}
+.featureProjectContainer .owl-controls {
+  display: none;
 }
 
 .preferred-choice-container {
