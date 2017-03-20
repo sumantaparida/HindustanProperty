@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HindustanProperty</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,800" rel="stylesheet">
+<!-- <link rel="stylesheet" href="http://www.hindustanproperty.com/css/style.min.css?vr=1.5"> -->
+  <link rel="stylesheet" href="css/hp.home.min.css">
+
+  <!-- <link rel="stylesheet" href="css/owl.carousel.css"> -->
+  <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css"> -->
+  <!-- JS Start -->
+  <script type='text/javascript' src='js/lib/jquery.js?ver=1.12.4'></script>
+  <script type='text/javascript' src='js/lib/jquery-migrate.min.js?ver=1.4.1'></script>
+  <script type='text/javascript' src='js/lib/jquery.themepunch.tools.min.js?ver=5.2.6'></script>
+  <script type='text/javascript' src='js/lib/jquery.themepunch.revolution.min.js?ver=5.2.6'></script>
+  <!-- JS End -->
+</head>
+<body class="homepage">
+<!-- // Login popup Strat -->
+<div class="modal fade" id="pop-login" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <ul class="login-tabs">
+          <li class="active">Login</li>
+          <li>Register</li>
+        </ul>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fa fa-close">
+          </i>
+        </button>
+      </div>
+      <div class="modal-body login-block">
+        <div class="tab-content">
+          <div class="tab-pane fade in active">
+            <div id="houzez_messages" class="houzez_messages message">
+            </div>
+            <form>
+              <div class="form-group field-group">
+                <div class="input-user input-icon">
+                  <input id="login_username" name="username" placeholder="Username" type="text" />
+                </div>
+                <div class="input-pass input-icon">
+                  <input id="password" name="password" placeholder="Password" type="password" />
+                </div>
+              </div>
+              <div class="forget-block clearfix">
+                <div class="form-group pull-left">
+                  <div class="checkbox">
+                    <label>
+                      <input name="remember" id="remember" type="checkbox">
+                      Remember me
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group pull-right">
+                  <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#pop-reset-pass">Lost your password?
+                  </a>
+                </div>
+              </div>
+              <input type="hidden" id="houzez_login_security" name="houzez_login_security" value="2de8d1e5a3" />
+              <input type="hidden" name="_wp_http_referer" value="/simple-listing-list-view/" />
+              <input type="hidden" name="action" id="login_action" value="houzez_login">
+              <button type="submit" class="fave-login-button btn btn-primary btn-block">Login
+              </button>
+            </form>
+            <hr>
+            <button class="facebook-login btn btn-social btn-bg-facebook btn-block">
+              <i class="fa fa-facebook">
+              </i> login with facebook
+            </button>
+            <button class="google-login btn btn-social btn-bg-google-plus btn-block">
+              <i class="fa fa-google-plus">
+              </i> login with google
+            </button>
+          </div>
+          <div class="tab-pane fade">
+            <form>
+              <div class="form-group field-group">
+                <div class="input-user input-icon">
+                  <input name="Name" placeholder="Name" type="text" />
+                </div>
+                <div class="input-email input-icon">
+                  <input name="Email" placeholder="Email" type="text" />
+                </div>
+                <div class="input-user input-icon">
+                  <input name="Mobil" placeholder="Mobil No" type="text" />
+                </div>
+                <div class="input-pass input-icon">
+                  <input name="password" placeholder="Password" type="password" />
+                </div>
+                <div class="input-pass input-icon">
+                  <input name="password" placeholder="Confirm Password" type="password" />
+                </div>
+              </div>
+              <div class="forget-block clearfix">
+                <div class="form-group pull-left">
+                  <div class="checkbox">
+                    <label>
+                      <input name="remember" id="remember" type="checkbox">
+                      Remember me
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <input type="hidden" id="houzez_login_security" name="houzez_login_security" value="2de8d1e5a3" />
+              <input type="hidden" name="_wp_http_referer" value="/simple-listing-list-view/" />
+              <input type="hidden" name="action" id="login_action" value="houzez_login">
+              <button type="submit" class="fave-login-button btn btn-primary btn-block">Login
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- // Login popup End -->
+<!-- // popup reset start -->
+<div class="modal fade" id="pop-reset-pass" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <ul class="login-tabs">
+          <li class="active">Reset Password
+          </li>
+        </ul>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fa fa-close">
+          </i>
+        </button>
+      </div>
+      <div class="modal-body login-block">
+        <p>Please enter your username or email address. You will receive a link to create a new password via email.
+        </p>
+        <div id="houzez_msg_reset" class="message">
+        </div>
+        <form>
+          <div class="form-group">
+            <div class="input-user input-icon">
+              <input name="user_login_forgot" id="user_login_forgot" placeholder="Enter your username or email" class="form-control">
+            </div>
+          </div>
+          <input type="hidden" id="fave_resetpassword_security" name="fave_resetpassword_security" value="76b9d91536" />
+          <input type="hidden" name="_wp_http_referer" value="/simple-listing-list-view/" />
+          <button type="button" id="houzez_forgetpass" class="btn btn-primary btn-block">Get new password
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- // popup reset end -->
+<!-- // city popup end -->
+<div class="modal fade" id="citypopup" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content citypop-container">
+      <div class="col-xs-7 left-property">
+        <h1>Select your City</h1>
+        <div class="col-xs-12 nopadding">
+          <form method="get" action="search" class="form-inline">
+              <div class="form-group col-xs-12 city-search-list">
+                <label for="">Search from over 1500 cities </label>
+                  <div class="search input-search input-icon col-xs-12 nopadding">
+                      <input type="text" data-autosuggest class="form-control ui-autocomplete-input" placeholder="Property" autocomplete="off">
+                  </div>
+              </div>
+          </form>
+        </div>
+        <div class="col-xs-12 nopadding popular">
+          <h6>POPULAR CITIES</h6>
+          <ul>
+            <li><a href="#">Chennai</a></li>
+            <li><a href="#">Bangalore</a></li>
+            <li><a href="#">Mumbai</a></li>
+            <li><a href="#">Chennai</a></li>
+            <li><a href="#">Bangalore</a></li>
+            <li><a href="#">Mumbai</a></li>
+            <li><a href="#">Chennai</a></li>
+            <li><a href="#">Bangalore</a></li>
+            <li><a href="#">Mumbai</a></li>
+            <li><a href="#">Mumbai</a></li>
+          </ul>
+          <ul data-botom>
+            <li><a href="#">Chennai</a></li>
+            <li><a href="#">Bangalore</a></li>
+            <li><a href="#">Mumbai</a></li>
+            <li><a href="#">Chennai</a></li>
+            <li><a href="#">Bangalore</a></li>
+            <li><a href="#">Mumbai</a></li>
+            <li><a href="#">Chennai</a></li>
+            <li><a href="#">Bangalore</a></li>
+            <li><a href="#">Mumbai</a></li>
+            <li><a href="#">Mumbai</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-5 right-property">
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
+        <h3>Why India Property ?</h3> -->
+        <div class="row">
+          <div class="col-xs-12 nopadding">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
+            <ul class="list-unstyled why-ip-list selcity">
+              <li class="font-whit bg1"><i class="icon-building rounded"></i><div class="overflow-hidden"><h5 class="no-margin text-uppercase">End-to-end</h5><p class="no-margin">From identifying the right property, making a buying decision to home loans, we are here to help you in every step of the way</p></div></li>
+              <li class="font-whit bg2"><i class="icon-champ rounded"></i><div class="overflow-hidden"><h5 class="no-margin text-uppercase">Experts</h5><p class="no-margin">Get expert assistance and advice to make the right property investment</p></div></li>
+              <li class="font-whit selcity1 bg3"><i class="icon-like rounded"></i><div class="overflow-hidden"><h5 class="no-margin text-uppercase">Extensive</h5><p class="no-margin"> 'We Get You Home' FASTER with close to a million properties to choose from</p></div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- // city popup end -->
+<!--start section header-->
+<header id="header-section" class="houzez-header-main header-section-4 not-splash-header nav-left hidden-sm hidden-xs" data-sticky="0">
+  <div class="container-fluid">
+    <div class="header-left col-xs-6 col-sm-5 nopadding">
+      <div class="col-xs-12 nopadding header-left-wrapper">
+        <a href="#">
+          <img src="http://www.hindustanproperty.com/images/logo.png" alt="">
+        </a>
+        <a href="#" data-toggle="modal" data-target="#citypopup">Mumbai <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div class="header-right col-xs-6 col-sm-7 nopadding">
+      <div class="user">
+        <a href="javascript:void(0);" class="app-download"><i class="sicon download-icon"></i> Download App
+          <div class="DownloadWrapper">
+            <p><img src="img/g-app.png" alt=""></p>
+            <p><img src="img/a-app.png" alt=""></p>
+          </div>
+        </a>
+        <a href="javascript:void(0);" class="button-outline"><i class="sicon c-service"></i> Customer Service</a>
+        <a href="javascript:void(0);" class="button-outline">Post Property for <i class="free">Free</i></a>
+        <a href="javascript:void(0);" data-toggle="modal" data-target="#pop-login">
+          <i class="fa fa-user hidden-md hidden-lg"></i>
+          <span class="hidden-sm hidden-xs">Sign In / Register</span>
+        </a>
+        <a href="#" onclick="sidenav();"><i class="fa fa-navicon"></i></a>
+      </div>
+    </div>
+  </div>
+</header>
+<!--end section header-->
+<!--start advanced search section-->
+<div class="header-mobile houzez-header-mobile  visible-sm visible-xs"  data-sticky="0">
+  <div class="container">
+    <!--start mobile nav-->
+    <div class="mobile-nav">
+      <span class="nav-trigger">
+        <a href="#" onclick="sidenav();"><i class="fa fa-navicon"></i></a>
+      </span>
+    </div>
+    <!--end mobile nav-->
+    <div class="header-logo">
+      <a href="#">
+        <img src="http://www.hindustanproperty.com/images/logo.png" alt="">
+      </a>
+    </div>
+    <div class="header-user">
+      <div class="user">
+        <a href="#" data-toggle="modal" data-target="#pop-login">
+          <i class="fa fa-user hidden-md hidden-lg"></i>
+          <span class="hidden-sm hidden-xs">Sign In / Register</span>
+        </a>
+        <a href="#" class="btn btn-default hidden-xs hidden-sm">Create Listing</a>
+        <!--<a href="#" data-toggle="modal" data-target="#pop-login"><i class="fa fa-user"></i> <span class="hidden-sm hidden-xs"></span></a>-->
+      </div>
+    </div>
+  </div>
+</div>
+<!--start advanced search section-->
+
+<!-- // Top nav Start -->
+<div class="col-xs-12 topNav">
+  <ul data-top-nav>
+    <li><a href="#">Home</a></li>
+    <li>
+      <a href="#"><span>Property</span><span><i class="fa fa-angle-down"></i></span></a>
+      <ul>
+        <li><a href="#">Post Property </a></li>
+        <li><a href="#">Post Property </a></li>
+        <li><a href="#">Post Property </a></li>
+      </ul>
+    </li>
+    <li><a href="#"><span>Home Finance</span></a></li>
+    <li>
+      <a href="#"><span>Know Real Estate</span> <span><i class="fa fa-angle-down"></i></span></a>
+      <ul>
+        <li><a href="#">Area Converter</a></li>
+        <li><a href="#">Property Agreement</a></li>
+        <li><a href="#">Property Documentation</a></li>
+        <li><a href="#">Stamp Duty</a></li>
+      </ul>
+    </li>
+    <li><a href="#"><span>About Us</span></a></li>
+    <li><a href="#"><span>Contact</span></a></li>
+    <li><a href="#"><span>Blog</span></a></li>
+  </ul>
+</div>
+<!-- // Top nav End -->
+<!-- // middle content start -->
+<div id="section-body">
+  <!-- // Banner Start -->
+  <div class="col-xs-12 banner-container">
+    <!-- // Banner Search bar start -->
+    <div class="main-search">
+      <div class="banner-search-main">
+        <form method="get" action="search" class="form-inline">
+          <ul tab-search>
+            <li><a tab-value class="tabactive" href="javascript:void(0);">Buy</a></li>
+            <li><a tab-value href="javascript:void(0);">Rent</a></li>
+            <li><a tab-value href="javascript:void(0);">Projects</a></li>
+            <li><a tab-value href="javascript:void(0);">Dealers</a></li>
+          </ul>
+          <div id="search-wrappwr">
+            <div class="form-group">
+              <div class="search input-search input-icon">
+                <input id="search" type="text" data-autosuggest class="form-control ui-autocomplete-input" name="keyword" placeholder="Enter an address, town, street, zip or property ID">
+              </div>
+              <div class="search-btn">
+                <button class="btn btn-hp"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+              </div>
+            </div>
+            <div class="form-group optional-search">
+              <div class="cus-dropdown-list">
+                <div class="prefield">
+                  <p data-dropdown='true' ><span>Residential Apartment+7</span><i class="fa fa-angle-down"></i></p>
+                  <ul data-list="false">
+                    <li><span><input type="radio"> New Project</span></li>
+                    <li><span>Property Delears</span></li>
+                    <li><span>Residential</span></li>
+                    <li><span>Commercial</span></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- // -->
+              <div class="cus-dropdown-list dropdown-small">
+                <div class="prefield">
+                  <p data-dropdown='true' ><span>₹ Min Budget</span><i class="fa fa-angle-down"></i></p>
+                  <ul data-list="false">
+                    <li><span>Below 5 Lacs</span></li>
+                    <li><span>5 Lacs</span></li>
+                    <li><span>10 Lacs</span></li>
+                    <li><span>15 Lacs</span></li>
+                    <li><span>20 Lacs</span></li>
+                    <li><span>25 Lacs</span></li>
+                    <li><span>30 Lacs</span></li>
+                    <li><span>35 Lacs</span></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- // -->
+              <!-- // -->
+              <div class="cus-dropdown-list dropdown-small">
+                <div class="prefield">
+                  <p data-dropdown='true' ><span>₹ Max Budget</span><i class="fa fa-angle-down"></i></p>
+                  <ul data-list="false">
+                    <li><span>Below 5 Lacs</span></li>
+                    <li><span>5 Lacs</span></li>
+                    <li><span>10 Lacs</span></li>
+                    <li><span>15 Lacs</span></li>
+                    <li><span>20 Lacs</span></li>
+                    <li><span>25 Lacs</span></li>
+                    <li><span>30 Lacs</span></li>
+                    <li><span>35 Lacs</span></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- // -->
+              <!-- // -->
+              <div class="cus-dropdown-list dropdown-small">
+                <div class="prefield">
+                  <p data-dropdown='true'><span>Bedroom</span><i class="fa fa-angle-down"></i></p>
+                  <ul data-list="false">
+                    <li><span>Any</span></li>
+                    <li><span>1 BHK</span></li>
+                    <li><span>2 BHK</span></li>
+                    <li><span>3 BHK</span></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- // -->
+              <!-- // -->
+              <div class="cus-dropdown-list dropdown-small">
+                <div class="prefield">
+                  <p data-dropdown='true'><span>Posted By</span><i class="fa fa-angle-down"></i></p>
+                  <ul data-list="false">
+                    <li><span>Owner</span></li>
+                    <li><span>Builder</span></li>
+                    <li><span>Dealer</span></li>
+                    <li><span>15 Lacs</span></li>
+                    <li><span>20 Lacs</span></li>
+                    <li><span>25 Lacs</span></li>
+                    <li><span>30 Lacs</span></li>
+                    <li><span>35 Lacs</span></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- // -->
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- // Banner Search bar End -->
+    <!-- SLIDER -->
+    <div class="widget-body">
+      <div class="col-xs-12 nopadding">
+        <div class="figure-block">
+          <div class="item-thumb-banner">
+            <a href="#" class="hover-effect">
+              <img src="img/slider-01.jpg" alt="" class="attachment-property-thumb-image size-property-thumb-image wp-post-image hidden-xs">
+              <img src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-07-768x516.jpg" alt="" class="attachment-property-thumb-image size-property-thumb-image wp-post-image visible-xs">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // slider End -->
+    <!-- // Property Description Start -->
+    <div class="col-xs-12 propertyDescription">
+      <div class="container">
+        <div class="col-sm-4 nopadding project-logo">
+          <a href="#"><img src="img/project-logo.jpg" alt=""></a>
+        </div>
+        <div class="col-sm-8 nopadding projectDescription">
+          <h3>Borosil Plot</h3>
+          <p>
+            <span>Off Andheri Kurla Road, Marol, Andheri (East).</span>
+            <a href="#" class="know-more-btn">KNOW MORE <i class="sicon more-icon"></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- // Property Description End -->
+  </div>
+  <!-- // Banner End -->
+
+  <!-- // Project slider start -->
+  <div class="col-xs-12 nopadding projectSlider">
+      <button class="leftArrow btn-prev-e9ukE3"><i class="sicon btn-prev" aria-hidden="true"></i></button>
+      <button class="rightArrow btn-next-e9ukE3"><i class="sicon btn-next" aria-hidden="true"></i></button>
+      <div id="properties-carousel-v1-e9ukE3"data-token="e9ukE3" class="carousel slide-animated">
+        <!-- // -->
+        <div class="figure-block">
+          <a href="#">
+            <div class="pro-img-box">
+              <img src="img/kanakiya.jpg" alt="">
+            </div>
+            <div class="pro-desc-box">
+              <h3>Borosil Plot</h3>
+              <p>
+                <span>Off Andheri Kurla Road, Marol, Andheri (East).</span>
+                <span>1BHk / 2BHK / 3BHK</span>
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="figure-block">
+          <a href="#">
+            <div class="pro-img-box">
+              <img src="img/kanakiya.jpg" alt="">
+            </div>
+            <div class="pro-desc-box">
+              <h3>Borosil Plot</h3>
+              <p>
+                <span>Off Andheri Kurla Road, Marol, Andheri (East).</span>
+                <span>1BHk / 2BHK / 3BHK</span>
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="figure-block">
+          <a href="#">
+            <div class="pro-img-box">
+              <img src="img/kanakiya.jpg" alt="">
+            </div>
+            <div class="pro-desc-box">
+              <h3>Borosil Plot</h3>
+              <p>
+                <span>Off Andheri Kurla Road, Marol, Andheri (East).</span>
+                <span>1BHk / 2BHK / 3BHK</span>
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="figure-block">
+          <a href="#">
+            <div class="pro-img-box">
+              <img src="img/kanakiya.jpg" alt="">
+            </div>
+            <div class="pro-desc-box">
+              <h3>Borosil Plot</h3>
+              <p>
+                <span>Off Andheri Kurla Road, Marol, Andheri (East).</span>
+                <span>1BHk / 2BHK / 3BHK</span>
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="figure-block">
+          <a href="#">
+            <div class="pro-img-box">
+              <img src="img/kanakiya.jpg" alt="">
+            </div>
+            <div class="pro-desc-box">
+              <h3>Borosil Plot</h3>
+              <p>
+                <span>Off Andheri Kurla Road, Marol, Andheri (East).</span>
+                <span>1BHk / 2BHK / 3BHK</span>
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="figure-block">
+          <a href="#">
+            <div class="pro-img-box">
+              <img src="img/kanakiya.jpg" alt="">
+            </div>
+            <div class="pro-desc-box">
+              <h3>Borosil Plot</h3>
+              <p>
+                <span>Off Andheri Kurla Road, Marol, Andheri (East).</span>
+                <span>1BHk / 2BHK / 3BHK</span>
+              </p>
+            </div>
+          </a>
+        </div>
+        <!-- // -->
+      </div>
+  </div>
+  <!-- // Project slider end -->
+  <!-- // Our Services Start -->
+  <section class='services-container'>
+    <div class="container servicesWrapper">
+      <h2 class="heading">Our <span>Services</span></h2>
+      <div class="row">
+        <div class="col-xs-12 col-sm-3">
+          <div class="our-box text-center">
+            <h4>
+              <span class="sicon agreement-icon"></span>
+              Property Agreement
+            </h4>
+            <p>Get Free Property Agreements Online. Online Service for Property Rental Agreement...</p>
+            <p><a href="#" class="readMore">Read More <span class="sicon more-icon"></span></a></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <div class="our-box text-center">
+            <h4>
+              <span class="sicon propertyIcon"></span>
+              Property Agreement
+            </h4>
+            <p>Get Free Property Agreements Online. Online Service for Property Rental Agreement...</p>
+            <p><a href="#" class="readMore">Read More <span class="sicon more-icon"></span></a></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <div class="our-box text-center">
+            <h4>
+              <span class="sicon news-icon"></span>
+              Latest Property News
+            </h4>
+            <p>Get Free Property Agreements Online. Online Service for Property Rental Agreement...</p>
+            <p><a href="#" class="readMore">Read More <span class="sicon more-icon"></span></a></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <div class="our-box text-center">
+            <h4>
+              <span class="icon nri-icon"></span>
+              NRI Section
+            </h4>
+            <p>Get Free Property Agreements Online. Online Service for Property Rental Agreement...</p>
+            <p><a href="#" class="readMore">Read More <span class="sicon more-icon"></span></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // Our Services Start -->
+  <!-- // feature project start -->
+  <section class="featureProjectContainer">
+    <div class="container featureProjectWrapper">
+      <h2 class="heading">Feature <span>Project</span></h2>
+      <div class="col-xs-12 nopadding">
+        <button class="leftArrow btn-prev-e9ukE2"><i class="sicon left-arrow-icon" aria-hidden="true"></i></button>
+        <button class="rightArrow btn-next-e9ukE2"><i class="sicon right-arrow-icon" aria-hidden="true"></i></button>
+        <div id="properties-carousel-v1-e9ukE2"data-token="e9ukE2" class="carousel slide-animated">
+          <!-- // -->
+          <div class="figure-block">
+            <div class="figureBox">
+              <figure class="item-thumb">
+                <a href="#" class="hover-effect">
+                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                </a>
+              </figure>
+              <div class="fi-prop-details">
+                <h5>Residential Property Prices Rose By</h5>
+                <p>
+                  <span>GREEN WODS</span>
+                  <span>2, 3 BHK Luxurtures...</span>
+                  <span>₹ 7.20 Cr - 16.84 Cr</span>
+                </p>
+              </div>
+            </div>
+            <div class="figureBox">
+              <figure class="item-thumb">
+                <a href="#" class="hover-effect">
+                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                </a>
+              </figure>
+              <div class="fi-prop-details">
+                <h5>Residential Property Prices Rose By</h5>
+                <p>
+                  <span>GREEN WODS</span>
+                  <span>2, 3 BHK Luxurtures...</span>
+                  <span>₹ 7.20 Cr - 16.84 Cr</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="figure-block">
+            <div class="figureBox">
+              <figure class="item-thumb">
+                <a href="#" class="hover-effect">
+                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                </a>
+              </figure>
+              <div class="fi-prop-details">
+                <h5>Residential Property Prices Rose By</h5>
+                <p>
+                  <span>GREEN WODS</span>
+                  <span>2, 3 BHK Luxurtures...</span>
+                  <span>₹ 7.20 Cr - 16.84 Cr</span>
+                </p>
+              </div>
+            </div>
+            <div class="figureBox">
+              <figure class="item-thumb">
+                <a href="#" class="hover-effect">
+                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                </a>
+              </figure>
+              <div class="fi-prop-details">
+                <h5>Residential Property Prices Rose By</h5>
+                <p>
+                  <span>GREEN WODS</span>
+                  <span>2, 3 BHK Luxurtures...</span>
+                  <span>₹ 7.20 Cr - 16.84 Cr</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="figure-block">
+            <div class="figureBox">
+              <figure class="item-thumb">
+                <a href="#" class="hover-effect">
+                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                </a>
+              </figure>
+              <div class="fi-prop-details">
+                <h5>Residential Property Prices Rose By</h5>
+                <p>
+                  <span>GREEN WODS</span>
+                  <span>2, 3 BHK Luxurtures...</span>
+                  <span>₹ 7.20 Cr - 16.84 Cr</span>
+                </p>
+              </div>
+            </div>
+            <div class="figureBox">
+              <figure class="item-thumb">
+                <a href="#" class="hover-effect">
+                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                </a>
+              </figure>
+              <div class="fi-prop-details">
+                <h5>Residential Property Prices Rose By</h5>
+                <p>
+                  <span>GREEN WODS</span>
+                  <span>2, 3 BHK Luxurtures...</span>
+                  <span>₹ 7.20 Cr - 16.84 Cr</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="figure-block">
+            <div class="figureBox">
+              <figure class="item-thumb">
+                <a href="#" class="hover-effect">
+                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                </a>
+              </figure>
+              <div class="fi-prop-details">
+                <h5>Residential Property Prices Rose By</h5>
+                <p>
+                  <span>GREEN WODS</span>
+                  <span>2, 3 BHK Luxurtures...</span>
+                  <span>₹ 7.20 Cr - 16.84 Cr</span>
+                </p>
+              </div>
+            </div>
+            <div class="figureBox">
+              <figure class="item-thumb">
+                <a href="#" class="hover-effect">
+                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                </a>
+              </figure>
+              <div class="fi-prop-details">
+                <h5>Residential Property Prices Rose By</h5>
+                <p>
+                  <span>GREEN WODS</span>
+                  <span>2, 3 BHK Luxurtures...</span>
+                  <span>₹ 7.20 Cr - 16.84 Cr</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="figure-block">
+            <div class="figureBox">
+              <figure class="item-thumb">
+                <a href="#" class="hover-effect">
+                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                </a>
+              </figure>
+              <div class="fi-prop-details">
+                <h5>Residential Property Prices Rose By</h5>
+                <p>
+                  <span>GREEN WODS</span>
+                  <span>2, 3 BHK Luxurtures...</span>
+                  <span>₹ 7.20 Cr - 16.84 Cr</span>
+                </p>
+              </div>
+            </div>
+            <div class="figureBox">
+              <figure class="item-thumb">
+                <a href="#" class="hover-effect">
+                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                </a>
+              </figure>
+              <div class="fi-prop-details">
+                <h5>Residential Property Prices Rose By</h5>
+                <p>
+                  <span>GREEN WODS</span>
+                  <span>2, 3 BHK Luxurtures...</span>
+                  <span>₹ 7.20 Cr - 16.84 Cr</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="figure-block">
+            <div class="figureBox">
+              <figure class="item-thumb">
+                <a href="#" class="hover-effect">
+                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                </a>
+              </figure>
+              <div class="fi-prop-details">
+                <h5>Residential Property Prices Rose By</h5>
+                <p>
+                  <span>GREEN WODS</span>
+                  <span>2, 3 BHK Luxurtures...</span>
+                  <span>₹ 7.20 Cr - 16.84 Cr</span>
+                </p>
+              </div>
+            </div>
+            <div class="figureBox">
+              <figure class="item-thumb">
+                <a href="#" class="hover-effect">
+                  <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+                </a>
+              </figure>
+              <div class="fi-prop-details">
+                <h5>Residential Property Prices Rose By</h5>
+                <p>
+                  <span>GREEN WODS</span>
+                  <span>2, 3 BHK Luxurtures...</span>
+                  <span>₹ 7.20 Cr - 16.84 Cr</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- // -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // feature project end -->
+  <!-- // Our feature Searcvice start -->
+  <section class="preferred-choice-container">
+    <div class="container">
+      <h2 class="heading">What Makes Us The <span>Preferred Choice</span></h2>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 choice-box">
+          <p>
+            <span><i class="sicon property-icon"></i></span>
+            <span class="blue">296326+</span>
+            <span>Properties for Sale in Mumbai</span>
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-4 choice-box">
+          <p>
+            <span><i class="sicon project-icon"></i></span>
+            <span class="green">3620+</span>
+            <span>Residential Projects in Mumbai</span>
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-4 choice-box">
+          <p>
+            <span><i class="sicon agents-icon"></i></span>
+            <span class="yellow">3620+</span>
+            <span>Residential Property Agents in Mumbai</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // Our feature Searcvice end -->
+  <!-- // New project start -->
+  <section class="new-project-container">
+    <div class="container">
+      <h2 class="heading">New <span>Project</span></h2>
+      <div class="row">
+        <div class="col-xs-12 col-sm-9 n-left-project">
+          <ul>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>City Heights - Taloja Ph-2</span>
+                <span>₹ 31.68 - 48.96 Lac</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-3 n-right-project">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="img/happyhome.jpg" alt="">
+                <p>
+                  <span>Altamonte1 & 2 BHK Apartments</span>
+                  <span>Neral, Beyond Thane</span>
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/kanakiya.jpg" alt="">
+                <p>
+                  <span>Altamonte1 & 2 BHK Apartments</span>
+                  <span>Neral, Beyond Thane</span>
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/happyhome.jpg" alt="">
+                <p>
+                  <span>Altamonte1 & 2 BHK Apartments</span>
+                  <span>Neral, Beyond Thane</span>
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/kanakiya.jpg" alt="">
+                <p>
+                  <span>Altamonte1 & 2 BHK Apartments</span>
+                  <span>Neral, Beyond Thane</span>
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // New project end -->
+  <!-- // Popular Location start -->
+  <section class="polupar-location-container">
+    <div class="container">
+      <h2 class="heading">Popular <span>Location</span></h2>
+      <div class="col-xs-12 nopadding">
+        <button class="leftArrow btn-prev-e9ukE"><i class="sicon p-left-icon" aria-hidden="true"></i></button>
+        <button class="rightArrow btn-next-e9ukE"><i class="sicon p-right-icon" aria-hidden="true"></i></button>
+        <div id="properties-carousel-v1-e9ukE"data-token="e9ukE" class="carousel slide-animated">
+          <!-- // -->
+          <div class="loc-box">
+            <h4>Mumbai</h4>
+            <ul>
+              <li><a href="#">Andheri</a></li>
+              <li><a href="#">Andheri East</a></li>
+              <li><a href="#">Andheri West</a></li>
+              <li><a href="#">Bandra</a></li>
+              <li><a href="#">Borivali</a></li>
+              <li><a href="#">Kandivali</a></li>
+              <li><a href="#">Mira Road</a></li>
+              <li><a href="#">Mumbai South</a></li>
+              <li><a href="#">Navi Mumbai</a></li>
+              <li><a href="#">Thane</a></li>
+            </ul>
+          </div>
+          <div class="loc-box">
+            <h4>DELHI</h4>
+            <ul>
+              <li><a href="#">Andheri</a></li>
+              <li><a href="#">Andheri East</a></li>
+              <li><a href="#">Andheri West</a></li>
+              <li><a href="#">Bandra</a></li>
+              <li><a href="#">Borivali</a></li>
+              <li><a href="#">Kandivali</a></li>
+              <li><a href="#">Mira Road</a></li>
+              <li><a href="#">Mumbai South</a></li>
+              <li><a href="#">Navi Mumbai</a></li>
+              <li><a href="#">Thane</a></li>
+            </ul>
+          </div>
+          <div class="loc-box">
+            <h4>BANGALORE</h4>
+            <ul>
+              <li><a href="#">Andheri</a></li>
+              <li><a href="#">Andheri East</a></li>
+              <li><a href="#">Andheri West</a></li>
+              <li><a href="#">Bandra</a></li>
+              <li><a href="#">Borivali</a></li>
+              <li><a href="#">Kandivali</a></li>
+              <li><a href="#">Mira Road</a></li>
+              <li><a href="#">Mumbai South</a></li>
+              <li><a href="#">Navi Mumbai</a></li>
+              <li><a href="#">Thane</a></li>
+            </ul>
+          </div>
+          <div class="loc-box">
+            <h4>KOLKATA</h4>
+            <ul>
+              <li><a href="#">Andheri</a></li>
+              <li><a href="#">Andheri East</a></li>
+              <li><a href="#">Andheri West</a></li>
+              <li><a href="#">Bandra</a></li>
+              <li><a href="#">Borivali</a></li>
+              <li><a href="#">Kandivali</a></li>
+              <li><a href="#">Mira Road</a></li>
+              <li><a href="#">Mumbai South</a></li>
+              <li><a href="#">Navi Mumbai</a></li>
+              <li><a href="#">Thane</a></li>
+            </ul>
+          </div>
+          <div class="loc-box">
+            <h4>HYDERABAD</h4>
+            <ul>
+              <li><a href="#">Andheri</a></li>
+              <li><a href="#">Andheri East</a></li>
+              <li><a href="#">Andheri West</a></li>
+              <li><a href="#">Bandra</a></li>
+              <li><a href="#">Borivali</a></li>
+              <li><a href="#">Kandivali</a></li>
+              <li><a href="#">Mira Road</a></li>
+              <li><a href="#">Mumbai South</a></li>
+              <li><a href="#">Navi Mumbai</a></li>
+              <li><a href="#">Thane</a></li>
+            </ul>
+          </div>
+          <!-- // -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // Popular Location end -->
+  <!-- // Property Plus start -->
+  <section class="propertyPlus">
+    <div class="container">
+      <div class="page-content col-xs-12">
+        <h2 class="osLight text-center">
+          <img alt="" src="img/logo_iq.png"></h2>
+        <div class="row iq_grid">
+          <ul>
+            <li><a target="_blank" href="Home-Finance-for-residential-property">Property Finance</a></li>
+            <li><a target="_blank" href="EMI-Calculator">Calculators</a></li>
+            <li><a target="_blank" href="CRM-for-Property-Dealers">Dealer CRM</a></li>
+            <li><a target="_blank" href="Property-Manager">Property Manager</a></li>
+            <li><a target="_blank" href="Area-Converter">Area Converter</a></li>
+            <li><a target="_blank" href="http://www.hindustanproperty.com/blog">Property Blogging</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // Property Plus end -->
+
+  <section class="containt-section">
+    <div class="container">
+      <p>Real estate is considerate of open plots, buildings or farming areas. In the contemporary times, the media and consumers do recognize it as a factor of commercial, residential, industrial purposes or farm purposes. They can be availed on rent, lease or ownership basis. The property is stacking up lot of developments and ventures. Property websites in India has become one of the easiest factors to source properties in good and well developed areas.</p>
+      <p>The outcome and the sales generated through the real estate is becoming the largest contributor in terms of taxations to the government. The statutory compliance decided by the law is must to abide even for every upcoming properties in Mumbai</p>
+      <p><a href="#" class="readMore">Read More <i class="icon more-icon"></i></a></p>
+    </div>
+  </section>
+
+</div>
+<!-- // middle content end -->
+<!--start footer section-->
+<footer id="footer-section">
+  <div class="footer footer-v2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div id="houzez_about_widget-3" class="footer-widget widget-about">
+            <div class="widget-top">
+              <h3 class="widget-title">About Site</h3>
+            </div>
+            <div class="widget-body">
+              <p>HindustanProperty theme for real estate where modern aesthetics are combined with tasteful simplicity.
+              </p>
+              <p class="read">
+                <a href="#">Read more
+                  <i class="fa fa-caret-right">
+                  </i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div id="houzez_contact-5" class="footer-widget widget-contact">
+            <div class="widget-top">
+              <h3 class="widget-title">Contact Us
+              </h3>
+            </div>
+            <div class="widget-body">
+              <p>
+              </p>
+              <ul class="list-unstyled">
+                <li>
+                  <i class="fa fa-location-arrow">
+                  </i> 774 NE 84th St Miami, FL 33879
+                </li>
+                <li>
+                  <i class="fa fa-phone">
+                  </i> Call us FREE +1 (800) 990 8877
+                </li>
+                <li>
+                  <i class="fa fa-envelope-o">
+                  </i>
+                  <a href="mailt:email@email.com">email@email.com
+                  </a>
+                </li>
+              </ul>
+              <p class="read">
+                <a href="http://houzez01.favethemes.com/contact/">Contact us
+                  <i class="fa fa-caret-right">
+                  </i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div id="mc4wp_form_widget-2" class="footer-widget widget_mc4wp_form_widget">
+            <div class="widget-top">
+              <h3 class="widget-title">Newsletter Subscribe
+              </h3>
+            </div>
+            <!-- MailChimp for WordPress v3.1.11 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
+            <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-1251" method="post" data-id="1251" data-name="Footer Form" >
+              <div class="mc4wp-form-fields">
+                <div class="table-list">
+                  <div class="form-group table-cell">
+                    <div class="input-email input-icon">
+                      <input class="form-control" type="email" name="EMAIL" required placeholder="Enter your email">
+                    </div>
+                  </div>
+                  <div class="table-cell">
+                    <button type="submit" class="btn btn-primary">Submit
+                    </button>
+                  </div>
+                </div>
+                <p>Houzez is a premium WordPress theme for real estate agents.
+                  <br>Don’t forget to fullow us on:
+                </p>
+                <ul class="social">
+                  <li>
+                    <a href="#" class="btn-facebook">
+                      <i class="fa fa-facebook-square">
+                      </i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn-twitter">
+                      <i class="fa fa-twitter-square">
+                      </i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn-google-plus">
+                      <i class="fa fa-google-plus-square">
+                      </i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn-linkedin">
+                      <i class="fa fa-linkedin-square">
+                      </i>
+                    </a>
+                  </li>
+                </ul>
+                <div style="display: none;">
+                  <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" />
+                </div>
+                <input type="hidden" name="_mc4wp_timestamp" value="1472490866" />
+                <input type="hidden" name="_mc4wp_form_id" value="1251" />
+                <input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" />
+              </div>
+              <div class="mc4wp-response">
+              </div>
+            </form>
+            <!-- / MailChimp for WordPress Plugin -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-3">
+          <div class="footer-col">
+            <p>HP - All rights reserved
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="footer-col">
+            <div class="navi">
+              <ul id="footer-menu" class="">
+                <li id="menu-item-750" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-750">
+                  <a href="http://houzez01.favethemes.com/privacy/">Privacy
+                  </a>
+                </li>
+                <li id="menu-item-751" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-751">
+                  <a href="http://houzez01.favethemes.com/terms-and-conditions/">Terms and Conditions
+                  </a>
+                </li>
+                <li id="menu-item-1181" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1181">
+                  <a href="http://houzez01.favethemes.com/contact/">Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3">
+          <div class="footer-col foot-social">
+            <p>
+              Follow us
+              <a target="_blank" href="https://facebook.com/Favethemes">
+                <i class="fa fa-facebook-square">
+                </i>
+              </a>
+              <a target="_blank" href="https://twitter.com/favethemes">
+                <i class="fa fa-twitter-square">
+                </i>
+              </a>
+              <a target="_blank" href="http://linkedin.com">
+                <i class="fa fa-linkedin-square">
+                </i>
+              </a>
+              <a target="_blank" href="http://google.com">
+                <i class="fa fa-google-plus-square">
+                </i>
+              </a>
+              <a target="_blank" href="http://instagram.com">
+                <i class="fa fa-instagram">
+                </i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--end footer section-->
+<!-- // Page Up Arrow Start -->
+<div data-top="false">
+  <i class="fa fa-angle-up" aria-hidden="true"></i>
+</div>
+<!-- // Page Up Arrow End -->
+<!-- // Right Sticky Start -->
+<div right-sticky>
+  <div class="myfevorite">
+    <a href="#">
+      <i class="sicon fevorite-icon"></i>
+    </a>
+  </div>
+  <ul>
+    <li>
+      <a href="#">
+        <span><i class="sicon bmr-icon"></i><span class="big">Book My Requirement</span></span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <span><i class="sicon icon-calculator"></i> <span class="big">Emi Calculater</span></span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <span><i class="sicon iconcontact"></i> <span class="rsmall">Contact</span></span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <span><i class="sicon icon-compare"></i> <span class="rsmall">Compare</span></span>
+      </a>
+    </li>
+  </ul>
+</div>
+<!-- // Right Sticky End -->
+<!-- // loader start -->
+<div page-loader="false">
+  <div class="loaderBlock">
+    <img src="img/hploader.svg" alt="">
+    <!-- // -->
+    <div class="col-xs-12 nopadding agent-slider">
+      <div class="col-xs-12 nopadding load_dedding">
+        <p><strong>One Moment Please...</strong> We are working on your request</p>
+      </div>
+      <!-- // -->
+      <div class="figure-block">
+        <div>
+          <figure class="item-thumb">
+            <a href="#" class="hover-effect">
+              <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+            </a>
+          </figure>
+          <div class="detail-bottom detail">
+            <h3>Lokhandwala, Andheri West</h3>
+            <ul class="list-inline">
+              <li>
+                <span>ORNATE THE GROVE TOWERS</span>
+                <a href="#">By Ornate Spaces</a>
+              </li>
+              <li>Premium - 3, 4 BHK Luxury Apartments, Life Style Features</li>
+              <li><strong><i class="fa fa-inr" aria-hidden="true"></i> 15 lakh - 1.5 Cr</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- // -->
+      <!-- // -->
+      <div class="figure-block">
+        <div>
+          <figure class="item-thumb">
+            <a href="#" class="hover-effect">
+              <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+            </a>
+          </figure>
+          <div class="detail-bottom detail">
+            <h3>Lokhandwala, Andheri West</h3>
+            <ul class="list-inline">
+              <li>
+                <span>ORNATE THE GROVE TOWERS</span>
+                <a href="#">By Ornate Spaces</a>
+              </li>
+              <li>Premium - 3, 4 BHK Luxury Apartments, Life Style Features</li>
+              <li><strong><i class="fa fa-inr" aria-hidden="true"></i> 15 lakh - 1.5 Cr</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- // -->
+      <!-- // -->
+      <div class="figure-block">
+        <div>
+          <figure class="item-thumb">
+            <a href="#" class="hover-effect">
+              <img width="570" height="340" src="http://www.hindustanproperty.com/images/FeaturedImages/SmallImages/PJ000585_IMG_1.jpg" class="attachment-houzez-image570_340 size-houzez-image570_340 wp-post-image" alt="chicago-06" />
+            </a>
+          </figure>
+          <div class="detail-bottom detail">
+            <h3>Lokhandwala, Andheri West</h3>
+            <ul class="list-inline">
+              <li>
+                <span>ORNATE THE GROVE TOWERS</span>
+                <a href="#">By Ornate Spaces</a>
+              </li>
+              <li>Premium - 3, 4 BHK Luxury Apartments, Life Style Features</li>
+              <li><strong><i class="fa fa-inr" aria-hidden="true"></i> 15 lakh - 1.5 Cr</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- // -->
+    </div>
+    <!-- // -->
+  </div>
+</div>
+<!-- // loader end -->
+<!-- // Javascript start -->
+<script type='text/javascript' src='js/lib/bootstrap.min.js?ver=3.3.5'></script>
+<script type='text/javascript' src='js/lib/jquery.nicescroll.js?ver=3.5.0'></script>
+<script type='text/javascript' src='js/lib/moment.js?ver=2.11.1'></script>
+<script type='text/javascript' src='js/lib/plugins.js?ver=1.3.0'></script>
+<script type='text/javascript' src='js/lib/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='js/lib/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript'>
+  var hindustan = {};
+  var prop_carousel_e9ukE = {"slides_to_show":"5","slides_to_scroll":"1","slide_auto":"true","auto_speed":"3000","slide_dots":"true","slide_infinite":"true"};
+  var prop_carousel_e9ukE2 = {"slides_to_show":"5","slides_to_scroll":"1","slide_auto":"true","auto_speed":"3000","slide_dots":"false","slide_infinite":"true"};
+  var prop_carousel_e9ukE3 = {"slides_to_show":"5","slides_to_scroll":"1","slide_auto":"true","auto_speed":"3000","slide_dots":"false","slide_infinite":"true"};
+</script>
+<script type='text/javascript' src='js/lib/property-carousels.js?ver=1.3.0'></script>
+<!-- <script type='text/javascript' src='js/lib/forms-api.min.js?ver=3.1.11'></script> -->
+<script type='text/javascript' src='js/custom.1.12.min.js?ver=1.3.0'></script>
+<script type='text/javascript' src='js/lib/jquery-1.8.0.min.js'></script>
+<script type='text/javascript' src='js/lib/jquery-ui.js?ver=1.11.4'></script>
+<!-- <script type='text/javascript' src='js/lib/bootstrap-multiselect.js?ver=1.11.4'></script> -->
+<script type='text/javascript' src='js/custom.1.8.min.js?ver=1.3.0'></script>
+<!--[if lte IE 9]>
+  <script type='text/javascript' src='http://houzez01.favethemes.com/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=3.1.11'></script>
+<![endif]-->
+<script type="text/javascript">
+  jQuery(function($) {
+    // Tap
+    featureService();
+    function featureService() {
+      var datDetailsId = $("[feature-service-details] > div")
+      var dataclick = $("[data-feature-service] > li")
+      dataclick.on("click", function(){
+        datDetailsId.removeClass("active");
+        var id = $(this).attr("data-route")
+        $(id).addClass("active");
+      });
+    }
+    //
+    $(window).scroll(function(){
+      var y = $(this).scrollTop();
+      if (y > 100) {
+        $("#header-section").addClass("bgColor");
+      } else {
+        $("#header-section").removeClass("bgColor");
+      }
+    });
+    //
+  });
+  //
+</script>
+<!-- // Javascript end -->
+</body>
+</html>
