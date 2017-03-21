@@ -4335,8 +4335,8 @@ textarea.wpcf7-form-control::-webkit-input-placeholder, .dsidx-resp-area input[t
 }
 
 .alert-info {
-  background-color: #a3e6ff;
-  border-color: #00aeef;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .container {
@@ -6862,14 +6862,11 @@ figure:hover .slideshow .slideshow-nav-main .slick-slide:before,
 
 /*START PAGE BODY AREA STYLE*/
 #section-body {
-  padding-top: 110px;
+  padding-top: 0px;
   position: relative;
   min-height: 700px;
   float: left;
   width: 100%;
-  &.citypage {
-    padding-top: 0px;
-  }
 }
 
 #section-body.landing-page {
@@ -11024,8 +11021,6 @@ body.transparent-yes .banner-caption {
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
-  /* mini phones and down */
-  /* mini phones and down */
 }
 .detail-tabs li:last-child {
   border: none;
