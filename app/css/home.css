@@ -33994,6 +33994,19 @@ ul[tab-search] li a.tabactive {
   margin-left: 5px;
 }
 
+.homePage .servicesWrapper .our-box {
+  background: #feffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #feffff 28%, #fbe9ca 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #feffff 28%, #fbe9ca 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #feffff 28%, #fbe9ca 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#fbe9ca',GradientType=0 );
+  /* IE6-9 */
+}
+
 .featureProjectContainer .figureBox {
   box-shadow: 0px 0px 7px 1px rgba(170, 167, 167, 0.7);
   -webkit-box-shadow: 0px 0px 7px 1px rgba(170, 167, 167, 0.7);
