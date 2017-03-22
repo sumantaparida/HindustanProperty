@@ -36,6 +36,7 @@ console.log($.fn.jquery);
     }
   });
   //
+
   /* ------------------------------------------------------------------------ */
   /*  IF HEADER OR SEARCH STICKY
    /* ------------------------------------------------------------------------ */
@@ -1604,7 +1605,11 @@ $("[data-dropdown='true']").on('click', function(){
     chAttr.removeClass("active");
   });
 });
-
+//
+$(".DownloadWrapper > p").on("click", function(){
+  var data_href = $(this).attr("data-href");
+  window.location = data_href;
+});
 
 
 })(jQuery);
