@@ -6860,8 +6860,13 @@ figure:hover .slideshow .slideshow-nav-main .slick-slide:before,
 }
 
 /*START PAGE BODY AREA STYLE*/
+.homepage {
+  #section-body {
+    padding-top: 0px;
+  }
+}
 #section-body {
-  padding-top: 0px;
+  padding-top: 60px;
   position: relative;
   min-height: 700px;
   float: left;

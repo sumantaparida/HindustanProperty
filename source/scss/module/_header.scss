@@ -34,6 +34,13 @@
   }
 }
 .homepage {
+  header {
+    background-color: transparent;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+  }
   .user {
     a {
       color: #fff;
@@ -179,6 +186,13 @@
 header {
   position: fixed;
   width: 100%;
+  background-color: #fff;
+  box-shadow: -1px 4px 4px -1px rgba(0,0,0,.5);
+  -webkit-box-shadow: -1px 4px 4px -1px rgba(0,0,0,.5);
+  -moz-box-shadow: -1px 4px 4px -1px rgba(0,0,0,.5);
+  -ms-box-shadow: -1px 4px 4px -1px rgba(0,0,0,.5);
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
   .user {
     a {
       &.app-download {
@@ -620,11 +634,11 @@ header {
   }
 }
 .bgColor {
-  background-color: #fff;
-  box-shadow: -1px 4px 4px -1px rgba(0,0,0,.5);
-  -webkit-box-shadow: -1px 4px 4px -1px rgba(0,0,0,.5);
-  -moz-box-shadow: -1px 4px 4px -1px rgba(0,0,0,.5);
-  -ms-box-shadow: -1px 4px 4px -1px rgba(0,0,0,.5);
+  background-color: #fff !important;
+  box-shadow: -1px 4px 4px -1px rgba(0,0,0,.5) !important;
+  -webkit-box-shadow: -1px 4px 4px -1px rgba(0,0,0,.5) !important;
+  -moz-box-shadow: -1px 4px 4px -1px rgba(0,0,0,.5) !important;
+  -ms-box-shadow: -1px 4px 4px -1px rgba(0,0,0,.5) !important;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -651,6 +665,72 @@ header {
       color: #000 !important;
       .fa {
         color: #000;
+      }
+    }
+  }
+}
+// Modal Add Start
+.advertisement {
+  .modal-body {
+    @media only screen and (min-width: 1024px) {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+    }
+    .flex-colum {
+      flex: 1;
+      -webkit-flex: 1;
+      -moz-flex: 1;
+    }
+    .tab-content {
+      @media only screen and (min-width: 1024px) {
+        width: 60%;
+        padding-right: 15px;
+        .checkbox {
+          margin-top: 0px;
+        }
+      }
+    }
+    .addSection  {
+      @media only screen and (max-width: 1024px) {
+        display: none;
+      }
+      ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        float: left;
+        width: 100%;
+        li {
+          float: left;
+          width: 100%;
+          padding: 7.5px 7.5px 0px 7.5px;
+          &:nth-child(even) {
+            background-color: #dedede;
+          }
+          &:nth-child(odd) {
+            background-color: #ededed;
+          }
+          a {
+            display: block;
+            img {
+              width: 100%;
+              margin-bottom: 5px;
+            }
+            p {
+              span {
+                display: block;
+                &:first-child {
+                  font-size: 11px;
+                }
+                &:last-child {
+                  font-size: 10px;
+                  color: #000;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

@@ -20,8 +20,8 @@
 </head>
 <body class="homepage">
 <!-- // Login popup Strat -->
-<div class="modal fade" id="pop-login" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-sm">
+<div class="modal fade advertisement" id="pop-login" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-md">
     <div class="modal-content">
       <div class="modal-header">
         <ul class="login-tabs">
@@ -33,16 +33,16 @@
           </i>
         </button>
       </div>
-      <div class="modal-body login-block">
+      <div class="modal-body">
         <div class="tab-content">
           <div class="tab-pane fade in active">
-            <div id="houzez_messages" class="houzez_messages message">
-            </div>
             <form>
               <div class="form-group field-group">
                 <div class="input-user input-icon">
                   <input id="login_username" name="username" placeholder="Username" type="text" />
                 </div>
+              </div>
+              <div class="form-group field-group">
                 <div class="input-pass input-icon">
                   <input id="password" name="password" placeholder="Password" type="password" />
                 </div>
@@ -113,6 +113,37 @@
               </button>
             </form>
           </div>
+        </div>
+        <div class="addSection flex-colum">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="img/happyhome.jpg" alt="">
+                <p>
+                  <span>Altamonte1 & 2 BHK Apartments</span>
+                  <span>Neral, Beyond Thane</span>
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/kanakiya.jpg" alt="">
+                <p>
+                  <span>Altamonte1 & 2 BHK Apartments</span>
+                  <span>Neral, Beyond Thane</span>
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/happyhome.jpg" alt="">
+                <p>
+                  <span>Altamonte1 & 2 BHK Apartments</span>
+                  <span>Neral, Beyond Thane</span>
+                </p>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -216,6 +247,146 @@
   </div>
 </div>
 <!-- // city popup end -->
+<!-- // Post Property Start -->
+<div class="modal fade advertisement" id="postProperty" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <ul class="login-tabs">
+          <li class="active">Requirement</li>
+        </ul>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fa fa-close"></i>
+        </button>
+      </div>
+      <div class="modal-body requirement_block">
+        <div class="tab-content">
+          <div class="tab-pane fade in active">
+            <form method="post" action="#">
+              <div class="form-group radio_button">
+                <div class="checkbox">
+                  <label>
+                    <input name="remember" id="Individual" type="checkbox">Individual
+                  </label>
+                </div>
+              </div>
+              <div class="form-group radio_button">
+                <div class="checkbox">
+                  <label>
+                    <input name="remember" id="Broker" type="checkbox">Broker
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <select select-dropdown="">
+                  <option value="cheese">Cheese</option>
+                  <option value="tomatoes">Tomatoes</option>
+                  <option value="mozarella">Mozzarella</option>
+                  <option value="mushrooms">Mushrooms</option>
+                  <option value="pepperoni">Pepperoni</option>
+                  <option value="onions">Onions</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input class="form-control" name="phone" type="text" placeholder="Phone">
+              </div>
+              <div class="form-group">
+                <select select-dropdown="">
+                  <option value="cheese">Cheese</option>
+                  <option value="tomatoes">Tomatoes</option>
+                  <option value="mozarella">Mozzarella</option>
+                  <option value="mushrooms">Mushrooms</option>
+                  <option value="pepperoni">Pepperoni</option>
+                  <option value="onions">Onions</option>
+                </select>
+              </div>
+              <div class="form-group min-max">
+                <input class="form-control" name="" type="text" placeholder="Min">
+                <input class="form-control" name="" type="text" placeholder="Max">
+              </div>
+              <div class="form-group">
+                <input class="form-control" name="" type="text" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <input class="form-control" name="" type="text" placeholder="Mobile No">
+              </div>
+              <hr>
+              <button type="button" class="btn btn-primary btn-block">POST REQUIRMENT</button>
+            </form>
+          </div>
+          <div class="tab-pane fade">
+            <form>
+              <div class="form-group field-group">
+                <div class="input-user input-icon">
+                  <input name="Name" placeholder="Name" type="text" />
+                </div>
+                <div class="input-email input-icon">
+                  <input name="Email" placeholder="Email" type="text" />
+                </div>
+                <div class="input-user input-icon">
+                  <input name="Mobil" placeholder="Mobil No" type="text" />
+                </div>
+                <div class="input-pass input-icon">
+                  <input name="password" placeholder="Password" type="password" />
+                </div>
+                <div class="input-pass input-icon">
+                  <input name="password" placeholder="Confirm Password" type="password" />
+                </div>
+              </div>
+              <div class="forget-block clearfix">
+                <div class="form-group pull-left">
+                  <div class="checkbox">
+                    <label>
+                      <input name="remember" id="remember" type="checkbox">
+                      Remember me
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <input type="hidden" id="houzez_login_security" name="houzez_login_security" value="2de8d1e5a3" />
+              <input type="hidden" name="_wp_http_referer" value="/simple-listing-list-view/" />
+              <input type="hidden" name="action" id="login_action" value="houzez_login">
+              <button type="submit" class="fave-login-button btn btn-primary btn-block">Login
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="addSection flex-colum">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="img/happyhome.jpg" alt="">
+                <p>
+                  <span>Altamonte1 & 2 BHK Apartments</span>
+                  <span>Neral, Beyond Thane</span>
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/kanakiya.jpg" alt="">
+                <p>
+                  <span>Altamonte1 & 2 BHK Apartments</span>
+                  <span>Neral, Beyond Thane</span>
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/happyhome.jpg" alt="">
+                <p>
+                  <span>Altamonte1 & 2 BHK Apartments</span>
+                  <span>Neral, Beyond Thane</span>
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- // Post Property end -->
 <!--start section header-->
 <header id="header-section" class="houzez-header-main header-section-4 not-splash-header nav-left hidden-sm hidden-xs" data-sticky="0">
   <div class="container-fluid">
@@ -1090,7 +1261,7 @@
   </div>
   <ul>
     <li>
-      <a href="#">
+      <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#postProperty">
         <span><i class="sicon bmr-icon"></i><span class="big">Book My Requirement</span></span>
       </a>
     </li>

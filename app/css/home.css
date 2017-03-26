@@ -19042,8 +19042,12 @@ figure:hover .slideshow .slideshow-nav-main .slick-slide:before,
 }
 
 /*START PAGE BODY AREA STYLE*/
-#section-body {
+.homepage #section-body {
   padding-top: 0px;
+}
+
+#section-body {
+  padding-top: 60px;
   position: relative;
   min-height: 700px;
   float: left;
@@ -31147,6 +31151,13 @@ section:nth-child(odd) {
   color: #000;
 }
 
+.homepage header {
+  background-color: transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+}
 .homepage .user a {
   color: #fff;
   position: relative;
@@ -31314,6 +31325,13 @@ section:nth-child(odd) {
 header {
   position: fixed;
   width: 100%;
+  background-color: #fff;
+  box-shadow: -1px 4px 4px -1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -1px 4px 4px -1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -1px 4px 4px -1px rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: -1px 4px 4px -1px rgba(0, 0, 0, 0.5);
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
 }
 header .user a.app-download {
   line-height: 36px;
@@ -31878,11 +31896,11 @@ header .header-left .header-left-wrapper a {
 }
 
 .bgColor {
-  background-color: #fff;
-  box-shadow: -1px 4px 4px -1px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: -1px 4px 4px -1px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: -1px 4px 4px -1px rgba(0, 0, 0, 0.5);
-  -ms-box-shadow: -1px 4px 4px -1px rgba(0, 0, 0, 0.5);
+  background-color: #fff !important;
+  box-shadow: -1px 4px 4px -1px rgba(0, 0, 0, 0.5) !important;
+  -webkit-box-shadow: -1px 4px 4px -1px rgba(0, 0, 0, 0.5) !important;
+  -moz-box-shadow: -1px 4px 4px -1px rgba(0, 0, 0, 0.5) !important;
+  -ms-box-shadow: -1px 4px 4px -1px rgba(0, 0, 0, 0.5) !important;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -31907,6 +31925,68 @@ header .header-left .header-left-wrapper a {
   color: #000 !important;
 }
 .bgColor .header-left-wrapper a .fa {
+  color: #000;
+}
+
+@media only screen and (min-width: 1024px) {
+  .advertisement .modal-body {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+  }
+}
+.advertisement .modal-body .flex-colum {
+  flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+}
+@media only screen and (min-width: 1024px) {
+  .advertisement .modal-body .tab-content {
+    width: 60%;
+    padding-right: 15px;
+  }
+  .advertisement .modal-body .tab-content .checkbox {
+    margin-top: 0px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .advertisement .modal-body .addSection {
+    display: none;
+  }
+}
+.advertisement .modal-body .addSection ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  float: left;
+  width: 100%;
+}
+.advertisement .modal-body .addSection ul li {
+  float: left;
+  width: 100%;
+  padding: 7.5px 7.5px 0px 7.5px;
+}
+.advertisement .modal-body .addSection ul li:nth-child(even) {
+  background-color: #dedede;
+}
+.advertisement .modal-body .addSection ul li:nth-child(odd) {
+  background-color: #ededed;
+}
+.advertisement .modal-body .addSection ul li a {
+  display: block;
+}
+.advertisement .modal-body .addSection ul li a img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.advertisement .modal-body .addSection ul li a p span {
+  display: block;
+}
+.advertisement .modal-body .addSection ul li a p span:first-child {
+  font-size: 11px;
+}
+.advertisement .modal-body .addSection ul li a p span:last-child {
+  font-size: 10px;
   color: #000;
 }
 
