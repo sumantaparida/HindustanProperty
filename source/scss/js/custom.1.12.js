@@ -1,5 +1,5 @@
 window.addEventListener('click', function(e){
-  if (document.getElementById('search-wrappwr').contains(e.target)){
+  if (document.getElementById('search').contains(e.target) || document.getElementById('optional-search').contains(e.target)){
     document.querySelector('.main-search').classList.add("active");
   } else{
     document.querySelector('.main-search').classList.remove("active");

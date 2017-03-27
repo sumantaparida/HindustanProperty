@@ -33006,12 +33006,6 @@ ul[tab-search] li a.tabactive {
   border: solid 1px #000;
 }
 
-@media only screen and (min-width: 1025px) {
-  .listingContainer {
-    padding-top: 8px !important;
-  }
-}
-
 .label-status {
   background-color: #333;
 }
