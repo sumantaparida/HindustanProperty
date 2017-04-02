@@ -12,10 +12,11 @@
   <!-- <link rel="stylesheet" href="css/owl.carousel.css"> -->
   <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css"> -->
   <!-- JS Start -->
-  <script type='text/javascript' src='js/lib/jquery.js?ver=1.12.4'></script>
-  <script type='text/javascript' src='js/lib/jquery-migrate.min.js?ver=1.4.1'></script>
-  <script type='text/javascript' src='js/lib/jquery.themepunch.tools.min.js?ver=5.2.6'></script>
-  <script type='text/javascript' src='js/lib/jquery.themepunch.revolution.min.js?ver=5.2.6'></script>
+  <script type='text/javascript' src='js/prod/step1/set1.min.js'></script>
+  <!-- <script type='text/javascript' src='js/lib/jquery.js?ver=1.12.4'></script>
+  <script type='text/javascript' src='js/lib/jquery-migrate.min.js?ver=1.4.1'></script> -->
+  <!-- <script type='text/javascript' src='js/lib/jquery.themepunch.tools.min.js?ver=5.2.6'></script> -->
+  <!-- <script type='text/javascript' src='js/lib/jquery.themepunch.revolution.min.js?ver=5.2.6'></script> -->
   <!-- JS End -->
 </head>
 <body class="homepage">
@@ -311,13 +312,19 @@
     <!-- // Banner Search bar start -->
     <div class="main-search">
       <div class="banner-search-main">
-        <form method="get" action="search" class="form-inline">
-          <ul tab-search>
+        <form method="get" action="" class="form-inline">
+          <ul tab-search class="hidden-xs">
             <li><a tab-value class="tabactive" href="javascript:void(0);">Buy</a></li>
             <li><a tab-value href="javascript:void(0);">Rent</a></li>
             <li><a tab-value href="javascript:void(0);">Projects</a></li>
             <li><a tab-value href="javascript:void(0);">Dealers</a></li>
           </ul>
+          <select name="" id="" class="mobile-drop-down visible-xs">
+            <option value="">Buy</option>
+            <option value="">Rent</option>
+            <option value="">Projects</option>
+            <option value="">Dealers</option>
+          </select>
           <div id="search-wrappwr">
             <div class="form-group">
               <div class="search input-search input-icon">
@@ -327,15 +334,198 @@
                 <button class="btn btn-hp"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
               </div>
             </div>
-            <div class="form-group optional-search">
+            <div class="form-group optional-search hidden-xs" id="optional-search">
               <div class="cus-dropdown-list">
                 <div class="prefield">
                   <p data-dropdown='true' ><span>Residential Apartment+7</span><i class="fa fa-angle-down"></i></p>
-                  <ul data-list="false">
-                    <li><span><input type="radio"> New Project</span></li>
-                    <li><span>Property Delears</span></li>
-                    <li><span>Residential</span></li>
-                    <li><span>Commercial</span></li>
+                  <ul class="cusDrop" data-list="false">
+                    <li class="active">
+                      <a href="javascript:void(0)">
+                        <i action=""><span></span><span></span></i>
+                        <span>Residential</span>
+                      </a>
+                      <ul data-drop="false">
+                        <li class="chkPropertytype">
+                          <label>
+                            <input type="checkbox" id="chkResidencial">
+                            <label for="chkResidencial"><span></span><span>All Residential</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="PRTY00001" value="PRTY00001" name="ddlPropertyType" class="chkPropertytype chkResProp">
+                            <label for="PRTY00001"><span></span><span>Residential Apartment</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="PRTY00002" value="PRTY00002" name="ddlPropertyType" class="chkPropertytype chkResProp">
+                            <label for="PRTY00002"><span></span><span>House / Villa</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="PRTY00012" value="PRTY00012" name="ddlPropertyType" class="chkPropertytype chkResProp">
+                            <label for="PRTY00012"><span></span><span>Builder Floor</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="PRTY00013" value="PRTY00013" name="ddlPropertyType" class="chkPropertytype chkResProp">
+                            <label for="PRTY00013"><span></span><span>Residential Land</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="PRTY00014" value="PRTY00014" name="ddlPropertyType" class="chkPropertytype chkResProp">
+                            <label for="PRTY00014"><span></span><span>Studio Apartment</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="PRTY00016" value="PRTY00016" name="ddlPropertyType" class="chkPropertytype chkResProp">
+                            <label for="PRTY00016"><span></span><span>Serviced Apartments</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="PRTY00017" value="PRTY00017" name="ddlPropertyType" class="chkPropertytype chkResProp">
+                            <label for="PRTY00017"><span></span><span>Farm House</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="PRTY00018" value="PRTY00018" name="ddlPropertyType" class="chkPropertytype chkResProp">
+                            <label for="PRTY00018"><span></span><span>Others</span></label>
+                          </label>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">
+                        <i action=""><span></span><span></span></i>
+                        <span>Residential</span>
+                      </a>
+                      <ul data-drop="false">
+                        <li class="chkPropertytype">
+                          <label>
+                            <input type="checkbox" id="chkResidencial">
+                            <label for="chkResidencial"><span></span><span>All Residential</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="PRTY00001" value="PRTY00001" name="ddlPropertyType" class="chkPropertytype chkResProp">
+                            <label for="PRTY00001"><span></span><span>Residential Apartment</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="PRTY00002" value="PRTY00002" name="ddlPropertyType" class="chkPropertytype chkResProp">
+                            <label for="PRTY00002"><span></span><span>House / Villa</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="PRTY00012" value="PRTY00012" name="ddlPropertyType" class="chkPropertytype chkResProp">
+                            <label for="PRTY00012"><span></span><span>Builder Floor</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="PRTY00013" value="PRTY00013" name="ddlPropertyType" class="chkPropertytype chkResProp">
+                            <label for="PRTY00013"><span></span><span>Residential Land</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="PRTY00014" value="PRTY00014" name="ddlPropertyType" class="chkPropertytype chkResProp">
+                            <label for="PRTY00014"><span></span><span>Studio Apartment</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="PRTY00016" value="PRTY00016" name="ddlPropertyType" class="chkPropertytype chkResProp">
+                            <label for="PRTY00016"><span></span><span>Serviced Apartments</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="PRTY00017" value="PRTY00017" name="ddlPropertyType" class="chkPropertytype chkResProp">
+                            <label for="PRTY00017"><span></span><span>Farm House</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="PRTY00018" value="PRTY00018" name="ddlPropertyType" class="chkPropertytype chkResProp">
+                            <label for="PRTY00018"><span></span><span>Others</span></label>
+                          </label>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)">
+                        <i action=""><span></span><span></span></i>
+                        <span>Residential</span>
+                      </a>
+                      <ul data-drop="false">
+                        <li class="chkPropertytype">
+                          <label>
+                            <input type="checkbox" id="chkResidencial">
+                            <label for="chkResidencial"><span></span><span>All Residential</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="PRTY00001" value="PRTY00001" name="ddlPropertyType" class="chkPropertytype chkResProp">
+                            <label for="PRTY00001"><span></span><span>Residential Apartment</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="PRTY00002" value="PRTY00002" name="ddlPropertyType" class="chkPropertytype chkResProp">
+                            <label for="PRTY00002"><span></span><span>House / Villa</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="PRTY00012" value="PRTY00012" name="ddlPropertyType" class="chkPropertytype chkResProp">
+                            <label for="PRTY00012"><span></span><span>Builder Floor</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="PRTY00013" value="PRTY00013" name="ddlPropertyType" class="chkPropertytype chkResProp">
+                            <label for="PRTY00013"><span></span><span>Residential Land</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="PRTY00014" value="PRTY00014" name="ddlPropertyType" class="chkPropertytype chkResProp">
+                            <label for="PRTY00014"><span></span><span>Studio Apartment</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="PRTY00016" value="PRTY00016" name="ddlPropertyType" class="chkPropertytype chkResProp">
+                            <label for="PRTY00016"><span></span><span>Serviced Apartments</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="PRTY00017" value="PRTY00017" name="ddlPropertyType" class="chkPropertytype chkResProp">
+                            <label for="PRTY00017"><span></span><span>Farm House</span></label>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" id="PRTY00018" value="PRTY00018" name="ddlPropertyType" class="chkPropertytype chkResProp">
+                            <label for="PRTY00018"><span></span><span>Others</span></label>
+                          </label>
+                        </li>
+                      </ul>
+                    </li>
+
                   </ul>
                 </div>
               </div>
@@ -344,14 +534,14 @@
                 <div class="prefield">
                   <p data-dropdown='true' ><span>₹ Min Budget</span><i class="fa fa-angle-down"></i></p>
                   <ul data-list="false">
-                    <li><span>Below 5 Lacs</span></li>
-                    <li><span>5 Lacs</span></li>
-                    <li><span>10 Lacs</span></li>
-                    <li><span>15 Lacs</span></li>
-                    <li><span>20 Lacs</span></li>
-                    <li><span>25 Lacs</span></li>
-                    <li><span>30 Lacs</span></li>
-                    <li><span>35 Lacs</span></li>
+                    <li><span option>Below 5 Lacs</span></li>
+                    <li><span option>5 Lacs</span></li>
+                    <li><span option>10 Lacs</span></li>
+                    <li><span option>15 Lacs</span></li>
+                    <li><span option>20 Lacs</span></li>
+                    <li><span option>25 Lacs</span></li>
+                    <li><span option>30 Lacs</span></li>
+                    <li><span option>35 Lacs</span></li>
                   </ul>
                 </div>
               </div>
@@ -361,14 +551,14 @@
                 <div class="prefield">
                   <p data-dropdown='true' ><span>₹ Max Budget</span><i class="fa fa-angle-down"></i></p>
                   <ul data-list="false">
-                    <li><span>Below 5 Lacs</span></li>
-                    <li><span>5 Lacs</span></li>
-                    <li><span>10 Lacs</span></li>
-                    <li><span>15 Lacs</span></li>
-                    <li><span>20 Lacs</span></li>
-                    <li><span>25 Lacs</span></li>
-                    <li><span>30 Lacs</span></li>
-                    <li><span>35 Lacs</span></li>
+                    <li><span option>Below 5 Lacs</span></li>
+                    <li><span option>5 Lacs</span></li>
+                    <li><span option>10 Lacs</span></li>
+                    <li><span option>15 Lacs</span></li>
+                    <li><span option>20 Lacs</span></li>
+                    <li><span option>25 Lacs</span></li>
+                    <li><span option>30 Lacs</span></li>
+                    <li><span option>35 Lacs</span></li>
                   </ul>
                 </div>
               </div>
@@ -378,10 +568,10 @@
                 <div class="prefield">
                   <p data-dropdown='true'><span>Bedroom</span><i class="fa fa-angle-down"></i></p>
                   <ul data-list="false">
-                    <li><span>Any</span></li>
-                    <li><span>1 BHK</span></li>
-                    <li><span>2 BHK</span></li>
-                    <li><span>3 BHK</span></li>
+                    <li><span option>Any</span></li>
+                    <li><span option>1 BHK</span></li>
+                    <li><span option>2 BHK</span></li>
+                    <li><span option>3 BHK</span></li>
                   </ul>
                 </div>
               </div>
@@ -391,14 +581,14 @@
                 <div class="prefield">
                   <p data-dropdown='true'><span>Posted By</span><i class="fa fa-angle-down"></i></p>
                   <ul data-list="false">
-                    <li><span>Owner</span></li>
-                    <li><span>Builder</span></li>
-                    <li><span>Dealer</span></li>
-                    <li><span>15 Lacs</span></li>
-                    <li><span>20 Lacs</span></li>
-                    <li><span>25 Lacs</span></li>
-                    <li><span>30 Lacs</span></li>
-                    <li><span>35 Lacs</span></li>
+                    <li><span option>Owner</span></li>
+                    <li><span option>Builder</span></li>
+                    <li><span option>Dealer</span></li>
+                    <li><span option>15 Lacs</span></li>
+                    <li><span option>20 Lacs</span></li>
+                    <li><span option>25 Lacs</span></li>
+                    <li><span option>30 Lacs</span></li>
+                    <li><span option>35 Lacs</span></li>
                   </ul>
                 </div>
               </div>
@@ -538,49 +728,45 @@
   <!-- // Project slider end -->
   <!-- // Our Services Start -->
   <section class='services-container'>
-    <div class="container servicesWrapper">
+    <div class="container multiple_location">
       <h2 class="heading">Our <span>Services</span></h2>
       <div class="row">
-        <div class="col-xs-12 col-sm-3">
-          <div class="our-box text-center">
-            <h4>
-              <span class="sicon agreement-icon"></span>
-              Property Agreement
-            </h4>
-            <p>Get Free Property Agreements Online. Online Service for Property Rental Agreement...</p>
-            <p><a href="#" class="readMore">Read More <span class="sicon more-icon"></span></a></p>
+          <div class="col-sm-4">
+              <div class="location-block" style="background-image: url(http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago.jpg);">
+                  <a href="#">
+                      <div class="location-fig-caption">
+                          <!-- <h3 class="heading">Appartment for Sale in Location</h3> -->
+                      </div>
+                  </a>
+              </div>
+              <div class="bottomLine">
+                <h3 class="heading">Appartment For <strong>Sale</strong> In Location</h3>
+              </div>
           </div>
-        </div>
-        <div class="col-xs-12 col-sm-3">
-          <div class="our-box text-center">
-            <h4>
-              <span class="sicon propertyIcon"></span>
-              Property Agreement
-            </h4>
-            <p>Get Free Property Agreements Online. Online Service for Property Rental Agreement...</p>
-            <p><a href="#" class="readMore">Read More <span class="sicon more-icon"></span></a></p>
+          <div class="col-sm-4">
+              <div class="location-block" style="background-image: url(http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles.jpg);">
+                  <a href="#">
+                      <div class="location-fig-caption">
+                          <!-- <h3 class="heading">Dealer Website</h3> -->
+                      </div>
+                  </a>
+              </div>
+              <div class="bottomLine">
+                <h3 class="heading"><strong>Rental</strong> Property in Location</h3>
+              </div>
           </div>
-        </div>
-        <div class="col-xs-12 col-sm-3">
-          <div class="our-box text-center">
-            <h4>
-              <span class="sicon news-icon"></span>
-              Latest Property News
-            </h4>
-            <p>Get Free Property Agreements Online. Online Service for Property Rental Agreement...</p>
-            <p><a href="#" class="readMore">Read More <span class="sicon more-icon"></span></a></p>
+          <div class="col-sm-4">
+              <div class="location-block" style="background-image: url(http://houzez01.favethemes.com/wp-content/uploads/2016/03/chicago.jpg);">
+                  <a href="#">
+                      <div class="location-fig-caption">
+                          <!-- <h3 class="heading">Dealer CRM</h3> -->
+                      </div>
+                  </a>
+              </div>
+              <div class="bottomLine">
+                <h3 class="heading">Under Constraction <strong>Project</strong></h3>
+              </div>
           </div>
-        </div>
-        <div class="col-xs-12 col-sm-3">
-          <div class="our-box text-center">
-            <h4>
-              <span class="icon nri-icon"></span>
-              NRI Section
-            </h4>
-            <p>Get Free Property Agreements Online. Online Service for Property Rental Agreement...</p>
-            <p><a href="#" class="readMore">Read More <span class="sicon more-icon"></span></a></p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -817,6 +1003,94 @@
             <span class="yellow">3620+</span>
             <span>Residential Property Agents in Mumbai</span>
           </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // Our feature Searcvice end -->
+
+  <!-- // Our feature Searcvice start -->
+  <section class="">
+    <div class="container">
+      <h2 class="heading">Preferred <span> Locality</span></h2>
+      <div class="row">
+        <div class="col-xs-12 detail-content-tabber locality-container">
+          <ul class="detail-tabs">
+              <li class="active">Navi Mumbai</li>
+              <li>Mumbai Dahisar & Beyond</li>
+              <li>Mumbai Beyond Thane</li>
+              <li>Andheri</li>
+          </ul>
+          <div class="tab-content">
+              <div class="tab-pane fade active in">
+                  <div id="description" class="property-description detail-block">
+                      <div class="alert alert-info">
+                          <ul class="list-three-col">
+                              <li><a href="#"><strong>Andheri East</strong></a></li>
+                              <li><a href="#"><strong>Raigad</strong></a></li>
+                              <li><a href="#"><strong>Andheri East:</strong></a></li>
+                              <li><a href="#"><strong>Breach Candy</strong></a></li>
+                              <li><a href="#"><strong>Raigad</strong></a></li>
+                              <li><a href="#"><strong>Andheri East:</strong></a></li>
+                              <li><a href="#"><strong>Breach Candy</strong></a></li>
+                              <li><a href="#"><strong>Raigad</strong></a></li>
+                              <li><a href="#"><strong>Andheri East:</strong></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="tab-pane fade">
+                  <div id="address" class="detail-address detail-block">
+                    <div class="alert alert-info">
+                      <ul class="list-three-col">
+                          <li><a href="#"><strong>Andheri East</strong></a></li>
+                          <li><a href="#"><strong>Raigad</strong></a></li>
+                          <li><a href="#"><strong>Andheri East:</strong></a></li>
+                          <li><a href="#"><strong>Breach Candy</strong></a></li>
+                          <li><a href="#"><strong>Raigad</strong></a></li>
+                          <li><a href="#"><strong>Andheri East:</strong></a></li>
+                          <li><a href="#"><strong>Breach Candy</strong></a></li>
+                          <li><a href="#"><strong>Raigad</strong></a></li>
+                          <li><a href="#"><strong>Andheri East:</strong></a></li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+              <div class="tab-pane fade">
+                  <div id="detail" class="detail-list detail-block">
+                    <div class="alert alert-info">
+                      <ul class="list-three-col">
+                          <li><a href="#"><strong>Andheri East</strong></a></li>
+                          <li><a href="#"><strong>Raigad</strong></a></li>
+                          <li><a href="#"><strong>Andheri East:</strong></a></li>
+                          <li><a href="#"><strong>Breach Candy</strong></a></li>
+                          <li><a href="#"><strong>Raigad</strong></a></li>
+                          <li><a href="#"><strong>Andheri East:</strong></a></li>
+                          <li><a href="#"><strong>Breach Candy</strong></a></li>
+                          <li><a href="#"><strong>Raigad</strong></a></li>
+                          <li><a href="#"><strong>Andheri East:</strong></a></li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+              <div class="tab-pane fade">
+                  <div id="features" class="detail-features detail-block">
+                    <div class="alert alert-info">
+                      <ul class="list-three-col">
+                          <li><a href="#"><strong>Andheri East</strong></a></li>
+                          <li><a href="#"><strong>Raigad</strong></a></li>
+                          <li><a href="#"><strong>Andheri East:</strong></a></li>
+                          <li><a href="#"><strong>Breach Candy</strong></a></li>
+                          <li><a href="#"><strong>Raigad</strong></a></li>
+                          <li><a href="#"><strong>Andheri East:</strong></a></li>
+                          <li><a href="#"><strong>Breach Candy</strong></a></li>
+                          <li><a href="#"><strong>Raigad</strong></a></li>
+                          <li><a href="#"><strong>Andheri East:</strong></a></li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1493,25 +1767,27 @@
 </div>
 <!-- // loader end -->
 <!-- // Javascript start -->
-<script type='text/javascript' src='js/lib/bootstrap.min.js?ver=3.3.5'></script>
+<script type='text/javascript' src='js/prod/step2/set2.min.js'></script>
+<!-- <script type='text/javascript' src='js/lib/bootstrap.min.js?ver=3.3.5'></script>
 <script type='text/javascript' src='js/lib/jquery.nicescroll.js?ver=3.5.0'></script>
 <script type='text/javascript' src='js/lib/moment.js?ver=2.11.1'></script>
 <script type='text/javascript' src='js/lib/plugins.js?ver=1.3.0'></script>
 <script type='text/javascript' src='js/lib/core.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='js/lib/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='js/lib/widget.min.js?ver=1.11.4'></script> -->
 <script type='text/javascript'>
   var hindustan = {};
   var prop_carousel_e9ukE = {"slides_to_show":"5","slides_to_scroll":"1","slide_auto":"true","auto_speed":"3000","slide_dots":"true","slide_infinite":"true"};
   var prop_carousel_e9ukE2 = {"slides_to_show":"5","slides_to_scroll":"1","slide_auto":"true","auto_speed":"3000","slide_dots":"false","slide_infinite":"true"};
   var prop_carousel_e9ukE3 = {"slides_to_show":"5","slides_to_scroll":"1","slide_auto":"true","auto_speed":"3000","slide_dots":"false","slide_infinite":"true"};
 </script>
-<script type='text/javascript' src='js/lib/property-carousels.js?ver=1.3.0'></script>
-<!-- <script type='text/javascript' src='js/lib/forms-api.min.js?ver=3.1.11'></script> -->
+<script type='text/javascript' src='js/prod/step3/set3.min.js'></script>
+
+<!-- <script type='text/javascript' src='js/lib/property-carousels.js?ver=1.3.0'></script>
 <script type='text/javascript' src='js/custom.1.12.min.js?ver=1.3.0'></script>
 <script type='text/javascript' src='js/lib/jquery-1.8.0.min.js'></script>
 <script type='text/javascript' src='js/lib/jquery-ui.js?ver=1.11.4'></script>
-<!-- <script type='text/javascript' src='js/lib/bootstrap-multiselect.js?ver=1.11.4'></script> -->
-<script type='text/javascript' src='js/custom.1.8.min.js?ver=1.3.0'></script>
+<script type='text/javascript' src='js/lib/bootstrap-multiselect.js?ver=1.11.4'></script>
+<script type='text/javascript' src='js/custom.1.8.min.js?ver=1.3.0'></script> -->
 <!--[if lte IE 9]>
   <script type='text/javascript' src='http://houzez01.favethemes.com/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=3.1.11'></script>
 <![endif]-->

@@ -18,7 +18,8 @@ module.exports = function(grunt) {
           app: 'app',
           assets: 'app',
           scss: ['<%= project.src %>/scss/style.scss'],
-          js: ['<%= project.src %>/js/*.js']
+          js: ['<%= project.src %>/js/*.js'],
+          jsfile: ['<%= project.src %>/scss/js/minify/']
         },
         // SASS
         sass: {                              // Task
@@ -56,6 +57,13 @@ module.exports = function(grunt) {
                     'app/js/style.min.js': ['<%= project.src %>/scss/js/style.js'],
                     'app/js/custom.1.8.min.js': ['<%= project.src %>/scss/js/custom.1.8.js'],
                     'app/js/custom.1.12.min.js': ['<%= project.src %>/scss/js/custom.1.12.js']
+                }
+            },
+            silu: {
+                files: {
+                  'app/js/prod/step1/set1.min.js': ['<%= project.src %>/scss/theam/js/jquery.js','<%= project.src %>/scss/theam/js/jquery-migrate.min.js'],
+                  'app/js/prod/step2/set2.min.js': ['<%= project.app %>/js/lib/bootstrap.min.js','<%= project.app %>/js/lib/jquery.nicescroll.js','<%= project.app %>/js/lib/moment.js','<%= project.app %>/js/lib/plugins.js','<%= project.app %>/js/lib/core.min.js','<%= project.app %>/js/lib/widget.min.js'],
+                  'app/js/prod/step3/set3.min.js': ['<%= project.app %>/js/lib/property-carousels.js','<%= project.src %>/scss/js/custom.1.12.js','<%= project.app %>/js/lib/jquery-1.8.0.min.js','<%= project.app %>/js/lib/jquery-ui.js','<%= project.app %>/js/lib/bootstrap-multiselect.js','<%= project.src %>/js/custom.1.8.min.js']
                 }
             }
         },
@@ -121,7 +129,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-open');
 
     grunt.registerTask('test', ['sass', 'cssmin', 'uglify']);
-    // grunt.registerTask('server', ['express','watch']);
+    grunt.registerTask('server', ['uglify:silu']);
     grunt.registerTask('default', ['sass', 'cssmin', 'uglify', 'connect:livereload', 'open', 'watch']);
 
 };
